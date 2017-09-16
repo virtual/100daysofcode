@@ -26,179 +26,99 @@
 
 ## Day 20: 2017-09-12 Tues
 
-> Tweet
-
-### Inspiration
-
-- links
+> Start projects using what you know; refine later using what your project needs. https://youtu.be/DFP6UDgVJtE  20/#100DaysOfCode
 
 
 ## Day 19: 2017-09-11 Mon
 
-> Tweet
-
-### Inspiration
-
-- links
+> I really don't understand it, but I somehow made it through the exercise. #EloquentJS Ch.4 arrayToList() 19/#100DaysOfCode 
 
 
 ## Day 18: 2017-09-10 Sun
 
-> Tweet
-
-### Inspiration
-
-- links
+> Building up a page using semanticui; mocking up a virtual community news page. Fun to try out all the components! 18/#100DaysOfCode  
 
 
 ## Day 17: 2017-09-09 Sat
 
-> Tweet
-
-### Inspiration
-
-- links
+> Tried out both materialdesign and semanticui. Definitely loving semanticui's documentation more! 17/#100DaysOfCode
 
 
 ## Day 16: 2017-09-08 Fri
 
-> Tweet
-
-### Inspiration
-
-- links
+> Taking time to practice making and approving pull requests in github with other mtcodeschool students! #mtcs07boz 16/#100DaysOfCode
 
 
 ## Day 15: 2017-09-07 Thurs
 
-> Tweet
-
-### Inspiration
-
-- links
+> With help of StackOverflow, I refactored my redundant XSL into dynamic templates. (Managing this was insane before!😓) 15/#100DaysOfCode  
 
 
 ## Day 14: 2017-09-06 Wed
 
-> Tweet
-
-### Inspiration
-
-- links
+> Submitted my prework for @mtcodeschool and made a simple [Inch/CM converter tool](https://s.codepen.io/virtual/debug/XawEqe/bZAQWyeYVQzM) 14/#100DaysOfCode #mtcs07boz
 
 
 ## Day 13: 2017-09-05 Tues
 
-> Tweet
-
-### Inspiration
-
-- links
+> Worked on setting up my dev environment on my new MacBook Air & worked through prework for mtcodeschool 13/#100DaysOfCode #mtcs07boz 
 
 
 ## Day 12: 2017-09-04 Mon
 
-> Tweet
-
-### Inspiration
-
-- links
+> Finished Pairwise & completely finished with #freecodecamp's Front End Development! 🎉 12/#100DaysOfCode  
 
 
 ## Day 11: 2017-09-03 Sun
 
-> Tweet
-
-### Inspiration
-
-- links
+> WIP ~ Still working on solving pairwise with reduce--last advanced algorithm I have yet to complete! #freecodecamp 11/#100DaysOfCode 
 
 
 ## Day 10: 2017-09-02 Sat
 
-> Tweet
-
-### Inspiration
-
-- links
+> No repeats please! ☑️ Spent more time fixing regex than I did learning & implementing Heap's algorithm! 10/#100DaysOfCode #freecodecamp 
 
 
 ## Day 09: 2017-09-01 Fri
 
-> Tweet
-
-### Inspiration
-
-- links
+> Attended a great 406creatives talk on authenticity, innovation & culture diff from googlemaps builders Garima & Alysia. 9/#100DaysOfCode  
 
 
 ## Day 08: 2017-08-31 Thurs
 
-> Tweet
-
-### Inspiration
-
-- links
+> Finished Symmetric Difference that I gave up on over a year ago! I also may have reworked the modal 👑 #freecodecamp 8/#100DaysOfCode  
 
 
 ## Day 07: 2017-08-30 Wed
 
-> Tweet
-
-### Inspiration
-
-- links
+> Finished some exercises on #EloquentJS. Met up with a fellow coder to develop ideas for projects this fall! 7/#100DaysOfCode 
 
 
 ## Day 06: 2017-08-29 Tues
 
-> Tweet
-
-### Inspiration
-
-- links
+> Finally understanding [higher-order functions](https://www.youtube.com/watch?v=BMUiFMZr7vk) with vids from mpjme / Ch. 5 #EloquentJS 6/#100DaysOfCode 
 
 
 ## Day 05: 2017-08-28 Mon
 
-> Tweet
-
-### Inspiration
-
-- links
+> Finally—that green lock of glory from @letsencrypt! Also ex. 38-42 from [A Smarter Way to Learn JavaScript](http://www.asmarterwaytolearn.com/js/index-of-exercises.html) 5/#100DaysOfCode  
 
 
 ## Day 04: 2017-08-27 Sun
 
-> Tweet
-
-### Inspiration
-
-- links
+> Completed [ex. 29-37--date conversions & functions](http://www.asmarterwaytolearn.com/js/index-of-exercises.html) & migrating sites to digitalocean ❤️ 4/#100DaysOfCode 
 
 
 ## Day 03: 2017-08-26 Sat
 
-> Tweet
-
-### Inspiration
-
-- links
+> Learned correlation & finished ch. 4 of #EloquentJS (& Migrated email to zoho—great docs!) 3/#100DaysOfCode  
 
 
 ## Day 02: 2017-08-25 Fri
 
-> Tweet
-
-### Inspiration
-
-- links
+> Backing up files from site5. Thinking of moving to digitalocean & zoho for SSL support. Ch4/arrays of #eloquentjs 2/#100DaysOfCode 
 
 
 ## Day 01: 2017-08-24 Thurs
 
-> Tweet
-
-### Inspiration
-
-- links
+> Finished my [portfolio migration from #Wordpress to GoHugoIO](http://www.satinflame.com)  Next up: implement letsencrypt 1/#100DaysOfCode
