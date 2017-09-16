@@ -1,68 +1,22 @@
-# 100 Days Of Code - Log
+## Day 23: 2017-09-15 Friday
 
-### Day 0: February 30, 2016 (Example 1)
-##### (delete me or comment me out)
+- Update [Patatap](https://virtual.github.io/udemy-web-dev-bootcamp-patatap/) to be mobile friendly (displays random circle & sound)
+- Begin developing out [100daysofcode](https://virtual.github.io/100daysofcode/) log
 
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
+## Day 22: 2017-09-14 Thurs
 
-**Thoughts:** I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
+> Sounds! 🎵 Colors! 🎨 Built an interactive page with PaperJS & [Colt Steele's Patatap](https://www.udemy.com/the-web-developer-bootcamp/learn/v4/t/lecture/3973786?start=0) course. 22/#100DaysOfCode
 
-**Link to work:** [Calculator App](http://www.example.com)
+- Created [Patatap] demo
 
-### Day 0: February 30, 2016 (Example 2)
-##### (delete me or comment me out)
+### Inspiration
 
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
+- [Counting Grains of Sand with Friends](https://medium.com/montanacodeschool/counting-grains-of-sand-with-friends-8ab777a01aa1)
 
-**Thoughts**: I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
+## Day 21: 2017-09-13 Wed
 
-**Link(s) to work**: [Calculator App](http://www.example.com)
+> Working through a [To-Do from Colt Steele's Web Dev Bootcamp](https://www.udemy.com/the-web-developer-bootcamp/learn/v4/t/lecture/3861520?start=0). Nice tips on remove() after fadeOut() & on vs click 21/#100DaysOfCode
 
+### Inspiration
 
-### Day 1: June 27, Monday
-
-**Today's Progress**: I've gone through many exercises on FreeCodeCamp.
-
-**Thoughts** I've recently started coding, and it's a great feeling when I finally solve an algorithm challenge after a lot of attempts and hours spent.
-
-**Link(s) to work**
-1. [Find the Longest Word in a String](https://www.freecodecamp.com/challenges/find-the-longest-word-in-a-string)
-2. [Title Case a Sentence](https://www.freecodecamp.com/challenges/title-case-a-sentence)
-
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/virtual/100daysofcode/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/virtual/100daysofcode/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- [After the flood - Spark lines](http://aftertheflood.co/projects/atf-spark)
