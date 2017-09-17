@@ -1,4 +1,15 @@
+## Day 24: 2017-09-16 Saturday
+
+> Reviewing #Sass on Codecademy & learning more fancy tricks! Use the common part of a property name & colon (:) 24/#100DaysOfCode
+
+- [Reviewing Sass](https://github.com/virtual/sass-play)
+- [Designing for Interfaces - online book](http://designingforperformance.com/)
+- [Mr. Rogers and the Power of Persuasion](https://www.youtube.com/watch?v=_DGdDQrXv5U) 
+- [Flexbox tutorial](https://flexbox.io/) recommended by Gildara (Twitter)
+
 ## Day 23: 2017-09-15 Friday
+
+> Added (mobile interaction)[https://virtual.github.io/udemy-web-dev-bootcamp-patatap/] & made a github [#100DaysOfCode log](https://virtual.github.io/100daysofcode) for the first 23 days! 
 
 - Update [Patatap](https://virtual.github.io/udemy-web-dev-bootcamp-patatap/) to be mobile friendly (displays random circle & sound)
 - Begin developing out [100daysofcode](https://virtual.github.io/100daysofcode/) log
