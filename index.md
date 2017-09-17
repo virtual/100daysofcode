@@ -9,7 +9,7 @@
 
 ## Day 23: 2017-09-15 Friday
 
-> Added (mobile interaction)[https://virtual.github.io/udemy-web-dev-bootcamp-patatap/] & made a github [#100DaysOfCode log](https://virtual.github.io/100daysofcode) for the first 23 days! 
+> Added [mobile interaction](https://virtual.github.io/udemy-web-dev-bootcamp-patatap/) & made a github [#100DaysOfCode log](https://virtual.github.io/100daysofcode) for the first 23 days! 
 
 - Update [Patatap](https://virtual.github.io/udemy-web-dev-bootcamp-patatap/) to be mobile friendly (displays random circle & sound)
 - Begin developing out [100daysofcode](https://virtual.github.io/100daysofcode/) log
