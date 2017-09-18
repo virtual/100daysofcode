@@ -1,3 +1,9 @@
+## Day 25: 2017-09-17 Sunday
+
+> (Very belated) improving #Flexbox skills with Wes Bos's great video tutorial. https://flexbox.io 25/#100DaysOfCode #css
+
+- [What the Flexbox WIP](https://github.com/virtual/What-The-Flexbox)
+
 ## Day 24: 2017-09-16 Saturday
 
 > Reviewing #Sass on Codecademy & learning more fancy tricks! Use the common part of a property name & colon (:) 24/#100DaysOfCode
