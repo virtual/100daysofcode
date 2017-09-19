@@ -1,6 +1,6 @@
 ## Day 26: 2017-09-18 Monday
 
-- [Flow (vs. Panic vs. Boredom](http://alifeofproductivity.com/how-to-experience-flow-magical-chart/)
+- [Flow (vs. Panic vs. Boredom)](http://alifeofproductivity.com/how-to-experience-flow-magical-chart/)
 - [Modern Agile](http://modernagile.org/)
 - [Bash Completion with Tab](https://debian-administration.org/article/316/An_introduction_to_bash_completion_part_1)
 - [What the Flexbox](https://github.com/virtual/What-The-Flexbox)
