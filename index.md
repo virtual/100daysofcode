@@ -1,3 +1,16 @@
+## Day 26: 2017-09-18 Monday
+
+- [Flow (vs. Panic vs. Boredom](http://alifeofproductivity.com/how-to-experience-flow-magical-chart/)
+- [Modern Agile](http://modernagile.org/)
+- [Bash Completion with Tab](https://debian-administration.org/article/316/An_introduction_to_bash_completion_part_1)
+- [What the Flexbox](https://github.com/virtual/What-The-Flexbox)
+
+---
+
+Start of Montana Code School 2017-09-18 
+
+---
+
 ## Day 25: 2017-09-17 Sunday
 
 > (Very belated) improving #Flexbox skills with Wes Bos's great video tutorial. https://flexbox.io 25/#100DaysOfCode #css
