@@ -2,7 +2,7 @@
 
 > Day 1 of mtcodeschool / #mtcs07boz! Watched ES6 L1 from LambdaSchool & worked more on #flexbox with wesbos. 26/#100DaysOfCode
 
-**MCS**
+### MCS
 - Learned Agile processes; used our Kanban board to move tasks around
 - Discussed the state of flow and learning
 - Intro to the Terminal; made directories, searched for files and set up colors
