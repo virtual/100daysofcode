@@ -4,6 +4,7 @@
 - [Modern Agile](http://modernagile.org/)
 - [Bash Completion with Tab](https://debian-administration.org/article/316/An_introduction_to_bash_completion_part_1)
 - [What the Flexbox](https://github.com/virtual/What-The-Flexbox)
+- [Lesson 1: Learn JavaScript ES6 Mini Bootcamp by Lambda School](https://lambdaschool.com/mini-bootcamp/archive)
 
 ---
 
