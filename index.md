@@ -9,6 +9,8 @@
 - Intro to Git / source control using clones
 - Practiced mob programming; multiple students around a computer. One to type, one to drive, and the rest to collaborate and work through ideas
 
+### Inspriation
+
 - [Mob Programming video](https://www.youtube.com/watch?v=dVqUcNKVbYg)
 - [Flow (vs. Panic vs. Boredom)](http://alifeofproductivity.com/how-to-experience-flow-magical-chart/)
 - [Modern Agile](http://modernagile.org/)
