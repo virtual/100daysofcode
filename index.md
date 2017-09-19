@@ -1,5 +1,15 @@
 ## Day 26: 2017-09-18 Monday
 
+> Day 1 of mtcodeschool / #mtcs07boz! Watched ES6 L1 from LambdaSchool & worked more on #flexbox with wesbos. 26/#100DaysOfCode
+
+**MCS**
+- Learned Agile processes; used our Kanban board to move tasks around
+- Discussed the state of flow and learning
+- Intro to the Terminal; made directories, searched for files and set up colors
+- Intro to Git / source control using clones
+- Practiced mob programming; multiple students around a computer. One to type, one to drive, and the rest to collaborate and work through ideas
+
+- [Mob Programming video](https://www.youtube.com/watch?v=dVqUcNKVbYg)
 - [Flow (vs. Panic vs. Boredom)](http://alifeofproductivity.com/how-to-experience-flow-magical-chart/)
 - [Modern Agile](http://modernagile.org/)
 - [Bash Completion with Tab](https://debian-administration.org/article/316/An_introduction_to_bash_completion_part_1)
