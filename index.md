@@ -1,3 +1,14 @@
+## Day 27: 2017-09-19 Tuesday
+
+> Learning JS TDD (test-driven development).
+> Write test; if passes, write another! 27/#100DaysOfCode https://github.com/virtual/mtcs-tdd #mtcs07boz
+
+### MCS
+
+- Worked on [Test-driven Development](https://github.com/virtual/mtcs-tdd) and mob programming
+- Updated [Meteoright App](https://github.com/Montana-Code-School/meteoright)
+- Trello for project management
+
 ## Day 26: 2017-09-18 Monday
 
 > Day 1 of mtcodeschool / #mtcs07boz! Watched ES6 L1 from LambdaSchool & worked more on #flexbox with wesbos. 26/#100DaysOfCode
