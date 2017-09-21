@@ -1,3 +1,16 @@
+## Day 28: 2017-09-20 Wednesday
+
+>  Upgrading our test-driven dev programs from plain JS to #MochaJS & #ChaiJS libraries! #mtcs07boz 28/#100DaysOfCode
+
+### MCS
+
+- "Upgraded" [our TDD tests](https://github.com/virtual/tdd-js) to use [Mocha](https://mochajs.org/) and [Chai](http://chaijs.com/)
+- Worked on mob programming for [Counting the number of selected letter in string](https://github.com/Montana-Code-School/JsBasicsMTCSFT07) using TDD
+- [String.prototype.includes()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
+- [Array.prototype.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+- [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+- [Basic vi Commands](https://www.cs.colostate.edu/helpdocs/vi.html)
+
 ## Day 27: 2017-09-19 Tuesday
 
 > Learning JS TDD (test-driven development).
