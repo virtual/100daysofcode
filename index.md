@@ -1,3 +1,21 @@
+## Day 30: 2017-09-22 Friday
+
+- All [OmniUpdate tagged repos](https://github.com/search?utf8=%E2%9C%93&q=topic%3Aomniupdate+user%3Avirtual&type=Repositories&ref=advsearch&l=&l=)
+
+## Day 29: 2017-09-21 Thursday
+
+> Full day of #Javascript! Building "Space Dawgz" app, servers w/ #Express, more #ChaiJS. 29/#100DaysOfCode https://github.com/virtual/mtcs-spacedawgz
+
+- Developed code for [OmniUpdate Image Snippet](https://github.com/virtual/omniupdate-image-snippet)
+- JS Meetup: Presentation from @jcs224 on [Adonis](https://adonisjs.com/) (MVC Framework for Node.js to write webapps with less code), and Drone app libraries: [Electron](https://electron.atom.io/), [Leaflet](http://leafletjs.com/), [Vue](https://vuejs.org/)
+
+### MCS
+
+- Practiced more [mob programming with testing](https://github.com/Montana-Code-School/JsBasicsMTCSFT07)
+- Introduction to Express and setup of [Space Dawgz app](https://github.com/virtual/mtcs-spacedawgz)
+- Review of Node & Node Package Manager
+- [Enneagram of Personality](https://en.wikipedia.org/wiki/Enneagram_of_Personality)
+
 ## Day 28: 2017-09-20 Wednesday
 
 >  Upgrading our test-driven dev programs from plain JS to #MochaJS & #ChaiJS libraries! #mtcs07boz 28/#100DaysOfCode
