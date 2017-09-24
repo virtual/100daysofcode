@@ -1,13 +1,27 @@
+## Day 31: 2017-09-23 Saturday
+
+> Developed a small #express app with @semanticui to demo the power of #XSLT to #mtcs07boz! ⚡ https://github.com/virtual/xsl-transform-demo 31/#100DaysOfCode
+
+- [XSLT Demo App](https://github.com/virtual/xsl-transform-demo)
+- [Everything you wanted to know about JavaScript scope](https://toddmotto.com/everything-you-wanted-to-know-about-javascript-scope/)
+
 ## Day 30: 2017-09-22 Friday
 
+> Finished week 1 of mtcodeschool! Happy (but a bit fried) from all the tools and concepts we've learned. #mtcs07boz 30/#100DaysOfCode
+
 - All [OmniUpdate tagged repos](https://github.com/search?utf8=%E2%9C%93&q=topic%3Aomniupdate+user%3Avirtual&type=Repositories&ref=advsearch&l=&l=)
+
+### MCS
+
+- Review week's topics: Mob programming, TDD (Mocha & Chai), Express, Servers vs. Clients, Node & NPM, Terminal, HTML, DRY (Don't Repeat Yourself) & Inheritance, Hot Keys, Git & Github, Trello, Dependencies, and JS Basics (looping, higher-order functions, string manipulation, conditionals)
+- Paired programming & presentation on [consonantsOnly()](https://github.com/Montana-Code-School/FirstWeekReviewMTCS07)
 
 ## Day 29: 2017-09-21 Thursday
 
 > Full day of #Javascript! Building "Space Dawgz" app, servers w/ #Express, more #ChaiJS. 29/#100DaysOfCode https://github.com/virtual/mtcs-spacedawgz
 
 - Developed code for [OmniUpdate Image Snippet](https://github.com/virtual/omniupdate-image-snippet)
-- JS Meetup: Presentation from @jcs224 on [Adonis](https://adonisjs.com/) (MVC Framework for Node.js to write webapps with less code), and Drone app libraries: [Electron](https://electron.atom.io/), [Leaflet](http://leafletjs.com/), [Vue](https://vuejs.org/)
+- JS Meetup: Presentation from jcs224 on [Adonis](https://adonisjs.com/) (MVC Framework for Node.js to write webapps with less code), and Drone app libraries: [Electron](https://electron.atom.io/), [Leaflet](http://leafletjs.com/), [Vue](https://vuejs.org/)
 
 ### MCS
 
