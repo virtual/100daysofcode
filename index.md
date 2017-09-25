@@ -1,3 +1,7 @@
+## Day 32: 2017-09-24 Sunday
+
+> Studied with mtcodeschool students to work through #javascript challenges & teach them about innerHTML! 32/#100DaysOfCode #mtsc07boz
+
 ## Day 31: 2017-09-23 Saturday
 
 > Developed a small #express app with @semanticui to demo the power of #XSLT to #mtcs07boz! ⚡ https://github.com/virtual/xsl-transform-demo 31/#100DaysOfCode
