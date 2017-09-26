@@ -1,3 +1,19 @@
+## Day 33: 2017-09-25 Monday
+
+> Playing with crazy, nested timed fading text and word replacement functions! How would you set it up? ;D 33/#100DaysOfCode #mtcs07boz
+
+- Finished [What the Flexbox](https://github.com/virtual/What-The-Flexbox) from Wes Bos!
+- [Enlightening the rainbow of its colors](https://medium.com/montanacodeschool/enlightening-the-rainbow-of-its-colors-a3b0f6ba9b0f)
+- [John Allwine's Puzzle Popsicle Sticks](https://www.allwinedesigns.com/blog/puzzle-popsicle-sticks)
+
+### MCS (Week 2)
+
+- Review [Chrome Inspect Debugger](https://developers.google.com/web/tools/chrome-devtools/javascript/)
+- Chrome [Make a minified file readable](https://developers.google.com/web/tools/chrome-devtools/javascript/reference#format)
+- Working through exercises on [JS Basics](https://github.com/virtual/JsBasicsMTCSFT07)
+- [Updating a fork to match master](https://gist.github.com/CristinaSolana/1885435)
+- [fadeTo() jQuery function](https://api.jquery.com/fadeTo/)
+
 ## Day 32: 2017-09-24 Sunday
 
 > Studied with mtcodeschool students to work through #javascript challenges & teach them about innerHTML! 32/#100DaysOfCode #mtsc07boz
