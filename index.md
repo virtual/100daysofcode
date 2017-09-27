@@ -1,3 +1,21 @@
+## Day 35: 2017-09-27 Wednesday
+
+
+### MCS
+- [Firebase](https://firebase.google.com)
+- [RoboMongo](https://robomongo.org/download)
+
+## Day 34: 2017-09-26 Tuesday
+
+> Learning asynchronous vs synchronous executions with 🎉 partying camels 🐫 & postmanclient! 34/#100DaysOfCode #mtcs07boz #javascript
+
+- [Express Updating Route](https://www.udemy.com/the-web-developer-bootcamp/learn/v4/t/lecture/3861604?start=0)
+
+### MCS 
+
+- [Bootstrap 4](https://v4-alpha.getbootstrap.com/) (use script includes on homepage)
+- [jQuery](https://code.jquery.com/)
+
 ## Day 33: 2017-09-25 Monday
 
 > Playing with crazy, nested timed fading text and word replacement functions! How would you set it up? ;D 33/#100DaysOfCode #mtcs07boz
