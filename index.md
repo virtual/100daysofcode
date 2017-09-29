@@ -1,9 +1,17 @@
+## Day 36: 2017-09-28 Thursday
+
+> A slightly frustrating day trying to figure out MongoDB & CRUD w/ Ajax. I'll be excited when it makes sense! 36/#100DaysOfCode #mtcs07boz
+
+- [jQuery.ajax()](http://api.jquery.com/jquery.ajax/)
+- [Using HTTP Methods for RESTful Services](http://www.restapitutorial.com/lessons/httpmethods.html)
+
 ## Day 35: 2017-09-27 Wednesday
 
+> Created an Express/Mongo app featuring some of my favorite actresses! 35/#100DaysOfCode #mtcs07boz #javascript https://github.com/virtual/celebrity-app
 
 ### MCS
-- [Firebase](https://firebase.google.com)
 - [RoboMongo](https://robomongo.org/download)
+- [Firebase](https://firebase.google.com)
 
 ## Day 34: 2017-09-26 Tuesday
 
