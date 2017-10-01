@@ -1,3 +1,14 @@
+## Day 38: 2017-09-30 Saturday
+
+> Reviewing Express, routes, MongoDB and Ajax. Next up, more practice fetching endpoints with $.get. 37 & 38/#100DaysOfCode #mtcs07boz
+
+## Day 37: 2017-09-29 Friday
+
+### MCS
+
+- [f.lux® screen temperature](https://justgetflux.com/)
+- Collaborated & presented [expressMongooseReview](https://github.com/robherrm/expressMongooseReview)
+
 ## Day 36: 2017-09-28 Thursday
 
 > A slightly frustrating day trying to figure out MongoDB & CRUD w/ Ajax. I'll be excited when it makes sense! 36/#100DaysOfCode #mtcs07boz
