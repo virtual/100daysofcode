@@ -1,3 +1,29 @@
+## Day 40: 2017-10-02 Monday
+
+>
+
+### MCS
+
+- [Intro to ES6](https://github.com/virtual/es6Exercises): [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const), [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) and [import/export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
+- [Quokka.js](https://quokkajs.com/docs/index.html) - enabled per file
+
+## Day 39: 2017-10-01 Sunday
+
+> Built Colt Steele's RESTful Blog App with fellow #mtcs07boz student Emily! (The blog theme was easily inspired. ☕) 39/#100DaysOfCode
+
+- [RESTful Routing: Hot Cocoa Blog](https://github.com/virtual/restful-routes)
+- [RESTful Routing - Udemy Web Developer Bootcamp](https://www.udemy.com/the-web-developer-bootcamp/learn/v4/t/lecture/3919760?start=0)
+
+| Name | Path | HTTP Verb | Purpose |
+| ---- | ---- | --------- | ------- |
+| Index | /dogs | GET | List all dogs |
+| New | /dogs/new | GET | Show new dog form |
+| Create | /dogs | POST | Create a new dog, then redirect somewhere |
+| Show | /dogs/:id | GET | Show info about one specific dog |
+| Edit | /dogs/:id/edit | GET | Show edit form for one dog | 
+| Update | /dogs/:id | PUT | Update a particular dog, then redirect somewhere |
+| Destroy | /dogs/:id | DELETE | Delete a particular dog, then redirect somewhere |
+
 ## Day 38: 2017-09-30 Saturday
 
 > Reviewing Express, routes, MongoDB and Ajax. Next up, more practice fetching endpoints with $.get. 37 & 38/#100DaysOfCode #mtcs07boz
