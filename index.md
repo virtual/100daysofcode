@@ -2,13 +2,30 @@
 
 > Angered the API gods by accidentally calling React components from each other's template. (Loop!) ☁️ Lesson learned! 43/#100DaysOfCode
 
+### MCS
+
+- [React Weather App using OpenWeatherMap API](https://github.com/virtual/reactWeatherApp)
+- [Passing Props](https://facebook.github.io/react-native/docs/props.html)
+- Arrow functions allow you to run a callback without changing scope
+- [Lifting State Up](https://reactjs.org/docs/lifting-state-up.html)
+
 ## Day 42: 2017-10-04 Wednesday
 
 > My first #hacktoberfest pull request resulted in a nice note! 🌮🌮 Anyone else trying some? 42/#100DaysOfCode https://hacktoberfest.digitalocean.com/ 
 
+- Pull Request (accepted!) for [AlgoWiki](https://github.com/vicky002/AlgoWiki/pull/75)
+
+### MCS
+
+- New [server setup](https://github.com/virtual/basicExpressWebServer) with server side fetch for Giphy API
+
 ## Day 41: 2017-10-03 Tuesday
 
 > 🌈 Because unicorns vomiting rainbows & @reactstrap make ReactJS app development that much more fun. 🌈 41/#100DaysOfCode #mtcs07boz
+
+### MCS
+
+- [reactStuff](https://github.com/virtual/reactStuff/tree/solutions) unicorns and super stahs!
 
 ## Day 40: 2017-10-02 Monday
 
