@@ -1,6 +1,18 @@
+## Day 43: 2017-10-05 Thursday
+
+> Angered the API gods by accidentally calling React components from each other's template. (Loop!) ☁️ Lesson learned! 43/#100DaysOfCode
+
+## Day 42: 2017-10-04 Wednesday
+
+> My first #hacktoberfest pull request resulted in a nice note! 🌮🌮 Anyone else trying some? 42/#100DaysOfCode https://hacktoberfest.digitalocean.com/ 
+
+## Day 41: 2017-10-03 Tuesday
+
+> 🌈 Because unicorns vomiting rainbows & @reactstrap make ReactJS app development that much more fun. 🌈 41/#100DaysOfCode #mtcs07boz
+
 ## Day 40: 2017-10-02 Monday
 
->
+> 2nd round redoing today's suite of @mtcodeschool exercises on async callbacks--it's slowly making sense! 40/#100DaysOfCode #mtcs07boz
 
 ### MCS
 
