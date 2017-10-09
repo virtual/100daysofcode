@@ -1,9 +1,25 @@
+## Day 47: 2017-10-09 Monday
+
+> Submitted 4th PR for #Hacktoberfest & watched videos from @mpjm on functions & promises 🐱🐱🐱 47/#100DaysOfCode
+
+## Day 46: 2017-10-08 Sunday
+
+> My project is currently a mess of React and EJS... but I've got an API loading & @semanticui to make it pretty! 👩‍🎨 46/#100DaysOfCode
+
+## Day 45: 2017-10-07 Saturday
+
+
+
+## Day 44: 2017-10-06 Friday
+
+> Researching how to store keys & secret squirrel passwords in project's config.js. Starting a video library project! 44/#100DaysOfCode
+
 ## Day 43: 2017-10-05 Thursday
 
 > Angered the API gods by accidentally calling React components from each other's template. (Loop!) ☁️ Lesson learned! 43/#100DaysOfCode
 
 ### MCS
-
+ 
 - [React Weather App using OpenWeatherMap API](https://github.com/virtual/reactWeatherApp)
 - [Passing Props](https://facebook.github.io/react-native/docs/props.html)
 - Arrow functions allow you to run a callback without changing scope
