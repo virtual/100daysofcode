@@ -1,18 +1,40 @@
-## Day 47: 2017-10-09 Monday
+## Day 49: 2017-10-10 Tuesday
+
+
+
+## Day 48: 2017-10-09 Monday
+
+> Refactored code and "lifted the state" for this small React app. Beautiful photos from unsplash giphy 48/#100DaysOfCode #mtcs07boz
+
+### MCS
+
+- Use React ["exact" option](https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/Redirect.md) for home route
+- [React Router Intro](https://github.com/virtual/reactRouterIntro)
+- [React Weather App (lifted state)](https://github.com/virtual/reactWeatherApp)
+
+## Day 47: 2017-10-08 Sunday
 
 > Submitted 4th PR for #Hacktoberfest & watched videos from @mpjm on functions & promises 🐱🐱🐱 47/#100DaysOfCode
 
-## Day 46: 2017-10-08 Sunday
+- [Catch Me Github Repo](https://github.com/lap00zza/catch_me/pull/30)
+
+## Day 46: 2017-10-07 Saturday
 
 > My project is currently a mess of React and EJS... but I've got an API loading & @semanticui to make it pretty! 👩‍🎨 46/#100DaysOfCode
 
-## Day 45: 2017-10-07 Saturday
+### MCS 
 
+- [Broken API - Express Routing](https://github.com/virtual/broken-api)
 
+## Day 45: 
+
+Skipped 45, oops!
 
 ## Day 44: 2017-10-06 Friday
 
 > Researching how to store keys & secret squirrel passwords in project's config.js. Starting a video library project! 44/#100DaysOfCode
+
+- [Best Practices for Writing React Components - Musefind](https://engineering.musefind.com/our-best-practices-for-writing-react-components-dec3eb5c3fc8)
 
 ## Day 43: 2017-10-05 Thursday
 
