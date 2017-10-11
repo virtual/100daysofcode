@@ -1,8 +1,12 @@
-## Day 49: 2017-10-10 Tuesday
+## Day 48: 2017-10-10 Tuesday (45)
 
+Spent a full day tying pieces together for a 🎵 project using the @Spotify API! #mtcs07boz montanacodeschool 45/#100DaysOfCode (48)
 
+### MCS
 
-## Day 48: 2017-10-09 Monday
+- [Github Happy Songs Repo](https://github.com/virtual/happy-songs)
+
+## Day 47: 2017-10-09 Monday (48)
 
 > Refactored code and "lifted the state" for this small React app. Beautiful photos from unsplash giphy 48/#100DaysOfCode #mtcs07boz
 
@@ -12,23 +16,19 @@
 - [React Router Intro](https://github.com/virtual/reactRouterIntro)
 - [React Weather App (lifted state)](https://github.com/virtual/reactWeatherApp)
 
-## Day 47: 2017-10-08 Sunday
+## Day 46: 2017-10-08 Sunday (47)
 
 > Submitted 4th PR for #Hacktoberfest & watched videos from @mpjm on functions & promises 🐱🐱🐱 47/#100DaysOfCode
 
 - [Catch Me Github Repo](https://github.com/lap00zza/catch_me/pull/30)
 
-## Day 46: 2017-10-07 Saturday
+## Day 45: 2017-10-07 Saturday (46)
 
 > My project is currently a mess of React and EJS... but I've got an API loading & @semanticui to make it pretty! 👩‍🎨 46/#100DaysOfCode
 
 ### MCS 
 
 - [Broken API - Express Routing](https://github.com/virtual/broken-api)
-
-## Day 45: 
-
-Skipped 45, oops!
 
 ## Day 44: 2017-10-06 Friday
 
