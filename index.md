@@ -1,3 +1,33 @@
+## Day 53: 2017-10-15 Sunday
+
+> So much to learn about #Javascript & web dev; at least we'll never be bored 😉 53/#100DaysOfCode #freecodecamp 
+
+- [freeCodeCamp - Timestamp Microservice](https://www.freecodecamp.org/challenges/timestamp-microservice)
+- Headfirst Design Patterns, Observer Pattern (Subject & Subscribers)
+- [Six Simple Mind Tricks to Help You Learn JavaScript Faster](https://www.sitepoint.com/mind-tricks-to-learn-javascript-faster/)
+- [The MVC Design Pattern in Vanilla JavaScript](https://www.sitepoint.com/mvc-design-pattern-javascript/)
+
+## Day 52: 2017-10-14 Saturday
+
+> Completed #freecodecamp's learnyoumongo challenge & checked out glitch for app dev. 52/#100DaysOfCode
+
+- [Glitch Timekeeper App](https://timestamp-ms-virtual.glitch.me/)
+- [learnyoumongo](https://github.com/evanlucas/learnyoumongo)
+
+## Day 51: 2017-10-13 Friday
+
+> Presented our music apps today. Any #recommendations for tuts on using #reactjs with Mongo/Express? 51/#100DaysOfCode #mtcs07boz
+
+## Day 50: 2017-10-12 Thursday
+
+> Halfway through! 🏆 50/#100DaysOfCode Continued working through an app using the @Spotify API https://github.com/virtual/happy-songs #mtcs07boz
+
+## Day 49: 2017-10-11 Wednesday
+
+> We were warned we'd reach a low point during @mtcodeschool. React/Mongo (Upside: it can only get better?) #mtcs07boz 49/#100DaysOfCode
+
+- [Why Learning to Code is So Damn Hard](http://www.vikingcodeschool.com/posts/why-learning-to-code-is-so-damn-hard)
+
 ## Day 48: 2017-10-10 Tuesday (45)
 
 Spent a full day tying pieces together for a 🎵 project using the @Spotify API! #mtcs07boz montanacodeschool 45/#100DaysOfCode (48)
