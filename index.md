@@ -1,14 +1,18 @@
 ## Day 58: 2017-10-20 Friday
 
-> 
+
 
 ## Day 57: 2017-10-19 Thursday
 
 > Implemented @LeafletJS and looked into the national parks API (nice docs but CORS issues!) 57/#100DaysOfCode #mtcs07boz
 
+- [React LeafletJS](https://github.com/PaulLeCam/react-leaflet)
+
 ## Day 56: 2017-10-18 Wednesday
 
 > A long but productive day: implemented mLab to have a shared mongodb for our team, added data and routes 56/#100DaysOfCode #mtcs07boz
+
+- [mLab for external MongoDB](https://mlab.com/home)
 
 ## Day 55: 2017-10-17 Tuesday
 
@@ -16,10 +20,11 @@
 
 ## Day 54: 2017-10-16 Monday
 
-> What do you do when you enjoy using @semanticui but start developing in #ReactJS? 🎉Celebrate! https://react.semantic-ui.com/elements/button  54/#100DaysOfCode
+> What do you do when you enjoy using @semanticui but start developing in #ReactJS? 🎉 Celebrate! https://react.semantic-ui.com/elements/button  54/#100DaysOfCode
 
 ### MCS 
 
+- [Semantic UI for React](https://react.semantic-ui.com/usage)
 - [Jest](https://facebook.github.io/jest/) for TDD in React
 - Open Space Technology to generate ideas and processes for project pitching, voting, and team formation
 
