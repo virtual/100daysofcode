@@ -33,9 +33,11 @@ Game development with melonJS!
 
 ### MCS 
 
+- Working with [Axios](https://www.npmjs.com/package/axios) for fetches - Promise based HTTP client for the browser and node.js
 - Working through CORS issues (unresolved) with National Parks API
-- Spent most of the day implementing Passport for authentication
+- Spent most of the day implementing [Passport for authentication](http://www.passportjs.org/docs)
 - Began implementing local storage / sessions but it doesn't seem quite integrated
+- Randomized featured cards using React props for order and limit
 
 ## Day 57: 2017-10-19 Thursday
 
@@ -43,16 +45,23 @@ Game development with melonJS!
 
 - [React LeafletJS](https://github.com/PaulLeCam/react-leaflet)
 - Learned how to request additional fields from the [National Parks API](https://www.nps.gov/subjects/digital/nps-data-api.htm)
+- Developed out single Sight info page for Yellowstone Odyssey
 
 ## Day 56: 2017-10-18 Wednesday
 
 > A long but productive day: implemented mLab to have a shared mongodb for our team, added data and routes 56/#100DaysOfCode #mtcs07boz
 
 - [mLab for external MongoDB](https://mlab.com/home)
+- Long day of getting information to pull for one sight. (Very frustrating!) Missing the understanding of tying React routes to the Express routes (working in Postman!)
+- With Mark's help used a different named route to get information for a single sight: /sightInfo instead of /sight/:id
 
 ## Day 55: 2017-10-17 Tuesday
 
 > Starting on group projects and building out our @balsamiq wireframes for @mtcodeschool / #mtcs07boz 🐃 55/#100DaysOfCode
+
+- Implemented javascript-quiz-using-json and rebuilt to allow for element to be placed inside a div
+- Developed quiz questions
+- Added feature card components 
 
 ## Day 54: 2017-10-16 Monday
 
