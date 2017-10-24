@@ -1,12 +1,48 @@
+## Day 61: 2017-10-23 Monday
+
+> Continuing to plug away at developing our @mtcodeschool apps. #Bozeman demos 11/2 at @Wisetail! #mtcs07boz 61/#100DaysOfCode
+
+- Reviewed user stories
+- Revised MongoDB schemas to include quiz types and scores
+- Updated Quiz to resolve scores
+- Still working through, not feeling hopeless, but still not all sure of ourselves and what we can/can't do
+
+## Day 60: 2017-10-22 Sunday
+
+> Today trying out some game dev with @melonJS & Tiled Map Editor. Slow-going but satisfying! http://melonjs.github.io/tutorial-platformer/ 60/#100DaysOfCode
+
+Game development with melonJS! 
+
+- [melonJS Platformer Tutorial](http://melonjs.github.io/tutorial-platformer/)
+- [melonJS boilerplate](https://github.com/melonjs/boilerplate)
+- [Tiled Map Editor](http://www.mapeditor.org/)
+
+## Day 59: 2017-10-21 Saturday
+
+> Had trouble working with an NPM quiz module, so I spent the day writing my own to work the way I wanted! 🎊 #ReactJS 59/#100DaysOfCode
+
+- Met up with Emily at Coldsmoke and worked through some updates ☕
+- Updated and optimized images
+- Learned you can make a fork of an NPM and manage it independently as an NPM resource
+- You must restart react manually if you make a change to JS outside the scope of normally watched files (eg NPM)
+- Decided to write Quiz module ourselves so we could manage it and implement things that didn't seem to work in the included NPM 
+
 ## Day 58: 2017-10-20 Friday
 
+> Neat tool for CORS workarounds: https://crossorigin.me/  Implemented Passport and attempted local storage 58/#100DaysOfCode #mtcs07boz
 
+### MCS 
+
+- Working through CORS issues (unresolved) with National Parks API
+- Spent most of the day implementing Passport for authentication
+- Began implementing local storage / sessions but it doesn't seem quite integrated
 
 ## Day 57: 2017-10-19 Thursday
 
 > Implemented @LeafletJS and looked into the national parks API (nice docs but CORS issues!) 57/#100DaysOfCode #mtcs07boz
 
 - [React LeafletJS](https://github.com/PaulLeCam/react-leaflet)
+- Learned how to request additional fields from the [National Parks API](https://www.nps.gov/subjects/digital/nps-data-api.htm)
 
 ## Day 56: 2017-10-18 Wednesday
 
