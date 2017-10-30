@@ -1,3 +1,38 @@
+## Day 67: 2017-10-29: Sunday
+
+Spent a few too many hours trying to fix my login only to break my signup page.  Time for a lazy Sunday afternoon. 67/#100DaysOfCode
+
+## Day 66: 2017-10-28: Saturday
+
+> Better understanding React state & comps with Colt Steele's Advanced Bootcamp & reading up! https://reactjs.org/docs/thinking-in-react.html 66/#100DaysOfCode
+
+A few takeaways from [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
+
+• Designer's Photoshop layer names may end up being the names of your React components.
+• Components that appear within another component in the mock up design should appear as a child in the (folder) hierarchy.
+• Build a static version in React (without state) first, and then add in state after all components are ready
+
+And in deciding state, ask three questions about each piece of data:
+1. Is it passed in from a parent via props? If so, it probably isn’t state.
+2. Does it remain unchanged over time? If so, it probably isn’t state.
+3. Can you compute it based on any other state or props in your component? If so, it isn’t state.
+
+## Day 66: 2017-10-27: Friday
+
+> Built out more CRUD for our Quiz project (MERN app) and played show-and-tell with #mtcs07boz Hello, weekend! 🎉 65/#100DaysOfCode
+
+## Day 64: 2017-10-26: Thursday
+
+> Working on sessionStorage and scoreboards for our Yellowstone quiz app. #mtcs07boz 64/#100DaysOfCode
+
+## Day 63: 2017-10-25 Wednesday
+
+> Built out the logic to save & update scores for our Yellowstone Quiz (MERN) App. #mtcs07boz 63/#100DaysOfCode
+
+## Day 62: 2017-10-24 Tuesday
+
+> Working to understand #reactjs lifecycles, and when to use (or not use) state. + Good company from jakedolan 🍻 62/#100DaysOfCode
+
 ## Day 61: 2017-10-23 Monday
 
 > Continuing to plug away at developing our @mtcodeschool apps. #Bozeman demos 11/2 at @Wisetail! #mtcs07boz 61/#100DaysOfCode
