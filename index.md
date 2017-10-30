@@ -1,6 +1,17 @@
+-----------
+
+Week 6 Complete of Montana Code School (Halfway Through!)
+
+----------
+
 ## Day 67: 2017-10-29: Sunday
 
 Spent a few too many hours trying to fix my login only to break my signup page.  Time for a lazy Sunday afternoon. 67/#100DaysOfCode
+
+- Signup with Passport working
+- Trying to clean up and get login working for a simple login template, but can't get both signup and login cooperating.
+
+📚 Reading: How to Win Friends and Influence People in the Digital Age 
 
 ## Day 66: 2017-10-28: Saturday
 
@@ -8,9 +19,9 @@ Spent a few too many hours trying to fix my login only to break my signup page. 
 
 A few takeaways from [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
 
-• Designer's Photoshop layer names may end up being the names of your React components.
-• Components that appear within another component in the mock up design should appear as a child in the (folder) hierarchy.
-• Build a static version in React (without state) first, and then add in state after all components are ready
+- Designer's Photoshop layer names may end up being the names of your React components.
+- Components that appear within another component in the mock up design should appear as a child in the (folder) hierarchy.
+- Build a static version in React (without state) first, and then add in state after all components are ready
 
 And in deciding state, ask three questions about each piece of data:
 1. Is it passed in from a parent via props? If so, it probably isn’t state.
@@ -20,6 +31,11 @@ And in deciding state, ask three questions about each piece of data:
 ## Day 66: 2017-10-27: Friday
 
 > Built out more CRUD for our Quiz project (MERN app) and played show-and-tell with #mtcs07boz Hello, weekend! 🎉 65/#100DaysOfCode
+
+### MCS
+
+- Created a sights dashboard that allows users to edit and save changes for each 
+- Possible to-do: Option to create and delete sights
 
 ## Day 64: 2017-10-26: Thursday
 
@@ -32,6 +48,8 @@ And in deciding state, ask three questions about each piece of data:
 ## Day 62: 2017-10-24 Tuesday
 
 > Working to understand #reactjs lifecycles, and when to use (or not use) state. + Good company from jakedolan 🍻 62/#100DaysOfCode
+
+- Began [Colt Steele's Advanced Web Dev Bootcamp](https://www.udemy.com/the-advanced-web-developer-bootcamp)
 
 ## Day 61: 2017-10-23 Monday
 
