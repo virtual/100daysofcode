@@ -1,3 +1,29 @@
+## Day 70: 2017-01-01: Wednesday
+
+- Refactored Contact page to use Array of info
+- Added in Google Analytics
+- Fun team photos!
+
+## Day 69: 2017-10-31: Tuesday
+
+> Implemented geolocation w/ Haversine formula calculations to find the closest landmarks! 🗺️ https://en.wikipedia.org/wiki/Haversine_formula 69/#100DaysOfCode
+
+- Haversine NPM to display closest location
+- Cleaned up React warnings, added keys
+- Added in Save animation for Edit Sights page and redirect to /admin listing
+
+- Finished Hackoberfest 2017 with 11 PRs!
+
+## Day 68: 2017-10-30: Monday
+
+> My first ever deployment to @Heroku today for a quiz app. To do: Route fixing. https://yellowstone-odyssey.herokuapp.com/  68/#100DaysOfCode #mtcs07boz
+
+- Fixed all A tags to [Link tags](http://knowbody.github.io/react-router-docs/api/Link.html) to keep Router working
+- Deployed to [Heroku](https://yellowstone-odyssey.herokuapp.com/)
+- Changed all fetch calls to use Axios
+- Added in dotenv NPM package and set ENV routers 
+- Changed all paths to secure (https)
+
 -----------
 
 Week 6 Complete of Montana Code School (Halfway Through!)
