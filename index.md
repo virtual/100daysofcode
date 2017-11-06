@@ -1,4 +1,38 @@
-## Day 70: 2017-01-01: Wednesday
+## Day 74: 2017-11-05: Sunday
+
+> Brain tired; think I'm catching a cold... 😴  pushed thru & submitted exercism_io pangram! http://exercism.io/submissions/8af111c3a4354108bc4e7243299c301d 74/#100DaysOfCode
+
+## Day 73: 2017-11-04: Saturday
+
+> Finished #javascript simple-cipher exercise at exercism_io - Leave me a nitpick at http://exercism.io/submissions/618f04a913e34fa0849395540189581b 73/#100DaysOfCode
+
+## Day 72: 2017-11-03: Friday
+
+> Learned more about Workiva's Missoula team; started working through MobX and problems on exercism_io #mtcs07boz 72/#100DaysOfCode
+
+## Day 71: 2017-11-02: Thursday
+
+> Great connections at our @mtcodeschool demos tonight! Thanks to everyone who came out for support 🎉 #mtc07boz 71/#100DaysOfCode
+
+⭐ Demo Day ⭐
+
+- Yellowstone Odyssey App
+- CRUD for Sights administration
+- Quizzes save to database
+- Scores work and update successfully
+- Geolocation worked well
+- Asked about authentication framework (Passport)
+
+Wishlist
+
+- Manage state better, possibly with MobX or Redux
+- Better authentication
+- Check on why Facebook share didn't work
+- Cuter badge for Twitter
+
+## Day 70: 2017-11-01: Wednesday
+
+> One day until our demos for @mtcodeschool #mtcs07boz! Refactored code & took team pics 📷 https://yellowstone-odyssey.herokuapp.com/contactinfo  70/#100DaysOfCode
 
 - Refactored Contact page to use Array of info
 - Added in Google Analytics
@@ -12,7 +46,7 @@
 - Cleaned up React warnings, added keys
 - Added in Save animation for Edit Sights page and redirect to /admin listing
 
-- Finished Hackoberfest 2017 with 11 PRs!
+- Finished Hackoberfest 2017 with 11 PRs! Ordered t-shirt!
 
 ## Day 68: 2017-10-30: Monday
 
@@ -23,6 +57,8 @@
 - Changed all fetch calls to use Axios
 - Added in dotenv NPM package and set ENV routers 
 - Changed all paths to secure (https)
+
+- Missed dentist appointment 🤷
 
 -----------
 
