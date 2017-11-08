@@ -1,6 +1,10 @@
 ## Day 77: 2017-11-08: Wednesday
 
-SQL: Structured Query Language.
+SQL: Structured Query Language. 
+
+- [Mark's super awesome app](https://github.com/virtual/simple-postgresql-app)
+- [Getting Started with PostgreSQL on Mac OSX](https://www.codementor.io/devops/tutorial/getting-started-postgresql-server-mac-osx)
+- [Node Postgres](https://node-postgres.com/)
 - Heroku can use PostgreSQL
 
 ## Day 76: 2017-11-07: Tuesday
