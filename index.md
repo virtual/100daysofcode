@@ -1,3 +1,16 @@
+## Day 77: 2017-11-08: Wednesday
+
+SQL: Structured Query Language.
+- Heroku can use PostgreSQL
+
+## Day 76: 2017-11-07: Tuesday
+
+> #Javascript Promises! 🎁 Wish I learned about these earlier.  https://developers.google.com/web/fundamentals/primers/promises https://davidwalsh.name/promises 76/#100DaysOfCode #freecodecamp
+
+## Day 75: 2017-11-06: Monday
+
+> #Thankful for my @mtcodeschool teacher for helping me get Passport working w/ MobX for React (& baking cookies! 🍪) 75/#100DaysOfCode
+
 ## Day 74: 2017-11-05: Sunday
 
 > Brain tired; think I'm catching a cold... 😴  pushed thru & submitted exercism_io pangram! http://exercism.io/submissions/8af111c3a4354108bc4e7243299c301d 74/#100DaysOfCode
