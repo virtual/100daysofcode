@@ -1,3 +1,44 @@
+## Day 82: 2017-11-13: Monday
+
+> Starting our second round of @mtcodeschool apps today. Giving @materialdesign another try; will be using React, PostgreSQL, Express, Node and feature coffee! ☕ #mtcs07boz 82/#100DaysOfCode
+
+☕ Starting new project! ☕
+
+- [Coffee Pot Pi](https://github.com/bbalconi/coffee-pot)
+- [React Material Design - M Laursen](https://react-md.mlaursen.com/components/buttons)
+- [Template Literals for long queries](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+- [Countdown Timer](http://pughpugh.github.io/react-countdown-clock/)
+- [Introduced to React Native](https://github.com/react-community/create-react-native-app)
+- [Expo - Easily build apps with React Native](https://expo.io/)
+
+## Day 81: 2017-11-12: Sunday
+
+> So close to finished with this app-just realizing I don't have an edit function. 🍲 Added meta, error message and XSS cleaning for inputs. https://fcc-recipe.herokuapp.com/  81/#100DaysOfCode #freecodecamp
+
+- [Udemy - Raspberry Pi Workshop 2017 Become a Coder / Maker](https://www.udemy.com/raspberry-pi-workshop-become-a-coder-maker-inventor/)
+- [Secure XSS Filters](https://github.com/yahoo/xss-filters)
+
+## Day 80: 2017-11-11: Saturday
+
+> Ordered a Raspberry Pi and reviewing Python from @SoloLearn to prepare for a possible next project! (Any suggestions for newbie Pi tutorials?) 80/#100DaysOfCode
+
+- Helped dev with [Flexbox](https://code.sololearn.com/WYze7OQhrS5E/#html)
+- [SoloLearn Python 3](https://www.sololearn.com/Course/Python/)
+- [https://www.raspberrypi.org/](https://www.raspberrypi.org/)
+- [9 amazing projects where Arduino & Art meet!](http://arduinoarts.com/2014/05/9-amazing-projects-where-arduino-art-meet/)
+- [Top 10 Raspberry Pi Projects for Beginners](https://lifehacker.com/top-10-raspberry-pi-projects-for-beginners-1791002723)
+
+## Day 79: 2017-11-10: Friday
+
+> Eee! Recipe app finally up and running on @Heroku! My buddy was even kind enough to add his favorite recipe. Needs a little more TLC tomorrow. https://fcc-recipe.herokuapp.com/  79/#100DaysOfCode
+
+- [Recipe Collector - Heroku](https://fcc-recipe.herokuapp.com/)
+- Added in dynamic inputs for ingredients
+
+## Day 78: 2017-11-09: Thursday
+
+> Back to working on my @freeCodeCamp #RecipeApp I started in April! Satisfying to finally understand enough to finish it. 78/#100DaysOfCode
+
 ## Day 77: 2017-11-08: Wednesday
 
 SQL: Structured Query Language. 
@@ -6,14 +47,19 @@ SQL: Structured Query Language.
 - [Getting Started with PostgreSQL on Mac OSX](https://www.codementor.io/devops/tutorial/getting-started-postgresql-server-mac-osx)
 - [Node Postgres](https://node-postgres.com/)
 - Heroku can use PostgreSQL
+- [Yellowstone Odyssey refactored using PostgreSQL for Login & Sights pages](https://github.com/virtual/yellowstone-odyssey-postgresql)
 
 ## Day 76: 2017-11-07: Tuesday
 
 > #Javascript Promises! 🎁 Wish I learned about these earlier.  https://developers.google.com/web/fundamentals/primers/promises https://davidwalsh.name/promises 76/#100DaysOfCode #freecodecamp
 
+- [Yellowstone Odyssey refactored using MobX](https://github.com/virtual/Buffaloed)
+
 ## Day 75: 2017-11-06: Monday
 
 > #Thankful for my @mtcodeschool teacher for helping me get Passport working w/ MobX for React (& baking cookies! 🍪) 75/#100DaysOfCode
+
+- [Happy Songs with MobX](https://github.com/virtual/happy-songs)
 
 ## Day 74: 2017-11-05: Sunday
 
