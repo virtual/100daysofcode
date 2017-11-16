@@ -1,3 +1,26 @@
+## Day 85: 2017-11-16: Thursday
+
+- Never count on users reading documentation
+- [Intro.js](https://introjs.com/)|[Installation](https://introjs.com/docs/getting-started/install) provides a interactive way for users to learn how to use your site
+- [Intro.js React wrapper NPM](https://www.npmjs.com/package/intro.js-react)
+- Keep track if it should run (stepsEnabled) with a newUser flag or similar on user accounts
+
+## Day 84: 2017-11-15: Wednesday
+
+> Great @mtcodeschool Q&A with @Wisetail about learning new technology, using domain modeling & design patterns, along with book recommendations like Clean Code & The Pragmatic Programmer. #mtcs07boz 84/#100DaysOfCode
+
+- Visit from Wisetail Q&A
+- Visit from Zoot Enterprises
+- [CodeSchool.com - Try Laravel](https://www.codeschool.com/courses/try-laravel)
+- [Status Errors](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_errors)
+- [Manually sending response code](https://stackoverflow.com/questions/26066785/proper-way-to-set-response-status-and-json-content-in-a-rest-api-made-with-nodej)
+
+## Day 83: 2017-11-14: Tuesday
+
+> Raspberry Pis, post-its, and messing more with @socketio & @materialdesign. Lots of learning today, but maybe not so much progress 😛 83/#100DaysOfCode #javascript
+
+- [Cofee Pot Pi on Heroku](https://coffee-pot-pi.herokuapp.com/)
+
 ## Day 82: 2017-11-13: Monday
 
 > Starting our second round of @mtcodeschool apps today. Giving @materialdesign another try; will be using React, PostgreSQL, Express, Node and feature coffee! ☕ #mtcs07boz 82/#100DaysOfCode
