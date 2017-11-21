@@ -1,7 +1,34 @@
+## Day 90: 2017-11-21: Tuesday
+
+- Idea: Make 100DaysOfCode day generator (Day 1 - 100 with day)
+- Watching [React Native from Tyler McGinnis](https://egghead.io/lessons/react-start-building-a-react-native-application)
+
+## Day 89: 2017-11-20: Monday
+
+> I don't think mobile apps are for me. Another frustrating day trying to develop in React Native. 😥 89/#100daysofcode
+
+- [React Native SVG Converter](https://github.com/goopscoop/svg-to-react-cli)
+
+## Day 88: 2017-11-19: Sunday
+
+> Started developing with React Native: successfully added a button... Also, played around with my new Raspberry Pi! 💻 88/#100DaysOfCode
+
+- Code School: GoLang
+
+## Day 87: 2017-11-18: Saturday
+
+> My afternoon was "abducted" by @codeschool's Close Encounters with #PHP! (Next up: more Laravel!) https://www.codeschool.com/courses/close-encounters-with-php 87/#100DaysOfCode
+
+## Day 86: 2017-11-17: Friday
+
+> Yay! Got a form file input saving uploaded images to an S3 Bucket with help from @heroku's great walkthrough. https://devcenter.heroku.com/articles/s3-upload-node 86/#100DaysOfCode #javascript #womenintech
+
 ## Day 85: 2017-11-16: Thursday
 
+> Got out for a fun @DTNBZN Ladies Night in between 8 hours of integrating Material Design, SVG animation, S3 configurations and a nice #javascript Meetup with @jcs224! 85/#100DaysOfCode https://codepen.io/virtual/pen/Ebbxae
+
 - Never count on users reading documentation
-- [Intro.js](https://introjs.com/)|[Installation](https://introjs.com/docs/getting-started/install) provides a interactive way for users to learn how to use your site
+- [Intro.js](https://introjs.com/) • [Installation](https://introjs.com/docs/getting-started/install) provides a interactive way for users to learn how to use your site
 - [Intro.js React wrapper NPM](https://www.npmjs.com/package/intro.js-react)
 - Keep track if it should run (stepsEnabled) with a newUser flag or similar on user accounts
 
