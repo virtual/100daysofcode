@@ -1,4 +1,21 @@
+## Day 92: 2017-11-23: Thursday
+
+🦃 Thanksgiving 🦃
+
+> Happy Thanksgiving everyone! I'm #ThankfulFor @freeCodeCamp #100DaysOfCode @udemy @mtcodeschool @LambdaSchool and all my fellow coders for the motivation and inspiration throughout this year! 😘
+
+- Need to check out [Github Passport Authentication](https://github.com/CalebCox/VotingApp)
+
+## Day 91: 2017-11-22: Wednesday
+
+> ☕ MobX with React Native for a Coffee app = working! Experiencing Python/Pi fun with my @mtcodeschool project teammate and a four-letter pHAT. Ready for a four-day weekend. #mtcs07boz 91/#100DaysOfCode
+
+- [React Native with MobX — Getting Started](https://medium.com/react-native-training/react-native-with-mobx-getting-started-ba7e18d8ff44)
+- [Passing props to StackNavigator](https://github.com/react-community/react-navigation/issues/876)
+
 ## Day 90: 2017-11-21: Tuesday
+
+> React Native: moving forward. 🚀 Sign up and login routes working; learning about the navigator and refreshing my flexbox muscles! 90/#100DaysOfCode
 
 - Idea: Make 100DaysOfCode day generator (Day 1 - 100 with day)
 - Watching [React Native from Tyler McGinnis](https://egghead.io/lessons/react-start-building-a-react-native-application)
