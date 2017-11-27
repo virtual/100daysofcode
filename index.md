@@ -1,3 +1,15 @@
+## Day 95: 2017-11-26 Sunday
+
+> Not feeling so ambitious this holiday weekend so enjoying a fun "game" of zombie destruction with Flexbox Zombies! Thanks for the recommendation @PeteCapeCod ;) 95/#100DaysOfCode #ReactNative https://geddski.teachable.com/p/flexbox-zombies
+
+## Day 94: 2017-11-25 Saturday
+
+> Looking into @omniupdate's gadgets, and I'm very impressed with @jesseclark's public repos and kind sharing of gadget code. (Thank you!) I'm excited that I may be able to put my recent learning to use in OU. 94/#100DaysOfCode
+
+## Day 93: 2017-11-24 Friday
+
+> Know some #React but curious to understand how #VueJS works? This great vid @traversymedia goes through an overview of the similarities and how to set it up! https://www.youtube.com/watch?v=z6hQqgvGI4Y 93/#100DaysOfCode #freecodecamp
+
 ## Day 92: 2017-11-23: Thursday
 
 🦃 Thanksgiving 🦃
