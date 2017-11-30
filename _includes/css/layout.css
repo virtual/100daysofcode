@@ -72,3 +72,8 @@
 		line-height: 24px;
 	}
 }
+
+.sidebar img {
+  max-width: 100%;
+  height: auto;
+}
