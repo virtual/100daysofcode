@@ -1,3 +1,19 @@
+## Day 99: 2017-11-30 Thursday
+
+> Does this count as my first iphone? 😜 Working in xcode is amazing for #ReactNative. No more issues with connectivity and rebooting Expo all the time. Did styling & history updates. #mtcs07boz 99/#100DaysOfCode
+
+## Day 98: 2017-11-29 Wednesday
+
+> 🏆 Updating my sites to use the holy grail layout with #flexbox 🃏 Learning Jest with Enzyme for #javascript testing 🎈 Celebrating my birthday with good food & friends! 98/#100DaysOfCode
+
+## Day 97: 2017-11-28 Tuesday 
+
+> Added validator & zxcvbn password strength checker (amazing!) to sign up form and tweaked styles. (Took me awhile to realize that's named after the bottom row of the keyboard!) ;P 97/#100DaysOfCode https://github.com/dropbox/zxcvbn 
+
+## Day 96: 2017-11-27 Monday
+
+> Moving along with this coffee app, added in more Material Design and MomentJS. Going to try out xcode instead of Expo for React Native tomorrow--tired of fighting connections. 96/#100DaysOfCode
+
 ## Day 95: 2017-11-26 Sunday
 
 > Not feeling so ambitious this holiday weekend so enjoying a fun "game" of zombie destruction with Flexbox Zombies! Thanks for the recommendation @PeteCapeCod ;) 95/#100DaysOfCode #ReactNative https://geddski.teachable.com/p/flexbox-zombies
