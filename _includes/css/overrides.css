@@ -1,0 +1,23 @@
+blockquote {
+  border: 1px solid #3498db47;
+  background: #3498db17;
+  margin: 0;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-style: normal;
+  color: #585858;
+  /* font-weight: 300; */
+}
+
+blockquote p {
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  font-size: .9em;
+  color: #333;
+  font-weight: 300;
+}
+
+h2 {
+  margin-top: 20px;
+}
