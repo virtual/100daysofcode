@@ -1,3 +1,23 @@
+# #100DaysOfCode
+
+### [Blog: No Turning Back: A Journey through Montana Code School](https://www.satinflame.com/blog/2017/12/no-turning-back-montana-code-school/)
+
+With a large amount of experience and self-study under my belt, I was ready to commit to finally getting the full exposure of modern web development with Montana Code School. Discover what I learned and view the projects my teams created. [Read more...](https://www.satinflame.com/blog/2017/12/no-turning-back-montana-code-school/)
+
+
+--------
+
+## Day 100: 2017-12-01 Friday
+
+🎉 Day 100/#100DaysOfCode 🎉
+It's been a great ride! https://virtual.github.io/100daysofcode/ 
+ 
+- Teach others as you can–it's the best way to solidify a concept
+- Learn github well & contribute!
+- Always consider your team's thoughts
+
+@digitalocean #hacktoberfest 💙 #freecodecamp
+
 ## Day 99: 2017-11-30 Thursday
 
 > Does this count as my first iphone? 😜 Working in xcode is amazing for #ReactNative. No more issues with connectivity and rebooting Expo all the time. Did styling & history updates. #mtcs07boz 99/#100DaysOfCode
