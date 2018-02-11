@@ -1,5 +1,22 @@
 # #100DaysOfCode
 
+## R2 Day 1: 2018-02-11 Sunday
+
+> Starting Round 2 of #100DaysOfCode with my React/MySQL project! Join me 😉 <br/>
+> ❌ No progress on listing a user's movie collection<br/>
+> ☑️ Moved some functions into a React store for better data accessibility<br/>
+> 🤔 Planning to do mostly app dev & Javascript30
+
+- Starting a new round! (Commencing Tuesday May 22, 2018)
+- Attempted to display a movie tagged in user collection but ran into state errors; I'll need to do a refresher on initialized state, Promises etc.
+- Moved movie functions to a new Movie Store on [LibWorx](https://github.com/virtual/libworx)
+
+--------
+
+Round 2 begins
+
+--------
+
 ### [Blog: No Turning Back: A Journey through Montana Code School](https://www.satinflame.com/blog/2017/12/no-turning-back-montana-code-school/)
 
 With a large amount of experience and self-study under my belt, I was ready to commit to finally getting the full exposure of modern web development with Montana Code School. Discover what I learned and view the projects my teams created. [Read more...](https://www.satinflame.com/blog/2017/12/no-turning-back-montana-code-school/)
@@ -9,8 +26,7 @@ With a large amount of experience and self-study under my belt, I was ready to c
 
 ## Day 100: 2017-12-01 Friday
 
-🎉 Day 100/#100DaysOfCode 🎉
-It's been a great ride! https://virtual.github.io/100daysofcode/ 
+> 🎉 Day 100/#100DaysOfCode 🎉 It's been a great ride! https://virtual.github.io/100daysofcode/ 
  
 - Teach others as you can–it's the best way to solidify a concept
 - Learn github well & contribute!
