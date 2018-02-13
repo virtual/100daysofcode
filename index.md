@@ -1,5 +1,14 @@
 # #100DaysOfCode
 
+## R2 Day 2: 2018-02-12 Monday
+
+> 🎥 Reorganized my code so my collections can reference IMDb IDs more easily<br/>
+> 🔲 Logged in users can click a button-wow!<br/>
+> 🎨 Did a little art with a poster placeholder graphic<br/>
+> R2D2(🤖 hehe)/#100daysofcode
+
+Learned about __5-4-3-2-1__ from @smaifullerton-wk: "5,4,3,2,1 is to motivate yourself to do something when you don’t have motivation - all it means is you say in your head 5, 4, 3, 2, 1 and then without further thought you get up and start working on the thing. it sounds kinda nutty and obvious but it really works, because it doesn’t give your brain an opportunity to argue against doing whatever it is you don’t feel motivated to do but know you should. It doesn’t really create motivation, it builds discipline to push past resistance to doing good things."
+
 ## R2 Day 1: 2018-02-11 Sunday
 
 > Starting Round 2 of #100DaysOfCode with my React/MySQL project! Join me 😉 <br/>
