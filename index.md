@@ -1,5 +1,9 @@
 # #100DaysOfCode
 
+## R2 Day 3: 2018-02-13 Tuesday
+
+> 🐱 Working through MVC reorganizing challenges from Udacity Design Patterns with Lesson 2 - Cat Clicker Premium! https://classroom.udacity.com/courses/ud989 R2D3/#100DaysOfCode 
+
 ## R2 Day 2: 2018-02-12 Monday
 
 > 🎥 Reorganized my code so my collections can reference IMDb IDs more easily<br/>
