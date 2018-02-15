@@ -1,5 +1,20 @@
 # #100DaysOfCode
 
+## R2 Day 4: 2018-02-14 Wednesday
+
+> Finished rewriting Cat Clicker Premium using MVC structure. It's such a foreign structure to me... It's so tidy. Seriously digging this @Udacity course from @benjaffe! R2D4/#100DaysOfCode https://classroom.udacity.com/courses/ud989 
+
+(Sick today 🤒 but made it through work and finished a giant spreadsheet.) Also registered with Shoreline to go to OmniUpdate conference this March, so that is super exciting!
+
+### Model
+The data. Make a nice object literal and stick the information in it. The view should never modify the model directly, and vice versa.
+
+### View
+The objects users see on the screen and interact with. If there is a common structure, put it into the HTML. The view functions can then populate those DOM elements.
+
+### Controller
+The link between the View and the Model. If someone clicks on an item in the view that changes the data, the _controller_ must be the one to update the model. Controller functions might cause re-renders of views after the data has been changed.
+
 ## R2 Day 3: 2018-02-13 Tuesday
 
 > 🐱 Working through MVC reorganizing challenges from Udacity Design Patterns with Lesson 2 - Cat Clicker Premium! https://classroom.udacity.com/courses/ud989 R2D3/#100DaysOfCode 
