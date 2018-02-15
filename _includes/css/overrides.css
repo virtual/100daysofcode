@@ -21,3 +21,16 @@ blockquote p {
 h2 {
   margin-top: 20px;
 }
+
+table, table td, table th {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  padding: 5px;
+  font-size: .9rem;
+}
+table th {
+  background: #585858;
+  color: #fff;
+  font-weight: 600;
+  vertical-align: bottom;
+}
