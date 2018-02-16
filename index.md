@@ -1,8 +1,15 @@
 # #100DaysOfCode
 
+## R2 Day 5: 2018-02-15 Thursday
+
+> 📚 Another round of working on my media catalog app <br/>
+> 🕰️ Added in more session checking <br/>
+> 🛍️ Rewrote dashboard so users can view their own collection of movies<br/>
+> R2D5/#100DaysOfCode
+
 ## R2 Day 4: 2018-02-14 Wednesday
 
-> Finished rewriting Cat Clicker Premium using MVC structure. It's such a foreign structure to me... It's so tidy. Seriously digging this @Udacity course from @benjaffe! R2D4/#100DaysOfCode https://classroom.udacity.com/courses/ud989 
+> Finished rewriting [Cat Clicker Premium](https://github.com/virtual/js-design-patterns) using MVC structure. It's such a foreign structure to me... It's so tidy. Seriously digging this @Udacity course from @benjaffe! R2D4/#100DaysOfCode https://classroom.udacity.com/courses/ud989 
 
 (Sick today 🤒 but made it through work and finished a giant spreadsheet.) Also registered with Shoreline to go to OmniUpdate conference this March, so that is super exciting!
 
