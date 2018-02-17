@@ -1,5 +1,15 @@
 # #100DaysOfCode
 
+## R2 Day 6: 2018-02-16 Friday
+
+Working on edit functionality for #freecodecamp Recipe box; maybe I'll get the save/update to work tomorrow... No wonder this thing hasn't been finished yet. 😪 R2D6/#100DaysOfCode
+
+✅ Transform text to inputs on form<br/>
+✅ Implemented logic for client to pass updated data<br/>
+❌ Input boxes need states so they can change<br/>
+❌ Server route/Mongo query needed for update <br/>
+
+
 ## R2 Day 5: 2018-02-15 Thursday
 
 > 📚 Another round of working on my media catalog app <br/>
