@@ -1,5 +1,15 @@
 # #100DaysOfCode
 
+## R2 Day 7: 2018-02-17 Saturday
+
+> Edit on update and save completed for my #freecodecamp Recipe App and *submitted!*--all before breakfast! (Since I want some of my data pretty, it only works on new additions.) https://fcc-recipe.herokuapp.com/ R2D7/#100DaysOfCode
+
+Some issues, but I'm so done with this for now:
+
+- Search is no longer functioning; the data is pulling but it gets lost on the way (I think indexing problem)
+- Some color accessibility
+- Edit form can be prettier
+
 ## R2 Day 6: 2018-02-16 Friday
 
 Working on edit functionality for #freecodecamp Recipe box; maybe I'll get the save/update to work tomorrow... No wonder this thing hasn't been finished yet. 😪 R2D6/#100DaysOfCode
