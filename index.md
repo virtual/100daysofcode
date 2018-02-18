@@ -1,5 +1,11 @@
 # #100DaysOfCode
 
+## R2 Day 8: 2018-02-18 Sunday
+
+> Created a #javascript30 Clock (02) using CSS transforms and JS. 🕑 A good review of the date functions too! R2D8/#100DaysOfCode
+
+[02-Clock Code](https://github.com/virtual/javascript30/tree/master/02-clock)
+
 ## R2 Day 7: 2018-02-17 Saturday
 
 > Edit on update and save completed for my #freecodecamp Recipe App and *submitted!*--all before breakfast! (Since I want some of my data pretty, it only works on new additions.) https://fcc-recipe.herokuapp.com/ R2D7/#100DaysOfCode
