@@ -1,5 +1,16 @@
 # #100DaysOfCode
 
+## R2 Day 9: 2018-02-19 Monday
+
+> Began a Software Dev course on EdX and took a peek at the requirements for the next #freecodecamp challenge--Game of Life. (Fascinating stuff!) R2D9/#100DaysOfCode https://www.edx.org/micromasters/software-development
+
+Started looking at [EdX - Software Development](https://www.edx.org/micromasters/software-development) for understanding good software design as recommended by Smai. 
+
+_Course >  1a: Beginning Student Language  > Expressions >  Expressions, pt 1_<br>
+Dr Racket is taking a bit too long to download so I'll have to continue that another time. 
+
+Began looking at FreeCodeCamp's [Game of Life challenge](https://codepen.io/freeCodeCamp/full/reGdqx).
+
 ## R2 Day 8: 2018-02-18 Sunday
 
 > Created a #javascript30 Clock (02) using CSS transforms and JS. 🕑 A good review of the date functions too! R2D8/#100DaysOfCode
