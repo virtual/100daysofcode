@@ -1,5 +1,11 @@
 # #100DaysOfCode
 
+## R2 Day 10: 2018-02-20 Tuesday
+
+> 🎲 Set up the game board for the #freecodecamp [Game of Life](https://fcc-game-of-life.herokuapp.com/) challenge<br/>
+> ✈️ Lifted the state & refactored data using a multidim array with on/off passed down as a prop to each square<br/>
+> R2D10/#100daysofcode
+
 ## R2 Day 9: 2018-02-19 Monday
 
 > Began a Software Dev course on EdX and took a peek at the requirements for the next #freecodecamp challenge--Game of Life. (Fascinating stuff!) R2D9/#100DaysOfCode https://www.edx.org/micromasters/software-development
