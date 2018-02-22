@@ -1,5 +1,9 @@
 # #100DaysOfCode
 
+## R2 Day 11: 2018-02-21 Wednesday
+
+> Continuing to work through the Game of Life #freecodecamp. The logic isn't quite right yet, but it does transform enough to make me feel semi-productive! R2D11/#100daysofcode https://fcc-game-of-life.herokuapp.com/
+
 ## R2 Day 10: 2018-02-20 Tuesday
 
 > 🎲 Set up the game board for the #freecodecamp [Game of Life](https://fcc-game-of-life.herokuapp.com/) challenge<br/>
