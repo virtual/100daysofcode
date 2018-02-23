@@ -1,5 +1,11 @@
 # #100DaysOfCode
 
+## R2 Day 12: 2018-02-22 Thursday
+
+> Kept thinking about this Game of Life setup between dreaming, haha. 👾 Feels awesome to complete a #freecodecamp React game challenge in three days! (Now to catch up on that sleep!) R2D12/#100DaysOfCode https://fcc-game-of-life.herokuapp.com/
+
+Also enjoyed implementing a range slider--I've never done that before (maybe a little overdue)!
+
 ## R2 Day 11: 2018-02-21 Wednesday
 
 > Continuing to work through the Game of Life #freecodecamp. The logic isn't quite right yet, but it does transform enough to make me feel semi-productive! R2D11/#100daysofcode https://fcc-game-of-life.herokuapp.com/
