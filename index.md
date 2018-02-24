@@ -1,5 +1,11 @@
 # #100DaysOfCode
 
+## R2 Day 13: 2018-02-23 Friday
+
+> Started learning D3 for charts. Loved the Scrimba video but can't quite understand the API docs. Going to need more tutorials to figure this out! #freecodecamp R2D13/#100DaysOfCode
+
+https://codepen.io/virtual/pen/MQqwby
+
 ## R2 Day 12: 2018-02-22 Thursday
 
 > Kept thinking about this Game of Life setup between dreaming, haha. 👾 Feels awesome to complete a #freecodecamp React game challenge in three days! (Now to catch up on that sleep!) R2D12/#100DaysOfCode https://fcc-game-of-life.herokuapp.com/
