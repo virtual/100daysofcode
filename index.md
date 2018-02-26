@@ -1,5 +1,13 @@
 # #100DaysOfCode
 
+## R2 Day 15: 2018-02-25 Sunday
+
+> Continuing to learn C# on SoloLearn. Getting more practice at the pre-increment and post-increment functions--a little tricky! R2D15/#100daysofcode
+
+## R2 Day 14: 2018-02-24 Saturday
+
+> Learning C# this weekend on @SoloLearn thanks to their fantastic mobile app. R2D14/#100DaysOfCode
+
 ## R2 Day 13: 2018-02-23 Friday
 
 > Started learning D3 for charts. Loved the Scrimba video but can't quite understand the API docs. Going to need more tutorials to figure this out! #freecodecamp R2D13/#100DaysOfCode
