@@ -1,5 +1,52 @@
 # #100DaysOfCode
 
+## R2 Day 18: 2018-02-28 Wednesday
+
+I am probably flip-flopping around too much, but I really want to start building a Bootstrap 4 template of an existing design. I'm hoping to do it using some smart setup, and now I'm researching Laravel again. With Vagrant. With VirtualBox, and Composer.
+
+I got stuck on the [install instructions](https://laravel.com/docs/5.6/homestead), thinking that cloning the Homestead repo was if the vagrant homestead library didn't work correctly, but now I understand. ScotchIO's [Getting started with Laravel Homestead](https://scotch.io/tutorials/getting-started-with-laravel-homestead) also helped me over some setup hurdles.
+
+Currently, I'm to the point where I have set up some overrides for my Homestead yaml:
+
+```yaml
+# ~/Homestead/Homestead.yaml
+---
+ip: "192.168.10.10"
+memory: 2048
+cpus: 1
+provider: virtualbox
+mariadb: true
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: ~/code
+      to: /home/vagrant/code
+
+sites:
+    - map: homestead.test
+      to: /home/vagrant/code/test/public
+
+    - map: laravel1.test
+      to: /home/vagrant/code/laravel1/public
+
+databases:
+    - homestead
+```
+
+And as luck would have it--now I'm learning how to write better code blocks in Markdown! :)
+
+- [Handy Vagrant commands](https://www.drupal.org/node/2008794)
+
+## R2 Day 17: 2018-02-27 Tuesday
+
+> Learning about Unity and the object controls. R2D17/#100DaysOfCode
+
+Finished "Learn" tutorials from Unity's homescreen 3/4
+
 ## R2 Day 16: 2018-02-26 Monday
 
 > Finished the third part of SoloLearn's C# tutorials. Might start playing with Unity this week thanks to suggestions from @idwardis R2D16/#100daysofcode
