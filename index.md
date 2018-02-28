@@ -46,7 +46,7 @@ And as luck would have it--now I'm learning how to write better code blocks in M
 
 Now I can `vagrant ssh` and run `composer global require "laravel/installer"`
 
-~~In my folder /home/vagrant/code/test I'm running `laravel new public`... ~~
+~~In my folder /home/vagrant/code/test I'm running `laravel new public`...~~
 
 That wasn't exacty right.... Laravel creates it own public folder, so I should run `laravel new test` instead from /home/vagrant/code
 
