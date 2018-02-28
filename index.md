@@ -41,6 +41,16 @@ And as luck would have it--now I'm learning how to write better code blocks in M
 
 - [Handy Vagrant commands](https://www.drupal.org/node/2008794)
 
+
+Now I can `vagrant ssh` and run `composer global require "laravel/installer"`
+
+[s]In my folder /home/vagrant/code/test I'm running `laravel new public`... [/s]
+
+That wasn't exacty right.... Laravel creates it own public folder, so I should run `laravel new test` instead from /home/vagrant/code
+
+But... There is a Laravel homepage showing! This is the further Laravel progress I've made.
+
+
 ## R2 Day 17: 2018-02-27 Tuesday
 
 > Learning about Unity and the object controls. R2D17/#100DaysOfCode
