@@ -2,6 +2,8 @@
 
 ## R2 Day 18: 2018-02-28 Wednesday
 
+> Woohoo! I finally have Laravel running on a local Vagrant instance. @jcs224 I hope you are proud! 🎉 It only took me since October. R2D18/#100DaysOfCode
+
 I am probably flip-flopping around too much, but I really want to start building a Bootstrap 4 template of an existing design. I'm hoping to do it using some smart setup, and now I'm researching Laravel again. With Vagrant. With VirtualBox, and Composer.
 
 I got stuck on the [install instructions](https://laravel.com/docs/5.6/homestead), thinking that cloning the Homestead repo was if the vagrant homestead library didn't work correctly, but now I understand. ScotchIO's [Getting started with Laravel Homestead](https://scotch.io/tutorials/getting-started-with-laravel-homestead) also helped me over some setup hurdles.
@@ -44,11 +46,11 @@ And as luck would have it--now I'm learning how to write better code blocks in M
 
 Now I can `vagrant ssh` and run `composer global require "laravel/installer"`
 
-[s]In my folder /home/vagrant/code/test I'm running `laravel new public`... [/s]
+~~In my folder /home/vagrant/code/test I'm running `laravel new public`... ~~
 
 That wasn't exacty right.... Laravel creates it own public folder, so I should run `laravel new test` instead from /home/vagrant/code
 
-But... There is a Laravel homepage showing! This is the further Laravel progress I've made.
+But... There is a Laravel homepage showing! This is the furthest Laravel progress I've made.
 
 
 ## R2 Day 17: 2018-02-27 Tuesday
@@ -178,7 +180,7 @@ Learned about __5-4-3-2-1__ from @smaifullerton-wk: "5,4,3,2,1 is to motivate yo
 
 --------
 
-Round 2 begins
+## ⭐ ⭐ Round 2 begins ⭐ ⭐
 
 --------
 
