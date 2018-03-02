@@ -1,5 +1,28 @@
 # #100DaysOfCode
 
+## R2 Day 19: 2018-03-01 Thursday
+
+> Learning some of the Laravel file structure and got Bootstrap 4 working on my welcome blade! (I need to get used to running my commands from my Vagrant terminal.) R2D19/#100DaysOfCode
+
+Playing with getting Bootstrap 4 up and running within Laravel 5.6. Shoved some BS4 HTML within the welcome "blade." Some useful code bits to get it working:
+
+CSRF Token seems to help calm a console error. 
+
+```html
+<meta name="csrf-token" content="{{ csrf_token() }}">
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+```
+
+JS after footer:
+
+```html
+<script src="{{ asset('js/app.js') }}"></script>
+```
+
+I've added some more scss changes to the `resources/assets/sass` folder. 
+
+From the ssh on Vagrant, run `npm install` and then compile using `npm run dev` or `npm run watch-poll` (since it doesn't work with just `npm run watch` on my VM). More on these commands from the [Laravel 5.6 docs](https://laravel.com/docs/5.6/mix#sass)
+
 ## R2 Day 18: 2018-02-28 Wednesday
 
 > Woohoo! I finally have Laravel running on a local Vagrant instance. @jcs224 I hope you are proud! 🎉 It only took me since October. R2D18/#100DaysOfCode
