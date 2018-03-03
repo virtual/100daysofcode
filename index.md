@@ -1,5 +1,9 @@
 # #100DaysOfCode
 
+## R2 Day 20: 2018-03-02 Friday
+
+> TGIF! Today learning about Laravel controllers from [Lynda's Laravel 5 Essential Training](https://www.lynda.com/Laravel-tutorials/Laravel-5-Essential-Training-1-Basics/604257-2.html). Looking forward to some Halo 4 🎮 LAN partying tonight! R2D20/#100DaysOfCode
+
 ## R2 Day 19: 2018-03-01 Thursday
 
 > Learning some of the Laravel file structure and got Bootstrap 4 working on my welcome blade! (I need to get used to running my commands from my Vagrant terminal.) R2D19/#100DaysOfCode
