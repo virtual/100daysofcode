@@ -1,5 +1,9 @@
 # #100DaysOfCode
 
+## R2 Day 21: 2018-03-04 Sunday
+
+> Got a simple Laravel app running on Heroku. Learning about pulling views into layouts, added in FontAwesome and some Bootstrap overrides. R2D21/#100DaysOfCode http://virtual-laravel-twbs4.herokuapp.com/
+
 ## R2 Day 20: 2018-03-02 Friday
 
 > TGIF! Today learning about Laravel controllers from [Lynda's Laravel 5 Essential Training](https://www.lynda.com/Laravel-tutorials/Laravel-5-Essential-Training-1-Basics/604257-2.html). Looking forward to some Halo 4 🎮 LAN partying tonight! R2D20/#100DaysOfCode
