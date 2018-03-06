@@ -1,5 +1,9 @@
 # #100DaysOfCode
 
+## R2 Day 22: 2018-03-05 Monday
+
+> Continuing to play with Bootstrap 4 and Laravel for my fictitious Knight University! http://virtual-laravel-twbs4.herokuapp.com/ R2D22/#100DaysOfCode
+
 ## R2 Day 21: 2018-03-04 Sunday
 
 > Got a simple Laravel app running on Heroku. Learning about pulling views into layouts, added in FontAwesome and some Bootstrap overrides. R2D21/#100DaysOfCode http://virtual-laravel-twbs4.herokuapp.com/
