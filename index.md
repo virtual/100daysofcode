@@ -1,5 +1,9 @@
 # #100DaysOfCode
 
+## R2 Day 23: 2018-03-06 Tuesday
+
+> Learning about adding models (data) to views (page layouts) in Laravel. https://www.lynda.com/Laravel-tutorials/Create-forms/604257/648654-4.html?autoplay=true R2D23/#100DaysOfCode
+
 ## R2 Day 22: 2018-03-05 Monday
 
 > Continuing to play with Bootstrap 4 and Laravel for my fictitious Knight University! http://virtual-laravel-twbs4.herokuapp.com/ R2D22/#100DaysOfCode
