@@ -1,5 +1,15 @@
 # #100DaysOfCode
 
+## R2 Day 24: 2018-03-07 Wednesday
+
+> Refined the styles for my video grid section inspired by the amazing UX designer [Krista Lacida](http://www.kristalacida.com/contact/). (Video functionality to come later.) 
+
+I first coded the play area without flexbox--it was much more classy using flexbox! Also I learned about using the box-shadow for overriding initial text-decorations (including line size and color.)
+
+When implementing the JS, I'll want to find a way to tag the current playing one with an active status and maybe lighten the box... (Or maybe that is pointless, since the video player will be overlaid over the page?)
+
+Anyhow, enjoying how it's coming together ;)
+
 ## R2 Day 23: 2018-03-06 Tuesday
 
 > Learning about adding models (data) to views (page layouts) in Laravel. https://www.lynda.com/Laravel-tutorials/Create-forms/604257/648654-4.html?autoplay=true R2D23/#100DaysOfCode
