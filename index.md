@@ -1,5 +1,8 @@
 # #100DaysOfCode
 
+## R2 Day 25: 2018-03-08
+> R2D25 - PR accepted for updates to these "Spark Notes" for the Pragmatic Programmer. 💪 Lots of great information—check it out! #100DaysOfCode https://github.com/HugoMatilla/The-Pragmatic-Programmer
+
 ## R2 Day 24: 2018-03-07 Wednesday
 
 > Refined the styles for my video grid section inspired by the amazing UX designer [Krista Lacida](http://www.kristalacida.com/contact/). (Video functionality to come later.) 
