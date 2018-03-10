@@ -1,6 +1,14 @@
 # #100DaysOfCode
 
-## R2 Day 25: 2018-03-08
+## R2 Day 26: 2018-03-09 Friday
+
+> RS26: Added a procfile to my heroku install so now my #javascript30 application is working! Completed challenge #3 -- CSS variables. https://virtual-javascript30.herokuapp.com/index.html #100DaysOfCode
+
+```text
+web: vendor/bin/heroku-php-apache2 /
+```
+
+## R2 Day 25: 2018-03-08 Thursday
 > R2D25 - PR accepted for updates to these "Spark Notes" for the Pragmatic Programmer. 💪 Lots of great information—check it out! #100DaysOfCode https://github.com/HugoMatilla/The-Pragmatic-Programmer
 
 ## R2 Day 24: 2018-03-07 Wednesday
