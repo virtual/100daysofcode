@@ -1,5 +1,13 @@
 # #100DaysOfCode
 
+## R2 Day 27: 2018-03-10 Saturday
+
+Added [padStart polyfill](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart) to JavaScript30 challenge 2 (clock) so it works for older browsers.
+
+Played with this [D3 library example](https://github.com/virtual/d3-explorer) and updated the .eslintrc file so the program would run for me. Made a PR in case this is helpful. 
+
+Began working on challenge 4 data
+
 ## R2 Day 26: 2018-03-09 Friday
 
 > RS26: Added a procfile to my heroku install so now my #javascript30 application is working! Completed challenge #3 -- CSS variables. https://virtual-javascript30.herokuapp.com/index.html #100DaysOfCode
