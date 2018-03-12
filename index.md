@@ -1,5 +1,9 @@
 # #100DaysOfCode
 
+## R2 Day 29: 2018-03-12 Monday
+
+Watching some videos from Lynda's [Linux Foundation Cert Prep: Service Configuration (Ubuntu)](https://www.lynda.com/Linux-tutorials/Configure-SSH-based-remote-access-using-publicprivate-key-pairs/664829/710619-4.html?autoplay=true) series and learned about managing SSH keys... so I organized my SSH keys using an SSH config file! Related walkthrough: [Simplify Your Life With an SSH Config File](http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/)
+
 ## R2 Day 28: 2018-03-11 Sunday
 
 > "Worked out" some challenges doing Array Cardio! #javascript30 R2D28/#100DaysOfCode https://virtual-javascript30.herokuapp.com/04-arrays/index.html
