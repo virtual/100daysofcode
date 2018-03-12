@@ -1,5 +1,9 @@
 # #100DaysOfCode
 
+## R2 Day 28: 2018-03-11 Sunday
+
+> "Worked out" some challenges doing Array Cardio! #javascript30 R2D28/#100DaysOfCode https://virtual-javascript30.herokuapp.com/04-arrays/index.html
+
 ## R2 Day 27: 2018-03-10 Saturday
 
 Added [padStart polyfill](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart) to JavaScript30 challenge 2 (clock) so it works for older browsers.
