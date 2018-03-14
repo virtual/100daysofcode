@@ -1,6 +1,16 @@
 # #100DaysOfCode
 
+## R2 Day 30: 2018-03-13 Tuesday
+
+> Finished reviewing setup for Debian servers; learned you can use zcat/zless to read files that are gzipped. Also did some Haml, flexbox and D3 for a small mock resume on codepen. R2D30/#100DaysOfCode
+
+Finished reviewing [chapter 3](https://www.lynda.com/Linux-tutorials/Configure-HTTP-server/664829/710621-4.html?autoplay=true) on setting up Apache/Debian on a web server.
+
+Practed Haml markup, a little D3 and flexbox in the start of a simple [Web resume](https://codepen.io/virtual/full/XEXVpp/)
+
 ## R2 Day 29: 2018-03-12 Monday
+
+> Watching some videos from Lynda's Linux Foundation Cert Prep series & happened upon managing SSH keys... so I organized my SSH keys using an SSH config file! So tidy! ✨ R2D29/#100DaysOfCode 
 
 Watching some videos from Lynda's [Linux Foundation Cert Prep: Service Configuration (Ubuntu)](https://www.lynda.com/Linux-tutorials/Configure-SSH-based-remote-access-using-publicprivate-key-pairs/664829/710619-4.html?autoplay=true) series and learned about managing SSH keys... so I organized my SSH keys using an SSH config file! Related walkthrough: [Simplify Your Life With an SSH Config File](http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/)
 
@@ -10,9 +20,11 @@ Watching some videos from Lynda's [Linux Foundation Cert Prep: Service Configura
 
 ## R2 Day 27: 2018-03-10 Saturday
 
+> Added a polyfill to one of my #javascript30 programs so it would run in older browsers; checked out a D3/React ex in Github (w/ PR: https://github.com/virtual/d3-explorer) and started challenge 4 data setup. R2D27/#100DaysOfCode
+
 Added [padStart polyfill](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart) to JavaScript30 challenge 2 (clock) so it works for older browsers.
 
-Played with this [D3 library example](https://github.com/virtual/d3-explorer) and updated the .eslintrc file so the program would run for me. Made a PR in case this is helpful. 
+Played with this [D3 library example](https://github.com/virtual/d3-explorer) and updated the .eslintrc file so the program would run for me. Made a PR in case this is helpful--accepted!  
 
 Began working on challenge 4 data
 
