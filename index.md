@@ -1,5 +1,9 @@
 # #100DaysOfCode
 
+## R2 Day 31: 2018-03-14 Wednesday
+
+> Working more on the D3 challenge for @Freecodecamp. It helped to think about how I would do it in HTML/CSS first and then translate that back into D3 functions/JS. R2D31/#100DaysOfCode https://codepen.io/virtual/full/XEXVpp/
+
 ## R2 Day 30: 2018-03-13 Tuesday
 
 > Finished reviewing setup for Debian servers; learned you can use zcat/zless to read files that are gzipped. Also did some Haml, flexbox and D3 for a small mock resume on codepen. R2D30/#100DaysOfCode
