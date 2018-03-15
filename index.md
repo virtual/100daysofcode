@@ -1,5 +1,9 @@
 # #100DaysOfCode
 
+## R2 Day 32
+
+Finished the first #D3 challenge in @freeCodeCamp! 📊 I'm pretty proud to have worked out the logic for the scales and method chaining, as well as the styles for a *responsive* vertical bar chart! R2D32/#100DaysOfCode https://codepen.io/virtual/full/XEXVpp/
+
 ## R2 Day 31: 2018-03-14 Wednesday
 
 > Working more on the D3 challenge for @Freecodecamp. It helped to think about how I would do it in HTML/CSS first and then translate that back into D3 functions/JS. R2D31/#100DaysOfCode https://codepen.io/virtual/full/XEXVpp/
