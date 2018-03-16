@@ -1,6 +1,12 @@
 # #100DaysOfCode
 
-## R2 Day 32
+## R2 Day 33: 2018-03-16 Friday
+
+Added fancybox video player (and some sweet Manchester Orchestra videos) to my [Laravel demo](http://virtual-laravel-twbs4.herokuapp.com/)
+
+Finished ch3 of Flexbox zombies
+
+## R2 Day 32: 2018-03-15 Thursday
 
 Finished the first #D3 challenge in @freeCodeCamp! 📊 I'm pretty proud to have worked out the logic for the scales and method chaining, as well as the styles for a *responsive* vertical bar chart! R2D32/#100DaysOfCode https://codepen.io/virtual/full/XEXVpp/
 
