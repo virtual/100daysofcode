@@ -1,5 +1,9 @@
 # #100DaysOfCode
 
+## R2 Day 34: 2018-03-17 Saturday
+
+Worked a little on javascript 30 Challenge 5 flexbox image gallery
+
 ## R2 Day 33: 2018-03-16 Friday
 
 Added fancybox video player (and some sweet Manchester Orchestra videos) to my [Laravel demo](http://virtual-laravel-twbs4.herokuapp.com/)
