@@ -1,5 +1,9 @@
 # #100DaysOfCode
 
+## R2 Day 35: 2018-03-18 Sunday
+
+Played with creating a sprite in my [Toy Factory](https://github.com/virtual/toy-factory), eventually a part of the Dungeon Crawler app for freeCodeCamp R2D35/#100DaysofCode
+
 ## R2 Day 34: 2018-03-17 Saturday
 
 Worked a little on javascript 30 Challenge 5 flexbox image gallery
