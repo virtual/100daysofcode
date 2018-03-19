@@ -4,6 +4,11 @@
 
 Played with creating a sprite in my [Toy Factory](https://github.com/virtual/toy-factory), eventually a part of the Dungeon Crawler app for freeCodeCamp R2D35/#100DaysofCode
 
+Created [demo with board](https://virtual.github.io/toy-factory/). Ran out of space on Heroku, so checking out Github pages more! 
+
+- Added `"homepage": "https://virtual.github.io/toy-factory/"` to the package.json
+- Modified build script: `"build": "rm -rf docs && react-scripts build && mv build docs",` in package.json
+
 ## R2 Day 34: 2018-03-17 Saturday
 
 Worked a little on javascript 30 Challenge 5 flexbox image gallery
