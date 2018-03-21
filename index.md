@@ -1,7 +1,16 @@
 # #100DaysOfCode
 
+## R2 Day 37: 2018-03-20 Tuesday
+
+Moved my Game of Life app off of Heroku (previously fcc-game-of-life.herokuapp.com) to [Github](https://virtual.github.io/fcc-game-of-life/)
+
+Made a [PR for Habit100](https://github.com/OppNHeimer/habit100/pull/1) to add in some mobile styling
+
+Code Complete: Read Ch. 1 about construction--what it encompasses, why "coding" is not quite an accurate word (it simply means translating into computer language).
+
 ## R2 Day 36: 2018-03-19 Monday
 
+> Reviewing a skills checklist for full-stack developers and noting which areas I still need to focus on. Also, invested in this 900-page book on best practices. Wish me luck! Moved my panda sprite into a responsive grid and started creating a game board for the #freecodecamp Dungeon Crawler challenge. https://virtual.github.io/toy-factory/ 
 
 ### [Full-Stack Developer: The Definitive Guide](https://medium.com/coderbyte/a-guide-to-becoming-a-full-stack-developer-in-2017-5c3c08a1600c)
 
