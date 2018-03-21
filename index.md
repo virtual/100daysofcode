@@ -2,6 +2,8 @@
 
 ## R2 Day 37: 2018-03-20 Tuesday
 
+> Did some cleanup and maintenance on my GitHub repos/pages. Read Ch1 of #CodeComplete on what "construction" entails. 🌮 ...And made tacos! R2D37/#100DaysOfCode 
+
 Moved my Game of Life app off of Heroku (previously fcc-game-of-life.herokuapp.com) to [Github](https://virtual.github.io/fcc-game-of-life/)
 
 Made a [PR for Habit100](https://github.com/OppNHeimer/habit100/pull/1) to add in some mobile styling
