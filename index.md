@@ -1,5 +1,11 @@
 # #100DaysOfCode
 
+## R2 Day 38: 2018-03-21 Wednesday
+
+> Practicing some Flexbox Zombies tonight because my brain isn't functioning enough to think about my current projects. 🏹 "...Never pays to be shady!" R2D38/#100DaysOfCode  
+
+Just a little practice of Flexbox zombies. 
+
 ## R2 Day 37: 2018-03-20 Tuesday
 
 > Did some cleanup and maintenance on my GitHub repos/pages. Read Ch1 of #CodeComplete on what "construction" entails. 🌮 ...And made tacos! R2D37/#100DaysOfCode 
