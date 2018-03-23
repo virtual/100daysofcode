@@ -1,5 +1,9 @@
 # #100DaysOfCode
 
+## R2 Day 39: 2018-03-22 Thursday
+
+Added in a responsive mega menu using Bootstrap 4 to my Knight Univesity page. http://virtual-laravel-twbs4.herokuapp.com/ R2D39/#100DaysOfCode
+
 ## R2 Day 38: 2018-03-21 Wednesday
 
 > Practicing some Flexbox Zombies tonight because my brain isn't functioning enough to think about my current projects. 🏹 "...Never pays to be shady!" R2D38/#100DaysOfCode  
