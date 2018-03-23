@@ -1,5 +1,13 @@
 # #100DaysOfCode
 
+## R2 Day 40: 2018-03-23 Friday
+
+[Laravel twbs4](http://virtual-laravel-twbs4.herokuapp.com/) 
+
+- Worked on the search functionality
+- Added spotlight carousel, think I might switch to implementing SlickSlider for more styling options
+- Added meta
+
 ## R2 Day 39: 2018-03-22 Thursday
 
 Added in a responsive mega menu using Bootstrap 4 to my Knight Univesity page. http://virtual-laravel-twbs4.herokuapp.com/ R2D39/#100DaysOfCode
