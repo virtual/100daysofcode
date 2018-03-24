@@ -1,5 +1,25 @@
 # #100DaysOfCode
 
+## R2 Day 41: 2018-03-24 Saturday
+
+📕 Read chapter 3.1-3.3 of Code Complete on defining program prerequisites. 
+
+Determine whether prerequisites need to be defined using a sequential or iterative approach.
+
+➡️ Sequential:
+
+- low risk
+- familiar application and implementation
+- design is well understood
+
+🔄 Iterative:
+
+- high risk
+- unfamiliar application
+- complex/hard to understand
+
+❓ Determine problem definition: ask what the problem is using clear language. The "problem definition" should not include a solution or technical jargon.
+
 ## R2 Day 40: 2018-03-23 Friday
 
 [Laravel twbs4](http://virtual-laravel-twbs4.herokuapp.com/) 
