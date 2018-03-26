@@ -1,5 +1,9 @@
 # #100DaysOfCode
 
+## R2 Day 42: 2018-03-25 Sunday
+
+Changed setup for toy factory and worked on C# for Sololearn. Big day of traveling with OmniUpdate for the OUTC18! Hung out with Jim Heiney and went to House of Blues Anaheim and some shops in the Garden Walk. :)
+
 ## R2 Day 41: 2018-03-24 Saturday
 
 📕 Read chapter 3.1-3.3 of Code Complete on defining program prerequisites. 
