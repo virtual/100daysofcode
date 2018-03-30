@@ -1,5 +1,17 @@
 # #100DaysOfCode
 
+## R2 Day 45: 2018-03-30 Friday
+
+Spent 3 hours fighting with Vagrant on my PC. Think I've got it worked out using the exact same process as my Mac now. R2D45/#100DaysofCode
+
+## R2 Day 44: 2018-03-28 Wednesday
+
+OUTC18 Hackathon--teamed up with Adam S.! Created a Gadget using the @omniupdate API that sends messages to users. #MyFirstGadget R2D44/#100DaysOfCode
+
+## R2 Day 43: 2018-03-27 Tuesday
+
+Worked on implementing a Google App Script to pull data from a Google Sheet
+
 ## R2 Day 42: 2018-03-25 Sunday
 
 Changed setup for toy factory and worked on C# for Sololearn. Big day of traveling with OmniUpdate for the OUTC18! Hung out with Jim Heiney and went to House of Blues Anaheim and some shops in the Garden Walk. :)
