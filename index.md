@@ -1,5 +1,13 @@
 # #100DaysOfCode
 
+## R2 Day 47: 2018-04-01 Sunday
+
+> My player can now move around the board for my Toy Factory #freecodecamp Dungeon Crawler! https://virtual.github.io/toy-factory/ R2D47/#100DaysOfCode
+
+## R2 Day 46: 2018-03-31 Saturday
+
+> Updated BS4 sliders to use Slick Slider and implemented a fancy Skip to Main (focus) content region for my faux Knight University. Celebrating Easter with the folks! 🐇 R2D46/#100DaysOfCode
+
 ## R2 Day 45: 2018-03-30 Friday
 
 Spent 3 hours fighting with Vagrant on my PC. Think I've got it worked out using the exact same process as my Mac now. R2D45/#100DaysofCode
