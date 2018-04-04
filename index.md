@@ -1,5 +1,13 @@
 # #100DaysOfCode
 
+## R2 Day 49: 2018-04-03 Tuesday
+
+> Added darkness toggle, experience points and the ability to kill off cute little pandas #freecodecamp Dungeon Crawler. R2D48/#100DaysOfCode https://virtual.github.io/toy-factory/ 
+
+## R2 Day 48: 2018-04-02 Monday
+
+> Continuing on my #freecodecamp Dungeon Crawler, there's now walls and my player can bump into them! (Hooray for little victories.) R2D48/#100DaysOfCode https://virtual.github.io/toy-factory/ 
+
 ## R2 Day 47: 2018-04-01 Sunday
 
 > My player can now move around the board for my Toy Factory #freecodecamp Dungeon Crawler! https://virtual.github.io/toy-factory/ R2D47/#100DaysOfCode
