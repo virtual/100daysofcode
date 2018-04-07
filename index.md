@@ -1,5 +1,18 @@
 # #100DaysOfCode
 
+## R2 Day 52: 2018-04-06 Friday
+
+Read more of chapter 3 of Code Complete about project requirements; started architecture requirements
+
+## R2 Day 51: 2018-04-05 Thursday
+
+> "Requirements are like water. They're easier to build on when they're frozen." Read more on defining program requirements and their importance from #codecomplete. Also added HP bar and death/restart to my game. 
+
+## R2 Day 50: 2018-04-04 Wednesday
+
+> Day 50! #freecodecamp Dungeon Crawler continues... Added HP potions and a weapon. So close yet still so far; still need to add a boss, more weapons, levels, and that whole dying bit.
+R2 #100DaysOfCode https://virtual.github.io/toy-factory/ 
+
 ## R2 Day 49: 2018-04-03 Tuesday
 
 > Added darkness toggle, experience points and the ability to kill off cute little pandas #freecodecamp Dungeon Crawler. R2D48/#100DaysOfCode https://virtual.github.io/toy-factory/ 
