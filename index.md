@@ -1,5 +1,13 @@
 # #100DaysOfCode
 
+## R2 Day 54: 2018-04-08 Sunday
+
+> Realizing I'm a little inexperienced with left navigation sweeping in from the side, I spent the morning playing with it on CodePen. There are some nice examples on https://www.w3schools.com/howto/howto_js_sidenav.asp but need a little TLC. https://codepen.io/virtual/full/JLwjKz/ 
+
+## R2 Day 53: 2018-04-07 Saturday
+
+Read more of chapter 3 of Code Complete about architecture requirements
+
 ## R2 Day 52: 2018-04-06 Friday
 
 Read more of chapter 3 of Code Complete about project requirements; started architecture requirements
