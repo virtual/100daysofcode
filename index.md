@@ -2,6 +2,8 @@
 
 ## R2 Day 57: 2018-04-11 Wednesday
 
+Working through some React challenges on freeCodeCamp beta! https://beta.freecodecamp.org/en/challenges/react/create-a-simple-jsx-element
+
 ## R2 Day 56: 2018-04-10 Tuesday
 
 Watched more of Tyler McGinnis's react bootcamp. A good reminder to use the callback function style for this.setState()
