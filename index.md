@@ -1,5 +1,21 @@
 # #100DaysOfCode
 
+## R2 Day 57: 2018-04-11 Wednesday
+
+## R2 Day 56: 2018-04-10 Tuesday
+
+Watched more of Tyler McGinnis's react bootcamp. A good reminder to use the callback function style for this.setState()
+
+Got work's server on CloudFlare! It's amazing <3
+
+## R2 Day 55: 2018-04-09 Monday
+
+> Too slow to win :P but we had a great night with @tylermcginnis and @freeCodeCamp Bozeman walking through the challenges! R2D55/#100DaysOfCode
+
+Remember:  Babel = makes JSX code run in the browser without having to write React.createElement everywhere!
+
+Updated my server to PHP 7.2 and got my first laravel project running
+
 ## R2 Day 54: 2018-04-08 Sunday
 
 > Realizing I'm a little inexperienced with left navigation sweeping in from the side, I spent the morning playing with it on CodePen. There are some nice examples on https://www.w3schools.com/howto/howto_js_sidenav.asp but need a little TLC. https://codepen.io/virtual/full/JLwjKz/ 
