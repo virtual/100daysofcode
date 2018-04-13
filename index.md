@@ -1,5 +1,11 @@
 # #100DaysOfCode
 
+------------
+
+Choosing not to continue with Round 2, but I wrote up a blog of some of [my favorite apps](https://www.satinflame.com/blog/2018/04/apps-and-tiny-tools/) from last few years
+
+-------
+
 ## R2 Day 57: 2018-04-11 Wednesday
 
 Working through some React challenges on freeCodeCamp beta! https://beta.freecodecamp.org/en/challenges/react/create-a-simple-jsx-element
