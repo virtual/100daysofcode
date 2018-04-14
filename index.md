@@ -1,5 +1,9 @@
 # #100DaysOfCode
 
+## 2018-04-14 Saturday
+
+> I learned about #Design on Lynda.com. I completed Graphic Design Careers: First Steps by @kristinellison  https://www.lynda.com/Design-tutorials/Graphic-Design-Careers-First-Steps/497761-2.html?certificate=85B2DBD03120450E8AF21F20AB82FDD6&utm_medium=certificateshare&utm_source=twitter
+
 ------------
 
 Choosing not to continue with Round 2, but I wrote up a blog of some of [my favorite apps](https://www.satinflame.com/blog/2018/04/apps-and-tiny-tools/) from last few years
