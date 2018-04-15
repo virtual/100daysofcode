@@ -1,5 +1,13 @@
 # #100DaysOfCode
 
+## 2018-04-15 Sunday
+
+Worked on Project Briefs in Lynda's [Planning your Project](https://www.lynda.com/Graphic-Design-tutorials/Understanding-needs-your-client/419419/479098-4.html)
+
+- Drew 20 Parmigianos logo samples
+- Created typeface palette
+- Worked on menu layout - 14 x 11 and a Kid's menu
+
 ## 2018-04-14 Saturday
 
 Started working on the [Lynda - Graphic Designer path](https://www.lynda.com/learning-paths/Design/become-a-graphic-designer)
