@@ -2,9 +2,24 @@
 
 ## 2018-04-14 Saturday
 
+Started working on the [Lynda - Graphic Designer path](https://www.lynda.com/learning-paths/Design/become-a-graphic-designer)
+
+Finished: 
+
+- [What is Graphic Design](https://www.lynda.com/Graphic-Design-tutorials/What-Graphic-Design/614734-2.html)
+- [Graphic Design Careers: First Steps](https://www.lynda.com/Design-tutorials/Graphic-Design-Careers-First-Steps/497761-2.html)
+
+Working through [Intro to Graphic Design](https://www.lynda.com/Graphic-Design-tutorials/Introduction-Graphic-Design/419419-2.html)
+
+- Typography: Typeface palettes, anatomy of, terminology
+- Colors: emotional effects of color
+
 > I learned about #Design on Lynda.com. I completed Graphic Design Careers: First Steps by @kristinellison  https://www.lynda.com/Design-tutorials/Graphic-Design-Careers-First-Steps/497761-2.html?certificate=85B2DBD03120450E8AF21F20AB82FDD6&utm_medium=certificateshare&utm_source=twitter
 
 ------------
+
+## Starting Graphic Design #100DaysOfCreativity~
+
 
 Choosing not to continue with Round 2, but I wrote up a blog of some of [my favorite apps](https://www.satinflame.com/blog/2018/04/apps-and-tiny-tools/) from last few years
 
