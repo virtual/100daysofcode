@@ -7,6 +7,7 @@ Worked on Project Briefs in Lynda's [Planning your Project](https://www.lynda.co
 - Drew 20 Parmigianos logo samples
 - Created typeface palette
 - Worked on menu layout - 14 x 11 and a Kid's menu
+- Worked through Illustrator project setting up the logo from a sketch using shapes and creating 3 versions (color, inverse, black) of the logo; exported to png
 
 ## 2018-04-14 Saturday
 
