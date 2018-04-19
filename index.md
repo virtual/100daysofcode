@@ -1,5 +1,7 @@
 # #100DaysOfCode
 
+Logging Graphic Design on Google Keep
+
 ## 2018-04-15 Sunday
 
 Worked on Project Briefs in Lynda's [Planning your Project](https://www.lynda.com/Graphic-Design-tutorials/Understanding-needs-your-client/419419/479098-4.html)
