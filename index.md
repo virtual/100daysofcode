@@ -1,5 +1,11 @@
 # #100DaysOfCode
 
+## 2018-09-03 Monday
+
+Finished Udacity's Accessibility course. 
+
+-------------
+
 Logging Graphic Design on Google Keep
 
 ## 2018-04-15 Sunday
