@@ -1,5 +1,18 @@
 # #100DaysOfCode
 
+## R3 Day 1: 2020-03-21 Saturday 
+
+Starting Round 3 of #100DaysOfCode--honestly for a mental health break from reading #covid19 info; getting back into Javascript30 
+
+- Added overdue favicon to JS30
+- Created a canvas drawing board for [Challenge 8 of #javascript30](https://virtual-javascript30.herokuapp.com/08-canvas/index.html) 
+
+--------
+
+## ⭐ ⭐ Round 3 begins ⭐ ⭐
+
+--------
+
 ## 2018-09-03 Monday
 
 Finished Udacity's Accessibility course. 
