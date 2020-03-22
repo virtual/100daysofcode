@@ -1,6 +1,58 @@
 # #100DaysOfCode
 
+
+## ⭐ Some ideas for round 3: ⭐ 
+
+- Read 10 pages of Code Complete
+- Continue developing out [Libworx](https://github.com/virtual/libworx)
+- Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
+- Consider apps that might help Toastmaster groups online (Timer, Feedback forms)
+- Continue through [Javascript30](https://javascript30.com/)
+- Animations / maniuplations with SVG
+- Create a game with an isometric view
+- Create a virtual pet site
+- Update server for TLS
+- Mod a game (Minecraft)
+- Complete lessons in freeCodeCamp
+- [React Storybook with Emma Bostian (FEM)](https://livestream.com/accounts/4894689/events/9027490/videos/202820134)
+- [CSS In-Depth, v3, Estelle Weyl (FEM)](https://frontendmasters.com/workshops/css-in-depth-v3/)
+
+----------
+
+## R3 Day 2: 2020-03-22 Sunday 
+
+> Interesting information on CSS failures and faux-commenting while you're testing code as shown from CSS in Depth (v3) with 
+@estellevw, @FrontendMasters. 
+> 
+> If you style CSS, take a peek at all these less common selectors! https://drafts.csswg.org/selectors-4/#overview R3D2/#100DaysOfCode
+
+Began [CSS In-Depth, v3, Estelle Weyl (FEM)](https://frontendmasters.com/workshops/css-in-depth-v3/)
+
+- ✓ Introduction
+- Selectors
+- Specificity
+- Generated Content
+- Media Queries
+- Units and Values
+- Colors & Transparency
+- Math (variables, calc, etc)
+- Text and fonts
+- Box Model
+- Float & Flexbox
+- Tables
+- CSS Grids
+- Backgrounds & Images
+- Gradients
+- Transforms
+- Transitions and Animations
+- Other features
+- File organization
+
 ## R3 Day 1: 2020-03-21 Saturday 
+
+> Scrubbed my toaster, cleaned my knife set, cut my finger, and then decided maybe I should start #100daysofcode back up instead. 
+> 
+> Challenge 8/#javascript30--now enjoying this mindnumbingly fun canvas board I can now doodle on like it's 2002. R3D1 https://virtual-javascript30.herokuapp.com/08-canvas/index.html
 
 Starting Round 3 of #100DaysOfCode--honestly for a mental health break from reading #covid19 info; getting back into Javascript30 
 
