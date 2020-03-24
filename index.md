@@ -19,10 +19,70 @@
 
 ----------
 
+## R3 Day 4: 2020-03-24 Tuesday
+
+> R3D4/#100DaysOfCode In-range but still invalid? 
+Here's a pen to help you understand the difference between :invalid and :out-of-range CSS psuedo-selectors. Example from 
+@FrontendMasters
+ CSS In-Depth. https://codepen.io/virtual/pen/abORwjw?editors=0100
+
+
+
+
+### Psuedo-selectors
+
+Selectors that match based on the current state of the UI
+
+`:valid`
+
+`:invalid` (out of range and/or unmatched step value)
+
+`:required`
+
+`:optional`
+
+`:in-range`
+
+`:out-of-range` (out of range, ignores step)
+
+`:user-invalid` Similar to on blur
+
+
+## R3 Day 3: 2020-03-23 Monday
+
+> R3D3/#100DaysOfCode I'll admit, I don't use these much (aside from form styling), and many have been around since CSS2! Do you ever style your elements this way?
+> 
+> Reviewing selectors, specificity, and gotchas with 
+@estelle
+—you know, for the next CSS trivia night. Winking face
+
+### Selectors
+ 
+
+Selector: "The part that comes before the declaration block"
+
+Pseudo-classes have the same selector weight as classes (0 - 1 - 0)
+
+### Attribute selectors
+
+`[attribute]` Has the attribute (e.g. [type])
+
+`[attribute='value']` Equal to the exact value only
+
+`[attribute~='value']` Includes the full word 'value'
+
+`[attribute|='en']` Equal to "en" specifically or "en-" followed by anything
+
+`[attribute^='val']` Starts with (e.g. 'https:')
+
+`[attribute$='lue']` Ends with (e.g. ".pdf")
+
+`[attribute*='alu']` Has anywhere 
+
 ## R3 Day 2: 2020-03-22 Sunday 
 
 > Interesting information on CSS failures and faux-commenting while you're testing code as shown from CSS in Depth (v3) with 
-@estellevw, @FrontendMasters. 
+@estelle, @FrontendMasters. 
 > 
 > If you style CSS, take a peek at all these less common selectors! https://drafts.csswg.org/selectors-4/#overview R3D2/#100DaysOfCode
 
