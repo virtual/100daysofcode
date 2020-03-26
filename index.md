@@ -19,6 +19,28 @@
 
 ----------
 
+## R3 Day 5: 2020-03-25 Wednesday
+
+> Happy to now be a monthly supporter for @freeCodeCamp! 
+>
+> R3D5/#100DaysOfCode 
+Started working through the testing curriculum; worked out how to manage via GitHub and Heroku (instead of Glitch) so my workflow is much happier. 🤗 https://github.com/virtual/boilerplate-mochachai 
+
+[Chai Testing Repo](https://github.com/virtual/boilerplate-mochachai) running on [Heroku](https://fcc-boilerplate-mochachai.herokuapp.com/)
+
+*Note on CSS Update for reduced motion:*
+
+``` css
+@​media (prefers-reduced-motion: reduce) {
+  *,
+  *:after,
+  *:before {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+```
+
 ## R3 Day 4: 2020-03-24 Tuesday
 
 > R3D4/#100DaysOfCode In-range but still invalid? 
