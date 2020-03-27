@@ -19,6 +19,26 @@
 
 ----------
 
+
+
+## R3 Day 7: 2020-03-27 Friday
+
+> Finished Unit and Functional testing for @freecodecamp.
+> 
+> I was always curious about how to test an actual form. #ChaiJS can mimic filling in a form & submitting it, and test the output on the screen.
+> 
+> Assertions cheat sheet: https://devhints.io/chai
+R3D7/#100DaysOfCode 
+
+[Chai Testing Repo](https://github.com/virtual/boilerplate-mochachai) running on [Heroku](https://fcc-boilerplate-mochachai.herokuapp.com/)
+
+
+## R3 Day 6: 2020-03-26 Tuesday
+
+> R3D6/#100DaysOfCode Another day working with Chai on @freeCodeCamp. I'm impressed with the flexibility of tests like "approximately." 
+> 
+> Spent a while debugging my testing scripts until I realized I had the wrong branch set to be automatically deployed on Heroku--oops! Face with rolling eyes
+
 ## R3 Day 5: 2020-03-25 Wednesday
 
 > Happy to now be a monthly supporter for @freeCodeCamp! 
