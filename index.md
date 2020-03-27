@@ -33,7 +33,7 @@ R3D7/#100DaysOfCode
 [Chai Testing Repo](https://github.com/virtual/boilerplate-mochachai) running on [Heroku](https://fcc-boilerplate-mochachai.herokuapp.com/)
 
 
-## R3 Day 6: 2020-03-26 Tuesday
+## R3 Day 6: 2020-03-26 Thursday
 
 > R3D6/#100DaysOfCode Another day working with Chai on @freeCodeCamp. I'm impressed with the flexibility of tests like "approximately." 
 > 
