@@ -37,7 +37,7 @@ R3D7/#100DaysOfCode
 
 > R3D6/#100DaysOfCode Another day working with Chai on @freeCodeCamp. I'm impressed with the flexibility of tests like "approximately." 
 > 
-> Spent a while debugging my testing scripts until I realized I had the wrong branch set to be automatically deployed on Heroku--oops! Face with rolling eyes
+> Spent a while debugging my testing scripts until I realized I had the wrong branch set to be automatically deployed on Heroku--oops! 🙄
 
 ## R3 Day 5: 2020-03-25 Wednesday
 
