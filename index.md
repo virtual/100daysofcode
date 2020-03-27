@@ -32,6 +32,28 @@ R3D7/#100DaysOfCode
 
 [Chai Testing Repo](https://github.com/virtual/boilerplate-mochachai) running on [Heroku](https://fcc-boilerplate-mochachai.herokuapp.com/)
 
+``` javascript
+suite('Functional Tests', function () {
+  test('submit "surname" : "Vespucci" - write your e2e test...', function (done) {
+    browser
+    // fill the form, and submit.
+    .fill('surname', 'Vespucci')
+    .pressButton('submit', function(){
+      // assert that status is OK 200
+      browser.assert.success(); // 200
+      // assert that the text inside the element 'span#name' is 'Amerigo'
+      browser.assert.text('span#name', 'Amerigo', 'name should be Amerigo');
+      // assert that the text inside the element 'span#surname' is 'Vespucci'
+      browser.assert.text('span#surname', 'Vespucci', 'surname is Vespucci');
+      // assert that the element(s) 'span#dates' exist and their count is 1
+      browser.assert.element('span#dates', 1, 'dates element exists');
+      // assert.fail();
+    })
+    done();
+  });
+});
+```
+
 
 ## R3 Day 6: 2020-03-26 Thursday
 
