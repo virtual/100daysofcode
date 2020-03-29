@@ -8,18 +8,71 @@
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
 - Consider apps that might help Toastmaster groups online (Timer, Feedback forms)
 - Continue through [Javascript30](https://javascript30.com/)
+  - Day 01: Challenge 08 ✓
+  - Day 09: Challenge 09 ✓
 - Animations / maniuplations with SVG
 - Create a game with an isometric view
 - Create a virtual pet site
 - Update server for TLS
 - Mod a game (Minecraft)
 - Complete lessons in freeCodeCamp
+  - Information Security and QA section
+    - Day 05: Finish new Javascript Algorithm challenges, began ChaiJS
+    - Day 06: Continue testing with ChaiJS
+    - Day 07: Finish testing with ChaiJS ✓
+    - Day 08: Complete HelmetJS & bcrypt ✓
 - [React Storybook with Emma Bostian (FEM)](https://livestream.com/accounts/4894689/events/9027490/videos/202820134)
 - [CSS In-Depth, v3, Estelle Weyl (FEM)](https://frontendmasters.com/workshops/css-in-depth-v3/)
+  - Day 02: Intro and review of failures
+  - Day 03: Attribute selectors and specificity
+  - Day 04: Pseudo-selectors
 
 ----------
 
+## R3 Day 9: 2020-03-29 Sunday
 
+> Another #javascript30 down! Neat console logging ideas like formatting as errors, custom styles & grouping. Added  @prismjs for syntax highlights.
+> 
+> I return for the intro riff 🎶 & stay for the great content from Wes Bos. 😉  
+https://virtual-javascript30.herokuapp.com/09-dev-tools/index.html R3D9/#100DaysOfCode
+
+- [JavaScript 09 Dev Tools](https://virtual-javascript30.herokuapp.com/09-dev-tools/index.html)
+- [JavaScript 30 Repo](https://github.com/virtual/javascript30)
+
+## R3 Day 8: 2020-03-28 Saturday
+
+> R3D8/#100DaysOfCode Completed #Helmetjs/bcrypt for 
+@freeCodeCamp's Information Security and QA section.
+> 
+> Have any of you finished this certification? Thinking face I'm curious about what the projects are like and would love to see your GitHub repos/examples! #womenintech
+
+### Applied InfoSec Challenges
+
+#### HelmetJS 
+
+_HelmetJS is a type of middleware for Express-based applications that automatically sets HTTP headers to prevent sensitive information from unintentionally being passed between the server and client. While HelmetJS does not account for all situations, it does include support for common ones like Content Security Policy, XSS Filtering, and HTTP Strict Transport Security, among others. HelmetJS can be installed on an Express project from npm, after which each layer of protection can be configured to best fit the project._
+
+- `contentSecurityPolicy` for setting Content Security Policy	 
+- `dnsPrefetchControl` controls browser DNS prefetching
+- `frameguard` to prevent clickjacking
+- `hidePoweredBy` to remove the X-Powered-By header
+- `hsts` for HTTP Strict Transport Security
+- `ieNoOpen` sets X-Download-Options for IE8+
+- `noSniff` to keep clients from sniffing the MIME type
+- `referrerPolicy` to hide the Referer header	 
+- `xssFilter` adds some small XSS protections
+
+Resources 
+- [HelmetJS Challenges - Glitch Project](https://virtual-fcc-helmetjs.glitch.me)
+- [HelmetJS Docs](https://helmetjs.github.io/docs/)
+
+#### BCrypt 
+
+_BCrypt hashes are very secure. A hash is basically a fingerprint of the original data- always unique. This is accomplished by feeding the original data into an algorithm and returning a fixed length result. To further complicate this process and make it more secure, you can also salt your hash. Salting your hash involves adding random data to the original data before the hashing process which makes it even harder to crack the hash._
+
+_BCrypt hashes will always looks like `$2a$13$ZyprE5MRw2Q3WpNOGZWGbeG7ADUre1Q8QO.uUUtcbqloU0yvzavOm` which does have a structure. The first small bit of data `$2a` is defining what kind of hash algorithm was used. The next portion `$13` defines the cost. Cost is about how much power it takes to compute the hash. It is on a logarithmic scale of 2^cost and determines how many times the data is put through the hashing algorithm. For example, at a cost of 10 you are able to hash 10 passwords a second on an average computer, however at a cost of 15 it takes 3 seconds per hash... and to take it further, at a cost of 31 it would takes multiple days to complete a hash. A cost of 12 is considered very secure at this time. The last portion of your hash `$ZyprE5MRw2Q3WpNOGZWGbeG7ADUre1Q8QO.uUUtcbqloU0yvzavOm`, looks like one large string of numbers, periods, and letters but it is actually two separate pieces of information. The first 22 characters is the salt in plain text, and the rest is the hashed password!_
+
+- [Understand BCrypt Hashes - Glitch Project](https://virtual-fcc-bcrypt.glitch.me)
 
 ## R3 Day 7: 2020-03-27 Friday
 
