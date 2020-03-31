@@ -29,6 +29,35 @@
 
 ----------
 
+## R3 Day 10: 2020-03-30 Monday
+
+> Making R3D10/#100DaysOfCode an easier day, reading through the history of languages on Code Complete.
+> 
+> Amused by this tidbit: "The acronym PHP originally stood for Personal Home Page." 
+
+Language History from _Code Complete_ (ed.2, pp 63-66)
+
+LL = Low-level
+ML = Mid-level
+HL = High-level
+OOL = Object-oriented 
+
+- Ada (HL) - embedded systems, named after Adam Lovelace
+- Assembly language (LL) - assembler for a single machine instruction, used in processors
+- C (ML) - originally associated with UNIX OS, extensive use of pointers and addresses, used for microcomputers 1980-1990s
+- C++ (OOL) - classes, exception handling, templates, compatible with C
+- C# (OOL) - programming environment developed by Microsoft, used for dev on Microsoft platforms
+- Cobol - DOD, mathematical and object-oriented. Stands for COmmon Business-Oriented Language
+- Fortran (HL) - Scientific and engineering applications, stands for FORmula TRANslation
+- Java (OOL) - Sun Microsystems, platforms convert Java source code to bye code and runs in a virtual machine
+- JavaScript - Client-side programming
+- Perl - used for administration tasks, building scripts, report generation. Stands for Pratical Extraction and Report Language
+- PHP - Can be embedded in web pages and present database info, originally stood for Personal Home Page but now stands for PHP: Hypertext Processor
+- Python (OOL) - Interpreted, used for writing scripts
+- SQL - Structured Query Language - is declarative language meaning that it does not define a sequence of operations, but rather the result of some operations
+- Visual Basic (HL) - Developed at Dartmouth College in 1960s, stands for Beginner's All-purpose Symbolic Instruction Code
+
+
 ## R3 Day 9: 2020-03-29 Sunday
 
 > Another #javascript30 down! Neat console logging ideas like formatting as errors, custom styles & grouping. Added  @prismjs for syntax highlights.
