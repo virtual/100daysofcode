@@ -4,6 +4,7 @@
 ## ⭐ Some ideas for round 3: ⭐ 
 
 - Read 10 pages of Code Complete
+  - Day 10: History of programming languages
 - Continue developing out [Libworx](https://github.com/virtual/libworx)
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
 - Consider apps that might help Toastmaster groups online (Timer, Feedback forms)
@@ -21,6 +22,7 @@
     - Day 06: Continue testing with ChaiJS
     - Day 07: Finish testing with ChaiJS ✓
     - Day 08: Complete HelmetJS & bcrypt ✓
+    - Day 11: Pug/Passport - Node & Express
 - [React Storybook with Emma Bostian (FEM)](https://livestream.com/accounts/4894689/events/9027490/videos/202820134)
 - [CSS In-Depth, v3, Estelle Weyl (FEM)](https://frontendmasters.com/workshops/css-in-depth-v3/)
   - Day 02: Intro and review of failures
@@ -28,6 +30,60 @@
   - Day 04: Pseudo-selectors
 
 ----------
+
+## R3 Day 11: 2020-03-31 Tuesday
+
+> Markdown links—someone once shared that "Brackets" comes before "Parenthesis" alphabetically, and I haven't screwed up creating a link since! 💙 (Thank you!)
+> 
+> Working on @freeCodeCamp's Node & Express section, starting with 🐶 #PugJS templates. R3D11/#100DaysOfCode
+
+- [Pug docs](https://github.com/pugjs/pug)
+- [Pug Templates, Introduction to Advanced Node and Express Challenges - Glitch project](https://virtual-fcc-node-security.glitch.me/)
+
+### Pug code example:
+
+``` pug
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    script(type='text/javascript').
+      if (foo) bar(1 + 5)
+  body
+    h1 Pug - node template engine
+    #container.col
+      if youAreUsingPug
+        p You are amazing
+      else
+        p Get on it!
+      p.
+        Pug is a terse and simple templating language with a
+        strong focus on performance and powerful features.
+```
+
+### Passport
+
+_It's time to set up Passport so we can finally start allowing a user to register or login to an account! In addition to Passport, we will use Express-session to handle sessions. Using this middleware saves the session id as a cookie in the client and allows us to access the session data using that id on the server. This way we keep personal account information out of the cookie used by the client to verify to our server they are authenticated and just keep the key to access the data stored on the server._
+
+```js
+const session = require('express-session')
+const passport = require('passport')
+
+// ...
+
+app.use(session({
+  secret: process.env.SESSION_SECRET,
+  resave: true,
+  saveUninitialized: true,
+}));
+
+// passport. initialize() is a middle-ware that initialises Passport. Middlewares are functions that have access to the request object (req), the response object (res), and the next middleware function in the application's request-response cycle
+app.use(passport.initialize())
+
+// passport.session() acts as a middleware to alter the req object and change the 'user' value that is currently the session id (from the client cookie) into the true deserialized user object.
+// `app.use(passport.session());` is equivalent to `app.use(passport.authenticate('session'));`
+app.use(passport.session())
+```
 
 ## R3 Day 10: 2020-03-30 Monday
 
