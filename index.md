@@ -33,9 +33,20 @@
 
 ## R3 Day 12: 2020-04-01 Wednesday
 
+> Just like any time I do server setup, spending way too much time debugging silly things like page titles... 
+> 
+> Is there anyone with @freecodecamp approval access that can review the PRs for this repo? R3D12/#100DaysOfCode
+> https://github.com/freeCodeCamp/boilerplate-advancednode/pulls
+
+[Glitch project](https://glitch.com/~virtual-fcc-node-security)
+
 Serialization of a User Object
 
 _To serialize an object means to convert its contents into a small key essentially that can then be deserialized into the original object. This is what allows us to know whos communicated with the server without having to send the authentication data like username and password at each request for a new page._
+
+Authentication Strategies
+
+_A strategy is a way of authenticating a user._
 
 ## R3 Day 11: 2020-03-31 Tuesday
 
