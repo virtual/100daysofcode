@@ -31,6 +31,12 @@
 
 ----------
 
+## R3 Day 12: 2020-04-01 Wednesday
+
+Serialization of a User Object
+
+_To serialize an object means to convert its contents into a small key essentially that can then be deserialized into the original object. This is what allows us to know whos communicated with the server without having to send the authentication data like username and password at each request for a new page._
+
 ## R3 Day 11: 2020-03-31 Tuesday
 
 > Markdown links—someone once shared that "Brackets" comes before "Parenthesis" alphabetically, and I haven't screwed up creating a link since! 💙 (Thank you!)
