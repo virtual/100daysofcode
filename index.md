@@ -23,6 +23,8 @@
     - Day 07: Finish testing with ChaiJS ✓
     - Day 08: Complete HelmetJS & bcrypt ✓
     - Day 11: Pug/Passport - Node & Express
+    - Day 12: Passport - Node & Express
+    - Day 13: Passport - Node & Express
 - [React Storybook with Emma Bostian (FEM)](https://livestream.com/accounts/4894689/events/9027490/videos/202820134)
 - [CSS In-Depth, v3, Estelle Weyl (FEM)](https://frontendmasters.com/workshops/css-in-depth-v3/)
   - Day 02: Intro and review of failures
@@ -30,6 +32,17 @@
   - Day 04: Pseudo-selectors
 
 ----------
+
+## R3 Day 13: 2020-04-02 Thursday
+
+> Continuing @freecodecamp's passport authentication and trying to debug errors preventing tests to pass even though it works. Frustrating! 😣
+> 
+> I hope all your coding adventures have been more rewarding today! R3D13/#100DaysOfCode
+
+There are so many issues and gotchas with this chapter outlined in a myriad of forum posts and GitHub issues.
+
+Time for me to leave this challenge and hope when I get back to it, it's been given some TLC. I tried a GitHub PR for the page title issues, but it was rejected.
+
 
 ## R3 Day 12: 2020-04-01 Wednesday
 
