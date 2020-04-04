@@ -33,6 +33,12 @@
 
 ----------
 
+## R3 Day 14: 2020-04-03 Friday
+
+> R3D14/#100DaysOfCode Started working out the first @freeCodeCamp security challenge for a Metric-Imperial Converter. Reviewing how to use regex to split strings and integrate HelmetJS for security. 
+
+[Glitch project](https://virtual-fcc-mi-convert.glitch.me/api/convert?input=3gal)
+
 ## R3 Day 13: 2020-04-02 Thursday
 
 > Continuing @freecodecamp's passport authentication and trying to debug errors preventing tests to pass even though it works. Frustrating! 😣
