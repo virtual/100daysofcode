@@ -33,6 +33,21 @@
 
 ----------
 
+## R3 Day 15: 2020-04-04 Saturday
+
+> Building the first project for @freecodecamp's security challenges. Added controller functions to process input (32mi) and calc output (51.5kg). @getpostman helps to debug. Love these projects, they really make things click! R3D15/#100DaysOfCode 
+> https://virtual-fcc-mi-convert.glitch.me
+
+
+"Controllers" — functions that separate out the code to route requests from the code that actually processes requests.
+
+Since I always forget the MVC setup:
+
+- __Models__ are the heart of any JavaScript application, containing the interactive data as well as a large part of the logic surrounding it: conversions, validations, computed properties, and access control.
+- __Routes__ to forward the supported requests (and any information encoded in request URLs) to the appropriate controller functions.
+- __Controller__ functions to get the requested data from the models, create an HTML page displaying the data, and return it to the user to view in the browser.
+- __Views__ (templates) used by the controllers to render the data.
+
 ## R3 Day 14: 2020-04-03 Friday
 
 > R3D14/#100DaysOfCode Started working out the first @freeCodeCamp security challenge for a Metric-Imperial Converter. Reviewing how to use regex to split strings and integrate HelmetJS for security. 
