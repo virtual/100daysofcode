@@ -25,6 +25,10 @@
     - Day 11: Pug/Passport - Node & Express
     - Day 12: Passport - Node & Express
     - Day 13: Passport - Node & Express
+    - Day 14: Metric-Imperial Converter
+    - Day 15: Metric-Imperial Converter
+    - Day 16: Metric-Imperial Converter
+    - Day 17: Metric-Imperial Converter ✓
 - [React Storybook with Emma Bostian (FEM)](https://livestream.com/accounts/4894689/events/9027490/videos/202820134)
 - [CSS In-Depth, v3, Estelle Weyl (FEM)](https://frontendmasters.com/workshops/css-in-depth-v3/)
   - Day 02: Intro and review of failures
@@ -32,6 +36,30 @@
   - Day 04: Pseudo-selectors
 
 ----------
+
+## R3 Day 17: 2020-04-06 Monday
+
+> ✅ Metric-Imperial Converter completed for @freecodecamp!
+> 
+>🔹 Built out controller functions
+<br/>
+>🔹 Verified correct return types
+<br/>
+>🔹 Added HelmetJS for security
+<br/>
+>🔹 Created unit and functional tests
+<br/>
+>🔹 Wrote API routes
+>
+> https://virtual-fcc-mi-convert.glitch.me R3D17/#100DaysOfCode #womenintech
+
+## R3 Day 16: 2020-04-05 Sunday
+
+> Finished the unit tests for @freecodecamp's M/I converter challenge. Tomorrow: functional tests! 
+> 
+> I learned that Chai's approximately only works if you actually return numbers—I will need to pay attention to my return types! R3D16/#100DaysOfCode 
+> 
+> Enjoy your weekend!
 
 ## R3 Day 15: 2020-04-04 Saturday
 
