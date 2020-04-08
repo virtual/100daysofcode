@@ -37,6 +37,21 @@
 
 ----------
 
+## R4 Day 18: 2020-04-07 Tuesday
+
+> Started on the second security challenge for @freeCodeCamp, beginning with a bit of CRUD! 
+> 
+> I'm really rusty on MongoDB, but I finally got my database connection set up and a fake object for Project Mew inserted in a collection! 🎉 R3D18/#100DaysOfCode
+
+[Glitch Project](https://virtual-fcc-issue-tracker.glitch.me/)
+
+Questions:
+
+- Where do I put the database connection? (I put it in api.js)
+- How do I insert in mongoDB? Create db in mlab, create user, create collection, insert into db 
+- Does the insert into DB return an _id?
+- What should the res return in the API?
+
 ## R3 Day 17: 2020-04-06 Monday
 
 > ✅ Metric-Imperial Converter completed for @freecodecamp!
