@@ -5,19 +5,11 @@
 
 - Read 10 pages of Code Complete
   - Day 10: History of programming languages
-- Continue developing out [Libworx](https://github.com/virtual/libworx)
-- Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
-- Consider apps that might help Toastmaster groups online (Timer, Feedback forms)
 - Continue through [Javascript30](https://javascript30.com/)
   - Day 01: Challenge 08 ✓
   - Day 09: Challenge 09 ✓
-- Animations / maniuplations with SVG
-- Create a game with an isometric view
-- Create a virtual pet site
-- Update server for TLS
-- Mod a game (Minecraft)
-- Complete lessons in freeCodeCamp
-  - Information Security and QA section
+- freeCodeCamp
+  - Information Security and QA overview section
     - Day 05: Finish new Javascript Algorithm challenges, began ChaiJS
     - Day 06: Continue testing with ChaiJS
     - Day 07: Finish testing with ChaiJS ✓
@@ -25,19 +17,44 @@
     - Day 11: Pug/Passport - Node & Express
     - Day 12: Passport - Node & Express
     - Day 13: Passport - Node & Express
+  - Infosec/QA - Metric-Imperial Converter
     - Day 14: Metric-Imperial Converter
     - Day 15: Metric-Imperial Converter
     - Day 16: Metric-Imperial Converter
     - Day 17: Metric-Imperial Converter ✓
-- [React Storybook with Emma Bostian (FEM)](https://livestream.com/accounts/4894689/events/9027490/videos/202820134)
-- [CSS In-Depth, v3, Estelle Weyl (FEM)](https://frontendmasters.com/workshops/css-in-depth-v3/)
-  - Day 02: Intro and review of failures
-  - Day 03: Attribute selectors and specificity
-  - Day 04: Pseudo-selectors
-
+  - Infosec/QA - Issue Tracker
+    - Day 18: POST with fake data
+    - Day 19: POST with form data, GET route
+- Front-end Masters
+  - [React Storybook with Emma Bostian (FEM)](https://livestream.com/accounts/4894689/events/9027490/videos/202820134)
+  - [CSS In-Depth, v3, Estelle Weyl (FEM)](https://frontendmasters.com/workshops/css-in-depth-v3/)
+    - Day 02: Intro and review of failures
+    - Day 03: Attribute selectors and specificity
+    - Day 04: Pseudo-selectors
+- Animations / maniuplations with SVG
+- Create a game with an isometric view
+- Create a virtual pet site
+- Update server for TLS
+- Mod a game (Minecraft)
+- Continue developing out [Libworx](https://github.com/virtual/libworx)
+- Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
+- Consider apps that might help Toastmaster groups online (Timer, Feedback forms)
+- IBM Design Thinking
+- FCC AWS Certification
 ----------
 
-## R4 Day 18: 2020-04-07 Tuesday
+## R3 Day 19: 2020-04-08 Wednesday
+
+> Spent another day digging into MongoDB for #freecodecamp's 2nd Security project. Updated my post route to use real form input and worked out the response for the get route as well. 
+> 
+> Half of the CRUD is working now! 😋 https://virtual-fcc-issue-tracker.glitch.me/apitest/ R3D19/#100DaysOfCode
+
+Questions: 
+- How do I return the result from a MongoDB query? _Use .toArray()_
+- How do I pass the serialized form fields to the route? _Use req.body_
+- How can I pass the current time into MongoDB? _new Date(Date.now())_ May also be able to setup a defined field in MongoDB that defaults to current time
+
+## R3 Day 18: 2020-04-07 Tuesday
 
 > Started on the second security challenge for @freeCodeCamp, beginning with a bit of CRUD! 
 > 
