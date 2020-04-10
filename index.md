@@ -3,8 +3,6 @@
 
 ## ⭐ Some ideas for round 3: ⭐ 
 
-- Read 10 pages of Code Complete
-  - Day 10: History of programming languages
 - Continue through [Javascript30](https://javascript30.com/)
   - Day 01: Challenge 08 ✓
   - Day 09: Challenge 09 ✓
@@ -31,6 +29,8 @@
     - Day 02: Intro and review of failures
     - Day 03: Attribute selectors and specificity
     - Day 04: Pseudo-selectors
+- Read Code Complete
+  - Day 10: History of programming languages
 - Animations / maniuplations with SVG
 - Create a game with an isometric view
 - Create a virtual pet site
@@ -41,7 +41,33 @@
 - Consider apps that might help Toastmaster groups online (Timer, Feedback forms)
 - IBM Design Thinking
 - FCC AWS Certification
+
 ----------
+
+## R3 Day 20: 2020-04-09 Thursday
+
+> Today I created the delete route for #freecodecamp's 2nd Infosec project.
+> 
+> Added a check to see if the ID actually exists prior to deleting it. Using findOne() seems to be better as you don't need to parse an array. R3D20/#100DaysOfCode 
+https://virtual-fcc-issue-tracker.glitch.me/apitest/
+
+Questions:
+
+- What format do I send the `req.body` info as in Postman? _x-www-form-encoded_
+- How do I reference the _id? `req.body._id`
+- How do I get the result of a promise? 
+
+  ```js
+  db.collection("issues").findOne(
+    { _id: ObjectId(req.body._id) }, 
+    function(err,result) {
+    if (err) {
+      throw err;
+    } else {
+      // do things
+    }
+  });
+  ```
 
 ## R3 Day 19: 2020-04-08 Wednesday
 
@@ -53,6 +79,8 @@ Questions:
 - How do I return the result from a MongoDB query? _Use .toArray()_
 - How do I pass the serialized form fields to the route? _Use req.body_
 - How can I pass the current time into MongoDB? _new Date(Date.now())_ May also be able to setup a defined field in MongoDB that defaults to current time
+
+Started [IBM's Design Thinking Practitioner Course](https://www.ibm.com/design/thinking/page/courses/Practitioner/topic/Introduction/01/01/02/0)
 
 ## R3 Day 18: 2020-04-07 Tuesday
 
