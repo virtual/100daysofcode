@@ -23,6 +23,8 @@
   - Infosec/QA - Issue Tracker
     - Day 18: POST with fake data
     - Day 19: POST with form data, GET route
+    - Day 20: DELETE route
+    - Day 21: PUT route
 - Front-end Masters
   - [React Storybook with Emma Bostian (FEM)](https://livestream.com/accounts/4894689/events/9027490/videos/202820134)
   - [CSS In-Depth, v3, Estelle Weyl (FEM)](https://frontendmasters.com/workshops/css-in-depth-v3/)
@@ -43,6 +45,30 @@
 - FCC AWS Certification
 
 ----------
+
+## R3 Day 22: 2020-04-11 Saturday
+
+> R3D22/#100DaysOfCode Working out how to use expect functions in addition to assert in Chai, but the doc's examples aren't even working in my app. Need to check version support. 
+> 
+> Slow going with adding testing to the 2nd infosec challenge for #freecodecamp.
+
+## R3 Day 21: 2020-04-10 Friday
+
+> CRUD Working! Post, Get, Put, and Delete routes for #freecodecamp's 2nd infosec project now setup. 
+>
+> Next to figure out is the testing and learn what I really set up incorrectly. 😆 R3D21/#100DaysOfCode https://virtual-fcc-issue-tracker.glitch.me/apitest/
+ 
+Questions:
+
+- What's the difference in creating an Update statement (versus Find) in MongoDB? _add `{ $set: projectObj }` with value-pairs that need to be updated._
+
+``` js
+db.collection("issues").update(
+  { _id: ObjectId(issueID) }, 
+  { $set: projectObj },
+  function(err, result) {
+    ...
+```
 
 ## R3 Day 20: 2020-04-09 Thursday
 
