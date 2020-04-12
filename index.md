@@ -46,11 +46,69 @@
 
 ----------
 
+## R3 Day 23: 2020-04-12 Sunday
+
+> Happy Easter! 🌼 Taking a step back from freeCodeCamp projects to learn JavaScript testing a bit more thoroughly on Lynda. Are there any recommendations for good walkthroughs on TDD/BDD (Test/Behavior-Driven Development) using Node.js/ChaiJS? R3D23/#100DaysOfCode
+
+### Reviewing Testing
+
+[Node.js: Testing and Code Quality - Jon Peck](https://www.lynda.com/Node-js-tutorials/Node-js-Testing-Code-Quality/587672-2.html)
+
+Notes:
+
+TDD General Notes:
+
+- __Mocha__ is the library that allows us to run tests, and __Chai__ contains some helpful functions that we’ll use to verify our test results.
+- `describe` is used to group individual tests
+- In TDD, you write your unit test first, watch it fail, and then implement code changes until the test passes.
+
+[Five steps to TDD](https://developer.ibm.com/articles/5-steps-of-test-driven-development/) (also known as Red-Green-Refactoring):
+
+1. Read, understand, and process the feature or bug request.
+1. Translate the requirement by writing a unit test. If you have hot reloading set up, the unit test will run and fail as no code is implemented yet.
+1. Write and implement the code that fulfills the requirement. Run all tests and they should pass, if not repeat this step.
+1. Clean up your code by refactoring.
+1. Rinse, lather and repeat.
+
+Questions:
+
+- What is BDD? I keep seeing it.
+_In TDD (Test Driven Development), the test is written to check the implementation of functionality, but as the code evolves, tests can give false results. BDD (Behavior Driven Development) is also a test-first approach, but differs by testing the actual behavior of the system from the end users perspective._
+
 ## R3 Day 22: 2020-04-11 Saturday
 
 > R3D22/#100DaysOfCode Working out how to use expect functions in addition to assert in Chai, but the doc's examples aren't even working in my app. Need to check version support. 
 > 
 > Slow going with adding testing to the 2nd infosec challenge for #freecodecamp.
+
+Questions:
+
+- Which tests do I need for functional tests?
+- Why aren't `expect` tests working?
+
+### IBM Design thinking
+
+- [IBM Design Thinking Practitioner](https://www.ibm.com/design/thinking/page/courses/Practitioner)
+- [Toolkit](https://www.ibm.com/design/thinking/page/toolkit)
+
+#### Notes
+
+- __Design thinking__ is the mindset that aims to improve the situation of people through the experiences they have. If you’re interested in solving problems for people, then you can practice design thinking.
+- __The Loops__ - Understand the present and envision the future in a continuous cycle of: 
+  - _observing_: Immerse yourself in the real world with design research. Interview users, watch them work, and test your ideas with the people who matter most to inform your decision-making and understanding.
+  - _reflecting_: Come together and look within to synchronize your movements, synthesize what you’ve learned, and share your “aha” moments with each other. Decide together and move forward with confidence.
+  - _making_: Give concrete form to abstract ideas. __The earlier you make the faster you learn.__ Put your ideas out there before they’re complete and improve them as you go.
+- __Enterprise Design Thinking__ - 
+a tailor-made approach for large, distributed teams to help them quickly deliver human-centered outcomes to the market
+- __Principles__
+  1. A focus on user outcomes
+  1. Restless reinvention
+  1. Diverse Empowered Teams
+- __Keys__
+  1. 🔺 Hills: Hills are statements of intent written as user enablements. They follow a format of Who, What, and Wow.
+  1. 🔲 Playbacks: Playbacks are story-based presentations that share insights, ideas, and updates to a user experience.
+  1. *️⃣ Sponsor Users: Sponsor Users are external clients, future clients, or end users that represent your target user, who regularly contribute domain expertise to your team. 
+
 
 ## R3 Day 21: 2020-04-10 Friday
 
