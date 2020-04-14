@@ -46,6 +46,57 @@
 
 ----------
 
+## R3 Day 24: 2020-04-13 Monday
+
+> Following along on a @lynda course from @FluxSauce on Node.js testing. Great info on testing libraries vs. assertion libraries, TDD vs. BDD, and soon will be digging into setting up better linting tools! R3D24/#100DaysOfCode https://www.lynda.com/Node-js-tutorials/Node-js-Testing-Code-Quality/587672-2.html
+
+[Node.js: Testing and Code Quality - Jon Peck](https://www.lynda.com/Node-js-tutorials/Node-js-Testing-Code-Quality/587672-2.html)
+
+- Quality code is deficiency free
+  - Useful: What does it do, can it be extended to work for similar operations?
+  - Maintainable
+    - Can you maintain the code?
+    - Can someone else maintain it without help?
+    - Can someone else read the code and understand the design and intent?
+- Code standards are the easiest way to improve code quality
+  - Use good conventions: spacing, whitespace, naming
+  - Use linters to check for good code standards
+  - Run lint before peer review
+
+Different types of testing:
+- __Unit testing__: the smallest testable part of an application, ie a function
+  - tests an isolated unit via API
+  - safe to run repeatedly
+  - fast
+  - validates an assertion, returns true or false
+  - simulate dependencies
+  - do not test third-party code
+- __Integrations testing__: builds upon unit tests, combines and tests resulting combinations (APIs, UIs, results) 
+  - more complex 
+  - harder to maintain
+  - checks more steps (register success, validation, etc)
+- __Functional testing__: tests how the system works together, against the requirements
+  - focus is on the result, not the code
+  - slower to execute
+  - tests user interface, eg. click button, enter input, see UI message  
+- __System testing__: tests the whole system, security issues, usability, etc
+  - any test that requires the whole system to be running
+- __Regression testing__: "regression"-software bug
+
+TDD vs BDD
+- TDD: terminology about testing
+  - describes when something works and when it doesn't
+  - too literal
+  - can lead to overly specific tests
+- BDD: terminology about behavior examples
+  - describe how and why with examples
+  - acceptance criteria as a scenario:
+    - __given__ some initial context (the givens)
+    - __when__ an event occurs
+    - __then__ ensures some outcomes
+  - `describe/context` - creates a group of specifications (tests)
+  - `specify/it` - create a specification, test, or test-spec
+
 ## R3 Day 23: 2020-04-12 Sunday
 
 > Happy Easter! 🌼 Taking a step back from freeCodeCamp projects to learn JavaScript testing a bit more thoroughly on Lynda. Are there any recommendations for good walkthroughs on TDD/BDD (Test/Behavior-Driven Development) using Node.js/ChaiJS? R3D23/#100DaysOfCode
@@ -58,7 +109,7 @@ Notes:
 
 TDD General Notes:
 
-- __Mocha__ is the library that allows us to run tests, and __Chai__ contains some helpful functions that we’ll use to verify our test results.
+- __Mocha__ is the _testing_ library that allows us to run tests, and __Chai__ is an _assertion_ library that contains some helpful functions that we’ll use to verify our test results.
 - `describe` is used to group individual tests
 - In TDD, you write your unit test first, watch it fail, and then implement code changes until the test passes.
 
