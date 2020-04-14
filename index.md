@@ -46,6 +46,25 @@
 
 ----------
 
+## R3 Day 25: 2020-04-14 Tuesday
+
+> Learning how to set up and configure EditorConfig and ESLint in order to maintain consistent coding standards in my projects! R3D25/#100DaysOfCode https://www.lynda.com/Node-js-tutorials/Node-js-Testing-Code-Quality/587672-2.html
+
+Linter:
+- `root: true` only in root
+- built-in checker: `node --check jsfile.js`
+- JSLint, JSHint, and ESLint (most popular)
+
+ESLint
+- don't install globally, package antipattern
+- `npm install eslint -D`
+- add `"eslint": "eslint",` to the scripts in package.json due to the placement of eslint
+- `npm run eslint` or `npm run eslint .`
+- need to configure ESLint `eslint init`
+- don't put ESLint configs in package.json, use .eslintrc.js instead
+- try putting flags before `eslint`, `npm run -h eslint`
+- check a file `npm run -s eslint file.js`
+
 ## R3 Day 24: 2020-04-13 Monday
 
 > Following along on a @lynda course from @FluxSauce on Node.js testing. Great info on testing libraries vs. assertion libraries, TDD vs. BDD, and soon will be digging into setting up better linting tools! R3D24/#100DaysOfCode https://www.lynda.com/Node-js-tutorials/Node-js-Testing-Code-Quality/587672-2.html
