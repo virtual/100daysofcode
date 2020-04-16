@@ -46,6 +46,58 @@
 
 ----------
 
+## R3 Day 26: 2020-04-15 Wednesday
+
+> Today I customized ESLint to keep code tidy and standardized within a project. 
+> 
+> You can also customize your own config and add it to npm for others to use as a dependency—as Google and Airbnb have done for their teams. Neat! R3D26/#100DaysOfCode https://medium.com/@natterstefan/how-to-create-your-own-shared-eslint-prettier-and-stylelint-configuration-3930dd764de3
+
+### Validate correctness using Unit Testing
+
+Node.js Testing frameworks:
+- AVA
+- Jasmine
+- Jest
+- mocha -- oldest and most used; does not include assertsions, but supports plugins (Chai)
+- tape
+
+Assertion Libraries (that work with any testing framework):
+- Assert (built into Node.js)
+- Chai - can be used for Node.js and browser testing
+  - assert: TDD-style
+  - expect/should: BDD-style
+- code - simplified expect functions from Chai only
+- should.js
+
+### Installing
+
+- `npm install mocha chai -D`
+- add `"test": "mocha"` to scripts
+- add ESLint env vars for mocha globals--add `test/.eslintrc.js` 
+
+```js
+module.exports = {
+  "env": {
+    "mocha": true
+  },
+  "rules": {
+    "no-unused-vars": [
+      "error",
+      {"varsIgnorePattern": "should|expect" }
+    ]
+  }
+}
+```
+
+ESLint Configs
+- You can export setup to npm so that others can use it
+- View a [list of available eslint configs](https://github.com/dustinspecker/awesome-eslint)
+- A sharable config can extend another
+- Use `git+ssh`
+- [How to create your own shared esLint, prettier and stylelint configuration](https://medium.com/@natterstefan/how-to-create-your-own-shared-eslint-prettier-and-stylelint-configuration-3930dd764de3)
+- you can ignore certain directories with `.eslintignore`, good for third-party code, contributed files, etc
+- Try using ESLint autofix errors from command palette
+
 ## R3 Day 25: 2020-04-14 Tuesday
 
 > Learning how to set up and configure EditorConfig and ESLint in order to maintain consistent coding standards in my projects! R3D25/#100DaysOfCode https://www.lynda.com/Node-js-tutorials/Node-js-Testing-Code-Quality/587672-2.html
