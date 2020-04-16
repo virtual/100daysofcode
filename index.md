@@ -25,6 +25,12 @@
     - Day 19: POST with form data, GET route
     - Day 20: DELETE route
     - Day 21: PUT route
+    - Day 22: Functional tests
+- [Node.js: Testing and Code Quality - Jon Peck](https://www.lynda.com/Node-js-tutorials/Node-js-Testing-Code-Quality/587672-2.html)
+  - Day 23: Intro
+  - Day 24: Testing and Code Quality Fundamentals
+  - Day 25: Finding Errors with Linting
+  - Day 26: Finding Errors with Linting & Validating Correctness with Unit Tests
 - Front-end Masters
   - [React Storybook with Emma Bostian (FEM)](https://livestream.com/accounts/4894689/events/9027490/videos/202820134)
   - [CSS In-Depth, v3, Estelle Weyl (FEM)](https://frontendmasters.com/workshops/css-in-depth-v3/)
