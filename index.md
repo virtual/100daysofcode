@@ -52,6 +52,35 @@
 
 ----------
 
+## R3 Day 27: 2020-04-16 Thursday
+
+> Code things that make you happy! Smiling face with open mouth and smiling eyes
+>
+> Saw examples of snaking timelines from #smashingconf and haven't stopped thinking about them since! Snake
+> 
+> Haml, CSS, and JS for reordering cards in the responsive design. R3D27/#100DaysOfCode #WomenWhoCode 
+https://codepen.io/virtual/pen/bGVpdyN
+
+### IBM Design thinking
+
+- [IBM Design Thinking Practitioner](https://www.ibm.com/design/thinking/page/courses/Practitioner)
+
+#### Notes
+
+- Identify your users and their problems
+- __a focus on user outcomes__ an Enterprise Design Thinking Principle that represents putting your users at the center of your work and solving for their needs
+- Ask the 5 Whys
+- Possible questions
+  - What does Joe do at work?
+  - What do they like and dislike?
+  - How could their current experiences be improved?
+- Sponsor users: 1-2/month for 6-9 months
+- __design research__ the practice of inquiry and discovery that builds knowledge, insight, and empathy for your users
+- Questions during research
+  - What’s one thing you learned that you didn’t know before?
+  - What pain points did you see the gate agents experience
+  - What was difficult about the exercise?
+
 ## R3 Day 26: 2020-04-15 Wednesday
 
 > Today I customized ESLint to keep code tidy and standardized within a project. 
