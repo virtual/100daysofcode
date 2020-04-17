@@ -31,6 +31,7 @@
   - Day 24: Testing and Code Quality Fundamentals
   - Day 25: Finding Errors with Linting
   - Day 26: Finding Errors with Linting & Validating Correctness with Unit Tests
+  - Day 28: Validating Correctness with Unit Testing
 - Front-end Masters
   - [React Storybook with Emma Bostian (FEM)](https://livestream.com/accounts/4894689/events/9027490/videos/202820134)
   - [CSS In-Depth, v3, Estelle Weyl (FEM)](https://frontendmasters.com/workshops/css-in-depth-v3/)
@@ -39,6 +40,8 @@
     - Day 04: Pseudo-selectors
 - Read Code Complete
   - Day 10: History of programming languages
+- Codepen
+  - Day 27: [Snaking Timeline](https://codepen.io/virtual/pen/bGVpdyN)  ✓
 - Animations / maniuplations with SVG
 - Create a game with an isometric view
 - Create a virtual pet site
@@ -51,6 +54,36 @@
 - FCC AWS Certification
 
 ----------
+
+## R3 Day 28: 2020-04-17 Friday
+
+- Unit test:
+  - Setup test with describe
+  - Arrow functions in mocha are discouraged because they break the binding to `this`
+  - Setup suite of tests w/ context
+  - mocha is not recursive by default, need to pass recursive flag `npm test -- --recursive`
+  - you can add `test/mocha.opts` (deprecated) to override default setting; add to file: `--recursive` or see [.mocharc.json](https://boneskull.com/mocha-v6/)
+- Testing asynchronous code
+  - Add a callback to `it`, usually called `done()`
+- Testing promises
+  - return the promise
+  - then put the assertion in `.then` or `.catch`
+  - do not use callback (do not use `done()`)
+
+
+```js
+describe("Reservation Suite", function(){
+  context("Date and Time Combination", function(){
+    it("should return a ISO 8601 date and time with valid input", function(){
+      const date = "2020/04/17";
+      const time = "04:53 PM";
+
+      Reservation.combineDateTime(date, time)
+        .should.equal("2020-04-17T16:53:00.000Z");
+    });
+  });
+});
+```  
 
 ## R3 Day 27: 2020-04-16 Thursday
 
