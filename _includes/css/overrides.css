@@ -34,3 +34,6 @@ table th {
   font-weight: 600;
   vertical-align: bottom;
 }
+body {
+  word-break: break-word;
+}

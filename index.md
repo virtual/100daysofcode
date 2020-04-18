@@ -57,6 +57,26 @@
 
 ## R3 Day 28: 2020-04-17 Friday
 
+- Test Doubles
+  - A replacement for any component of executable code (module or method)
+  - Simplified
+  - May be hard-coded
+  - Isolated, consistent, and fast
+  - Sinon.js is one library, sinon-chai is a module we can use with Chai for readability: `npm install sinon@2 sinon-chai -D`
+- A test stub verifies indirect inputs by providing a controlled response.
+- A test spy records indirect outputs by reporting on how the request was made for later verification. 
+- A mock object verifies indirect outputs by setting up expectations and throwing an exception if it's used unexpectedly.
+- A fake object just runs faster with less functionality. 
+- And a dummy object specifies values used for testing. 
+- xunitpatterns.com and martinfowler.com for more info
+
+
+Book ref: xUnit Test Patterns: Refactoring Test Code by Gerard Meszaros  
+
+## R3 Day 28: 2020-04-17 Friday
+
+> Back to more testing with Mocha and Chai. Set up example tests for unit tests, callbacks and promises. Mocha doesn't use arrow functions in order to keep the correct binding for `this`. R3D28/#100DaysOfCode https://www.lynda.com/Node-js-tutorials/Node-js-Testing-Code-Quality/587672-2.html
+
 - Unit test:
   - Setup test with describe
   - Arrow functions in mocha are discouraged because they break the binding to `this`
