@@ -32,6 +32,7 @@
   - Day 25: Finding Errors with Linting
   - Day 26: Finding Errors with Linting & Validating Correctness with Unit Tests
   - Day 28: Validating Correctness with Unit Testing
+  - Day 29: Replacing and Inspecting with Stubs, Spies, and Mocks
 - Front-end Masters
   - [React Storybook with Emma Bostian (FEM)](https://livestream.com/accounts/4894689/events/9027490/videos/202820134)
   - [CSS In-Depth, v3, Estelle Weyl (FEM)](https://frontendmasters.com/workshops/css-in-depth-v3/)
@@ -55,7 +56,9 @@
 
 ----------
 
-## R3 Day 28: 2020-04-17 Friday
+## R3 Day 29: 2020-04-18 Saturday
+
+> Learning how to test code and watch if it successfully creates entries & which actions are performed. Test doubles, stubs, spies & mocks. Not understanding everything... but more info can also be found in this 800+ page book! http://xunitpatterns.com 🙈 R3D29/#100DaysOfCode
 
 - Test Doubles
   - A replacement for any component of executable code (module or method)
@@ -70,6 +73,38 @@
 - And a dummy object specifies values used for testing. 
 - xunitpatterns.com and martinfowler.com for more info
 
+Overriding dependencies
+- Testing dependencies is integration, not unit testing
+- 3 main dependency maniuplation libaries:
+  1. Mockery (easiest, shows warnings)
+  1. Proxyquire (offers more granular control): `npm install proxyquire -D`
+  1. Rewire (can override modules, but doesn't support es6 or transpilers like Babel)
+- Stub update in package.json: `"test": "cross-env DEBUG=nadia:* mocha"`
+
+__Process of Stubbing a Custom Response__
+- Replicate how the method responds:
+  - Is it returning a value, throwing an exception, or is it a promise that resolves or rejects? 
+  - Once you know how the response will be made you'll need to replicate what is being returned. The goal should be to match the structure. 
+  - If it returns an integer, the stub will need to return an integer, and so forth. 
+- The easiest way to discover this is to console.log the actual response if the API documentation isn't available or you're not sure.
+
+Example: testing a module that updates the database:
+- How can we use a wrapped stub? 
+- In our application, the best target will be create, which uses save to insert a reservations record into the database. Create uses that response to return an ID. 
+- To do this, we'll wrap the database, replace the run method, and return a resolved promise that has the correct structure. 
+
+__Observing interactions with Spies__
+- spies record information about function calls
+- How are we going to use spies in our application? 
+-It'd be useful to check how the validator was called when creating a reservation. 
+- The validator should only be called once. When called through create, it should be called with a transformed reservation.  
+
+__Sinon Mocks__
+- Control how a unit of code is being used
+- Gives no responses
+- Tests how many times called
+- Tests with which arguments
+- Example, ensure db is only called once when saving
 
 Book ref: xUnit Test Patterns: Refactoring Test Code by Gerard Meszaros  
 
