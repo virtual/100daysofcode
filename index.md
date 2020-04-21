@@ -33,6 +33,7 @@
   - Day 26: Finding Errors with Linting & Validating Correctness with Unit Tests
   - Day 28: Validating Correctness with Unit Testing
   - Day 29: Replacing and Inspecting with Stubs, Spies, and Mocks
+  - Day 30: Reporting on Your Entire Codebase ✓
 - Front-end Masters
   - [React Storybook with Emma Bostian (FEM)](https://livestream.com/accounts/4894689/events/9027490/videos/202820134)
   - [CSS In-Depth, v3, Estelle Weyl (FEM)](https://frontendmasters.com/workshops/css-in-depth-v3/)
@@ -42,11 +43,12 @@
 - Read Code Complete
   - Day 10: History of programming languages
 - Codepen
-  - Day 27: [Snaking Timeline](https://codepen.io/virtual/pen/bGVpdyN)  ✓
+  - Day 27: [Snaking Timeline](https://codepen.io/virtual/pen/bGVpdyN) ✓
+- Update webserver to support LetsEncrypt ACMEv2
+  - Day 31: Updated to Debian 10 ✓
 - Animations / maniuplations with SVG
 - Create a game with an isometric view
 - Create a virtual pet site
-- Update server for TLS
 - Mod a game (Minecraft)
 - Continue developing out [Libworx](https://github.com/virtual/libworx)
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
@@ -55,6 +57,179 @@
 - FCC AWS Certification
 
 ----------
+
+## R3 Day 31: 2020-04-20 Monday
+
+> Been putting this off since January—updated my webserver to the next OS version.
+> 
+> Killed off MariaDB on recommended purge/cleanup, but thankfully when I reinstalled it, all my databases were still there. Small miracles. 🌟 R3D31/#100DaysOfCode
+
+## R3 Day 30: 2020-04-19 Sunday
+
+> Spent the day learning https://istanbul.js.org/ and code coverage. What is it? The measure (%) of how much code is executed with a given operation. (Goal: 100% coverage!) R3D30/#100DaysOfCode 
+> 
+> - Executed statements
+> - Branches
+> - Called, defined functions
+> - Executed lines
+>
+> 🎵 Bonus: why do you run the Istanbul test coverage library with `nyc` instead of `istanbul`? It's a reference to the song "Istanbul (not Constantinople)" from They Might Be Giants! https://www.youtube.com/watch?v=xo0X77OBJUg
+
+### What is code coverage?
+
+- Code coverage: the measure of how much code is executed with a given operation (%)
+- Four types, the proportion of:
+  1. Executed statements
+  1. Branches
+  1. Called, defined functions
+  1. Executed lines
+- The percentages will often be pretty close to each other, but you can have 100% line execution but miss out on some branches. 
+- Reports also show uncovered lines, which are not covered by any test
+
+__Statements__--perform an action in code
+  - can be many lines
+  - consists of a group of keywords
+  - examples:
+    - content in an `if... else` block
+    - declaring a variable `const...`
+    - what executes in a `while` loop
+
+__Branches__--each statement within a conditional
+  - include conditions, logical ors, ands and not (`||, &&, !`), ternary operator
+  - examples:
+  ```js
+  if (condition) {
+    statement1(); //branch 1
+  } else {
+    statement2(); //branch 2
+    statement3(); //branch 2
+  }
+  ```
+
+__Function__--a function that is never called
+
+__Line__--a line that is never executed
+
+### How do we implement code coverage?
+
+Code coverage libraries:
+- Blanket.js - no longer maintained
+- JSCoverage - no longer maintained
+- [Istanbul](https://istanbul.js.org/): active and still preferred in 2020
+  - 🎵 Music reference, run with `nyc` as a ref to [Istanbul (not Constantinople) - They Might Be Giants](https://www.youtube.com/watch?v=xo0X77OBJUg)
+  - Reports
+    - Text
+    - HTML
+    - LCOV (a code coverage standard)
+
+Install:
+- add `nyc` to dev dependencies: `npm install nyc -D`
+- add coverage to package.json: `"coverage": "cross-env DEBUG=nadia:* nyc --reporter=text --reporter=html mocha"`
+- Give test runner as argument (mocha): `npm run -s coverage`
+- Ignore coverage files from .eslintignore
+
+Functional Testing
+- Based on business requirements
+- Describes what a function does, not how
+- Libraries:
+  - Phantom.js (Casper.js)
+  - Selenium WebDriver (Nightwatch, webdriver io)
+  - SuperAgent (Chai HTTP)
+
+Example user stories for Functional Testing:
+
+As a user, I want to:
+- See a reservation form
+- Book a table.
+- Submit a valid reservation 
+- Be thanked upon success. 
+- Submit an invalid reservation
+- Be informed that there's a problem.  
+
+Installing Chai HTTP: 
+`npm install chai-http -D`
+
+__Chai docs on using .get(), end__
+
+Because the end function is passed a callback, assertions are run asynchronously. Therefore, a mechanism must be used to notify the testing framework that the callback has completed. Otherwise, the test will pass before the assertions are checked.
+
+For example, in the Mocha test framework, this is accomplished using the done callback, which signal that the callback has completed, and the assertions can be verified:
+```js
+it('fails, as expected', function(done) { // <= Pass in done callback
+  chai.request('http://localhost:8080')
+  .get('/')
+  .end(function(err, res) {
+    expect(res).to.have.status(123);
+    done();                               // <= Call done to signal callback end
+  });
+});
+
+it('succeeds silently!', function() {   // <= No done callback
+  chai.request('http://localhost:8080')
+  .get('/')
+  .end(function(err, res) {
+    expect(res).to.have.status(123);    // <= Test completes before this runs
+  });
+});
+```
+
+When done is passed in, Mocha will wait until the call to done(), or until the timeout expires. done also accepts an error parameter when signaling completion.
+
+Need to parse HTML to check for valid output? Check out cheerio.js
+
+__"100% Test" coverage:__
+- Does not mean that your application is bug free. 
+- Does not mean that you wrote good tests, it just means that your tests didn't fail. 
+- Tests could not be properly isolated so unexpected behavior could still occur.
+- Does not deliver new functionality
+- Not a substitute for peer code review.
+
+Open source continuous integration: 
+- Buildbot
+- Jenkins
+- Strider CD
+
+Continuous Integration as a Service:
+- CircleCI
+- Gitlab
+- TravisCI
+- Heroku (I think?)
+
+CI Features to look for:
+- Matches your prod environment
+- Easy to configure and use
+- Scalable
+- Integrates with your workflow
+
+### Establishing Code Standards 
+- try a eslint config
+- jsdocs to require good docs, require-jsdoc, valid-jsdoc 
+- Mocha rules: eslint-program-mocha
+
+### Links:
+- [Working Variation on FCC Metric-Imperial Converter with Code Coverage](https://glitch.com/~virtual-fcc-infosec-mi-reporting)
+- [Lynda Certificate: Node.js: Testing and Code Quality](https://www.lynda.com/ViewCertificate/6924CC0424CC49838A7FE00599CFA611?utm_source=directlink&utm_medium=sharing&utm_campaign=certificate)
+- [Nadia Repo](https://github.com/virtual/lynda-nodejs-testing)
+
+### [VSCode plugins recommended](https://twitter.com/spences10/status/1251802889280008198):
+
+_Mine are here:_ https://satinflame.com/uses
+
+_Brad Traversy_
+- Live Server
+- Live Sass Compiler
+- ES7/React/Redux/GraphQL Snippets
+- Vetur
+- Auto Tag Rename
+- Bracket Colorizer
+- Chrome Debugger
+- Git Lens
+- Dotenv
+- Quokka
+- Python
+- PHP Intellisense
+- Docker
+- Auto Markdown Preview
 
 ## R3 Day 29: 2020-04-18 Saturday
 
