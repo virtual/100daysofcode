@@ -46,6 +46,8 @@
   - Day 27: [Snaking Timeline](https://codepen.io/virtual/pen/bGVpdyN) ✓
 - Update webserver to support LetsEncrypt ACMEv2
   - Day 31: Updated to Debian 10 ✓
+- IBM Design Thinking
+  - Day 31: Practitioner Badge ✓
 - Animations / maniuplations with SVG
 - Create a game with an isometric view
 - Create a virtual pet site
@@ -53,7 +55,7 @@
 - Continue developing out [Libworx](https://github.com/virtual/libworx)
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
 - Consider apps that might help Toastmaster groups online (Timer, Feedback forms)
-- IBM Design Thinking
+
 - FCC AWS Certification
 
 ----------
@@ -63,6 +65,41 @@
 > Been putting this off since January—updated my webserver to the next OS version.
 > 
 > Killed off MariaDB on recommended purge/cleanup, but thankfully when I reinstalled it, all my databases were still there. Small miracles. 🌟 R3D31/#100DaysOfCode
+
+### IBM Practitioner
+
+Restless reinvention
+
+- _“The last best experience that anyone has anywhere, becomes the minimum expectation for the experience they want everywhere.”_ - Bridget Van Kralingen
+- __restless reinvention__
+a principle of Enterprise Design Thinking that represents active continuous testing and learning in order to improve the solution to a problem
+- Visualize your ideas, so that your team and users can understand them clearly. It does need to communicate the idea enough for someone else to understand it and give you feedback.
+- The next time you have a new idea to share with your team, before you tell them about it, draw it on paper. Think about how a diagram or visual representation might convey something that words couldn’t. 
+- Ideate!
+- Prompts like “...on the moon” automatically trigger non-obvious ideas. And that’s how you get to something no one else does yet.Try thinking of your users’ problem in a different context, like “without modern technology,” or “in the year 3019.”
+- Take risks: Let’s talk about failure
+
+Include a variety of voices
+- Enterprise Design Thinking asks that you collaborate as a whole team to get the job done.
+- __Diverse Empowered Teams__
+an Enterprise Design Thinking Principle that represents that a group of people with varied perspectives more successfully make decisions together and work toward shared goals
+- Ideate
+- Cluster like ideas
+- Build off eachother's ideas
+- Come to some alignment on a path forward
+- Build alignment across your team, __alignment__ a state of agreement and understanding on a group decision that includes follow-through on that decision
+  - Next time you’re in a meeting where the conversation spins in circles, ask everyone to grab something to write with, visualize their thoughts, and then take turns sharing.
+  - Next time you’re in a meeting where only one or two people share their opinion, hold a silent and anonymous voting session to expose everyone’s viewpoints.
+- Start sharing stories
+- __Playbacks__
+an Enterprise Design Thinking Key, story-based presentations that bring stakeholders and whole teams together in a safe space to exchange feedback
+- Alignment: 
+  - Starting a new project or initiative. Answer questions like: _Who will be the users and stakeholders? What experience are we trying to improve and why?_
+  - Deciding as a team on a future experience for your users. Answer questions like: _What do we think our users need to be successful? How are we going to serve those needs?_
+  - Reviewing progress as you deliver. Answer questions like: _Do we successfully deliver value to our users? Are we still aligned as a team?_
+
+Planning
+- In design thinking, to solve for an actual need that exists in the world, you must take the time to write clear problem statements around your intent: What problem are you solving, for whom, and why?
 
 ## R3 Day 30: 2020-04-19 Sunday
 
