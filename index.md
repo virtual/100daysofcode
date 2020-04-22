@@ -6,6 +6,7 @@
 - Continue through [Javascript30](https://javascript30.com/)
   - Day 01: Challenge 08 ✓
   - Day 09: Challenge 09 ✓
+  - Day 33: Challenge 10 ✓
 - freeCodeCamp
   - Information Security and QA overview section
     - Day 05: Finish new Javascript Algorithm challenges, began ChaiJS
@@ -48,6 +49,8 @@
   - Day 31: Updated to Debian 10 ✓
 - IBM Design Thinking
   - Day 31: Practitioner Badge ✓
+- Stylelint
+  - Day 32: Initial stylelint with ordering  
 - Animations / maniuplations with SVG
 - Create a game with an isometric view
 - Create a virtual pet site
@@ -55,10 +58,51 @@
 - Continue developing out [Libworx](https://github.com/virtual/libworx)
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
 - Consider apps that might help Toastmaster groups online (Timer, Feedback forms)
-
 - FCC AWS Certification
 
 ----------
+
+## R3 Day 33: 2020-04-22 Wednesday
+
+> Checkbox ranges using Shift! And now that I know how to incorporate them, I'll need to make sure more of my projects use them. 
+> 
+> ☑️ Challenge 10/#javascript30 
+R3D33/#100DaysOfCode https://virtual-javascript30.herokuapp.com/
+
+## R3 Day 32: 2020-04-21 Tuesday
+
+> After learning more about ESLinting, I added similar functionality for .scss to a project using stylelint! Lots of information and plugins out there, but I'd love to see examples of your .stylelintrc files too if you use it. R3D32/#100DaysOfCode https://github.com/stylelint/awesome-stylelint
+>
+> One of my goals for incorporating style linting is to be better at arranging my properties in a coherent manner. 
+> 
+> "If you can always count on certain properties being in the same place, you can understand the CSS a bit faster (less scanning)." https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/
+
+WIP Stylelinting 
+- [.stylelintrc.json WIP](https://github.com/virtual/shoreline/blob/master/.stylelintrc.json)
+- packages: 
+```json
+"stylelint": "^13.3.3",
+"stylelint-config-rational-order": "^0.1.2",
+"stylelint-declaration-block-no-ignored-properties": "^2.3.0",
+"stylelint-order": "^4.0.0",
+```
+- All .scss comments should be on their own line to prevent bugs
+- `npx stylelint source/_assets/sass/FILE.scss --fix` to autofix
+
+__Stylelint tips:__
+
+Glad you're learning to use stylelint! The 50+ rules that [limit language features](https://stylelint.io/user-guide/rules/list#limit-language-features) are often overlooked. They are `*-pattern`, `*-blacklist`, `*-whitelist` and `*-max-*` rules that you can use to enforce non-stylistic conventions in your CSS.
+
+```json
+{
+  "declaration-no-important": true,
+  "media-feature-name-whitelist": ["min-width"],
+  "selector-class-pattern": "^[a-z][a-zA-Z0-9]+$",
+  "selector-max-id": 0,
+  "unit-whitelist": ["rem"]
+}
+```
+To enforce `rem` units, `min-width` media queries, camelCase selectors and so on.
 
 ## R3 Day 31: 2020-04-20 Monday
 
