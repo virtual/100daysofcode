@@ -26,7 +26,8 @@
     - Day 19: POST with form data, GET route
     - Day 20: DELETE route
     - Day 21: PUT route
-    - Day 22: Functional tests
+    - Day 22: Functional tests (POST)
+    - Day 34: Functional tests (POST)
 - [Node.js: Testing and Code Quality - Jon Peck](https://www.lynda.com/Node-js-tutorials/Node-js-Testing-Code-Quality/587672-2.html)
   - Day 23: Intro
   - Day 24: Testing and Code Quality Fundamentals
@@ -43,6 +44,7 @@
     - Day 04: Pseudo-selectors
 - Read Code Complete
   - Day 10: History of programming languages
+  - Day 34: Programming _into_ the language
 - Codepen
   - Day 27: [Snaking Timeline](https://codepen.io/virtual/pen/bGVpdyN) ✓
 - Update webserver to support LetsEncrypt ACMEv2
@@ -61,6 +63,52 @@
 - FCC AWS Certification
 
 ----------
+
+## R3 Day 35: 2020-04-24 Friday
+
+> Back to #freecodecamp's 2nd InfoSec challenge--I'm still not understanding how best to write functional tests. It appears that I need to learn more about returning error statuses from the API. (Any recommendations on related reading?) 🤔 R3D35/#100DaysOfCode #chaijs
+
+Add coverage to [FCC Issue Tracker Glitch project](https://virtual-fcc-issue-tracker.glitch.me):
+
+- Add __test/mocha.opts__:
+  ```bash
+  tests
+  --recursive
+  ```
+- Add coverage script to package.json: `"coverage": "nyc --reporter=text --reporter=html mocha -u tdd"`
+
+```
+------------------------|---------|----------|---------|---------|--------------------------------
+File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s              
+------------------------|---------|----------|---------|---------|--------------------------------
+All files               |   29.29 |     4.85 |      24 |   32.41 |                                
+ app                    |   23.23 |     3.13 |       0 |   26.74 |                                
+  assertion-analyser.js |    1.54 |        0 |       0 |    1.92 | 31-128                         
+  server.js             |   64.71 |       25 |       0 |   64.71 | 26,32,43,52-61                 
+ app/controllers        |   51.72 |        0 |   71.43 |   51.72 |                                
+  dataHandler.js        |   51.72 |        0 |   71.43 |   51.72 | 36-40,43-65                    
+ app/routes             |   28.83 |     7.84 |   24.14 |   31.68 |                                
+  api.js                |   38.98 |    13.33 |   54.55 |   39.66 | 27,88,133,147-255              
+  fcctesting.js         |   17.31 |        0 |    5.56 |   20.93 | 38-41,46-49,54-57,63-73,77-102 
+------------------------|---------|----------|---------|---------|--------------------------------
+```
+
+[FCC Issue Tracker Reference](https://glitch.com/edit/#!/fcc-issue-tracker-project?path=tests/2_functional-tests.js:1:0)
+
+## R3 Day 34: 2020-04-23 Thursday
+
+> Digging into CSS & JS SourceMaps; add ".sourceMaps()" to webpack mix.
+> 
+> I'll be adding these into my clients' websites as I work on them—an easier method to debug code without needing to ship an unminified version to production! R3D34/#100DaysOfCode https://css-tricks.com/should-i-use-source-maps-in-production/
+
+Add `sourceMaps()` to __webpack.mix.js__:
+
+```js
+  mix.js('source/_assets/js/main.js', 'js')
+    .sourceMaps(productionToo = true, 
+      type = 'eval-source-map')
+    ...
+```  
 
 ## R3 Day 33: 2020-04-22 Wednesday
 
