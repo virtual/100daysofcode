@@ -64,6 +64,99 @@
 
 ----------
 
+## R3 Day 36: 2020-04-25 Saturday
+
+> Reviewing HTTP response statuses sent in APIs. It seems that there's not even agreement over the correct status for GET for an element that does not exist in DB (404/204/null object/500?), but I now have plenty of references! R3D36/#100DaysOfCode
+https://nordicapis.com/best-practices-api-error-handling 
+
+- [HTTP/1.1: Status Code Definitions](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
+- _"It’s in the 4XX range, so you know the problem was on the client side..."_ [Best Practices for API Error Handling](https://nordicapis.com/best-practices-api-error-handling/)
+- [IETF publication RFC 7807](https://tools.ietf.org/html/rfc7807)
+- [IETF List of Responses](https://tools.ietf.org/html/rfc7231#section-6.3.5)
+
+Example of [404 response](https://gitlab.com/pragmaticreviews/node-mocha-chai/-/blob/master/index.js):
+```js
+// GET (BY ID)
+app.get("/api/tasks/:id" , (request, response) => {
+    const taskId = request.params.id;
+    const task = tasks.find(task => task.id === parseInt(taskId));
+    if(!task) return response.status(404).send("The task with the provided ID does not exist.");
+    response.send(task);
+});
+```
+
+Recommended example (ref RFC 7807) from [Best Practices for REST API Error Handling](https://www.baeldung.com/rest-api-error-handling-best-practices):
+
+This schema is composed of five parts:
+
+1. __type__ — A URI identifier that categorizes the error
+1. __title__ — A brief, human-readable message about the error
+1. __status__ — The HTTP response code (optional)
+1. __detail__ — A human-readable explanation of the error
+1. __instance__ — A URI that identifies the specific occurrence of the error
+
+```json
+{
+    "type": "/errors/incorrect-user-pass",
+    "title": "Incorrect username or password.",
+    "status": 403,
+    "detail": "Authentication failed due to incorrect username or password.",
+    "instance": "/login/log/abc123"
+}
+```
+
+For example, in HTML, a problem could be embedded by [encapsulating JSON in a script tag (pg 16)](https://tools.ietf.org/html/rfc7807):
+```json   
+<script type="application/problem+json">
+  {
+    "type": "https://example.com/probs/out-of-credit",
+    "title": "You do not have enough credit.",
+    "detail": "Your current balance is 30, but that costs 50.",
+    "instance": "/account/12345/msgs/abc",
+    "balance": 30,
+    "accounts": ["/account/12345",
+                "/account/67890"]
+  }
+</script>
+```
+
+Example from [twitter API](https://api.twitter.com/1.1/statuses/mentions_timeline.json):
+
+```json
+{
+  "errors":[{
+    "message":"Sorry, that page does not exist",
+    "code":34
+  }
+]}
+```
+
+Example from facebook API:
+```json
+{
+   "error": {
+      "message": "An active access token must be used to query information about the current user.",
+      "type": "OAuthException",
+      "code": 2500,
+      "fbtrace_id": "A6S6sVDcfVJd7p7vcOABR0d"
+   }
+}
+```
+
+Example from Twilio API:
+```json
+{
+  "code": 21211,
+  "message": "The 'To' number 5551234567 is not a valid phone number.",
+  "more_info": "https://www.twilio.com/docs/errors/21211",
+  "status": 400
+}
+```
+
+### Questions
+
+- What is the proper REST response code for a valid request but an empty data? 204, 404? empty object?
+
 ## R3 Day 35: 2020-04-24 Friday
 
 > Back to #freecodecamp's 2nd InfoSec challenge--I'm still not understanding how best to write functional tests. It appears that I need to learn more about returning error statuses from the API. (Any recommendations on related reading?) 🤔 R3D35/#100DaysOfCode #chaijs
