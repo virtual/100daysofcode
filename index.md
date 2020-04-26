@@ -27,7 +27,9 @@
     - Day 20: DELETE route
     - Day 21: PUT route
     - Day 22: Functional tests (POST)
-    - Day 34: Functional tests (POST)
+    - Day 35: Functional tests (POST)
+    - Day 36: Researching API HTTP Responses
+    - Day 37: Sending MongoDB boolean from deconstructed array
 - [Node.js: Testing and Code Quality - Jon Peck](https://www.lynda.com/Node-js-tutorials/Node-js-Testing-Code-Quality/587672-2.html)
   - Day 23: Intro
   - Day 24: Testing and Code Quality Fundamentals
@@ -63,6 +65,14 @@
 - FCC AWS Certification
 
 ----------
+
+## R3 Day 37: 2020-04-26 Sunday
+
+Oof.
+
+> ¯\_(ツ)_/¯ 3 hours on deconstructing a boolean to send in a MongoDB query. Still no idea.
+https://glitch.com/edit/#!/virtual-fcc-issue-tracker?path=routes/api.js:128:22 R3D37/#100DaysOfCode
+
 
 ## R3 Day 36: 2020-04-25 Saturday
 
