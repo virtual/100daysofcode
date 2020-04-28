@@ -37,3 +37,39 @@ table th {
 body {
   word-break: break-word;
 }
+a {
+  color: #a71068;
+}
+
+a:visited {
+  color: #920d5a;
+}
+
+body {
+  border-top-color: #a71068;
+}
+
+a:focus, a:hover {
+  color: #920d5a;
+} 
+blockquote {
+  border-color: rgba(167, 16, 104, .1);
+  background: rgba(167, 16, 104, .1);
+  position: relative;
+  border-left: 5px solid #920d5a;
+}
+
+blockquote:before {
+  content: "\f081";
+  position: absolute;
+  top: 5px;
+  left: -30px;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: #920d5a;
+} 
