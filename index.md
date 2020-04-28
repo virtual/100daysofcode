@@ -4,9 +4,9 @@
 ## ⭐ Some ideas for round 3: ⭐ 
 
 - Continue through [Javascript30](https://javascript30.com/)
-  - Day 01: Challenge 08 ✓
-  - Day 09: Challenge 09 ✓
-  - Day 33: Challenge 10 ✓
+  - Day 01: [Challenge 08 ✓](https://virtual-javascript30.herokuapp.com/08-canvas/index.html)
+  - Day 09: [Challenge 09 ✓](https://virtual-javascript30.herokuapp.com/09-dev-tools/index.html)
+  - Day 33: [Challenge 10 ✓](https://virtual-javascript30.herokuapp.com/10-checkbox-range/index.html)
 - freeCodeCamp
   - Information Security and QA overview section
     - Day 05: Finish new Javascript Algorithm challenges, began ChaiJS
@@ -16,12 +16,12 @@
     - Day 11: Pug/Passport - Node & Express
     - Day 12: Passport - Node & Express
     - Day 13: Passport - Node & Express
-  - Infosec/QA - Metric-Imperial Converter
+  - [Infosec/QA - Metric-Imperial Converter ✓](https://virtual-fcc-mi-convert.glitch.me)
     - Day 14: Metric-Imperial Converter
     - Day 15: Metric-Imperial Converter
     - Day 16: Metric-Imperial Converter
     - Day 17: Metric-Imperial Converter ✓
-  - Infosec/QA - Issue Tracker
+  - [Infosec/QA - Issue Tracker ✓](https://virtual-fcc-issue-tracker.glitch.me)
     - Day 18: POST with fake data
     - Day 19: POST with form data, GET route
     - Day 20: DELETE route
@@ -30,7 +30,8 @@
     - Day 35: Functional tests (POST)
     - Day 36: Researching API HTTP Responses
     - Day 37: Sending MongoDB boolean from deconstructed array
-- [Node.js: Testing and Code Quality - Jon Peck](https://www.lynda.com/Node-js-tutorials/Node-js-Testing-Code-Quality/587672-2.html)
+    - Day 38: Functional tests ✓
+- [Node.js: Testing and Code Quality - Jon Peck ✓](https://www.lynda.com/Node-js-tutorials/Node-js-Testing-Code-Quality/587672-2.html)
   - Day 23: Intro
   - Day 24: Testing and Code Quality Fundamentals
   - Day 25: Finding Errors with Linting
@@ -44,7 +45,7 @@
     - Day 02: Intro and review of failures
     - Day 03: Attribute selectors and specificity
     - Day 04: Pseudo-selectors
-- Read Code Complete
+- Read _Code Complete_
   - Day 10: History of programming languages
   - Day 34: Programming _into_ the language
 - Codepen
@@ -65,6 +66,27 @@
 - FCC AWS Certification
 
 ----------
+
+
+## R3 Day 38: 2020-04-27 Monday
+
+> Finished the second infosec challenge for #freecodecamp! I learned a lot about returning statuses, errors, and messages from the API and more types of assertions with #ChaiJS. R3D38/#100DaysOfCode https://glitch.com/~virtual-fcc-issue-tracker
+
+```bash
+------------------------|---------|----------|---------|---------|---------------------------------------------------------------------------
+File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                         
+------------------------|---------|----------|---------|---------|---------------------------------------------------------------------------
+All files               |   43.84 |    42.11 |   30.77 |   47.83 |                                                                           
+ app                    |   23.23 |     3.13 |       0 |   26.74 |                                                                           
+  assertion-analyser.js |    1.54 |        0 |       0 |    1.92 | 31-128                                                                    
+  server.js             |   64.71 |       25 |       0 |   64.71 | 26,32,43,52-61                                                            
+ app/controllers        |   57.14 |    57.69 |   44.44 |   57.14 |                                                                           
+  dataHandler.js        |   57.14 |    57.69 |   44.44 |   57.14 | 16-17,20-21,24-25,28-29,32-33,47,50,54,57,60                              
+ app/routes             |   54.93 |    51.06 |   41.38 |   59.09 |                                                                           
+  api.js                |   76.67 |    65.75 |     100 |   77.53 | 27,74,77,83,86,89,105-110,159,191,198,208,211,214,217,220-222,232,265,278 
+  fcctesting.js         |   17.31 |        0 |    5.56 |   20.93 | 38-41,46-49,54-57,63-73,77-102                                            
+------------------------|---------|----------|---------|---------|---------------------------------------------------------------------------
+```
 
 ## R3 Day 37: 2020-04-26 Sunday
 
