@@ -137,3 +137,34 @@ nav h1 {
     width: 78%;
   }
 }
+
+.content {
+  font-size: 18px;
+}
+
+.content, li {
+  line-height: 1.6
+}
+li { margin-bottom:0;}
+li + li { margin-top: .5rem;}
+
+li pre {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+code {
+  background: rgba(146, 13, 90, 0.1);
+  padding: 5px 10px;
+}
+
+blockquote p {
+  color: #920d5a;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+blockquote {
+  padding: 12px 24px;
+  margin-bottom:  1rem;
+}

@@ -359,7 +359,8 @@ R3D33/#100DaysOfCode https://virtual-javascript30.herokuapp.com/
 > After learning more about ESLinting, I added similar functionality for .scss to a project using stylelint! Lots of information and plugins out there, but I'd love to see examples of your .stylelintrc files too if you use it. R3D32/#100DaysOfCode https://github.com/stylelint/awesome-stylelint
 >
 > One of my goals for incorporating style linting is to be better at arranging my properties in a coherent manner. 
-> 
+
+
 > "If you can always count on certain properties being in the same place, you can understand the CSS a bit faster (less scanning)." https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/
 
 WIP Stylelinting 
