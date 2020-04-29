@@ -67,6 +67,118 @@
 
 ----------
 
+## R3 Day 39: 2020-04-28 Tuesday
+
+## [Getting Started with Google Kubernetes Engine](https://www.coursera.org/learn/google-kubernetes-engine/lecture/Ad1z3/what-are-containers)
+
+Labs: [Introduction to Containers and Docker](https://github.com/ScottyVG/public-org/blob/master/google-cloud-kubernetes/google-cloud-training.org)
+
+### Introduction to Containers
+
+History of servers
+
+- Dedicated Server -- Maintain the hardware (physical servers), OS Kernal, Dependencies and Application code.
+- Virtual Machine -- Abstract the hardware, maintain Kernal, Dependencies and Application code.
+- Container -- Abstract the hardware, virtualize the Kernal (decoupled), maintain Dependencies and Application code. 
+
+- CGroup (consistency group) - allows you to manage these containers and keep them consistent _2006_
+- Docker - you can only edit the top layer "container layer" _2013_
+
+### Introduction to Docker
+
+IRL: you push and pull images from a registry
+
+What are advantages of containers versus virtual machines?
+- They share parts of the OS, but not common dependencies, so they start fast and can run anywhere with the same kernel.
+ 
+Which types of actions can you perform in a container Dockerfile?
+- CMD - what command to run in the container
+- FROM - creates a layer a Docker image
+
+What is the default hostname to publish a Docker image to the Google Registry?
+- gcr.io 
+
+### Clusters, Nodes, and Pods
+
+__Kubernetes__ -- an open-source orchestrator for a container environment, it manages and delegates jobs
+
+
+- Users
+- Master cluster server - controls jobs, scheduling, etcd (a cluster is a set of computers that works as an instance that manages nodes); masters manage jobs by scheduling jobs on nodes based on loads (move to nodes with free-space or move jobs away from nodes that pulling a lot of resources), Master runs K8s
+- Nodes (Kubelets, a K8s engine)
+- Pod -- analogous to "VM", they share networking and storage separate from the node, yaml config (containers, ports), can have redundant pods as failsafes
+
+### Services, Labels, and Selectors
+
+- Service assigns a fixed IP to your pod replicas, acts as communication beween pods, acts as a load balancer, defined in yaml
+- Labels -- metadata you can assign to any API object and represent identity, used for filtering/searching pods; e.g. 
+  ```js
+  Pod1
+  App: MyApp
+  Phase: prod
+  Role: FE
+
+  Pod2
+  App: MyApp
+  Phase: test
+  Role: BE
+  ```
+
+### Volumes
+
+- Docker provides data storage for containers, volumes do not share data
+- K8s volume allow containers in pods to share data and be stateful
+- Volume -- a directory 
+
+Why use Kubernetes (i.e. what benefit does it provide to containers?)
+- It provides a set of APIs that you can use to deploy containers on a set of nodes.
+ 
+What does a pod specify?
+- A set of containers sharing networking and storage.
+
+Which component do you use to send requests to API servers on masters to configure the cluster?
+- `kubectl`
+
+### Deployments and Rolling Updates
+
+- Deployments rely on replicate sets to manage and run pods
+- allow you to name a set of pods, and a number, to make sure pods run evenly
+- if one node (pod) is unhealthy, the deployment will spin up a new pod to keep the number correct
+- rolling updates allow you to gradually update from one image version to another, moves one pod from one ReplicaSet to another ReplicaSet with a newer image version until they've all been moved
+
+### Canary and Blue-Green Deployments
+
+- Canary deployment relies on a service to load-balance the traffic to primary pods based on label selectors
+- Blue-Green deployment uses the service label selector to switch all traffic from one deployment to another
+
+### Lab: Deploying to Kubernetes
+
+What is the purpose of the ReplicaSet?
+- To create a desired number of pods. 
+
+When are rolling deployments triggered?
+- If the deployment’s pod template changes. 
+
+How does Kubernetes choose instances in the second deployment of a canary deployment?
+- The service points to instances in both deployments with a common selector.
+ 
+### Creating a Continuous Delivery Pipeline
+
+Deploying a continuous delivery pipeline enables you to build, stage, test, and deploy your application, using automated triggers and manual approvals. (e.g. Spinnaker or Jenkins)
+
+- Build steps - analogous to running commands in a script (Spinnaker)
+- Pushing to a certain branch may update a dev environment or later prod (Jenkins)
+- Spinnaker and Jenkins are deployed as K8s applications, they are not stand-alone services
+
+Why is it useful to set up continuous delivery with Kubernetes?
+- Continuous delivery is one of the main advantages of containers because containers are so portable.
+
+Which 3 deployments are used in our instance of Kubernetes continuous delivery?
+- Development, canary, and production.
+ 
+Which of the following best describes why we used Jenkins for continous delivery with Kubernetes?
+- You can use any tool, but it’s good to try one that’s well documented in a controlled environment first.
+
 
 ## R3 Day 38: 2020-04-27 Monday
 
