@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 blockquote {
   border: 1px solid #3498db47;
   background: #3498db17;
@@ -13,7 +16,7 @@ blockquote p {
   font-style: normal;
   padding: 0;
   margin: 0;
-  font-size: .9em;
+  font-size: 0.9em;
   color: #333;
   font-weight: 300;
 }
@@ -22,11 +25,13 @@ h2 {
   margin-top: 20px;
 }
 
-table, table td, table th {
+table,
+table td,
+table th {
   border: 1px solid #ccc;
   border-collapse: collapse;
   padding: 5px;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 table th {
   background: #585858;
@@ -49,12 +54,13 @@ body {
   border-top-color: #a71068;
 }
 
-a:focus, a:hover {
+a:focus,
+a:hover {
   color: #920d5a;
-} 
+}
 blockquote {
-  border-color: rgba(167, 16, 104, .1);
-  background: rgba(167, 16, 104, .1);
+  border-color: rgba(167, 16, 104, 0.1);
+  background: rgba(167, 16, 104, 0.1);
   position: relative;
   border-left: 5px solid #920d5a;
 }
@@ -72,4 +78,62 @@ blockquote:before {
   -moz-osx-font-smoothing: grayscale;
 
   color: #920d5a;
-} 
+}
+.container,
+nav,
+.container .four.columns,
+.container .eleven.columns {
+  width: 100%;
+}
+
+.container .columns {
+  padding: 15px 30px;
+}
+
+@media (min-width: 768px) {
+  .container .four.columns {
+    width: 35%;
+    float: left;
+  }
+
+  .container .eleven.columns {
+    width: 65%;
+    float: right;
+  }
+}
+.container > .columns {
+  margin: 0;
+}
+
+ul {
+  padding-left: 25px;
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+nav h1 {
+  font-size: 24px;
+}
+
+@media (min-width: 992px) {
+  .container .four.columns {
+    width: 25%;
+  }
+
+  .container .eleven.columns {
+    width: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  .container .four.columns {
+    width: 22%;
+  }
+
+  .container .eleven.columns {
+    width: 78%;
+  }
+}
