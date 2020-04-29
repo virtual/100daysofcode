@@ -439,7 +439,8 @@ Planning
 > - Branches
 > - Called, defined functions
 > - Executed lines
->
+
+
 > 🎵 Bonus: why do you run the Istanbul test coverage library with `nyc` instead of `istanbul`? It's a reference to the song "Istanbul (not Constantinople)" from They Might Be Giants! https://www.youtube.com/watch?v=xo0X77OBJUg
 
 ### What is code coverage?
@@ -684,7 +685,7 @@ describe("Reservation Suite", function(){
 
 ## R3 Day 27: 2020-04-16 Thursday
 
-> Code things that make you happy! Smiling face with open mouth and smiling eyes
+> Code things that make you happy! 😄
 >
 > Saw examples of snaking timelines from #smashingconf and haven't stopped thinking about them since! Snake
 > 
