@@ -67,6 +67,55 @@
 
 ----------
 
+## R3 Day 40: 2020-04-29 Wednesday
+
+> Set up docker-compose files and now know a little more about running Docker containers. 🤗 The VSCode Docker plugin is also helpful for seeing active containers and writing out Dockerfiles! (https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) https://www.lynda.com/Docker-tutorials/Leverage-power-Docker/2211315/2221492-4.html R3D40/#100DaysOfCode
+
+> 🛥️ Bonus: Ahoy! Docker containers are named after shipping containers. More nautical analogies can be found in this article on demystifying Docker and Kubernetes. https://apifriends.com/api-management/docker-and-kubernetes/
+
+[Docker for Developers](https://www.lynda.com/Docker-tutorials/Leverage-power-Docker/2211315/2221492-4.html)
+
+### Getting started
+
+- In a project, create a new `Dockerfile` (no extension) and `.dockerignore` (ignores files to place in container)
+- In `.dockerignore`:
+  ```
+  node_modules
+  npm-debug.log
+  ```
+- `Dockerfile` is the blueprint for a container
+- VSCode plugin: _ms-azuretools.vscode-docker_
+- To build image: `docker build -t folder/backend .` (`-t` =	Name and optionally a tag in the ‘name:tag’ format), (`.` runs the [command](https://docs.docker.com/engine/reference/commandline/docker/))
+- `docker images` - see all images you've created or used
+- `docker rmi folder/backend` - rm an image
+- `docker run -p 4000:4000 folder/backend` (`-p` is for port)
+- while docker is running `docker ps` to list running images (process status)
+- `docker stop cc3cc` or `docker start cc3cc` - force stop/start
+- `docker pull` / `docker push`
+
+### Develop with Docker
+
+- Goal: Separate the front end and back end on different containers with a volume for data
+- `docker-compose.yml` - tells Docker which applications we want to start
+- `links` - listed services must run before this; they are defined in the file (eg `mongo`)
+- `docker-compose build` to build images in the docker-compose file
+- `docker logs cc3cc` if you want to view logs for a particular service
+- `docker-compose stop` - turn off all 
+- `docker run -p 3000:3000 lynda/frontend`
+
+### Fullstack--putting it together
+
+- Created `fullstack` folder. Put `frontend` and `backend` folders in and rename to `client` and `api`, respectively.
+- Move the `backend/docker-compose.yml` to main folder
+- Update dirs for `backend/Dockerfile`
+- Add `version` to docker-compose.yml, to indicate the version of docker-compose
+- `links` vs. `depends_on`?
+- recommend to start each image separately to prevent crashes: 
+  1. `docker-compose up -d mongo` 
+  1. `docker-compose up -d app` 
+  1. `docker-compose up -d client` 
+- s
+
 ## R3 Day 39: 2020-04-28 Tuesday
 
 ## [Getting Started with Google Kubernetes Engine](https://www.coursera.org/learn/google-kubernetes-engine/lecture/Ad1z3/what-are-containers)
