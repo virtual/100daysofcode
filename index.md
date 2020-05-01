@@ -67,6 +67,26 @@
 
 ----------
 
+## R3 Day 41: 2020-04-30 Thursday
+
+> Learning about continuous integration with TravisCI and automatically building from GitHub to DockerHub. All interesting pieces--will be neat to figure this out with my own server! R3D41/#100DaysOfCode
+
+[Lynda Cert](https://www.lynda.com/ViewCertificate/0E72D7CC5A334178961D74BAC32A76CE?utm_source=directlink&utm_medium=sharing&utm_campaign=certificate)
+
+### Continuous integration
+
+- Travis file: `.travis.yml` indicates to TravisCI what environment we need to run the test on, where do we deploy the app
+- Name the docker apps using your docker hub username :) `docker build -t satinflame/lyndanode`
+- Create github repo
+- Activate in TravisCI
+- Trigger a build from dashboard
+- You can set ENV vars directly in travis-ci.org
+
+### Other builds
+
+- Swarms, allows you to cluser, manage and schedule containers
+- Kubernetes, similar to swarm but is industry standard
+
 ## R3 Day 40: 2020-04-29 Wednesday
 
 > Set up docker-compose files and now know a little more about running Docker containers. 🤗 The VSCode Docker plugin is also helpful for seeing active containers and writing out Dockerfiles! (https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) https://www.lynda.com/Docker-tutorials/Leverage-power-Docker/2211315/2221492-4.html R3D40/#100DaysOfCode
