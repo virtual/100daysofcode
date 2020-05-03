@@ -50,6 +50,8 @@
   - Day 34: Programming _into_ the language
 - Codepen
   - Day 27: [Snaking Timeline](https://codepen.io/virtual/pen/bGVpdyN) ✓
+  - Day 42: [Minecraft Drawing Grid](https://codepen.io/virtual/full/vYNeajo)
+  - Day 43: [Minecraft Drawing Grid](https://codepen.io/virtual/full/vYNeajo)
 - Update webserver to support LetsEncrypt ACMEv2
   - Day 31: Updated to Debian 10 ✓
 - IBM Design Thinking
@@ -66,6 +68,38 @@
 - FCC AWS Certification
 
 ----------
+
+## R3 Day 44: 2020-05-03 Sunday
+
+> Today I'm learning the basics of Phaser.js for game development--including preload, create, and update functions. R3D44/#100DaysOfCode  https://www.codecademy.com/learn/learn-phaser
+
+[Game Development with Phaser.JS](https://www.codecademy.com/courses/learn-phaser/lessons/learn-phaser-basics/exercises/hello-world)
+ 
+
+Phaser games are composed of Scenes that we define and pass to Phaser in the config! A Phaser Scene can have any of the following functions:
+
+- `preload()`, where we load in external files (or “assets”) to our game. 
+- `create()`, where we define the GameObjects that are necessary at the start of our game. 
+- `update()` where we define animation and interaction in our game (more on this in later exercises!)
+- Phaser does its best to call update() 60 times per second, so delta‘s values will normally be around 16.6.
+
+```js
+ scene: {
+    preload,
+    create
+  }
+```
+Note that we are using JavaScript’s property-value shorthand, the code above would be the same if we passed `{ preload: preload, create: create }` to the scene instead.
+
+## R3 Day 43: 2020-05-02 Saturday
+
+> Worked a little more on my minecraft drawing tool, fixing the grid on load and touch on mobile; but mostly just watching Dance Gavin Dance music videos. R3D43/#100DaysOfCode
+
+## R3 Day 42: 2020-05-01 Friday
+
+> Ready for the weekend! Made a silly little Minecraft doodle tool with jQuery. Interesting challenge using mousedown / mousemove to keep drawing. Happy May Day! 🌼
+R3D42/#100DaysOfCode 
+https://codepen.io/virtual/full/vYNeajo
 
 ## R3 Day 41: 2020-04-30 Thursday
 
