@@ -57,7 +57,10 @@
 - IBM Design Thinking
   - Day 31: Practitioner Badge ✓
 - Stylelint
-  - Day 32: Initial stylelint with ordering  
+  - Day 32: Initial stylelint with ordering
+- Codecademy [Game Development with Phaser.JS](https://www.codecademy.com/courses/learn-phaser/lessons/learn-phaser-basics/exercises/hello-world)
+  - Day 44: Learn Phaser: Basics
+  - Day 45: Learn Phaser: Basics ✓
 - Animations / maniuplations with SVG
 - Create a game with an isometric view
 - Create a virtual pet site
@@ -69,12 +72,26 @@
 
 ----------
 
+## R3 Day 45: 2020-05-04 Monday
+
+> Finished the first section on learning Phaser.js for game development--managing state and taking input. I'm also pretty excited for the next section (it involves coloring a pegasus!)  🦄🎨 R3D45/#100DaysOfCode https://www.codecademy.com/courses/learn-phaser/lessons/learn-phaser-basics
+
+__Phaser.JS__
+- 3 ways for Storing State
+  1. Create global variables for everything.
+  1. Attach important variables to the Scene itself by creating a new property for this from within a Scene method.
+  1. Create a `gameState` object and keep track of the state there.
+- In order to interact with a GameObject, we need to call the `setInteractive()` method on it. The setInteractive() method tells Phaser to listen in for interactive events on the GameObject.
+
+__SEO__
+- [Blue Array Academy - SEO Manager Certification](https://www.bluearrayacademy.com/)
+- [Moz Academy](https://academy.moz.com/)
+
 ## R3 Day 44: 2020-05-03 Sunday
 
 > Today I'm learning the basics of Phaser.js for game development--including preload, create, and update functions. R3D44/#100DaysOfCode  https://www.codecademy.com/learn/learn-phaser
 
 [Game Development with Phaser.JS](https://www.codecademy.com/courses/learn-phaser/lessons/learn-phaser-basics/exercises/hello-world)
- 
 
 Phaser games are composed of Scenes that we define and pass to Phaser in the config! A Phaser Scene can have any of the following functions:
 
