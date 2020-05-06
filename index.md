@@ -61,6 +61,7 @@
 - Codecademy [Game Development with Phaser.JS](https://www.codecademy.com/courses/learn-phaser/lessons/learn-phaser-basics/exercises/hello-world)
   - Day 44: Learn Phaser: Basics
   - Day 45: Learn Phaser: Basics ✓
+  - Day 46: Learn Phaser: Color a Pegasus
 - Animations / maniuplations with SVG
 - Create a game with an isometric view
 - Create a virtual pet site
@@ -71,6 +72,12 @@
 - FCC AWS Certification
 
 ----------
+
+## R3 Day 46: 2020-05-05 Tuesday
+
+> A little more fun with Phaser.js today; also trying it out on my own with a little Maplestory panda and some physics like bounce and gravity. R3D46/#100DaysOfCode https://cdpn.io/virtual/debug/QWjaRRo/ZoMBaznVqdEk
+
+- [Phaser physics](https://phaser.io/tutorials/making-your-first-phaser-3-game/part7)
 
 ## R3 Day 45: 2020-05-04 Monday
 
