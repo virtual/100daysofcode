@@ -73,6 +73,22 @@
 
 ----------
 
+## R3 Day 47: 2020-05-06 Wednesday
+
+Continuing Codecademy: Physics
+
+__SEO__
+
+4 pillars:
+- How your site currently performs: _strengths_ and _weaknesses_
+- Who your _real_ competitors are
+- What are your _business goals_
+- Identify your _key enablers_
+
+SEO Roadmap document
+
+For new sites, focus on content with low competition keywords
+
 ## R3 Day 46: 2020-05-05 Tuesday
 
 > A little more fun with Phaser.js today; also trying it out on my own with a little Maplestory panda and some physics like bounce and gravity. R3D46/#100DaysOfCode https://cdpn.io/virtual/debug/QWjaRRo/ZoMBaznVqdEk
