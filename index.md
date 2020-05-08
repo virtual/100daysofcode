@@ -70,12 +70,60 @@
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
 - Consider apps that might help Toastmaster groups online (Timer, Feedback forms)
 - FCC AWS Certification
+- Blue Array Academy
+  - Day 46: Welcome
+  - Day 46: How does search work?
+  - Day 47: SEO strategies
+  - Day 47: Site audit: Checklist & requirements
+  - Day 48, 49: Technical audit of your site (part 1)
+  - Technical audit of your site (part 2)
+  - Producing a technical backlog
+  - Benchmarking against your competitors
+  - SEO common pitfalls
+  - Creating a Keyword Universe
+  - Creating your North Star Goal
+  - Creating your monthly report
+  - Site structure and internal linking
+  - Creating a content strategy
+  - Technical on-page optimisation
+  - Local SEO
+  - International SEO
+  - SEO for eCommerce
+  - Backlink strategy
+  - Maintenance SEO
+  - Ongoing learning
+  - Managing SEO in-house
+  - Blue Array certification
 
 ----------
 
+## R3 Day 49: 2020-05-08 Friday
+
+Continuing Codecademy: Phaser.js Physics
+
+__SEO__
+
+What are the ideal lengths for meta?
+
+## R3 Day 48: 2020-05-07 Thursday
+
+Continuing Codecademy: Phaser.js Physics
+
+__SEO__
+
+Questions
+
+- What backlinks do my competitors have?
+- How do I remove results for that I don't want users landing on - robots?
+- Force redirect * to www?
+- Can I add more links within my content to my other content?
+- Can I get redirects working for older links?
+- Rel next/prev for pagination?
+- Can we add lastmod to OU Campus sitemaps?
+
 ## R3 Day 47: 2020-05-06 Wednesday
 
-Continuing Codecademy: Physics
+Continuing Codecademy: Phaser.js Physics
 
 __SEO__
 
