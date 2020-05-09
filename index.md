@@ -70,13 +70,13 @@
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
 - Consider apps that might help Toastmaster groups online (Timer, Feedback forms)
 - FCC AWS Certification
-- Blue Array Academy
+- Blue Array Academy SEO Manager Certification
   - Day 46: Welcome
   - Day 46: How does search work?
   - Day 47: SEO strategies
   - Day 47: Site audit: Checklist & requirements
   - Day 48, 49: Technical audit of your site (part 1)
-  - Technical audit of your site (part 2)
+  - Day 50: Technical audit of your site (part 2)
   - Producing a technical backlog
   - Benchmarking against your competitors
   - SEO common pitfalls
@@ -96,6 +96,16 @@
   - Blue Array certification
 
 ----------
+
+## R3 Day 50: 2020-05-09 Saturday
+
+Continuing Codecademy: Phaser.js Physics
+
+__SEO__
+
+- Check Google Search Console for mobile issues
+- Are robots.txt blocking rendering resources (CSS) that would support mobile-rendering?
+- What are the errors/warnings in GSC?
 
 ## R3 Day 49: 2020-05-08 Friday
 
