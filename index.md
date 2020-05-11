@@ -62,6 +62,12 @@
   - Day 44: Learn Phaser: Basics
   - Day 45: Learn Phaser: Basics ✓
   - Day 46: Learn Phaser: Color a Pegasus
+  - Day 47: Learn Phaser: Color a Pegasus ✓
+  - Day 48: Learn Phaser: Physics
+  - Day 49: Learn Phaser: Physics
+  - Day 50: Learn Phaser: Physics
+  - Day 51: Learn Phaser: Physics
+  - Day 52: Learn Phaser: Physics ✓
 - Animations / maniuplations with SVG
 - Create a game with an isometric view
 - Create a virtual pet site
@@ -77,8 +83,8 @@
   - Day 47: Site audit: Checklist & requirements
   - Day 48, 49: Technical audit of your site (part 1)
   - Day 50: Technical audit of your site (part 2)
-  - Producing a technical backlog
-  - Benchmarking against your competitors
+  - Day 51: Producing a technical backlog
+  - Day 51, 52: Benchmarking against your competitors
   - SEO common pitfalls
   - Creating a Keyword Universe
   - Creating your North Star Goal
@@ -96,6 +102,15 @@
   - Blue Array certification
 
 ----------
+
+## R3 Day 52: 2020-05-11 Monday
+
+Finished Learn Phaser: Physics from Codecademy; working on technical audit for SEO
+
+
+## R3 Day 51: 2020-05-10 Sunday
+
+> I've been continuing to play with bugs in Phaser.JS game tutorials and also working out SEO issues while going through Blue Array Academy's course. (Good info--free through May.) R3D47-51/#100DaysOfCode
 
 ## R3 Day 50: 2020-05-09 Saturday
 
