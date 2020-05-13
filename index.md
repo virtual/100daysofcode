@@ -103,6 +103,48 @@
 
 ----------
 
+## R3 Day 53: 2020-05-12 Tuesday
+
+> A little DGD while I code an AMP example with GDG! Thanks for teaching the #AMPstudygroup 
+benmorss! R3D53/#100DaysOfCode https://virtual-gdg-amp-study-group.glitch.me
+
+Feeling motivated an inspired today. Morning yoga, Toastmasers, and an AMP workshop with GDG!
+
+[AMP Project: Cheesey Bikes](https://virtual-gdg-amp-study-group.glitch.me/)
+
+### AMP Notes
+
+Tell the browser your page is AMP using one of two ways:
+
+```html
+<html amp ...>
+<html ⚡ ...>
+```
+
+- web vitals
+- AMP adds tags to HTML
+- Supported by Bing and IE
+- AMP cache optimizes images for you (for mobile only)
+- In the future, "AMP-like" pages might also be given AMP treatment
+- Can validate AMP pages with [chrome amp validator plugin](https://chrome.google.com/webstore/detail/amp-validator/nmoffdblmcmgeicmolmhobpoocbbmknc/related?hl=en)
+- if you add `#development=1` to the end of the URL, errors will log to the console
+
+Types implemented: 
+- `amp-img`
+- `amp-youtube` - Some videos require scripts
+- `amp-carousel`
+- `amp-sidebar`
+
+Required scripts have to go before the call to the element.
+
+Extra:
+
+- MacOS has a nice emoji shortcut (Ctrl + Cmd + Space) in which you can find and select the lightning bolt
+- https://amp.dev
+- https://amp-wp.org/
+- https://camp.samples.amp.dev/
+- https://amp.dev/documentation/courses/
+
 ## R3 Day 52: 2020-05-11 Monday
 
 Finished Learn Phaser: Physics from Codecademy; working on technical audit for SEO
