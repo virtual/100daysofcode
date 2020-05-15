@@ -52,8 +52,9 @@
   - Day 27: [Snaking Timeline](https://codepen.io/virtual/pen/bGVpdyN) ✓
   - Day 42: [Minecraft Drawing Grid](https://codepen.io/virtual/full/vYNeajo)
   - Day 43: [Minecraft Drawing Grid](https://codepen.io/virtual/full/vYNeajo)
-- Update webserver to support LetsEncrypt ACMEv2
-  - Day 31: Updated to Debian 10 ✓
+- Server updates
+  - Day 31: Updated to support LetsEncrypt ACMEv2 and to Debian 10 ✓
+  - Day 54: Explore docker droplets, SSH config
 - IBM Design Thinking
   - Day 31: Practitioner Badge ✓
 - Stylelint
@@ -68,12 +69,15 @@
   - Day 50: Learn Phaser: Physics
   - Day 51: Learn Phaser: Physics
   - Day 52: Learn Phaser: Physics ✓
-- Animations / maniuplations with SVG
+- GDG Meetup 
+  - Day 53: AMP Website Workshop
+- Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
+  - Day 55: Hero, subfeature
+- Animations / manipulations with SVG
 - Create a game with an isometric view
 - Create a virtual pet site
 - Mod a game (Minecraft)
 - Continue developing out [Libworx](https://github.com/virtual/libworx)
-- Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
 - Consider apps that might help Toastmaster groups online (Timer, Feedback forms)
 - FCC AWS Certification
 - Blue Array Academy SEO Manager Certification
@@ -102,6 +106,15 @@
   - Blue Array certification
 
 ----------
+
+## R3 Day 55: 2020-05-14 Thursday
+
+> Working on mocking up my faux Knight University website using TailwindCSS. I'm finding maybe it's best to componentize all the things (like buttons for example.) Maybe even headers (h2, h3)? Curious how others manage this. https://github.com/virtual/knightu R3D55/#100DaysOfCode 
+
+## R3 Day 54: 2020-05-13 Wednesday
+
+> Set up my SSH config on my Mac so I don't have to type crazy-long SSH lines! Logged into DigitalOcean to look into setting up a droplet to try out Docker, TDD & CI/CD and realized I still have no idea what I'm doing.  https://www.ostechnix.com/how-to-create-ssh-alias-in-linux/
+R3D54/#100DaysOfCode
 
 ## R3 Day 53: 2020-05-12 Tuesday
 
@@ -144,6 +157,19 @@ Extra:
 - https://amp-wp.org/
 - https://camp.samples.amp.dev/
 - https://amp.dev/documentation/courses/
+
+### Docker 
+
+__Ports__
+- When starting the container, you define which ports you want to bind using the `-p <host-port>:<container-port>` option. The Redis container exposes the service on port 6379. If you wanted to map this port directly on the host, we'd use the option -p 6379:6379.
+`docker run -d --name redisHostPort -p 6379:6379 redis:latest`
+- Binding directories (also known as volumes) in Docker is similar to binding ports using the option `-v <host-dir>:<container-dir>`. When a directory is mounted, the files which exist in that directory on the host can be accessed by the container and any data changed/written to the directory inside the container will be stored on the host.
+- Docker allows you to use $PWD as a placeholder for the current directory.
+- If we wanted to interact with the container  instead of just seeing the output, we'd include the options -ti.
+
+? Maybe
+- https://learning.oreilly.com/live-training/courses/building-a-deployment-pipeline-with-jenkins-2/0636920384960/
+- https://learning.oreilly.com/live-training/courses/design-patterns-boot-camp/0636920434450/
 
 ## R3 Day 52: 2020-05-11 Monday
 
