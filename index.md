@@ -107,6 +107,80 @@
 
 ----------
 
+## R3 Day 56: 2020-05-15 Friday
+
+> Typed arrays are actually objects, and they don't have access to array methods like push and pop. 🤷‍♀️ But they can help with performance by only allocating the memory space you need. Learning data structures from #freecodecamp! #womenintech #codenewbie R3D56/#100DaysOfCode
+
+VSCode: `Alt + Shift` to [edit multiple lines](https://stackoverflow.com/a/50196011/720970)
+
+
+### FCC Data Structures
+
+- __Typed Arrays__: allow you to define how much memory you want to give an array. 
+
+| Type |	Each element size in bytes |
+|---|---:|
+| `Int8Array`	 | 1 |
+| `Uint8Array` |	1 |
+| `Uint8ClampedArray` |	1 |
+| `Int16Array` |	2 |
+| `Uint16Array` |	2 |
+| `Int32Array` |	4 |
+| `Uint32Array` |	4 |
+| `Float32Array` |	4 |
+| `Float64Array` |	8 |
+
+Typed arrays do not have some of the methods traditional arrays have such as .pop() or .push(). Typed arrays are type object.
+
+- Learn how a Stack Works
+
+Last-In-First-Out using `.push()` and `.pop()`
+
+- Create a Stack Class
+- Create a Queue Class
+- Create a Priority Queue Class
+- Create a Circular Queue
+- Create a Set Class
+- Perform a Union on Two Sets
+- Perform an Intersection on Two Sets of Data
+- Perform a Difference on Two Sets of Data
+- Perform a Subset Check on Two Sets of Data
+- Create and Add to Sets in ES6
+- Remove items from a set in ES6
+- Use .has and .size on an ES6 Set
+- Use Spread and Notes for ES5 Set() Integration
+- Create a Map Data Structure
+- Create an ES6 JavaScript Map
+- Create a Hash Table
+- Work with Nodes in a Linked List
+- Create a Linked List Class
+- Remove Elements from a Linked List
+- Search within a Linked List
+- Remove Elements from a Linked List by Index
+- Add Elements at a Specific Index in a Linked List
+- Create a Doubly Linked List
+- Reverse a Doubly Linked List
+- Add a New Element to a Binary Search Tree
+- Find the Minimum and Maximum Value in a Binary - Search Tree
+- Check if an Element is Present in a Binary - Search Tree
+- Check if Tree is Binary Search Tree
+- Find the Minimum and Maximum Height of a Binary - Search Tree
+- Use Depth First Search in a Binary Search Tree
+- Use Breadth First Search in a Binary Search Tree
+- Delete a Leaf Node in a Binary Search Tree
+- Delete a Node with One Child in a Binary Search - Tree
+- Delete a Node with Two Children in a Binary - Search Tree
+- Invert a Binary Tree
+- Create a Trie Search Tree
+- Insert an Element into a Max Heap
+- Remove an Element from a Max Heap
+- Implement Heap Sort with a Min Heap
+- Adjacency List
+- Adjacency Matrix
+- Incidence Matrix
+- Breadth-First Search
+- Depth-First Search
+
 ## R3 Day 55: 2020-05-14 Thursday
 
 > Working on mocking up my faux Knight University website using TailwindCSS. I'm finding maybe it's best to componentize all the things (like buttons for example.) Maybe even headers (h2, h3)? Curious how others manage this. https://github.com/virtual/knightu R3D55/#100DaysOfCode 
