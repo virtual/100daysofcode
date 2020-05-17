@@ -111,6 +111,18 @@
 
 ----------
 
+## R3 Day 58: 2020-05-17 Sunday
+
+[Section 2: A Mini-Microservices App](https://github.com/virtual/microservices-blog)
+- which services will we recreate? One separate service for every _resource_ in our app: Posts and Comments
+- Consider the goals and responsibilities of each service
+- Dependencies: comments will have to know to tie to certain (existing) post
+
+App steps
+1. Create a new app via create react app
+1. Create an express-based project for the posts service
+1. Create an express-based project for the comments service
+
 ## R3 Day 57: 2020-05-16 Saturday
 
 [Microservices built with Node, React, Docker and Kubernetes](https://www.udemy.com/course/microservices-with-node-js-and-react)
