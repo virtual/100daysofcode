@@ -31,6 +31,8 @@
     - Day 36: Researching API HTTP Responses
     - Day 37: Sending MongoDB boolean from deconstructed array
     - Day 38: Functional tests ✓
+  - Data Structures
+    - Day 56
 - [Node.js: Testing and Code Quality - Jon Peck ✓](https://www.lynda.com/Node-js-tutorials/Node-js-Testing-Code-Quality/587672-2.html)
   - Day 23: Intro
   - Day 24: Testing and Code Quality Fundamentals
@@ -71,6 +73,8 @@
   - Day 52: Learn Phaser: Physics ✓
 - GDG Meetup 
   - Day 53: AMP Website Workshop
+- [Microservices with Node JS and React](https://www.udemy.com/course/microservices-with-node-js-and-react/)
+  - Day 57: Section 1: Fundamental Ideas Around Microservices
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Animations / manipulations with SVG
@@ -106,6 +110,35 @@
   - Blue Array certification
 
 ----------
+
+## R3 Day 57: 2020-05-16 Saturday
+
+[Microservices built with Node, React, Docker and Kubernetes](https://www.udemy.com/course/microservices-with-node-js-and-react)
+
+- A __monolith__ has _routing, middleware, business logic, and database access_ to implement __all__ features of the app
+- A single __microservice__ has _routing, middleware, business logic, and database access_ to implement __one__ features of the app
+- Data management between services is a large problem for microservices
+- Each service gets its own database
+- Services will never, ever reach into another service's database
+
+Communicating between services
+(not the same meaning as JavaScript)
+- __Sync__ - Services communicate with eachother using _direct requests_
+  - Service D requests (req/res) directly from Service A, B and C
+  - Easy to understand
+  - Service D won't need its own database
+- __Async__ - Services communicate with eachother using _events_
+  - Async #1 - uses an __Event bus__ - handles little notifications/objects that come from each service
+    - Once a service is connected, it can either emit events or receive events
+    - Event example: `type: UserQuery, data: {id: 1}`
+    - Uncommon; requires the same dependencies as Sync, but has additional downsides
+  - Async #2
+    - Start by creating a more specific expectation for req/res and what service should do: what is the minimum information needed for the database to return that information?
+    - May seem inefficient
+    - Services A, B, and C need to tell Service D when there is a related update to the data in database D
+    - Service D relies on others to emit an event (that flows into the event bus) in order to know to add information to its db
+    - Service D has zero dependencies
+    - Extremely fast
 
 ## R3 Day 56: 2020-05-15 Friday
 
