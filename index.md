@@ -111,6 +111,11 @@
 
 ----------
 
+## R3 Day 59: 2020-05-18 Monday
+
+- Find what is running on a port: `sudo lsof -i :3000`
+- Prevent returning undefined with an or-statement, e.g. `res.send(commentsByPostId[req.params.id] || [])`
+
 ## R3 Day 58: 2020-05-17 Sunday
 
 [Section 2: A Mini-Microservices App](https://github.com/virtual/microservices-blog)
