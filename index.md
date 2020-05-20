@@ -1,7 +1,6 @@
 # #100DaysOfCode
 
-
-## ⭐ Some ideas for round 3: ⭐ 
+## ⭐ Some ideas for round 3: ⭐
 
 - Continue through [Javascript30](https://javascript30.com/)
   - Day 01: [Challenge 08 ✓](https://virtual-javascript30.herokuapp.com/08-canvas/index.html)
@@ -71,10 +70,14 @@
   - Day 50: Learn Phaser: Physics
   - Day 51: Learn Phaser: Physics
   - Day 52: Learn Phaser: Physics ✓
-- GDG Meetup 
+- GDG Meetup
   - Day 53: AMP Website Workshop
 - [Microservices with Node JS and React](https://www.udemy.com/course/microservices-with-node-js-and-react/)
   - Day 57: Section 1: Fundamental Ideas Around Microservices
+  - Day 58: Section 2: A Mini-Microservices App (setup and services)
+  - Day 59: Section 2: A Mini-Microservices App (begin React components)
+  - Day 60: Section 2: A Mini-Microservices App (PostCreate)
+  - Day 61: Section 2: A Mini-Microservices App (CORS support)
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Animations / manipulations with SVG
@@ -109,16 +112,92 @@
   - Managing SEO in-house
   - Blue Array certification
 
-----------
+---
+
+## R3 Day 61: 2020-05-20 Wednesday
+
+### Different ways to define a React component
+
+You have to extend React.Component to create a stateful component which then will need a constructor and you'll be able to use the state.
+
+__Create Component using Class__
+```jsx
+class Main extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: "Hello React",
+    };
+  }
+  render() {
+    return (
+      <div>
+        {this.state.title}
+      </div>
+    )
+  }
+}
+```
+
+__Implicit__
+```jsx
+export default function Foo(props) {
+    return (
+        <div>My component</div>
+    )
+}
+```
+
+__Using arrow functions__
+
+Using an arrow function with a class property ensures that the method is always invoked with the component as the value for this, meaning that the manual rebinding here is redundant:
+
+`this.handleUpdateInput = this.handleUpdateInput.bind (this);`
+
+```jsx
+export default (details) => {
+  // code
+}
+```
+or from Dan Abramov:
+"Arrows work just fine if you give them implicit name first."
+```jsx
+const RenderDetails = (details) => {
+  // code
+}
+export default RenderDetails;
+```
+
+- Review using the Network tab (Inspect Elements) and focus on XHR
+- _What does XHR stand for?_ XMLHttpRequest is an API in the form of an object whose methods transfer data between a web browser and a web server. The object is provided by the browser's JavaScript environment.
+
+## R3 Day 60: 2020-05-19 Tuesday
+
+Begin adding React components
+
+## R3 Day 59: 2020-05-18 Monday
+
+### Determine React component hierarchy
+
+- App
+
+  - PostList
+    - CommentList
+    - CommentCreate
+  - PostCreate
+
+
 
 ## R3 Day 58: 2020-05-17 Sunday
 
 [Section 2: A Mini-Microservices App](https://github.com/virtual/microservices-blog)
+
 - which services will we recreate? One separate service for every _resource_ in our app: Posts and Comments
 - Consider the goals and responsibilities of each service
 - Dependencies: comments will have to know to tie to certain (existing) post
 
 App steps
+
 1. Create a new app via create react app
 1. Create an express-based project for the posts service
 1. Create an express-based project for the comments service
@@ -127,20 +206,21 @@ App steps
 
 [Microservices built with Node, React, Docker and Kubernetes](https://www.udemy.com/course/microservices-with-node-js-and-react)
 
-- A __monolith__ has _routing, middleware, business logic, and database access_ to implement __all__ features of the app
-- A single __microservice__ has _routing, middleware, business logic, and database access_ to implement __one__ features of the app
+- A **monolith** has _routing, middleware, business logic, and database access_ to implement **all** features of the app
+- A single **microservice** has _routing, middleware, business logic, and database access_ to implement **one** features of the app
 - Data management between services is a large problem for microservices
 - Each service gets its own database
 - Services will never, ever reach into another service's database
 
 Communicating between services
 (not the same meaning as JavaScript)
-- __Sync__ - Services communicate with eachother using _direct requests_
+
+- **Sync** - Services communicate with eachother using _direct requests_
   - Service D requests (req/res) directly from Service A, B and C
   - Easy to understand
   - Service D won't need its own database
-- __Async__ - Services communicate with eachother using _events_
-  - Async #1 - uses an __Event bus__ - handles little notifications/objects that come from each service
+- **Async** - Services communicate with eachother using _events_
+  - Async #1 - uses an **Event bus** - handles little notifications/objects that come from each service
     - Once a service is connected, it can either emit events or receive events
     - Event example: `type: UserQuery, data: {id: 1}`
     - Uncommon; requires the same dependencies as Sync, but has additional downsides
@@ -158,22 +238,21 @@ Communicating between services
 
 VSCode: `Alt + Shift` to [edit multiple lines](https://stackoverflow.com/a/50196011/720970)
 
-
 ### FCC Data Structures
 
-- __Typed Arrays__: allow you to define how much memory you want to give an array. 
+- **Typed Arrays**: allow you to define how much memory you want to give an array.
 
-| Type |	Each element size in bytes |
-|---|---:|
-| `Int8Array`	 | 1 |
-| `Uint8Array` |	1 |
-| `Uint8ClampedArray` |	1 |
-| `Int16Array` |	2 |
-| `Uint16Array` |	2 |
-| `Int32Array` |	4 |
-| `Uint32Array` |	4 |
-| `Float32Array` |	4 |
-| `Float64Array` |	8 |
+| Type                | Each element size in bytes |
+| ------------------- | -------------------------: |
+| `Int8Array`         |                          1 |
+| `Uint8Array`        |                          1 |
+| `Uint8ClampedArray` |                          1 |
+| `Int16Array`        |                          2 |
+| `Uint16Array`       |                          2 |
+| `Int32Array`        |                          4 |
+| `Uint32Array`       |                          4 |
+| `Float32Array`      |                          4 |
+| `Float64Array`      |                          8 |
 
 Typed arrays do not have some of the methods traditional arrays have such as .pop() or .push(). Typed arrays are type object.
 
@@ -228,17 +307,17 @@ Last-In-First-Out using `.push()` and `.pop()`
 
 ## R3 Day 55: 2020-05-14 Thursday
 
-> Working on mocking up my faux Knight University website using TailwindCSS. I'm finding maybe it's best to componentize all the things (like buttons for example.) Maybe even headers (h2, h3)? Curious how others manage this. https://github.com/virtual/knightu R3D55/#100DaysOfCode 
+> Working on mocking up my faux Knight University website using TailwindCSS. I'm finding maybe it's best to componentize all the things (like buttons for example.) Maybe even headers (h2, h3)? Curious how others manage this. https://github.com/virtual/knightu R3D55/#100DaysOfCode
 
 ## R3 Day 54: 2020-05-13 Wednesday
 
-> Set up my SSH config on my Mac so I don't have to type crazy-long SSH lines! Logged into DigitalOcean to look into setting up a droplet to try out Docker, TDD & CI/CD and realized I still have no idea what I'm doing.  https://www.ostechnix.com/how-to-create-ssh-alias-in-linux/
-R3D54/#100DaysOfCode
+> Set up my SSH config on my Mac so I don't have to type crazy-long SSH lines! Logged into DigitalOcean to look into setting up a droplet to try out Docker, TDD & CI/CD and realized I still have no idea what I'm doing. https://www.ostechnix.com/how-to-create-ssh-alias-in-linux/
+> R3D54/#100DaysOfCode
 
 ## R3 Day 53: 2020-05-12 Tuesday
 
-> A little DGD while I code an AMP example with GDG! Thanks for teaching the #AMPstudygroup 
-benmorss! R3D53/#100DaysOfCode https://virtual-gdg-amp-study-group.glitch.me
+> A little DGD while I code an AMP example with GDG! Thanks for teaching the #AMPstudygroup
+> benmorss! R3D53/#100DaysOfCode https://virtual-gdg-amp-study-group.glitch.me
 
 Feeling motivated an inspired today. Morning yoga, Toastmasers, and an AMP workshop with GDG!
 
@@ -250,7 +329,8 @@ Tell the browser your page is AMP using one of two ways:
 
 ```html
 <html amp ...>
-<html ⚡ ...>
+  <html ⚡ ...></html>
+</html>
 ```
 
 - web vitals
@@ -261,7 +341,8 @@ Tell the browser your page is AMP using one of two ways:
 - Can validate AMP pages with [chrome amp validator plugin](https://chrome.google.com/webstore/detail/amp-validator/nmoffdblmcmgeicmolmhobpoocbbmknc/related?hl=en)
 - if you add `#development=1` to the end of the URL, errors will log to the console
 
-Types implemented: 
+Types implemented:
+
 - `amp-img`
 - `amp-youtube` - Some videos require scripts
 - `amp-carousel`
@@ -277,23 +358,24 @@ Extra:
 - https://camp.samples.amp.dev/
 - https://amp.dev/documentation/courses/
 
-### Docker 
+### Docker
 
-__Ports__
+**Ports**
+
 - When starting the container, you define which ports you want to bind using the `-p <host-port>:<container-port>` option. The Redis container exposes the service on port 6379. If you wanted to map this port directly on the host, we'd use the option -p 6379:6379.
-`docker run -d --name redisHostPort -p 6379:6379 redis:latest`
+  `docker run -d --name redisHostPort -p 6379:6379 redis:latest`
 - Binding directories (also known as volumes) in Docker is similar to binding ports using the option `-v <host-dir>:<container-dir>`. When a directory is mounted, the files which exist in that directory on the host can be accessed by the container and any data changed/written to the directory inside the container will be stored on the host.
-- Docker allows you to use $PWD as a placeholder for the current directory.
-- If we wanted to interact with the container  instead of just seeing the output, we'd include the options -ti.
+- Docker allows you to use \$PWD as a placeholder for the current directory.
+- If we wanted to interact with the container instead of just seeing the output, we'd include the options -ti.
 
 ? Maybe
+
 - https://learning.oreilly.com/live-training/courses/building-a-deployment-pipeline-with-jenkins-2/0636920384960/
 - https://learning.oreilly.com/live-training/courses/design-patterns-boot-camp/0636920434450/
 
 ## R3 Day 52: 2020-05-11 Monday
 
 Finished Learn Phaser: Physics from Codecademy; working on technical audit for SEO
-
 
 ## R3 Day 51: 2020-05-10 Sunday
 
@@ -303,7 +385,7 @@ Finished Learn Phaser: Physics from Codecademy; working on technical audit for S
 
 Continuing Codecademy: Phaser.js Physics
 
-__SEO__
+**SEO**
 
 - Check Google Search Console for mobile issues
 - Are robots.txt blocking rendering resources (CSS) that would support mobile-rendering?
@@ -313,7 +395,7 @@ __SEO__
 
 Continuing Codecademy: Phaser.js Physics
 
-__SEO__
+**SEO**
 
 What are the ideal lengths for meta?
 
@@ -321,13 +403,13 @@ What are the ideal lengths for meta?
 
 Continuing Codecademy: Phaser.js Physics
 
-__SEO__
+**SEO**
 
 Questions
 
 - What backlinks do my competitors have?
 - How do I remove results for that I don't want users landing on - robots?
-- Force redirect * to www?
+- Force redirect \* to www?
 - Can I add more links within my content to my other content?
 - Can I get redirects working for older links?
 - Rel next/prev for pagination?
@@ -337,9 +419,10 @@ Questions
 
 Continuing Codecademy: Phaser.js Physics
 
-__SEO__
+**SEO**
 
 4 pillars:
+
 - How your site currently performs: _strengths_ and _weaknesses_
 - Who your _real_ competitors are
 - What are your _business goals_
@@ -357,38 +440,40 @@ For new sites, focus on content with low competition keywords
 
 ## R3 Day 45: 2020-05-04 Monday
 
-> Finished the first section on learning Phaser.js for game development--managing state and taking input. I'm also pretty excited for the next section (it involves coloring a pegasus!)  🦄🎨 R3D45/#100DaysOfCode https://www.codecademy.com/courses/learn-phaser/lessons/learn-phaser-basics
+> Finished the first section on learning Phaser.js for game development--managing state and taking input. I'm also pretty excited for the next section (it involves coloring a pegasus!) 🦄🎨 R3D45/#100DaysOfCode https://www.codecademy.com/courses/learn-phaser/lessons/learn-phaser-basics
 
-__Phaser.JS__
+**Phaser.JS**
+
 - 3 ways for Storing State
   1. Create global variables for everything.
   1. Attach important variables to the Scene itself by creating a new property for this from within a Scene method.
   1. Create a `gameState` object and keep track of the state there.
 - In order to interact with a GameObject, we need to call the `setInteractive()` method on it. The setInteractive() method tells Phaser to listen in for interactive events on the GameObject.
 
-__SEO__
+**SEO**
+
 - [Blue Array Academy - SEO Manager Certification](https://www.bluearrayacademy.com/)
 - [Moz Academy](https://academy.moz.com/)
 
 ## R3 Day 44: 2020-05-03 Sunday
 
-> Today I'm learning the basics of Phaser.js for game development--including preload, create, and update functions. R3D44/#100DaysOfCode  https://www.codecademy.com/learn/learn-phaser
+> Today I'm learning the basics of Phaser.js for game development--including preload, create, and update functions. R3D44/#100DaysOfCode https://www.codecademy.com/learn/learn-phaser
 
 [Game Development with Phaser.JS](https://www.codecademy.com/courses/learn-phaser/lessons/learn-phaser-basics/exercises/hello-world)
 
 Phaser games are composed of Scenes that we define and pass to Phaser in the config! A Phaser Scene can have any of the following functions:
 
-- `preload()`, where we load in external files (or “assets”) to our game. 
-- `create()`, where we define the GameObjects that are necessary at the start of our game. 
+- `preload()`, where we load in external files (or “assets”) to our game.
+- `create()`, where we define the GameObjects that are necessary at the start of our game.
 - `update()` where we define animation and interaction in our game (more on this in later exercises!)
 - Phaser does its best to call update() 60 times per second, so delta‘s values will normally be around 16.6.
 
 ```js
- scene: {
-    preload,
-    create
-  }
+scene: {
+  preload, create;
+}
 ```
+
 Note that we are using JavaScript’s property-value shorthand, the code above would be the same if we passed `{ preload: preload, create: create }` to the scene instead.
 
 ## R3 Day 43: 2020-05-02 Saturday
@@ -398,8 +483,8 @@ Note that we are using JavaScript’s property-value shorthand, the code above w
 ## R3 Day 42: 2020-05-01 Friday
 
 > Ready for the weekend! Made a silly little Minecraft doodle tool with jQuery. Interesting challenge using mousedown / mousemove to keep drawing. Happy May Day! 🌼
-R3D42/#100DaysOfCode 
-https://codepen.io/virtual/full/vYNeajo
+> R3D42/#100DaysOfCode
+> https://codepen.io/virtual/full/vYNeajo
 
 ## R3 Day 41: 2020-04-30 Thursday
 
@@ -439,7 +524,7 @@ https://codepen.io/virtual/full/vYNeajo
   ```
 - `Dockerfile` is the blueprint for a container
 - VSCode plugin: _ms-azuretools.vscode-docker_
-- To build image: `docker build -t folder/backend .` (`-t` =	Name and optionally a tag in the ‘name:tag’ format), (`.` runs the [command](https://docs.docker.com/engine/reference/commandline/docker/))
+- To build image: `docker build -t folder/backend .` (`-t` = Name and optionally a tag in the ‘name:tag’ format), (`.` runs the [command](https://docs.docker.com/engine/reference/commandline/docker/))
 - `docker images` - see all images you've created or used
 - `docker rmi folder/backend` - rm an image
 - `docker run -p 4000:4000 folder/backend` (`-p` is for port)
@@ -454,7 +539,7 @@ https://codepen.io/virtual/full/vYNeajo
 - `links` - listed services must run before this; they are defined in the file (eg `mongo`)
 - `docker-compose build` to build images in the docker-compose file
 - `docker logs cc3cc` if you want to view logs for a particular service
-- `docker-compose stop` - turn off all 
+- `docker-compose stop` - turn off all
 - `docker run -p 3000:3000 lynda/frontend`
 
 ### Fullstack--putting it together
@@ -464,10 +549,10 @@ https://codepen.io/virtual/full/vYNeajo
 - Update dirs for `backend/Dockerfile`
 - Add `version` to docker-compose.yml, to indicate the version of docker-compose
 - `links` vs. `depends_on`?
-- recommend to start each image separately to prevent crashes: 
-  1. `docker-compose up -d mongo` 
-  1. `docker-compose up -d app` 
-  1. `docker-compose up -d client` 
+- recommend to start each image separately to prevent crashes:
+  1. `docker-compose up -d mongo`
+  1. `docker-compose up -d app`
+  1. `docker-compose up -d client`
 - s
 
 ## R3 Day 39: 2020-04-28 Tuesday
@@ -482,7 +567,7 @@ History of servers
 
 - Dedicated Server -- Maintain the hardware (physical servers), OS Kernal, Dependencies and Application code.
 - Virtual Machine -- Abstract the hardware, maintain Kernal, Dependencies and Application code.
-- Container -- Abstract the hardware, virtualize the Kernal (decoupled), maintain Dependencies and Application code. 
+- Container -- Abstract the hardware, virtualize the Kernal (decoupled), maintain Dependencies and Application code.
 
 - CGroup (consistency group) - allows you to manage these containers and keep them consistent _2006_
 - Docker - you can only edit the top layer "container layer" _2013_
@@ -492,19 +577,21 @@ History of servers
 IRL: you push and pull images from a registry
 
 What are advantages of containers versus virtual machines?
+
 - They share parts of the OS, but not common dependencies, so they start fast and can run anywhere with the same kernel.
- 
+
 Which types of actions can you perform in a container Dockerfile?
+
 - CMD - what command to run in the container
 - FROM - creates a layer a Docker image
 
 What is the default hostname to publish a Docker image to the Google Registry?
-- gcr.io 
+
+- gcr.io
 
 ### Clusters, Nodes, and Pods
 
-__Kubernetes__ -- an open-source orchestrator for a container environment, it manages and delegates jobs
-
+**Kubernetes** -- an open-source orchestrator for a container environment, it manages and delegates jobs
 
 - Users
 - Master cluster server - controls jobs, scheduling, etcd (a cluster is a set of computers that works as an instance that manages nodes); masters manage jobs by scheduling jobs on nodes based on loads (move to nodes with free-space or move jobs away from nodes that pulling a lot of resources), Master runs K8s
@@ -514,32 +601,36 @@ __Kubernetes__ -- an open-source orchestrator for a container environment, it ma
 ### Services, Labels, and Selectors
 
 - Service assigns a fixed IP to your pod replicas, acts as communication beween pods, acts as a load balancer, defined in yaml
-- Labels -- metadata you can assign to any API object and represent identity, used for filtering/searching pods; e.g. 
-  ```js
-  Pod1
-  App: MyApp
-  Phase: prod
-  Role: FE
+- Labels -- metadata you can assign to any API object and represent identity, used for filtering/searching pods; e.g.
 
-  Pod2
-  App: MyApp
-  Phase: test
-  Role: BE
+  ```js
+  Pod1;
+  App: MyApp;
+  Phase: prod;
+  Role: FE;
+
+  Pod2;
+  App: MyApp;
+  Phase: test;
+  Role: BE;
   ```
 
 ### Volumes
 
 - Docker provides data storage for containers, volumes do not share data
 - K8s volume allow containers in pods to share data and be stateful
-- Volume -- a directory 
+- Volume -- a directory
 
 Why use Kubernetes (i.e. what benefit does it provide to containers?)
+
 - It provides a set of APIs that you can use to deploy containers on a set of nodes.
- 
+
 What does a pod specify?
+
 - A set of containers sharing networking and storage.
 
 Which component do you use to send requests to API servers on masters to configure the cluster?
+
 - `kubectl`
 
 ### Deployments and Rolling Updates
@@ -557,14 +648,17 @@ Which component do you use to send requests to API servers on masters to configu
 ### Lab: Deploying to Kubernetes
 
 What is the purpose of the ReplicaSet?
-- To create a desired number of pods. 
+
+- To create a desired number of pods.
 
 When are rolling deployments triggered?
-- If the deployment’s pod template changes. 
+
+- If the deployment’s pod template changes.
 
 How does Kubernetes choose instances in the second deployment of a canary deployment?
+
 - The service points to instances in both deployments with a common selector.
- 
+
 ### Creating a Continuous Delivery Pipeline
 
 Deploying a continuous delivery pipeline enables you to build, stage, test, and deploy your application, using automated triggers and manual approvals. (e.g. Spinnaker or Jenkins)
@@ -574,14 +668,16 @@ Deploying a continuous delivery pipeline enables you to build, stage, test, and 
 - Spinnaker and Jenkins are deployed as K8s applications, they are not stand-alone services
 
 Why is it useful to set up continuous delivery with Kubernetes?
+
 - Continuous delivery is one of the main advantages of containers because containers are so portable.
 
 Which 3 deployments are used in our instance of Kubernetes continuous delivery?
-- Development, canary, and production.
- 
-Which of the following best describes why we used Jenkins for continous delivery with Kubernetes?
-- You can use any tool, but it’s good to try one that’s well documented in a controlled environment first.
 
+- Development, canary, and production.
+
+Which of the following best describes why we used Jenkins for continous delivery with Kubernetes?
+
+- You can use any tool, but it’s good to try one that’s well documented in a controlled environment first.
 
 ## R3 Day 38: 2020-04-27 Monday
 
@@ -589,17 +685,17 @@ Which of the following best describes why we used Jenkins for continous delivery
 
 ```bash
 ------------------------|---------|----------|---------|---------|---------------------------------------------------------------------------
-File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                         
+File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 ------------------------|---------|----------|---------|---------|---------------------------------------------------------------------------
-All files               |   43.84 |    42.11 |   30.77 |   47.83 |                                                                           
- app                    |   23.23 |     3.13 |       0 |   26.74 |                                                                           
-  assertion-analyser.js |    1.54 |        0 |       0 |    1.92 | 31-128                                                                    
-  server.js             |   64.71 |       25 |       0 |   64.71 | 26,32,43,52-61                                                            
- app/controllers        |   57.14 |    57.69 |   44.44 |   57.14 |                                                                           
-  dataHandler.js        |   57.14 |    57.69 |   44.44 |   57.14 | 16-17,20-21,24-25,28-29,32-33,47,50,54,57,60                              
- app/routes             |   54.93 |    51.06 |   41.38 |   59.09 |                                                                           
-  api.js                |   76.67 |    65.75 |     100 |   77.53 | 27,74,77,83,86,89,105-110,159,191,198,208,211,214,217,220-222,232,265,278 
-  fcctesting.js         |   17.31 |        0 |    5.56 |   20.93 | 38-41,46-49,54-57,63-73,77-102                                            
+All files               |   43.84 |    42.11 |   30.77 |   47.83 |
+ app                    |   23.23 |     3.13 |       0 |   26.74 |
+  assertion-analyser.js |    1.54 |        0 |       0 |    1.92 | 31-128
+  server.js             |   64.71 |       25 |       0 |   64.71 | 26,32,43,52-61
+ app/controllers        |   57.14 |    57.69 |   44.44 |   57.14 |
+  dataHandler.js        |   57.14 |    57.69 |   44.44 |   57.14 | 16-17,20-21,24-25,28-29,32-33,47,50,54,57,60
+ app/routes             |   54.93 |    51.06 |   41.38 |   59.09 |
+  api.js                |   76.67 |    65.75 |     100 |   77.53 | 27,74,77,83,86,89,105-110,159,191,198,208,211,214,217,220-222,232,265,278
+  fcctesting.js         |   17.31 |        0 |    5.56 |   20.93 | 38-41,46-49,54-57,63-73,77-102
 ------------------------|---------|----------|---------|---------|---------------------------------------------------------------------------
 ```
 
@@ -607,14 +703,13 @@ All files               |   43.84 |    42.11 |   30.77 |   47.83 |
 
 Oof.
 
-> ¯\_(ツ)_/¯ 3 hours on deconstructing a boolean to send in a MongoDB query. Still no idea.
-https://glitch.com/edit/#!/virtual-fcc-issue-tracker?path=routes/api.js:128:22 R3D37/#100DaysOfCode
-
+> ¯\_(ツ)\_/¯ 3 hours on deconstructing a boolean to send in a MongoDB query. Still no idea.
+> https://glitch.com/edit/#!/virtual-fcc-issue-tracker?path=routes/api.js:128:22 R3D37/#100DaysOfCode
 
 ## R3 Day 36: 2020-04-25 Saturday
 
 > Reviewing HTTP response statuses sent in APIs. It seems that there's not even agreement over the correct status for GET for an element that does not exist in DB (404/204/null object/500?), but I now have plenty of references! R3D36/#100DaysOfCode
-https://nordicapis.com/best-practices-api-error-handling 
+> https://nordicapis.com/best-practices-api-error-handling
 
 - [HTTP/1.1: Status Code Definitions](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
 - _"It’s in the 4XX range, so you know the problem was on the client side..."_ [Best Practices for API Error Handling](https://nordicapis.com/best-practices-api-error-handling/)
@@ -622,13 +717,17 @@ https://nordicapis.com/best-practices-api-error-handling
 - [IETF List of Responses](https://tools.ietf.org/html/rfc7231#section-6.3.5)
 
 Example of [404 response](https://gitlab.com/pragmaticreviews/node-mocha-chai/-/blob/master/index.js):
+
 ```js
 // GET (BY ID)
-app.get("/api/tasks/:id" , (request, response) => {
-    const taskId = request.params.id;
-    const task = tasks.find(task => task.id === parseInt(taskId));
-    if(!task) return response.status(404).send("The task with the provided ID does not exist.");
-    response.send(task);
+app.get("/api/tasks/:id", (request, response) => {
+  const taskId = request.params.id;
+  const task = tasks.find((task) => task.id === parseInt(taskId));
+  if (!task)
+    return response
+      .status(404)
+      .send("The task with the provided ID does not exist.");
+  response.send(task);
 });
 ```
 
@@ -636,24 +735,25 @@ Recommended example (ref RFC 7807) from [Best Practices for REST API Error Handl
 
 This schema is composed of five parts:
 
-1. __type__ — A URI identifier that categorizes the error
-1. __title__ — A brief, human-readable message about the error
-1. __status__ — The HTTP response code (optional)
-1. __detail__ — A human-readable explanation of the error
-1. __instance__ — A URI that identifies the specific occurrence of the error
+1. **type** — A URI identifier that categorizes the error
+1. **title** — A brief, human-readable message about the error
+1. **status** — The HTTP response code (optional)
+1. **detail** — A human-readable explanation of the error
+1. **instance** — A URI that identifies the specific occurrence of the error
 
 ```json
 {
-    "type": "/errors/incorrect-user-pass",
-    "title": "Incorrect username or password.",
-    "status": 403,
-    "detail": "Authentication failed due to incorrect username or password.",
-    "instance": "/login/log/abc123"
+  "type": "/errors/incorrect-user-pass",
+  "title": "Incorrect username or password.",
+  "status": 403,
+  "detail": "Authentication failed due to incorrect username or password.",
+  "instance": "/login/log/abc123"
 }
 ```
 
 For example, in HTML, a problem could be embedded by [encapsulating JSON in a script tag (pg 16)](https://tools.ietf.org/html/rfc7807):
-```json   
+
+```json
 <script type="application/problem+json">
   {
     "type": "https://example.com/probs/out-of-credit",
@@ -671,26 +771,30 @@ Example from [twitter API](https://api.twitter.com/1.1/statuses/mentions_timelin
 
 ```json
 {
-  "errors":[{
-    "message":"Sorry, that page does not exist",
-    "code":34
-  }
-]}
+  "errors": [
+    {
+      "message": "Sorry, that page does not exist",
+      "code": 34
+    }
+  ]
+}
 ```
 
 Example from facebook API:
+
 ```json
 {
-   "error": {
-      "message": "An active access token must be used to query information about the current user.",
-      "type": "OAuthException",
-      "code": 2500,
-      "fbtrace_id": "A6S6sVDcfVJd7p7vcOABR0d"
-   }
+  "error": {
+    "message": "An active access token must be used to query information about the current user.",
+    "type": "OAuthException",
+    "code": 2500,
+    "fbtrace_id": "A6S6sVDcfVJd7p7vcOABR0d"
+  }
 }
 ```
 
 Example from Twilio API:
+
 ```json
 {
   "code": 21211,
@@ -710,7 +814,7 @@ Example from Twilio API:
 
 Add coverage to [FCC Issue Tracker Glitch project](https://virtual-fcc-issue-tracker.glitch.me):
 
-- Add __test/mocha.opts__:
+- Add **test/mocha.opts**:
   ```bash
   tests
   --recursive
@@ -719,17 +823,17 @@ Add coverage to [FCC Issue Tracker Glitch project](https://virtual-fcc-issue-tra
 
 ```
 ------------------------|---------|----------|---------|---------|--------------------------------
-File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s              
+File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 ------------------------|---------|----------|---------|---------|--------------------------------
-All files               |   29.29 |     4.85 |      24 |   32.41 |                                
- app                    |   23.23 |     3.13 |       0 |   26.74 |                                
-  assertion-analyser.js |    1.54 |        0 |       0 |    1.92 | 31-128                         
-  server.js             |   64.71 |       25 |       0 |   64.71 | 26,32,43,52-61                 
- app/controllers        |   51.72 |        0 |   71.43 |   51.72 |                                
-  dataHandler.js        |   51.72 |        0 |   71.43 |   51.72 | 36-40,43-65                    
- app/routes             |   28.83 |     7.84 |   24.14 |   31.68 |                                
-  api.js                |   38.98 |    13.33 |   54.55 |   39.66 | 27,88,133,147-255              
-  fcctesting.js         |   17.31 |        0 |    5.56 |   20.93 | 38-41,46-49,54-57,63-73,77-102 
+All files               |   29.29 |     4.85 |      24 |   32.41 |
+ app                    |   23.23 |     3.13 |       0 |   26.74 |
+  assertion-analyser.js |    1.54 |        0 |       0 |    1.92 | 31-128
+  server.js             |   64.71 |       25 |       0 |   64.71 | 26,32,43,52-61
+ app/controllers        |   51.72 |        0 |   71.43 |   51.72 |
+  dataHandler.js        |   51.72 |        0 |   71.43 |   51.72 | 36-40,43-65
+ app/routes             |   28.83 |     7.84 |   24.14 |   31.68 |
+  api.js                |   38.98 |    13.33 |   54.55 |   39.66 | 27,88,133,147-255
+  fcctesting.js         |   17.31 |        0 |    5.56 |   20.93 | 38-41,46-49,54-57,63-73,77-102
 ------------------------|---------|----------|---------|---------|--------------------------------
 ```
 
@@ -738,47 +842,49 @@ All files               |   29.29 |     4.85 |      24 |   32.41 |
 ## R3 Day 34: 2020-04-23 Thursday
 
 > Digging into CSS & JS SourceMaps; add ".sourceMaps()" to webpack mix.
-> 
+>
 > I'll be adding these into my clients' websites as I work on them—an easier method to debug code without needing to ship an unminified version to production! R3D34/#100DaysOfCode https://css-tricks.com/should-i-use-source-maps-in-production/
 
-Add `sourceMaps()` to __webpack.mix.js__:
+Add `sourceMaps()` to **webpack.mix.js**:
 
 ```js
   mix.js('source/_assets/js/main.js', 'js')
-    .sourceMaps(productionToo = true, 
+    .sourceMaps(productionToo = true,
       type = 'eval-source-map')
     ...
-```  
+```
 
 ## R3 Day 33: 2020-04-22 Wednesday
 
-> Checkbox ranges using Shift! And now that I know how to incorporate them, I'll need to make sure more of my projects use them. 
-> 
-> ☑️ Challenge 10/#javascript30 
-R3D33/#100DaysOfCode https://virtual-javascript30.herokuapp.com/
+> Checkbox ranges using Shift! And now that I know how to incorporate them, I'll need to make sure more of my projects use them.
+>
+> ☑️ Challenge 10/#javascript30
+> R3D33/#100DaysOfCode https://virtual-javascript30.herokuapp.com/
 
 ## R3 Day 32: 2020-04-21 Tuesday
 
 > After learning more about ESLinting, I added similar functionality for .scss to a project using stylelint! Lots of information and plugins out there, but I'd love to see examples of your .stylelintrc files too if you use it. R3D32/#100DaysOfCode https://github.com/stylelint/awesome-stylelint
 >
-> One of my goals for incorporating style linting is to be better at arranging my properties in a coherent manner. 
-
+> One of my goals for incorporating style linting is to be better at arranging my properties in a coherent manner.
 
 > "If you can always count on certain properties being in the same place, you can understand the CSS a bit faster (less scanning)." https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/
 
-WIP Stylelinting 
+WIP Stylelinting
+
 - [.stylelintrc.json WIP](https://github.com/virtual/shoreline/blob/master/.stylelintrc.json)
-- packages: 
+- packages:
+
 ```json
 "stylelint": "^13.3.3",
 "stylelint-config-rational-order": "^0.1.2",
 "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
 "stylelint-order": "^4.0.0",
 ```
+
 - All .scss comments should be on their own line to prevent bugs
 - `npx stylelint source/_assets/sass/FILE.scss --fix` to autofix
 
-__Stylelint tips:__
+**Stylelint tips:**
 
 Glad you're learning to use stylelint! The 50+ rules that [limit language features](https://stylelint.io/user-guide/rules/list#limit-language-features) are often overlooked. They are `*-pattern`, `*-blacklist`, `*-whitelist` and `*-max-*` rules that you can use to enforce non-stylistic conventions in your CSS.
 
@@ -791,12 +897,13 @@ Glad you're learning to use stylelint! The 50+ rules that [limit language featur
   "unit-whitelist": ["rem"]
 }
 ```
+
 To enforce `rem` units, `min-width` media queries, camelCase selectors and so on.
 
 ## R3 Day 31: 2020-04-20 Monday
 
 > Been putting this off since January—updated my webserver to the next OS version.
-> 
+>
 > Killed off MariaDB on recommended purge/cleanup, but thankfully when I reinstalled it, all my databases were still there. Small miracles. 🌟 R3D31/#100DaysOfCode
 
 ### IBM Practitioner
@@ -804,45 +911,46 @@ To enforce `rem` units, `min-width` media queries, camelCase selectors and so on
 Restless reinvention
 
 - _“The last best experience that anyone has anywhere, becomes the minimum expectation for the experience they want everywhere.”_ - Bridget Van Kralingen
-- __restless reinvention__
-a principle of Enterprise Design Thinking that represents active continuous testing and learning in order to improve the solution to a problem
+- **restless reinvention**
+  a principle of Enterprise Design Thinking that represents active continuous testing and learning in order to improve the solution to a problem
 - Visualize your ideas, so that your team and users can understand them clearly. It does need to communicate the idea enough for someone else to understand it and give you feedback.
-- The next time you have a new idea to share with your team, before you tell them about it, draw it on paper. Think about how a diagram or visual representation might convey something that words couldn’t. 
+- The next time you have a new idea to share with your team, before you tell them about it, draw it on paper. Think about how a diagram or visual representation might convey something that words couldn’t.
 - Ideate!
 - Prompts like “...on the moon” automatically trigger non-obvious ideas. And that’s how you get to something no one else does yet.Try thinking of your users’ problem in a different context, like “without modern technology,” or “in the year 3019.”
 - Take risks: Let’s talk about failure
 
 Include a variety of voices
+
 - Enterprise Design Thinking asks that you collaborate as a whole team to get the job done.
-- __Diverse Empowered Teams__
-an Enterprise Design Thinking Principle that represents that a group of people with varied perspectives more successfully make decisions together and work toward shared goals
+- **Diverse Empowered Teams**
+  an Enterprise Design Thinking Principle that represents that a group of people with varied perspectives more successfully make decisions together and work toward shared goals
 - Ideate
 - Cluster like ideas
 - Build off eachother's ideas
 - Come to some alignment on a path forward
-- Build alignment across your team, __alignment__ a state of agreement and understanding on a group decision that includes follow-through on that decision
+- Build alignment across your team, **alignment** a state of agreement and understanding on a group decision that includes follow-through on that decision
   - Next time you’re in a meeting where the conversation spins in circles, ask everyone to grab something to write with, visualize their thoughts, and then take turns sharing.
   - Next time you’re in a meeting where only one or two people share their opinion, hold a silent and anonymous voting session to expose everyone’s viewpoints.
 - Start sharing stories
-- __Playbacks__
-an Enterprise Design Thinking Key, story-based presentations that bring stakeholders and whole teams together in a safe space to exchange feedback
-- Alignment: 
+- **Playbacks**
+  an Enterprise Design Thinking Key, story-based presentations that bring stakeholders and whole teams together in a safe space to exchange feedback
+- Alignment:
   - Starting a new project or initiative. Answer questions like: _Who will be the users and stakeholders? What experience are we trying to improve and why?_
   - Deciding as a team on a future experience for your users. Answer questions like: _What do we think our users need to be successful? How are we going to serve those needs?_
   - Reviewing progress as you deliver. Answer questions like: _Do we successfully deliver value to our users? Are we still aligned as a team?_
 
 Planning
+
 - In design thinking, to solve for an actual need that exists in the world, you must take the time to write clear problem statements around your intent: What problem are you solving, for whom, and why?
 
 ## R3 Day 30: 2020-04-19 Sunday
 
-> Spent the day learning https://istanbul.js.org/ and code coverage. What is it? The measure (%) of how much code is executed with a given operation. (Goal: 100% coverage!) R3D30/#100DaysOfCode 
-> 
+> Spent the day learning https://istanbul.js.org/ and code coverage. What is it? The measure (%) of how much code is executed with a given operation. (Goal: 100% coverage!) R3D30/#100DaysOfCode
+>
 > - Executed statements
 > - Branches
 > - Called, defined functions
 > - Executed lines
-
 
 > 🎵 Bonus: why do you run the Istanbul test coverage library with `nyc` instead of `istanbul`? It's a reference to the song "Istanbul (not Constantinople)" from They Might Be Giants! https://www.youtube.com/watch?v=xo0X77OBJUg
 
@@ -854,36 +962,40 @@ Planning
   1. Branches
   1. Called, defined functions
   1. Executed lines
-- The percentages will often be pretty close to each other, but you can have 100% line execution but miss out on some branches. 
+- The percentages will often be pretty close to each other, but you can have 100% line execution but miss out on some branches.
 - Reports also show uncovered lines, which are not covered by any test
 
-__Statements__--perform an action in code
-  - can be many lines
-  - consists of a group of keywords
-  - examples:
-    - content in an `if... else` block
-    - declaring a variable `const...`
-    - what executes in a `while` loop
+**Statements**--perform an action in code
 
-__Branches__--each statement within a conditional
-  - include conditions, logical ors, ands and not (`||, &&, !`), ternary operator
-  - examples:
-  ```js
-  if (condition) {
-    statement1(); //branch 1
-  } else {
-    statement2(); //branch 2
-    statement3(); //branch 2
-  }
-  ```
+- can be many lines
+- consists of a group of keywords
+- examples:
+  - content in an `if... else` block
+  - declaring a variable `const...`
+  - what executes in a `while` loop
 
-__Function__--a function that is never called
+**Branches**--each statement within a conditional
 
-__Line__--a line that is never executed
+- include conditions, logical ors, ands and not (`||, &&, !`), ternary operator
+- examples:
+
+```js
+if (condition) {
+  statement1(); //branch 1
+} else {
+  statement2(); //branch 2
+  statement3(); //branch 2
+}
+```
+
+**Function**--a function that is never called
+
+**Line**--a line that is never executed
 
 ### How do we implement code coverage?
 
 Code coverage libraries:
+
 - Blanket.js - no longer maintained
 - JSCoverage - no longer maintained
 - [Istanbul](https://istanbul.js.org/): active and still preferred in 2020
@@ -894,12 +1006,14 @@ Code coverage libraries:
     - LCOV (a code coverage standard)
 
 Install:
+
 - add `nyc` to dev dependencies: `npm install nyc -D`
 - add coverage to package.json: `"coverage": "cross-env DEBUG=nadia:* nyc --reporter=text --reporter=html mocha"`
 - Give test runner as argument (mocha): `npm run -s coverage`
 - Ignore coverage files from .eslintignore
 
 Functional Testing
+
 - Based on business requirements
 - Describes what a function does, not how
 - Libraries:
@@ -910,37 +1024,43 @@ Functional Testing
 Example user stories for Functional Testing:
 
 As a user, I want to:
+
 - See a reservation form
 - Book a table.
-- Submit a valid reservation 
-- Be thanked upon success. 
+- Submit a valid reservation
+- Be thanked upon success.
 - Submit an invalid reservation
-- Be informed that there's a problem.  
+- Be informed that there's a problem.
 
-Installing Chai HTTP: 
+Installing Chai HTTP:
 `npm install chai-http -D`
 
-__Chai docs on using .get(), end__
+**Chai docs on using .get(), end**
 
 Because the end function is passed a callback, assertions are run asynchronously. Therefore, a mechanism must be used to notify the testing framework that the callback has completed. Otherwise, the test will pass before the assertions are checked.
 
 For example, in the Mocha test framework, this is accomplished using the done callback, which signal that the callback has completed, and the assertions can be verified:
+
 ```js
-it('fails, as expected', function(done) { // <= Pass in done callback
-  chai.request('http://localhost:8080')
-  .get('/')
-  .end(function(err, res) {
-    expect(res).to.have.status(123);
-    done();                               // <= Call done to signal callback end
-  });
+it("fails, as expected", function (done) {
+  // <= Pass in done callback
+  chai
+    .request("http://localhost:8080")
+    .get("/")
+    .end(function (err, res) {
+      expect(res).to.have.status(123);
+      done(); // <= Call done to signal callback end
+    });
 });
 
-it('succeeds silently!', function() {   // <= No done callback
-  chai.request('http://localhost:8080')
-  .get('/')
-  .end(function(err, res) {
-    expect(res).to.have.status(123);    // <= Test completes before this runs
-  });
+it("succeeds silently!", function () {
+  // <= No done callback
+  chai
+    .request("http://localhost:8080")
+    .get("/")
+    .end(function (err, res) {
+      expect(res).to.have.status(123); // <= Test completes before this runs
+    });
 });
 ```
 
@@ -948,36 +1068,42 @@ When done is passed in, Mocha will wait until the call to done(), or until the t
 
 Need to parse HTML to check for valid output? Check out cheerio.js
 
-__"100% Test" coverage:__
-- Does not mean that your application is bug free. 
-- Does not mean that you wrote good tests, it just means that your tests didn't fail. 
+**"100% Test" coverage:**
+
+- Does not mean that your application is bug free.
+- Does not mean that you wrote good tests, it just means that your tests didn't fail.
 - Tests could not be properly isolated so unexpected behavior could still occur.
 - Does not deliver new functionality
 - Not a substitute for peer code review.
 
-Open source continuous integration: 
+Open source continuous integration:
+
 - Buildbot
 - Jenkins
 - Strider CD
 
 Continuous Integration as a Service:
+
 - CircleCI
 - Gitlab
 - TravisCI
 - Heroku (I think?)
 
 CI Features to look for:
+
 - Matches your prod environment
 - Easy to configure and use
 - Scalable
 - Integrates with your workflow
 
-### Establishing Code Standards 
+### Establishing Code Standards
+
 - try a eslint config
-- jsdocs to require good docs, require-jsdoc, valid-jsdoc 
+- jsdocs to require good docs, require-jsdoc, valid-jsdoc
 - Mocha rules: eslint-program-mocha
 
 ### Links:
+
 - [Working Variation on FCC Metric-Imperial Converter with Code Coverage](https://glitch.com/~virtual-fcc-infosec-mi-reporting)
 - [Lynda Certificate: Node.js: Testing and Code Quality](https://www.lynda.com/ViewCertificate/6924CC0424CC49838A7FE00599CFA611?utm_source=directlink&utm_medium=sharing&utm_campaign=certificate)
 - [Nadia Repo](https://github.com/virtual/lynda-nodejs-testing)
@@ -987,6 +1113,7 @@ CI Features to look for:
 _Mine are here:_ https://satinflame.com/uses
 
 _Brad Traversy_
+
 - Live Server
 - Live Sass Compiler
 - ES7/React/Redux/GraphQL Snippets
@@ -1013,13 +1140,14 @@ _Brad Traversy_
   - Isolated, consistent, and fast
   - Sinon.js is one library, sinon-chai is a module we can use with Chai for readability: `npm install sinon@2 sinon-chai -D`
 - A test stub verifies indirect inputs by providing a controlled response.
-- A test spy records indirect outputs by reporting on how the request was made for later verification. 
+- A test spy records indirect outputs by reporting on how the request was made for later verification.
 - A mock object verifies indirect outputs by setting up expectations and throwing an exception if it's used unexpectedly.
-- A fake object just runs faster with less functionality. 
-- And a dummy object specifies values used for testing. 
+- A fake object just runs faster with less functionality.
+- And a dummy object specifies values used for testing.
 - xunitpatterns.com and martinfowler.com for more info
 
 Overriding dependencies
+
 - Testing dependencies is integration, not unit testing
 - 3 main dependency maniuplation libaries:
   1. Mockery (easiest, shows warnings)
@@ -1027,32 +1155,36 @@ Overriding dependencies
   1. Rewire (can override modules, but doesn't support es6 or transpilers like Babel)
 - Stub update in package.json: `"test": "cross-env DEBUG=nadia:* mocha"`
 
-__Process of Stubbing a Custom Response__
+**Process of Stubbing a Custom Response**
+
 - Replicate how the method responds:
-  - Is it returning a value, throwing an exception, or is it a promise that resolves or rejects? 
-  - Once you know how the response will be made you'll need to replicate what is being returned. The goal should be to match the structure. 
-  - If it returns an integer, the stub will need to return an integer, and so forth. 
+  - Is it returning a value, throwing an exception, or is it a promise that resolves or rejects?
+  - Once you know how the response will be made you'll need to replicate what is being returned. The goal should be to match the structure.
+  - If it returns an integer, the stub will need to return an integer, and so forth.
 - The easiest way to discover this is to console.log the actual response if the API documentation isn't available or you're not sure.
 
 Example: testing a module that updates the database:
-- How can we use a wrapped stub? 
-- In our application, the best target will be create, which uses save to insert a reservations record into the database. Create uses that response to return an ID. 
-- To do this, we'll wrap the database, replace the run method, and return a resolved promise that has the correct structure. 
 
-__Observing interactions with Spies__
+- How can we use a wrapped stub?
+- In our application, the best target will be create, which uses save to insert a reservations record into the database. Create uses that response to return an ID.
+- To do this, we'll wrap the database, replace the run method, and return a resolved promise that has the correct structure.
+
+**Observing interactions with Spies**
+
 - spies record information about function calls
-- How are we going to use spies in our application? 
--It'd be useful to check how the validator was called when creating a reservation. 
-- The validator should only be called once. When called through create, it should be called with a transformed reservation.  
+- How are we going to use spies in our application?
+  -It'd be useful to check how the validator was called when creating a reservation.
+- The validator should only be called once. When called through create, it should be called with a transformed reservation.
 
-__Sinon Mocks__
+**Sinon Mocks**
+
 - Control how a unit of code is being used
 - Gives no responses
 - Tests how many times called
 - Tests with which arguments
 - Example, ensure db is only called once when saving
 
-Book ref: xUnit Test Patterns: Refactoring Test Code by Gerard Meszaros  
+Book ref: xUnit Test Patterns: Refactoring Test Code by Gerard Meszaros
 
 ## R3 Day 28: 2020-04-17 Friday
 
@@ -1071,29 +1203,29 @@ Book ref: xUnit Test Patterns: Refactoring Test Code by Gerard Meszaros
   - then put the assertion in `.then` or `.catch`
   - do not use callback (do not use `done()`)
 
-
 ```js
-describe("Reservation Suite", function(){
-  context("Date and Time Combination", function(){
-    it("should return a ISO 8601 date and time with valid input", function(){
+describe("Reservation Suite", function () {
+  context("Date and Time Combination", function () {
+    it("should return a ISO 8601 date and time with valid input", function () {
       const date = "2020/04/17";
       const time = "04:53 PM";
 
-      Reservation.combineDateTime(date, time)
-        .should.equal("2020-04-17T16:53:00.000Z");
+      Reservation.combineDateTime(date, time).should.equal(
+        "2020-04-17T16:53:00.000Z"
+      );
     });
   });
 });
-```  
+```
 
 ## R3 Day 27: 2020-04-16 Thursday
 
 > Code things that make you happy! 😄
 >
 > Saw examples of snaking timelines from #smashingconf and haven't stopped thinking about them since! Snake
-> 
-> Haml, CSS, and JS for reordering cards in the responsive design. R3D27/#100DaysOfCode #WomenWhoCode 
-https://codepen.io/virtual/pen/bGVpdyN
+>
+> Haml, CSS, and JS for reordering cards in the responsive design. R3D27/#100DaysOfCode #WomenWhoCode
+> https://codepen.io/virtual/pen/bGVpdyN
 
 ### IBM Design thinking
 
@@ -1102,14 +1234,14 @@ https://codepen.io/virtual/pen/bGVpdyN
 #### Notes
 
 - Identify your users and their problems
-- __a focus on user outcomes__ an Enterprise Design Thinking Principle that represents putting your users at the center of your work and solving for their needs
+- **a focus on user outcomes** an Enterprise Design Thinking Principle that represents putting your users at the center of your work and solving for their needs
 - Ask the 5 Whys
 - Possible questions
   - What does Joe do at work?
   - What do they like and dislike?
   - How could their current experiences be improved?
 - Sponsor users: 1-2/month for 6-9 months
-- __design research__ the practice of inquiry and discovery that builds knowledge, insight, and empathy for your users
+- **design research** the practice of inquiry and discovery that builds knowledge, insight, and empathy for your users
 - Questions during research
   - What’s one thing you learned that you didn’t know before?
   - What pain points did you see the gate agents experience
@@ -1117,13 +1249,14 @@ https://codepen.io/virtual/pen/bGVpdyN
 
 ## R3 Day 26: 2020-04-15 Wednesday
 
-> Today I customized ESLint to keep code tidy and standardized within a project. 
-> 
+> Today I customized ESLint to keep code tidy and standardized within a project.
+>
 > You can also customize your own config and add it to npm for others to use as a dependency—as Google and Airbnb have done for their teams. Neat! R3D26/#100DaysOfCode https://medium.com/@natterstefan/how-to-create-your-own-shared-eslint-prettier-and-stylelint-configuration-3930dd764de3
 
 ### Validate correctness using Unit Testing
 
 Node.js Testing frameworks:
+
 - AVA
 - Jasmine
 - Jest
@@ -1131,6 +1264,7 @@ Node.js Testing frameworks:
 - tape
 
 Assertion Libraries (that work with any testing framework):
+
 - Assert (built into Node.js)
 - Chai - can be used for Node.js and browser testing
   - assert: TDD-style
@@ -1142,23 +1276,21 @@ Assertion Libraries (that work with any testing framework):
 
 - `npm install mocha chai -D`
 - add `"test": "mocha"` to scripts
-- add ESLint env vars for mocha globals--add `test/.eslintrc.js` 
+- add ESLint env vars for mocha globals--add `test/.eslintrc.js`
 
 ```js
 module.exports = {
-  "env": {
-    "mocha": true
+  env: {
+    mocha: true,
   },
-  "rules": {
-    "no-unused-vars": [
-      "error",
-      {"varsIgnorePattern": "should|expect" }
-    ]
-  }
-}
+  rules: {
+    "no-unused-vars": ["error", { varsIgnorePattern: "should|expect" }],
+  },
+};
 ```
 
 ESLint Configs
+
 - You can export setup to npm so that others can use it
 - View a [list of available eslint configs](https://github.com/dustinspecker/awesome-eslint)
 - A sharable config can extend another
@@ -1172,11 +1304,13 @@ ESLint Configs
 > Learning how to set up and configure EditorConfig and ESLint in order to maintain consistent coding standards in my projects! R3D25/#100DaysOfCode https://www.lynda.com/Node-js-tutorials/Node-js-Testing-Code-Quality/587672-2.html
 
 Linter:
+
 - `root: true` only in root
 - built-in checker: `node --check jsfile.js`
 - JSLint, JSHint, and ESLint (most popular)
 
 ESLint
+
 - don't install globally, package antipattern
 - `npm install eslint -D`
 - add `"eslint": "eslint",` to the scripts in package.json due to the placement of eslint
@@ -1204,26 +1338,28 @@ ESLint
   - Run lint before peer review
 
 Different types of testing:
-- __Unit testing__: the smallest testable part of an application, ie a function
+
+- **Unit testing**: the smallest testable part of an application, ie a function
   - tests an isolated unit via API
   - safe to run repeatedly
   - fast
   - validates an assertion, returns true or false
   - simulate dependencies
   - do not test third-party code
-- __Integrations testing__: builds upon unit tests, combines and tests resulting combinations (APIs, UIs, results) 
-  - more complex 
+- **Integrations testing**: builds upon unit tests, combines and tests resulting combinations (APIs, UIs, results)
+  - more complex
   - harder to maintain
   - checks more steps (register success, validation, etc)
-- __Functional testing__: tests how the system works together, against the requirements
+- **Functional testing**: tests how the system works together, against the requirements
   - focus is on the result, not the code
   - slower to execute
-  - tests user interface, eg. click button, enter input, see UI message  
-- __System testing__: tests the whole system, security issues, usability, etc
+  - tests user interface, eg. click button, enter input, see UI message
+- **System testing**: tests the whole system, security issues, usability, etc
   - any test that requires the whole system to be running
-- __Regression testing__: "regression"-software bug
+- **Regression testing**: "regression"-software bug
 
 TDD vs BDD
+
 - TDD: terminology about testing
   - describes when something works and when it doesn't
   - too literal
@@ -1231,9 +1367,9 @@ TDD vs BDD
 - BDD: terminology about behavior examples
   - describe how and why with examples
   - acceptance criteria as a scenario:
-    - __given__ some initial context (the givens)
-    - __when__ an event occurs
-    - __then__ ensures some outcomes
+    - **given** some initial context (the givens)
+    - **when** an event occurs
+    - **then** ensures some outcomes
   - `describe/context` - creates a group of specifications (tests)
   - `specify/it` - create a specification, test, or test-spec
 
@@ -1249,7 +1385,7 @@ Notes:
 
 TDD General Notes:
 
-- __Mocha__ is the _testing_ library that allows us to run tests, and __Chai__ is an _assertion_ library that contains some helpful functions that we’ll use to verify our test results.
+- **Mocha** is the _testing_ library that allows us to run tests, and **Chai** is an _assertion_ library that contains some helpful functions that we’ll use to verify our test results.
 - `describe` is used to group individual tests
 - In TDD, you write your unit test first, watch it fail, and then implement code changes until the test passes.
 
@@ -1264,12 +1400,12 @@ TDD General Notes:
 Questions:
 
 - What is BDD? I keep seeing it.
-_In TDD (Test Driven Development), the test is written to check the implementation of functionality, but as the code evolves, tests can give false results. BDD (Behavior Driven Development) is also a test-first approach, but differs by testing the actual behavior of the system from the end users perspective._
+  _In TDD (Test Driven Development), the test is written to check the implementation of functionality, but as the code evolves, tests can give false results. BDD (Behavior Driven Development) is also a test-first approach, but differs by testing the actual behavior of the system from the end users perspective._
 
 ## R3 Day 22: 2020-04-11 Saturday
 
-> R3D22/#100DaysOfCode Working out how to use expect functions in addition to assert in Chai, but the doc's examples aren't even working in my app. Need to check version support. 
-> 
+> R3D22/#100DaysOfCode Working out how to use expect functions in addition to assert in Chai, but the doc's examples aren't even working in my app. Need to check version support.
+>
 > Slow going with adding testing to the 2nd infosec challenge for #freecodecamp.
 
 Questions:
@@ -1284,36 +1420,35 @@ Questions:
 
 #### Notes
 
-- __Design thinking__ is the mindset that aims to improve the situation of people through the experiences they have. If you’re interested in solving problems for people, then you can practice design thinking.
-- __The Loops__ - Understand the present and envision the future in a continuous cycle of: 
+- **Design thinking** is the mindset that aims to improve the situation of people through the experiences they have. If you’re interested in solving problems for people, then you can practice design thinking.
+- **The Loops** - Understand the present and envision the future in a continuous cycle of:
   - _observing_: Immerse yourself in the real world with design research. Interview users, watch them work, and test your ideas with the people who matter most to inform your decision-making and understanding.
   - _reflecting_: Come together and look within to synchronize your movements, synthesize what you’ve learned, and share your “aha” moments with each other. Decide together and move forward with confidence.
-  - _making_: Give concrete form to abstract ideas. __The earlier you make the faster you learn.__ Put your ideas out there before they’re complete and improve them as you go.
-- __Enterprise Design Thinking__ - 
-a tailor-made approach for large, distributed teams to help them quickly deliver human-centered outcomes to the market
-- __Principles__
+  - _making_: Give concrete form to abstract ideas. **The earlier you make the faster you learn.** Put your ideas out there before they’re complete and improve them as you go.
+- **Enterprise Design Thinking** -
+  a tailor-made approach for large, distributed teams to help them quickly deliver human-centered outcomes to the market
+- **Principles**
   1. A focus on user outcomes
   1. Restless reinvention
   1. Diverse Empowered Teams
-- __Keys__
+- **Keys**
   1. 🔺 Hills: Hills are statements of intent written as user enablements. They follow a format of Who, What, and Wow.
   1. 🔲 Playbacks: Playbacks are story-based presentations that share insights, ideas, and updates to a user experience.
-  1. *️⃣ Sponsor Users: Sponsor Users are external clients, future clients, or end users that represent your target user, who regularly contribute domain expertise to your team. 
-
+  1. \*️⃣ Sponsor Users: Sponsor Users are external clients, future clients, or end users that represent your target user, who regularly contribute domain expertise to your team.
 
 ## R3 Day 21: 2020-04-10 Friday
 
-> CRUD Working! Post, Get, Put, and Delete routes for #freecodecamp's 2nd infosec project now setup. 
+> CRUD Working! Post, Get, Put, and Delete routes for #freecodecamp's 2nd infosec project now setup.
 >
 > Next to figure out is the testing and learn what I really set up incorrectly. 😆 R3D21/#100DaysOfCode https://virtual-fcc-issue-tracker.glitch.me/apitest/
- 
+
 Questions:
 
 - What's the difference in creating an Update statement (versus Find) in MongoDB? _add `{ $set: projectObj }` with value-pairs that need to be updated._
 
-``` js
+```js
 db.collection("issues").update(
-  { _id: ObjectId(issueID) }, 
+  { _id: ObjectId(issueID) },
   { $set: projectObj },
   function(err, result) {
     ...
@@ -1322,20 +1457,21 @@ db.collection("issues").update(
 ## R3 Day 20: 2020-04-09 Thursday
 
 > Today I created the delete route for #freecodecamp's 2nd Infosec project.
-> 
-> Added a check to see if the ID actually exists prior to deleting it. Using findOne() seems to be better as you don't need to parse an array. R3D20/#100DaysOfCode 
-https://virtual-fcc-issue-tracker.glitch.me/apitest/
+>
+> Added a check to see if the ID actually exists prior to deleting it. Using findOne() seems to be better as you don't need to parse an array. R3D20/#100DaysOfCode
+> https://virtual-fcc-issue-tracker.glitch.me/apitest/
 
 Questions:
 
 - What format do I send the `req.body` info as in Postman? _x-www-form-encoded_
-- How do I reference the _id? `req.body._id`
-- How do I get the result of a promise? 
+- How do I reference the \_id? `req.body._id`
+- How do I get the result of a promise?
 
   ```js
-  db.collection("issues").findOne(
-    { _id: ObjectId(req.body._id) }, 
-    function(err,result) {
+  db.collection("issues").findOne({ _id: ObjectId(req.body._id) }, function (
+    err,
+    result
+  ) {
     if (err) {
       throw err;
     } else {
@@ -1346,11 +1482,12 @@ Questions:
 
 ## R3 Day 19: 2020-04-08 Wednesday
 
-> Spent another day digging into MongoDB for #freecodecamp's 2nd Security project. Updated my post route to use real form input and worked out the response for the get route as well. 
-> 
+> Spent another day digging into MongoDB for #freecodecamp's 2nd Security project. Updated my post route to use real form input and worked out the response for the get route as well.
+>
 > Half of the CRUD is working now! 😋 https://virtual-fcc-issue-tracker.glitch.me/apitest/ R3D19/#100DaysOfCode
 
-Questions: 
+Questions:
+
 - How do I return the result from a MongoDB query? _Use .toArray()_
 - How do I pass the serialized form fields to the route? _Use req.body_
 - How can I pass the current time into MongoDB? _new Date(Date.now())_ May also be able to setup a defined field in MongoDB that defaults to current time
@@ -1359,8 +1496,8 @@ Started [IBM's Design Thinking Practitioner Course](https://www.ibm.com/design/t
 
 ## R3 Day 18: 2020-04-07 Tuesday
 
-> Started on the second security challenge for @freeCodeCamp, beginning with a bit of CRUD! 
-> 
+> Started on the second security challenge for @freeCodeCamp, beginning with a bit of CRUD!
+>
 > I'm really rusty on MongoDB, but I finally got my database connection set up and a fake object for Project Mew inserted in a collection! 🎉 R3D18/#100DaysOfCode
 
 [Glitch Project](https://virtual-fcc-issue-tracker.glitch.me/)
@@ -1368,70 +1505,68 @@ Started [IBM's Design Thinking Practitioner Course](https://www.ibm.com/design/t
 Questions:
 
 - Where do I put the database connection? (I put it in api.js)
-- How do I insert in mongoDB? Create db in mlab, create user, create collection, insert into db 
-- Does the insert into DB return an _id?
+- How do I insert in mongoDB? Create db in mlab, create user, create collection, insert into db
+- Does the insert into DB return an \_id?
 - What should the res return in the API?
 
 ## R3 Day 17: 2020-04-06 Monday
 
 > ✅ Metric-Imperial Converter completed for @freecodecamp!
-> 
->🔹 Built out controller functions
-<br/>
->🔹 Verified correct return types
-<br/>
->🔹 Added HelmetJS for security
-<br/>
->🔹 Created unit and functional tests
-<br/>
->🔹 Wrote API routes
+>
+> 🔹 Built out controller functions
+> <br/>
+> 🔹 Verified correct return types
+> <br/>
+> 🔹 Added HelmetJS for security
+> <br/>
+> 🔹 Created unit and functional tests
+> <br/>
+> 🔹 Wrote API routes
 >
 > https://virtual-fcc-mi-convert.glitch.me R3D17/#100DaysOfCode #womenintech
 
 ## R3 Day 16: 2020-04-05 Sunday
 
-> Finished the unit tests for @freecodecamp's M/I converter challenge. Tomorrow: functional tests! 
-> 
-> I learned that Chai's approximately only works if you actually return numbers—I will need to pay attention to my return types! R3D16/#100DaysOfCode 
-> 
+> Finished the unit tests for @freecodecamp's M/I converter challenge. Tomorrow: functional tests!
+>
+> I learned that Chai's approximately only works if you actually return numbers—I will need to pay attention to my return types! R3D16/#100DaysOfCode
+>
 > Enjoy your weekend!
 
 ## R3 Day 15: 2020-04-04 Saturday
 
-> Building the first project for @freecodecamp's security challenges. Added controller functions to process input (32mi) and calc output (51.5kg). @getpostman helps to debug. Love these projects, they really make things click! R3D15/#100DaysOfCode 
+> Building the first project for @freecodecamp's security challenges. Added controller functions to process input (32mi) and calc output (51.5kg). @getpostman helps to debug. Love these projects, they really make things click! R3D15/#100DaysOfCode
 > https://virtual-fcc-mi-convert.glitch.me
-
 
 "Controllers" — functions that separate out the code to route requests from the code that actually processes requests.
 
 Since I always forget the MVC setup:
 
-- __Models__ are the heart of any JavaScript application, containing the interactive data as well as a large part of the logic surrounding it: conversions, validations, computed properties, and access control.
-- __Routes__ to forward the supported requests (and any information encoded in request URLs) to the appropriate controller functions.
-- __Controller__ functions to get the requested data from the models, create an HTML page displaying the data, and return it to the user to view in the browser.
-- __Views__ (templates) used by the controllers to render the data.
+- **Models** are the heart of any JavaScript application, containing the interactive data as well as a large part of the logic surrounding it: conversions, validations, computed properties, and access control.
+- **Routes** to forward the supported requests (and any information encoded in request URLs) to the appropriate controller functions.
+- **Controller** functions to get the requested data from the models, create an HTML page displaying the data, and return it to the user to view in the browser.
+- **Views** (templates) used by the controllers to render the data.
 
 ## R3 Day 14: 2020-04-03 Friday
 
-> R3D14/#100DaysOfCode Started working out the first @freeCodeCamp security challenge for a Metric-Imperial Converter. Reviewing how to use regex to split strings and integrate HelmetJS for security. 
+> R3D14/#100DaysOfCode Started working out the first @freeCodeCamp security challenge for a Metric-Imperial Converter. Reviewing how to use regex to split strings and integrate HelmetJS for security.
 
 [Glitch project](https://virtual-fcc-mi-convert.glitch.me/api/convert?input=3gal)
 
 ## R3 Day 13: 2020-04-02 Thursday
 
 > Continuing @freecodecamp's passport authentication and trying to debug errors preventing tests to pass even though it works. Frustrating! 😣
-> 
+>
 > I hope all your coding adventures have been more rewarding today! R3D13/#100DaysOfCode
 
 There are so many issues and gotchas with this chapter outlined in a myriad of forum posts and GitHub issues.
 
 Time for me to leave this challenge and hope when I get back to it, it's been given some TLC. I tried a GitHub PR for the page title issues, but it was rejected.
 
-
 ## R3 Day 12: 2020-04-01 Wednesday
 
-> Just like any time I do server setup, spending way too much time debugging silly things like page titles... 
-> 
+> Just like any time I do server setup, spending way too much time debugging silly things like page titles...
+>
 > Is there anyone with @freecodecamp approval access that can review the PRs for this repo? R3D12/#100DaysOfCode
 > https://github.com/freeCodeCamp/boilerplate-advancednode/pulls
 
@@ -1448,7 +1583,7 @@ _A strategy is a way of authenticating a user._
 ## R3 Day 11: 2020-03-31 Tuesday
 
 > Markdown links—someone once shared that "Brackets" comes before "Parenthesis" alphabetically, and I haven't screwed up creating a link since! 💙 (Thank you!)
-> 
+>
 > Working on @freeCodeCamp's Node & Express section, starting with 🐶 #PugJS templates. R3D11/#100DaysOfCode
 
 - [Pug docs](https://github.com/pugjs/pug)
@@ -1456,7 +1591,7 @@ _A strategy is a way of authenticating a user._
 
 ### Pug code example:
 
-``` pug
+```pug
 doctype html
 html(lang="en")
   head
@@ -1480,37 +1615,39 @@ html(lang="en")
 _It's time to set up Passport so we can finally start allowing a user to register or login to an account! In addition to Passport, we will use Express-session to handle sessions. Using this middleware saves the session id as a cookie in the client and allows us to access the session data using that id on the server. This way we keep personal account information out of the cookie used by the client to verify to our server they are authenticated and just keep the key to access the data stored on the server._
 
 ```js
-const session = require('express-session')
-const passport = require('passport')
+const session = require("express-session");
+const passport = require("passport");
 
 // ...
 
-app.use(session({
-  secret: process.env.SESSION_SECRET,
-  resave: true,
-  saveUninitialized: true,
-}));
+app.use(
+  session({
+    secret: process.env.SESSION_SECRET,
+    resave: true,
+    saveUninitialized: true,
+  })
+);
 
 // passport. initialize() is a middle-ware that initialises Passport. Middlewares are functions that have access to the request object (req), the response object (res), and the next middleware function in the application's request-response cycle
-app.use(passport.initialize())
+app.use(passport.initialize());
 
 // passport.session() acts as a middleware to alter the req object and change the 'user' value that is currently the session id (from the client cookie) into the true deserialized user object.
 // `app.use(passport.session());` is equivalent to `app.use(passport.authenticate('session'));`
-app.use(passport.session())
+app.use(passport.session());
 ```
 
 ## R3 Day 10: 2020-03-30 Monday
 
 > Making R3D10/#100DaysOfCode an easier day, reading through the history of languages on Code Complete.
-> 
-> Amused by this tidbit: "The acronym PHP originally stood for Personal Home Page." 
+>
+> Amused by this tidbit: "The acronym PHP originally stood for Personal Home Page."
 
 Language History from _Code Complete_ (ed.2, pp 63-66)
 
 LL = Low-level
 ML = Mid-level
 HL = High-level
-OOL = Object-oriented 
+OOL = Object-oriented
 
 - Ada (HL) - embedded systems, named after Adam Lovelace
 - Assembly language (LL) - assembler for a single machine instruction, used in processors
@@ -1527,45 +1664,45 @@ OOL = Object-oriented
 - SQL - Structured Query Language - is declarative language meaning that it does not define a sequence of operations, but rather the result of some operations
 - Visual Basic (HL) - Developed at Dartmouth College in 1960s, stands for Beginner's All-purpose Symbolic Instruction Code
 
-
 ## R3 Day 9: 2020-03-29 Sunday
 
-> Another #javascript30 down! Neat console logging ideas like formatting as errors, custom styles & grouping. Added  @prismjs for syntax highlights.
-> 
+> Another #javascript30 down! Neat console logging ideas like formatting as errors, custom styles & grouping. Added @prismjs for syntax highlights.
+>
 > I return for the intro riff 🎶 & stay for the great content from Wes Bos. 😉  
-https://virtual-javascript30.herokuapp.com/09-dev-tools/index.html R3D9/#100DaysOfCode
+> https://virtual-javascript30.herokuapp.com/09-dev-tools/index.html R3D9/#100DaysOfCode
 
 - [JavaScript 09 Dev Tools](https://virtual-javascript30.herokuapp.com/09-dev-tools/index.html)
 - [JavaScript 30 Repo](https://github.com/virtual/javascript30)
 
 ## R3 Day 8: 2020-03-28 Saturday
 
-> R3D8/#100DaysOfCode Completed #Helmetjs/bcrypt for 
-@freeCodeCamp's Information Security and QA section.
-> 
+> R3D8/#100DaysOfCode Completed #Helmetjs/bcrypt for
+> @freeCodeCamp's Information Security and QA section.
+>
 > Have any of you finished this certification? Thinking face I'm curious about what the projects are like and would love to see your GitHub repos/examples! #womenintech
 
 ### Applied InfoSec Challenges
 
-#### HelmetJS 
+#### HelmetJS
 
 _HelmetJS is a type of middleware for Express-based applications that automatically sets HTTP headers to prevent sensitive information from unintentionally being passed between the server and client. While HelmetJS does not account for all situations, it does include support for common ones like Content Security Policy, XSS Filtering, and HTTP Strict Transport Security, among others. HelmetJS can be installed on an Express project from npm, after which each layer of protection can be configured to best fit the project._
 
-- `contentSecurityPolicy` for setting Content Security Policy	 
+- `contentSecurityPolicy` for setting Content Security Policy
 - `dnsPrefetchControl` controls browser DNS prefetching
 - `frameguard` to prevent clickjacking
 - `hidePoweredBy` to remove the X-Powered-By header
 - `hsts` for HTTP Strict Transport Security
 - `ieNoOpen` sets X-Download-Options for IE8+
 - `noSniff` to keep clients from sniffing the MIME type
-- `referrerPolicy` to hide the Referer header	 
+- `referrerPolicy` to hide the Referer header
 - `xssFilter` adds some small XSS protections
 
-Resources 
+Resources
+
 - [HelmetJS Challenges - Glitch Project](https://virtual-fcc-helmetjs.glitch.me)
 - [HelmetJS Docs](https://helmetjs.github.io/docs/)
 
-#### BCrypt 
+#### BCrypt
 
 _BCrypt hashes are very secure. A hash is basically a fingerprint of the original data- always unique. This is accomplished by feeding the original data into an algorithm and returning a fixed length result. To further complicate this process and make it more secure, you can also salt your hash. Salting your hash involves adding random data to the original data before the hashing process which makes it even harder to crack the hash._
 
@@ -1576,55 +1713,54 @@ _BCrypt hashes will always looks like `$2a$13$ZyprE5MRw2Q3WpNOGZWGbeG7ADUre1Q8QO
 ## R3 Day 7: 2020-03-27 Friday
 
 > Finished Unit and Functional testing for @freecodecamp.
-> 
+>
 > I was always curious about how to test an actual form. #ChaiJS can mimic filling in a form & submitting it, and test the output on the screen.
-> 
+>
 > Assertions cheat sheet: https://devhints.io/chai
-R3D7/#100DaysOfCode 
+> R3D7/#100DaysOfCode
 
 [Chai Testing Repo](https://github.com/virtual/boilerplate-mochachai) running on [Heroku](https://fcc-boilerplate-mochachai.herokuapp.com/)
 
-``` javascript
-suite('Functional Tests', function () {
+```javascript
+suite("Functional Tests", function () {
   test('submit "surname" : "Vespucci" - write your e2e test...', function (done) {
     browser
-    // fill the form, and submit.
-    .fill('surname', 'Vespucci')
-    .pressButton('submit', function(){
-      // assert that status is OK 200
-      browser.assert.success(); // 200
-      // assert that the text inside the element 'span#name' is 'Amerigo'
-      browser.assert.text('span#name', 'Amerigo', 'name should be Amerigo');
-      // assert that the text inside the element 'span#surname' is 'Vespucci'
-      browser.assert.text('span#surname', 'Vespucci', 'surname is Vespucci');
-      // assert that the element(s) 'span#dates' exist and their count is 1
-      browser.assert.element('span#dates', 1, 'dates element exists');
-      // assert.fail();
-    })
+      // fill the form, and submit.
+      .fill("surname", "Vespucci")
+      .pressButton("submit", function () {
+        // assert that status is OK 200
+        browser.assert.success(); // 200
+        // assert that the text inside the element 'span#name' is 'Amerigo'
+        browser.assert.text("span#name", "Amerigo", "name should be Amerigo");
+        // assert that the text inside the element 'span#surname' is 'Vespucci'
+        browser.assert.text("span#surname", "Vespucci", "surname is Vespucci");
+        // assert that the element(s) 'span#dates' exist and their count is 1
+        browser.assert.element("span#dates", 1, "dates element exists");
+        // assert.fail();
+      });
     done();
   });
 });
 ```
 
-
 ## R3 Day 6: 2020-03-26 Thursday
 
-> R3D6/#100DaysOfCode Another day working with Chai on @freeCodeCamp. I'm impressed with the flexibility of tests like "approximately." 
-> 
+> R3D6/#100DaysOfCode Another day working with Chai on @freeCodeCamp. I'm impressed with the flexibility of tests like "approximately."
+>
 > Spent a while debugging my testing scripts until I realized I had the wrong branch set to be automatically deployed on Heroku--oops! 🙄
 
 ## R3 Day 5: 2020-03-25 Wednesday
 
-> Happy to now be a monthly supporter for @freeCodeCamp! 
+> Happy to now be a monthly supporter for @freeCodeCamp!
 >
-> R3D5/#100DaysOfCode 
-Started working through the testing curriculum; worked out how to manage via GitHub and Heroku (instead of Glitch) so my workflow is much happier. 🤗 https://github.com/virtual/boilerplate-mochachai 
+> R3D5/#100DaysOfCode
+> Started working through the testing curriculum; worked out how to manage via GitHub and Heroku (instead of Glitch) so my workflow is much happier. 🤗 https://github.com/virtual/boilerplate-mochachai
 
 [Chai Testing Repo](https://github.com/virtual/boilerplate-mochachai) running on [Heroku](https://fcc-boilerplate-mochachai.herokuapp.com/)
 
-*Note on CSS Update for reduced motion:*
+_Note on CSS Update for reduced motion:_
 
-``` css
+```css
 @​media (prefers-reduced-motion: reduce) {
   *,
   *:after,
@@ -1637,13 +1773,10 @@ Started working through the testing curriculum; worked out how to manage via Git
 
 ## R3 Day 4: 2020-03-24 Tuesday
 
-> R3D4/#100DaysOfCode In-range but still invalid? 
-Here's a pen to help you understand the difference between :invalid and :out-of-range CSS psuedo-selectors. Example from 
-@FrontendMasters
- CSS In-Depth. https://codepen.io/virtual/pen/abORwjw?editors=0100
-
-
-
+> R3D4/#100DaysOfCode In-range but still invalid?
+> Here's a pen to help you understand the difference between :invalid and :out-of-range CSS psuedo-selectors. Example from
+> @FrontendMasters
+> CSS In-Depth. https://codepen.io/virtual/pen/abORwjw?editors=0100
 
 ### Psuedo-selectors
 
@@ -1663,17 +1796,15 @@ Selectors that match based on the current state of the UI
 
 `:user-invalid` Similar to on blur
 
-
 ## R3 Day 3: 2020-03-23 Monday
 
 > R3D3/#100DaysOfCode I'll admit, I don't use these much (aside from form styling), and many have been around since CSS2! Do you ever style your elements this way?
-> 
-> Reviewing selectors, specificity, and gotchas with 
-@estelle
-—you know, for the next CSS trivia night. Winking face
+>
+> Reviewing selectors, specificity, and gotchas with
+> @estelle
+> —you know, for the next CSS trivia night. Winking face
 
 ### Selectors
- 
 
 Selector: "The part that comes before the declaration block"
 
@@ -1693,13 +1824,13 @@ Pseudo-classes have the same selector weight as classes (0 - 1 - 0)
 
 `[attribute$='lue']` Ends with (e.g. ".pdf")
 
-`[attribute*='alu']` Has anywhere 
+`[attribute*='alu']` Has anywhere
 
-## R3 Day 2: 2020-03-22 Sunday 
+## R3 Day 2: 2020-03-22 Sunday
 
-> Interesting information on CSS failures and faux-commenting while you're testing code as shown from CSS in Depth (v3) with 
-@estelle, @FrontendMasters. 
-> 
+> Interesting information on CSS failures and faux-commenting while you're testing code as shown from CSS in Depth (v3) with
+> @estelle, @FrontendMasters.
+>
 > If you style CSS, take a peek at all these less common selectors! https://drafts.csswg.org/selectors-4/#overview R3D2/#100DaysOfCode
 
 Began [CSS In-Depth, v3, Estelle Weyl (FEM)](https://frontendmasters.com/workshops/css-in-depth-v3/)
@@ -1724,28 +1855,28 @@ Began [CSS In-Depth, v3, Estelle Weyl (FEM)](https://frontendmasters.com/worksho
 - Other features
 - File organization
 
-## R3 Day 1: 2020-03-21 Saturday 
+## R3 Day 1: 2020-03-21 Saturday
 
-> Scrubbed my toaster, cleaned my knife set, cut my finger, and then decided maybe I should start #100daysofcode back up instead. 
-> 
+> Scrubbed my toaster, cleaned my knife set, cut my finger, and then decided maybe I should start #100daysofcode back up instead.
+>
 > Challenge 8/#javascript30--now enjoying this mindnumbingly fun canvas board I can now doodle on like it's 2002. R3D1 https://virtual-javascript30.herokuapp.com/08-canvas/index.html
 
-Starting Round 3 of #100DaysOfCode--honestly for a mental health break from reading #covid19 info; getting back into Javascript30 
+Starting Round 3 of #100DaysOfCode--honestly for a mental health break from reading #covid19 info; getting back into Javascript30
 
 - Added overdue favicon to JS30
-- Created a canvas drawing board for [Challenge 8 of #javascript30](https://virtual-javascript30.herokuapp.com/08-canvas/index.html) 
+- Created a canvas drawing board for [Challenge 8 of #javascript30](https://virtual-javascript30.herokuapp.com/08-canvas/index.html)
 
---------
+---
 
 ## ⭐ ⭐ Round 3 begins ⭐ ⭐
 
---------
+---
 
 ## 2018-09-03 Monday
 
-Finished Udacity's Accessibility course. 
+Finished Udacity's Accessibility course.
 
--------------
+---
 
 Logging Graphic Design on Google Keep
 
@@ -1762,7 +1893,7 @@ Worked on Project Briefs in Lynda's [Planning your Project](https://www.lynda.co
 
 Started working on the [Lynda - Graphic Designer path](https://www.lynda.com/learning-paths/Design/become-a-graphic-designer)
 
-Finished: 
+Finished:
 
 - [What is Graphic Design](https://www.lynda.com/Graphic-Design-tutorials/What-Graphic-Design/614734-2.html)
 - [Graphic Design Careers: First Steps](https://www.lynda.com/Design-tutorials/Graphic-Design-Careers-First-Steps/497761-2.html)
@@ -1772,16 +1903,15 @@ Working through [Intro to Graphic Design](https://www.lynda.com/Graphic-Design-t
 - Typography: Typeface palettes, anatomy of, terminology
 - Colors: emotional effects of color
 
-> I learned about #Design on Lynda.com. I completed Graphic Design Careers: First Steps by @kristinellison  https://www.lynda.com/Design-tutorials/Graphic-Design-Careers-First-Steps/497761-2.html?certificate=85B2DBD03120450E8AF21F20AB82FDD6&utm_medium=certificateshare&utm_source=twitter
+> I learned about #Design on Lynda.com. I completed Graphic Design Careers: First Steps by @kristinellison https://www.lynda.com/Design-tutorials/Graphic-Design-Careers-First-Steps/497761-2.html?certificate=85B2DBD03120450E8AF21F20AB82FDD6&utm_medium=certificateshare&utm_source=twitter
 
-------------
+---
 
 ## Starting Graphic Design #100DaysOfCreativity~
 
-
 Choosing not to continue with Round 2, but I wrote up a blog of some of [my favorite apps](https://www.satinflame.com/blog/2018/04/apps-and-tiny-tools/) from last few years
 
--------
+---
 
 ## R2 Day 57: 2018-04-11 Wednesday
 
@@ -1797,13 +1927,13 @@ Got work's server on CloudFlare! It's amazing <3
 
 > Too slow to win :P but we had a great night with @tylermcginnis and @freeCodeCamp Bozeman walking through the challenges! R2D55/#100DaysOfCode
 
-Remember:  Babel = makes JSX code run in the browser without having to write React.createElement everywhere!
+Remember: Babel = makes JSX code run in the browser without having to write React.createElement everywhere!
 
 Updated my server to PHP 7.2 and got my first laravel project running
 
 ## R2 Day 54: 2018-04-08 Sunday
 
-> Realizing I'm a little inexperienced with left navigation sweeping in from the side, I spent the morning playing with it on CodePen. There are some nice examples on https://www.w3schools.com/howto/howto_js_sidenav.asp but need a little TLC. https://codepen.io/virtual/full/JLwjKz/ 
+> Realizing I'm a little inexperienced with left navigation sweeping in from the side, I spent the morning playing with it on CodePen. There are some nice examples on https://www.w3schools.com/howto/howto_js_sidenav.asp but need a little TLC. https://codepen.io/virtual/full/JLwjKz/
 
 ## R2 Day 53: 2018-04-07 Saturday
 
@@ -1815,20 +1945,20 @@ Read more of chapter 3 of Code Complete about project requirements; started arch
 
 ## R2 Day 51: 2018-04-05 Thursday
 
-> "Requirements are like water. They're easier to build on when they're frozen." Read more on defining program requirements and their importance from #codecomplete. Also added HP bar and death/restart to my game. 
+> "Requirements are like water. They're easier to build on when they're frozen." Read more on defining program requirements and their importance from #codecomplete. Also added HP bar and death/restart to my game.
 
 ## R2 Day 50: 2018-04-04 Wednesday
 
 > Day 50! #freecodecamp Dungeon Crawler continues... Added HP potions and a weapon. So close yet still so far; still need to add a boss, more weapons, levels, and that whole dying bit.
-R2 #100DaysOfCode https://virtual.github.io/toy-factory/ 
+> R2 #100DaysOfCode https://virtual.github.io/toy-factory/
 
 ## R2 Day 49: 2018-04-03 Tuesday
 
-> Added darkness toggle, experience points and the ability to kill off cute little pandas #freecodecamp Dungeon Crawler. R2D48/#100DaysOfCode https://virtual.github.io/toy-factory/ 
+> Added darkness toggle, experience points and the ability to kill off cute little pandas #freecodecamp Dungeon Crawler. R2D48/#100DaysOfCode https://virtual.github.io/toy-factory/
 
 ## R2 Day 48: 2018-04-02 Monday
 
-> Continuing on my #freecodecamp Dungeon Crawler, there's now walls and my player can bump into them! (Hooray for little victories.) R2D48/#100DaysOfCode https://virtual.github.io/toy-factory/ 
+> Continuing on my #freecodecamp Dungeon Crawler, there's now walls and my player can bump into them! (Hooray for little victories.) R2D48/#100DaysOfCode https://virtual.github.io/toy-factory/
 
 ## R2 Day 47: 2018-04-01 Sunday
 
@@ -1856,7 +1986,7 @@ Changed setup for toy factory and worked on C# for Sololearn. Big day of traveli
 
 ## R2 Day 41: 2018-03-24 Saturday
 
-📕 Read chapter 3.1-3.3 of Code Complete on defining program prerequisites. 
+📕 Read chapter 3.1-3.3 of Code Complete on defining program prerequisites.
 
 Determine whether prerequisites need to be defined using a sequential or iterative approach.
 
@@ -1876,7 +2006,7 @@ Determine whether prerequisites need to be defined using a sequential or iterati
 
 ## R2 Day 40: 2018-03-23 Friday
 
-[Laravel twbs4](http://virtual-laravel-twbs4.herokuapp.com/) 
+[Laravel twbs4](http://virtual-laravel-twbs4.herokuapp.com/)
 
 - Worked on the search functionality
 - Added spotlight carousel, think I might switch to implementing SlickSlider for more styling options
@@ -1888,13 +2018,13 @@ Added in a responsive mega menu using Bootstrap 4 to my Knight Univesity page. h
 
 ## R2 Day 38: 2018-03-21 Wednesday
 
-> Practicing some Flexbox Zombies tonight because my brain isn't functioning enough to think about my current projects. 🏹 "...Never pays to be shady!" R2D38/#100DaysOfCode  
+> Practicing some Flexbox Zombies tonight because my brain isn't functioning enough to think about my current projects. 🏹 "...Never pays to be shady!" R2D38/#100DaysOfCode
 
-Just a little practice of Flexbox zombies. 
+Just a little practice of Flexbox zombies.
 
 ## R2 Day 37: 2018-03-20 Tuesday
 
-> Did some cleanup and maintenance on my GitHub repos/pages. Read Ch1 of #CodeComplete on what "construction" entails. 🌮 ...And made tacos! R2D37/#100DaysOfCode 
+> Did some cleanup and maintenance on my GitHub repos/pages. Read Ch1 of #CodeComplete on what "construction" entails. 🌮 ...And made tacos! R2D37/#100DaysOfCode
 
 Moved my Game of Life app off of Heroku (previously fcc-game-of-life.herokuapp.com) to [Github](https://virtual.github.io/fcc-game-of-life/)
 
@@ -1904,7 +2034,7 @@ Code Complete: Read Ch. 1 about construction--what it encompasses, why "coding" 
 
 ## R2 Day 36: 2018-03-19 Monday
 
-> Reviewing a skills checklist for full-stack developers and noting which areas I still need to focus on. Also, invested in this 900-page book on best practices. Wish me luck! Moved my panda sprite into a responsive grid and started creating a game board for the #freecodecamp Dungeon Crawler challenge. https://virtual.github.io/toy-factory/ 
+> Reviewing a skills checklist for full-stack developers and noting which areas I still need to focus on. Also, invested in this 900-page book on best practices. Wish me luck! Moved my panda sprite into a responsive grid and started creating a game board for the #freecodecamp Dungeon Crawler challenge. https://virtual.github.io/toy-factory/
 
 ### [Full-Stack Developer: The Definitive Guide](https://medium.com/coderbyte/a-guide-to-becoming-a-full-stack-developer-in-2017-5c3c08a1600c)
 
@@ -1936,7 +2066,7 @@ _The JavaScript language is growing more popular every year and new libraries, f
 #### 3. Back-End Language
 
 _Once you feel you’ve gotten a good grasp on HTML/CSS and JavaScript, you’ll want to move on to a back-end language that will handle things like database operations, user authentication, and application logic. All online programs and bootcamps usually focus on a specific back-end language, and in reality in doesn’t matter which one you learn so much as long as you understand what is going on and you learn the nuances of your chosen language. You’ll get a ton of different responses if you ask someone which back-end language is the best to learn, so below I’ve listed a few popular combinations. An important note: whichever you decide to learn, just stick with it and learn as much as you can about it — there are jobs out there for all the languages listed below._
- 
+
 - [x] Node.js: This is a great option because Node.js is itself just a JavaScript environment which means you don’t need to learn a new language. This is a big reason why a lot of online programs and bootcamps choose to teach Node.js. The most popular framework you’d most likely learn to aid you in developing web applications is Express.
 - [ ] Ruby: Some popular frameworks for developing in Ruby are Rails and Sinatra. Plenty of programs teach Ruby as a first back-end language.
 - [ ] Python: Some popular frameworks for developing in Python are Django and Flask.
@@ -1957,7 +2087,7 @@ _When learning to build web applications, at some point you’ll probably want t
 
 #### 5. HTTP & REST
 
-_HTTP is a stateless application protocol on the Internet — it’s what allows clients to communicate with servers (e.g. your JavaScript code can make an AJAX request to some back-end code you have running on a server which will happen via HTTP)._ 
+_HTTP is a stateless application protocol on the Internet — it’s what allows clients to communicate with servers (e.g. your JavaScript code can make an AJAX request to some back-end code you have running on a server which will happen via HTTP)._
 
 - [x] What is REST and why is it important in regards to the HTTP protocol and web applications.
 - [x] Best practices for designing a RESTful API. POST/GET requests.
@@ -1972,7 +2102,7 @@ _Once you think you have a grasp on HTML/CSS, JavaScript, back-end programming, 
 
 _There are best practices that you can read about online on, but the best way to actually learn about application architecture is by working on a large application yourself that contains several moving parts — or even better, working on a team and together developing a somewhat large/complex application._
 
-_This is why, for example, someone with 7+ years of experience may not necessarily know CSS or JavaScript better than someone with 2 years of experience, but over all of those years they’ve presumably worked with all sorts of different applications and websites and have learned how to architect and design applications (among learning other important things) to be most efficient and can see the “big picture” when it comes to development. Below are some things you can read that will help you learn how to architect your web applications efficiently:_ 
+_This is why, for example, someone with 7+ years of experience may not necessarily know CSS or JavaScript better than someone with 2 years of experience, but over all of those years they’ve presumably worked with all sorts of different applications and websites and have learned how to architect and design applications (among learning other important things) to be most efficient and can see the “big picture” when it comes to development. Below are some things you can read that will help you learn how to architect your web applications efficiently:_
 
 - [x] Learn about common platforms as a service, e.g. Heroku and AWS. Heroku allows you to easily upload your code and have an application up and running with very little configuration or server maintenance and AWS offers dozens of products and services to help with storage, video processing, load balancing, and much more.
 - [ ] Performance optimization for applications and modern browsers.
@@ -2006,7 +2136,7 @@ _That said, as Ryan McGrath mentions, our front-end (FE) engineers are expected 
 
 Played with creating a sprite in my [Toy Factory](https://github.com/virtual/toy-factory), eventually a part of the Dungeon Crawler app for freeCodeCamp R2D35/#100DaysofCode
 
-Created [demo with board](https://virtual.github.io/toy-factory/). Ran out of space on Heroku, so checking out Github pages more! 
+Created [demo with board](https://virtual.github.io/toy-factory/). Ran out of space on Heroku, so checking out Github pages more!
 
 - Added `"homepage": "https://virtual.github.io/toy-factory/"` to the package.json
 - Modified build script: `"build": "rm -rf docs && react-scripts build && mv build docs",` in package.json
@@ -2023,7 +2153,7 @@ Finished ch3 of Flexbox zombies
 
 ## R2 Day 32: 2018-03-15 Thursday
 
-Finished the first #D3 challenge in @freeCodeCamp! 📊 I'm pretty proud to have worked out the logic for the scales and method chaining, as well as the styles for a *responsive* vertical bar chart! R2D32/#100DaysOfCode https://codepen.io/virtual/full/XEXVpp/
+Finished the first #D3 challenge in @freeCodeCamp! 📊 I'm pretty proud to have worked out the logic for the scales and method chaining, as well as the styles for a _responsive_ vertical bar chart! R2D32/#100DaysOfCode https://codepen.io/virtual/full/XEXVpp/
 
 Laravel Homestead for twbs4:
 
@@ -2046,7 +2176,7 @@ Practed Haml markup, a little D3 and flexbox in the start of a simple [Web resum
 
 ## R2 Day 29: 2018-03-12 Monday
 
-> Watching some videos from Lynda's Linux Foundation Cert Prep series & happened upon managing SSH keys... so I organized my SSH keys using an SSH config file! So tidy! ✨ R2D29/#100DaysOfCode 
+> Watching some videos from Lynda's Linux Foundation Cert Prep series & happened upon managing SSH keys... so I organized my SSH keys using an SSH config file! So tidy! ✨ R2D29/#100DaysOfCode
 
 Watching some videos from Lynda's [Linux Foundation Cert Prep: Service Configuration (Ubuntu)](https://www.lynda.com/Linux-tutorials/Configure-SSH-based-remote-access-using-publicprivate-key-pairs/664829/710619-4.html?autoplay=true) series and learned about managing SSH keys... so I organized my SSH keys using an SSH config file! Related walkthrough: [Simplify Your Life With an SSH Config File](http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/)
 
@@ -2060,7 +2190,7 @@ Watching some videos from Lynda's [Linux Foundation Cert Prep: Service Configura
 
 Added [padStart polyfill](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart) to JavaScript30 challenge 2 (clock) so it works for older browsers.
 
-Played with this [D3 library example](https://github.com/virtual/d3-explorer) and updated the .eslintrc file so the program would run for me. Made a PR in case this is helpful--accepted!  
+Played with this [D3 library example](https://github.com/virtual/d3-explorer) and updated the .eslintrc file so the program would run for me. Made a PR in case this is helpful--accepted!
 
 Began working on challenge 4 data
 
@@ -2073,11 +2203,12 @@ web: vendor/bin/heroku-php-apache2 /
 ```
 
 ## R2 Day 25: 2018-03-08 Thursday
+
 > R2D25 - PR accepted for updates to these "Spark Notes" for the Pragmatic Programmer. 💪 Lots of great information—check it out! #100DaysOfCode https://github.com/HugoMatilla/The-Pragmatic-Programmer
 
 ## R2 Day 24: 2018-03-07 Wednesday
 
-> Refined the styles for my video grid section inspired by the amazing UX designer [Krista Lacida](http://www.kristalacida.com/contact/). (Video functionality to come later.) 
+> Refined the styles for my video grid section inspired by the amazing UX designer [Krista Lacida](http://www.kristalacida.com/contact/). (Video functionality to come later.)
 
 I first coded the play area without flexbox--it was much more classy using flexbox! Also I learned about using the box-shadow for overriding initial text-decorations (including line size and color.)
 
@@ -2107,11 +2238,11 @@ Anyhow, enjoying how it's coming together ;)
 
 Playing with getting Bootstrap 4 up and running within Laravel 5.6. Shoved some BS4 HTML within the welcome "blade." Some useful code bits to get it working:
 
-CSRF Token seems to help calm a console error. 
+CSRF Token seems to help calm a console error.
 
 ```html
-<meta name="csrf-token" content="{{ csrf_token() }}">
-<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<meta name="csrf-token" content="{{ csrf_token() }}" />
+<link href="{{ asset('css/app.css') }}" rel="stylesheet" />
 ```
 
 JS after footer:
@@ -2120,7 +2251,7 @@ JS after footer:
 <script src="{{ asset('js/app.js') }}"></script>
 ```
 
-I've added some more scss changes to the `resources/assets/sass` folder. 
+I've added some more scss changes to the `resources/assets/sass` folder.
 
 From the ssh on Vagrant, run `npm install` and then compile using `npm run dev` or `npm run watch-poll` (since it doesn't work with just `npm run watch` on my VM). More on these commands from the [Laravel 5.6 docs](https://laravel.com/docs/5.6/mix#sass)
 
@@ -2146,27 +2277,26 @@ mariadb: true
 authorize: ~/.ssh/id_rsa.pub
 
 keys:
-    - ~/.ssh/id_rsa
+  - ~/.ssh/id_rsa
 
 folders:
-    - map: ~/code
-      to: /home/vagrant/code
+  - map: ~/code
+    to: /home/vagrant/code
 
 sites:
-    - map: homestead.test
-      to: /home/vagrant/code/test/public
+  - map: homestead.test
+    to: /home/vagrant/code/test/public
 
-    - map: laravel1.test
-      to: /home/vagrant/code/laravel1/public
+  - map: laravel1.test
+    to: /home/vagrant/code/laravel1/public
 
 databases:
-    - homestead
+  - homestead
 ```
 
 And as luck would have it--now I'm learning how to write better code blocks in Markdown! :)
 
 - [Handy Vagrant commands](https://www.drupal.org/node/2008794)
-
 
 Now I can `vagrant ssh` and run `composer global require "laravel/installer"`
 
@@ -2175,7 +2305,6 @@ Now I can `vagrant ssh` and run `composer global require "laravel/installer"`
 That wasn't exacty right.... Laravel creates it own public folder, so I should run `laravel new test` instead from /home/vagrant/code
 
 But... There is a Laravel homepage showing! This is the furthest Laravel progress I've made.
-
 
 ## R2 Day 17: 2018-02-27 Tuesday
 
@@ -2223,10 +2352,10 @@ Also enjoyed implementing a range slider--I've never done that before (maybe a l
 
 > Began a Software Dev course on EdX and took a peek at the requirements for the next #freecodecamp challenge--Game of Life. (Fascinating stuff!) R2D9/#100DaysOfCode https://www.edx.org/micromasters/software-development
 
-Started looking at [EdX - Software Development](https://www.edx.org/micromasters/software-development) for understanding good software design as recommended by Smai. 
+Started looking at [EdX - Software Development](https://www.edx.org/micromasters/software-development) for understanding good software design as recommended by Smai.
 
-_Course >  1a: Beginning Student Language  > Expressions >  Expressions, pt 1_<br>
-Dr Racket is taking a bit too long to download so I'll have to continue that another time. 
+_Course > 1a: Beginning Student Language > Expressions > Expressions, pt 1_<br>
+Dr Racket is taking a bit too long to download so I'll have to continue that another time.
 
 Began looking at FreeCodeCamp's [Game of Life challenge](https://codepen.io/freeCodeCamp/full/reGdqx).
 
@@ -2238,7 +2367,7 @@ Began looking at FreeCodeCamp's [Game of Life challenge](https://codepen.io/free
 
 ## R2 Day 7: 2018-02-17 Saturday
 
-> Edit on update and save completed for my #freecodecamp Recipe App and *submitted!*--all before breakfast! (Since I want some of my data pretty, it only works on new additions.) https://fcc-recipe.herokuapp.com/ R2D7/#100DaysOfCode
+> Edit on update and save completed for my #freecodecamp Recipe App and _submitted!_--all before breakfast! (Since I want some of my data pretty, it only works on new additions.) https://fcc-recipe.herokuapp.com/ R2D7/#100DaysOfCode
 
 Some issues, but I'm so done with this for now:
 
@@ -2255,7 +2384,6 @@ Working on edit functionality for #freecodecamp Recipe box; maybe I'll get the s
 ❌ Input boxes need states so they can change<br/>
 ❌ Server route/Mongo query needed for update <br/>
 
-
 ## R2 Day 5: 2018-02-15 Thursday
 
 > 📚 Another round of working on my media catalog app <br/>
@@ -2265,22 +2393,25 @@ Working on edit functionality for #freecodecamp Recipe box; maybe I'll get the s
 
 ## R2 Day 4: 2018-02-14 Wednesday
 
-> Finished rewriting [Cat Clicker Premium](https://github.com/virtual/js-design-patterns) using MVC structure. It's such a foreign structure to me... It's so tidy. Seriously digging this @Udacity course from @benjaffe! R2D4/#100DaysOfCode https://classroom.udacity.com/courses/ud989 
+> Finished rewriting [Cat Clicker Premium](https://github.com/virtual/js-design-patterns) using MVC structure. It's such a foreign structure to me... It's so tidy. Seriously digging this @Udacity course from @benjaffe! R2D4/#100DaysOfCode https://classroom.udacity.com/courses/ud989
 
 (Sick today 🤒 but made it through work and finished a giant spreadsheet.) Also registered with Shoreline to go to OmniUpdate conference this March, so that is super exciting!
 
 ### Model
+
 The data. Make a nice object literal and stick the information in it. The view should never modify the model directly, and vice versa.
 
 ### View
+
 The objects users see on the screen and interact with. If there is a common structure, put it into the HTML. The view functions can then populate those DOM elements.
 
 ### Controller
+
 The link between the View and the Model. If someone clicks on an item in the view that changes the data, the _controller_ must be the one to update the model. Controller functions might cause re-renders of views after the data has been changed.
 
 ## R2 Day 3: 2018-02-13 Tuesday
 
-> 🐱 Working through MVC reorganizing challenges from Udacity Design Patterns with Lesson 2 - Cat Clicker Premium! https://classroom.udacity.com/courses/ud989 R2D3/#100DaysOfCode 
+> 🐱 Working through MVC reorganizing challenges from Udacity Design Patterns with Lesson 2 - Cat Clicker Premium! https://classroom.udacity.com/courses/ud989 R2D3/#100DaysOfCode
 
 ## R2 Day 2: 2018-02-12 Monday
 
@@ -2289,7 +2420,7 @@ The link between the View and the Model. If someone clicks on an item in the vie
 > 🎨 Did a little art with a poster placeholder graphic<br/>
 > R2D2(🤖 hehe)/#100daysofcode
 
-Learned about __5-4-3-2-1__ from @smaifullerton-wk: "5,4,3,2,1 is to motivate yourself to do something when you don’t have motivation - all it means is you say in your head 5, 4, 3, 2, 1 and then without further thought you get up and start working on the thing. it sounds kinda nutty and obvious but it really works, because it doesn’t give your brain an opportunity to argue against doing whatever it is you don’t feel motivated to do but know you should. It doesn’t really create motivation, it builds discipline to push past resistance to doing good things."
+Learned about **5-4-3-2-1** from @smaifullerton-wk: "5,4,3,2,1 is to motivate yourself to do something when you don’t have motivation - all it means is you say in your head 5, 4, 3, 2, 1 and then without further thought you get up and start working on the thing. it sounds kinda nutty and obvious but it really works, because it doesn’t give your brain an opportunity to argue against doing whatever it is you don’t feel motivated to do but know you should. It doesn’t really create motivation, it builds discipline to push past resistance to doing good things."
 
 ## R2 Day 1: 2018-02-11 Sunday
 
@@ -2302,23 +2433,22 @@ Learned about __5-4-3-2-1__ from @smaifullerton-wk: "5,4,3,2,1 is to motivate yo
 - Attempted to display a movie tagged in user collection but ran into state errors; I'll need to do a refresher on initialized state, Promises etc.
 - Moved movie functions to a new Movie Store on [LibWorx](https://github.com/virtual/libworx)
 
---------
+---
 
 ## ⭐ ⭐ Round 2 begins ⭐ ⭐
 
---------
+---
 
 ### [Blog: No Turning Back: A Journey through Montana Code School](https://www.satinflame.com/blog/2017/12/no-turning-back-montana-code-school/)
 
 With a large amount of experience and self-study under my belt, I was ready to commit to finally getting the full exposure of modern web development with Montana Code School. Discover what I learned and view the projects my teams created. [Read more...](https://www.satinflame.com/blog/2017/12/no-turning-back-montana-code-school/)
 
-
---------
+---
 
 ## Day 100: 2017-12-01 Friday
 
-> 🎉 Day 100/#100DaysOfCode 🎉 It's been a great ride! https://virtual.github.io/100daysofcode/ 
- 
+> 🎉 Day 100/#100DaysOfCode 🎉 It's been a great ride! https://virtual.github.io/100daysofcode/
+
 - Teach others as you can–it's the best way to solidify a concept
 - Learn github well & contribute!
 - Always consider your team's thoughts
@@ -2333,9 +2463,9 @@ With a large amount of experience and self-study under my belt, I was ready to c
 
 > 🏆 Updating my sites to use the holy grail layout with #flexbox 🃏 Learning Jest with Enzyme for #javascript testing 🎈 Celebrating my birthday with good food & friends! 98/#100DaysOfCode
 
-## Day 97: 2017-11-28 Tuesday 
+## Day 97: 2017-11-28 Tuesday
 
-> Added validator & zxcvbn password strength checker (amazing!) to sign up form and tweaked styles. (Took me awhile to realize that's named after the bottom row of the keyboard!) ;P 97/#100DaysOfCode https://github.com/dropbox/zxcvbn 
+> Added validator & zxcvbn password strength checker (amazing!) to sign up form and tweaked styles. (Took me awhile to realize that's named after the bottom row of the keyboard!) ;P 97/#100DaysOfCode https://github.com/dropbox/zxcvbn
 
 ## Day 96: 2017-11-27 Monday
 
@@ -2435,7 +2565,7 @@ With a large amount of experience and self-study under my belt, I was ready to c
 
 ## Day 81: 2017-11-12: Sunday
 
-> So close to finished with this app-just realizing I don't have an edit function. 🍲 Added meta, error message and XSS cleaning for inputs. https://fcc-recipe.herokuapp.com/  81/#100DaysOfCode #freecodecamp
+> So close to finished with this app-just realizing I don't have an edit function. 🍲 Added meta, error message and XSS cleaning for inputs. https://fcc-recipe.herokuapp.com/ 81/#100DaysOfCode #freecodecamp
 
 - [Udemy - Raspberry Pi Workshop 2017 Become a Coder / Maker](https://www.udemy.com/raspberry-pi-workshop-become-a-coder-maker-inventor/)
 - [Secure XSS Filters](https://github.com/yahoo/xss-filters)
@@ -2452,7 +2582,7 @@ With a large amount of experience and self-study under my belt, I was ready to c
 
 ## Day 79: 2017-11-10: Friday
 
-> Eee! Recipe app finally up and running on @Heroku! My buddy was even kind enough to add his favorite recipe. Needs a little more TLC tomorrow. https://fcc-recipe.herokuapp.com/  79/#100DaysOfCode
+> Eee! Recipe app finally up and running on @Heroku! My buddy was even kind enough to add his favorite recipe. Needs a little more TLC tomorrow. https://fcc-recipe.herokuapp.com/ 79/#100DaysOfCode
 
 - [Recipe Collector - Heroku](https://fcc-recipe.herokuapp.com/)
 - Added in dynamic inputs for ingredients
@@ -2463,7 +2593,7 @@ With a large amount of experience and self-study under my belt, I was ready to c
 
 ## Day 77: 2017-11-08: Wednesday
 
-SQL: Structured Query Language. 
+SQL: Structured Query Language.
 
 - [Mark's super awesome app](https://github.com/virtual/simple-postgresql-app)
 - [Getting Started with PostgreSQL on Mac OSX](https://www.codementor.io/devops/tutorial/getting-started-postgresql-server-mac-osx)
@@ -2473,7 +2603,7 @@ SQL: Structured Query Language.
 
 ## Day 76: 2017-11-07: Tuesday
 
-> #Javascript Promises! 🎁 Wish I learned about these earlier.  https://developers.google.com/web/fundamentals/primers/promises https://davidwalsh.name/promises 76/#100DaysOfCode #freecodecamp
+> #Javascript Promises! 🎁 Wish I learned about these earlier. https://developers.google.com/web/fundamentals/primers/promises https://davidwalsh.name/promises 76/#100DaysOfCode #freecodecamp
 
 - [Yellowstone Odyssey refactored using MobX](https://github.com/virtual/Buffaloed)
 
@@ -2485,7 +2615,7 @@ SQL: Structured Query Language.
 
 ## Day 74: 2017-11-05: Sunday
 
-> Brain tired; think I'm catching a cold... 😴  pushed thru & submitted exercism_io pangram! http://exercism.io/submissions/8af111c3a4354108bc4e7243299c301d 74/#100DaysOfCode
+> Brain tired; think I'm catching a cold... 😴 pushed thru & submitted exercism_io pangram! http://exercism.io/submissions/8af111c3a4354108bc4e7243299c301d 74/#100DaysOfCode
 
 ## Day 73: 2017-11-04: Saturday
 
@@ -2517,7 +2647,7 @@ Wishlist
 
 ## Day 70: 2017-11-01: Wednesday
 
-> One day until our demos for @mtcodeschool #mtcs07boz! Refactored code & took team pics 📷 https://yellowstone-odyssey.herokuapp.com/contactinfo  70/#100DaysOfCode
+> One day until our demos for @mtcodeschool #mtcs07boz! Refactored code & took team pics 📷 https://yellowstone-odyssey.herokuapp.com/contactinfo 70/#100DaysOfCode
 
 - Refactored Contact page to use Array of info
 - Added in Google Analytics
@@ -2535,30 +2665,30 @@ Wishlist
 
 ## Day 68: 2017-10-30: Monday
 
-> My first ever deployment to @Heroku today for a quiz app. To do: Route fixing. https://yellowstone-odyssey.herokuapp.com/  68/#100DaysOfCode #mtcs07boz
+> My first ever deployment to @Heroku today for a quiz app. To do: Route fixing. https://yellowstone-odyssey.herokuapp.com/ 68/#100DaysOfCode #mtcs07boz
 
 - Fixed all A tags to [Link tags](http://knowbody.github.io/react-router-docs/api/Link.html) to keep Router working
 - Deployed to [Heroku](https://yellowstone-odyssey.herokuapp.com/)
 - Changed all fetch calls to use Axios
-- Added in dotenv NPM package and set ENV routers 
+- Added in dotenv NPM package and set ENV routers
 - Changed all paths to secure (https)
 
 - Missed dentist appointment 🤷
 
------------
+---
 
 Week 6 Complete of Montana Code School (Halfway Through!)
 
-----------
+---
 
 ## Day 67: 2017-10-29: Sunday
 
-Spent a few too many hours trying to fix my login only to break my signup page.  Time for a lazy Sunday afternoon. 67/#100DaysOfCode
+Spent a few too many hours trying to fix my login only to break my signup page. Time for a lazy Sunday afternoon. 67/#100DaysOfCode
 
 - Signup with Passport working
 - Trying to clean up and get login working for a simple login template, but can't get both signup and login cooperating.
 
-📚 Reading: How to Win Friends and Influence People in the Digital Age 
+📚 Reading: How to Win Friends and Influence People in the Digital Age
 
 ## Day 66: 2017-10-28: Saturday
 
@@ -2571,6 +2701,7 @@ A few takeaways from [Thinking in React](https://reactjs.org/docs/thinking-in-re
 - Build a static version in React (without state) first, and then add in state after all components are ready
 
 And in deciding state, ask three questions about each piece of data:
+
 1. Is it passed in from a parent via props? If so, it probably isn’t state.
 2. Does it remain unchanged over time? If so, it probably isn’t state.
 3. Can you compute it based on any other state or props in your component? If so, it isn’t state.
@@ -2581,7 +2712,7 @@ And in deciding state, ask three questions about each piece of data:
 
 ### MCS
 
-- Created a sights dashboard that allows users to edit and save changes for each 
+- Created a sights dashboard that allows users to edit and save changes for each
 - Possible to-do: Option to create and delete sights
 
 ## Day 64: 2017-10-26: Thursday
@@ -2611,7 +2742,7 @@ And in deciding state, ask three questions about each piece of data:
 
 > Today trying out some game dev with @melonJS & Tiled Map Editor. Slow-going but satisfying! http://melonjs.github.io/tutorial-platformer/ 60/#100DaysOfCode
 
-Game development with melonJS! 
+Game development with melonJS!
 
 - [melonJS Platformer Tutorial](http://melonjs.github.io/tutorial-platformer/)
 - [melonJS boilerplate](https://github.com/melonjs/boilerplate)
@@ -2625,13 +2756,13 @@ Game development with melonJS!
 - Updated and optimized images
 - Learned you can make a fork of an NPM and manage it independently as an NPM resource
 - You must restart react manually if you make a change to JS outside the scope of normally watched files (eg NPM)
-- Decided to write Quiz module ourselves so we could manage it and implement things that didn't seem to work in the included NPM 
+- Decided to write Quiz module ourselves so we could manage it and implement things that didn't seem to work in the included NPM
 
 ## Day 58: 2017-10-20 Friday
 
-> Neat tool for CORS workarounds: https://crossorigin.me/  Implemented Passport and attempted local storage 58/#100DaysOfCode #mtcs07boz
+> Neat tool for CORS workarounds: https://crossorigin.me/ Implemented Passport and attempted local storage 58/#100DaysOfCode #mtcs07boz
 
-### MCS 
+### MCS
 
 - Working with [Axios](https://www.npmjs.com/package/axios) for fetches - Promise based HTTP client for the browser and node.js
 - Working through CORS issues (unresolved) with National Parks API
@@ -2661,13 +2792,13 @@ Game development with melonJS!
 
 - Implemented javascript-quiz-using-json and rebuilt to allow for element to be placed inside a div
 - Developed quiz questions
-- Added feature card components 
+- Added feature card components
 
 ## Day 54: 2017-10-16 Monday
 
-> What do you do when you enjoy using @semanticui but start developing in #ReactJS? 🎉 Celebrate! https://react.semantic-ui.com/elements/button  54/#100DaysOfCode
+> What do you do when you enjoy using @semanticui but start developing in #ReactJS? 🎉 Celebrate! https://react.semantic-ui.com/elements/button 54/#100DaysOfCode
 
-### MCS 
+### MCS
 
 - [Semantic UI for React](https://react.semantic-ui.com/usage)
 - [Jest](https://facebook.github.io/jest/) for TDD in React
@@ -2675,7 +2806,7 @@ Game development with melonJS!
 
 ## Day 53: 2017-10-15 Sunday
 
-> So much to learn about #Javascript & web dev; at least we'll never be bored 😉 53/#100DaysOfCode #freecodecamp 
+> So much to learn about #Javascript & web dev; at least we'll never be bored 😉 53/#100DaysOfCode #freecodecamp
 
 - [freeCodeCamp - Timestamp Microservice](https://www.freecodecamp.org/challenges/timestamp-microservice)
 - Headfirst Design Patterns, Observer Pattern (Subject & Subscribers)
@@ -2731,7 +2862,7 @@ Spent a full day tying pieces together for a 🎵 project using the @Spotify API
 
 > My project is currently a mess of React and EJS... but I've got an API loading & @semanticui to make it pretty! 👩‍🎨 46/#100DaysOfCode
 
-### MCS 
+### MCS
 
 - [Broken API - Express Routing](https://github.com/virtual/broken-api)
 
@@ -2746,7 +2877,7 @@ Spent a full day tying pieces together for a 🎵 project using the @Spotify API
 > Angered the API gods by accidentally calling React components from each other's template. (Loop!) ☁️ Lesson learned! 43/#100DaysOfCode
 
 ### MCS
- 
+
 - [React Weather App using OpenWeatherMap API](https://github.com/virtual/reactWeatherApp)
 - [Passing Props](https://facebook.github.io/react-native/docs/props.html)
 - Arrow functions allow you to run a callback without changing scope
@@ -2754,7 +2885,7 @@ Spent a full day tying pieces together for a 🎵 project using the @Spotify API
 
 ## Day 42: 2017-10-04 Wednesday
 
-> My first #hacktoberfest pull request resulted in a nice note! 🌮🌮 Anyone else trying some? 42/#100DaysOfCode https://hacktoberfest.digitalocean.com/ 
+> My first #hacktoberfest pull request resulted in a nice note! 🌮🌮 Anyone else trying some? 42/#100DaysOfCode https://hacktoberfest.digitalocean.com/
 
 - Pull Request (accepted!) for [AlgoWiki](https://github.com/vicky002/AlgoWiki/pull/75)
 
@@ -2786,19 +2917,19 @@ Spent a full day tying pieces together for a 🎵 project using the @Spotify API
 - [RESTful Routing: Hot Cocoa Blog](https://github.com/virtual/restful-routes)
 - [RESTful Routing - Udemy Web Developer Bootcamp](https://www.udemy.com/the-web-developer-bootcamp/learn/v4/t/lecture/3919760?start=0)
 
-| Name | Path | HTTP Verb | Purpose | Mongoose Method |
-| ---- | ---- | --------- | ------- | ----------------|
-| Index | /dogs | GET | List all dogs | Dog.find() |
-| New | /dogs/new | GET | Show new dog form | N/A |
-| Create | /dogs | POST | Create a new dog, then redirect somewhere | Dog.create() |
-| Show | /dogs/:id | GET | Show info about one specific dog | Dog.findById() |
-| Edit | /dogs/:id/edit | GET | Show edit form for one dog | Dog.findById() |
-| Update | /dogs/:id | PUT | Update a particular dog, then redirect somewhere | Dog.findByIdAndUpdate() |
-| Destroy | /dogs/:id | DELETE | Delete a particular dog, then redirect somewhere | Dog.findByIdAndRemove()|
+| Name    | Path           | HTTP Verb | Purpose                                          | Mongoose Method         |
+| ------- | -------------- | --------- | ------------------------------------------------ | ----------------------- |
+| Index   | /dogs          | GET       | List all dogs                                    | Dog.find()              |
+| New     | /dogs/new      | GET       | Show new dog form                                | N/A                     |
+| Create  | /dogs          | POST      | Create a new dog, then redirect somewhere        | Dog.create()            |
+| Show    | /dogs/:id      | GET       | Show info about one specific dog                 | Dog.findById()          |
+| Edit    | /dogs/:id/edit | GET       | Show edit form for one dog                       | Dog.findById()          |
+| Update  | /dogs/:id      | PUT       | Update a particular dog, then redirect somewhere | Dog.findByIdAndUpdate() |
+| Destroy | /dogs/:id      | DELETE    | Delete a particular dog, then redirect somewhere | Dog.findByIdAndRemove() |
 
 ## Day 38: 2017-09-30 Saturday
 
-> Reviewing Express, routes, MongoDB and Ajax. Next up, more practice fetching endpoints with $.get. 37 & 38/#100DaysOfCode #mtcs07boz
+> Reviewing Express, routes, MongoDB and Ajax. Next up, more practice fetching endpoints with \$.get. 37 & 38/#100DaysOfCode #mtcs07boz
 
 ## Day 37: 2017-09-29 Friday
 
@@ -2819,6 +2950,7 @@ Spent a full day tying pieces together for a 🎵 project using the @Spotify API
 > Created an Express/Mongo app featuring some of my favorite actresses! 35/#100DaysOfCode #mtcs07boz #javascript https://github.com/virtual/celebrity-app
 
 ### MCS
+
 - [RoboMongo](https://robomongo.org/download)
 - [Firebase](https://firebase.google.com)
 
@@ -2828,7 +2960,7 @@ Spent a full day tying pieces together for a 🎵 project using the @Spotify API
 
 - [Express Updating Route](https://www.udemy.com/the-web-developer-bootcamp/learn/v4/t/lecture/3861604?start=0)
 
-### MCS 
+### MCS
 
 - [Bootstrap 4](https://v4-alpha.getbootstrap.com/) (use script includes on homepage)
 - [jQuery](https://code.jquery.com/)
@@ -2887,7 +3019,7 @@ Spent a full day tying pieces together for a 🎵 project using the @Spotify API
 
 ## Day 28: 2017-09-20 Wednesday
 
->  Upgrading our test-driven dev programs from plain JS to #MochaJS & #ChaiJS libraries! #mtcs07boz 28/#100DaysOfCode
+> Upgrading our test-driven dev programs from plain JS to #MochaJS & #ChaiJS libraries! #mtcs07boz 28/#100DaysOfCode
 
 ### MCS
 
@@ -2914,6 +3046,7 @@ Spent a full day tying pieces together for a 🎵 project using the @Spotify API
 > Day 1 of mtcodeschool / #mtcs07boz! Watched ES6 L1 from LambdaSchool & worked more on #flexbox with wesbos. 26/#100DaysOfCode
 
 ### MCS
+
 - Learned Agile processes; used our Kanban board to move tasks around
 - Discussed the state of flow and learning
 - Intro to the Terminal; made directories, searched for files and set up colors
@@ -2931,7 +3064,7 @@ Spent a full day tying pieces together for a 🎵 project using the @Spotify API
 
 ---
 
-Start of Montana Code School 2017-09-18 
+Start of Montana Code School 2017-09-18
 
 ---
 
@@ -2947,16 +3080,15 @@ Start of Montana Code School 2017-09-18
 
 - [Reviewing Sass](https://github.com/virtual/sass-play)
 - [Designing for Interfaces - online book](http://designingforperformance.com/)
-- [Mr. Rogers and the Power of Persuasion](https://www.youtube.com/watch?v=_DGdDQrXv5U) 
+- [Mr. Rogers and the Power of Persuasion](https://www.youtube.com/watch?v=_DGdDQrXv5U)
 - [Flexbox tutorial](https://flexbox.io/) recommended by Gildara (Twitter)
 
 ## Day 23: 2017-09-15 Friday
 
-> Added [mobile interaction](https://virtual.github.io/udemy-web-dev-bootcamp-patatap/) & made a github [#100DaysOfCode log](https://virtual.github.io/100daysofcode) for the first 23 days! 
+> Added [mobile interaction](https://virtual.github.io/udemy-web-dev-bootcamp-patatap/) & made a github [#100DaysOfCode log](https://virtual.github.io/100daysofcode) for the first 23 days!
 
 - Update [Patatap](https://virtual.github.io/udemy-web-dev-bootcamp-patatap/) to be mobile friendly (displays random circle & sound)
 - Begin developing out [100daysofcode](https://virtual.github.io/100daysofcode/) log
-
 
 ## Day 22: 2017-09-14 Thurs
 
@@ -2968,7 +3100,6 @@ Start of Montana Code School 2017-09-18
 
 - [Counting Grains of Sand with Friends](https://medium.com/montanacodeschool/counting-grains-of-sand-with-friends-8ab777a01aa1)
 
-
 ## Day 21: 2017-09-13 Wed
 
 > Working through a [To-Do from Colt Steele's Web Dev Bootcamp](https://www.udemy.com/the-web-developer-bootcamp/learn/v4/t/lecture/3861520?start=0). Nice tips on remove() after fadeOut() & on vs click 21/#100DaysOfCode
@@ -2977,102 +3108,82 @@ Start of Montana Code School 2017-09-18
 
 - [After the flood - Spark lines](http://aftertheflood.co/projects/atf-spark)
 
-
 ## Day 20: 2017-09-12 Tues
 
-> Start projects using what you know; refine later using what your project needs. https://youtu.be/DFP6UDgVJtE  20/#100DaysOfCode
-
+> Start projects using what you know; refine later using what your project needs. https://youtu.be/DFP6UDgVJtE 20/#100DaysOfCode
 
 ## Day 19: 2017-09-11 Mon
 
-> I really don't understand it, but I somehow made it through the exercise. #EloquentJS Ch.4 arrayToList() 19/#100DaysOfCode 
-
+> I really don't understand it, but I somehow made it through the exercise. #EloquentJS Ch.4 arrayToList() 19/#100DaysOfCode
 
 ## Day 18: 2017-09-10 Sun
 
-> Building up a page using semanticui; mocking up a virtual community news page. Fun to try out all the components! 18/#100DaysOfCode  
-
+> Building up a page using semanticui; mocking up a virtual community news page. Fun to try out all the components! 18/#100DaysOfCode
 
 ## Day 17: 2017-09-09 Sat
 
 > Tried out both materialdesign and semanticui. Definitely loving semanticui's documentation more! 17/#100DaysOfCode
 
-
 ## Day 16: 2017-09-08 Fri
 
 > Taking time to practice making and approving pull requests in github with other mtcodeschool students! #mtcs07boz 16/#100DaysOfCode
 
-
 ## Day 15: 2017-09-07 Thurs
 
-> With help of StackOverflow, I refactored my redundant XSL into dynamic templates. (Managing this was insane before!😓) 15/#100DaysOfCode  
-
+> With help of StackOverflow, I refactored my redundant XSL into dynamic templates. (Managing this was insane before!😓) 15/#100DaysOfCode
 
 ## Day 14: 2017-09-06 Wed
 
 > Submitted my prework for @mtcodeschool and made a simple [Inch/CM converter tool](https://s.codepen.io/virtual/debug/XawEqe/bZAQWyeYVQzM) 14/#100DaysOfCode #mtcs07boz
 
-
 ## Day 13: 2017-09-05 Tues
 
-> Worked on setting up my dev environment on my new MacBook Air & worked through prework for mtcodeschool 13/#100DaysOfCode #mtcs07boz 
-
+> Worked on setting up my dev environment on my new MacBook Air & worked through prework for mtcodeschool 13/#100DaysOfCode #mtcs07boz
 
 ## Day 12: 2017-09-04 Mon
 
-> Finished Pairwise & completely finished with #freecodecamp's Front End Development! 🎉 12/#100DaysOfCode  
-
+> Finished Pairwise & completely finished with #freecodecamp's Front End Development! 🎉 12/#100DaysOfCode
 
 ## Day 11: 2017-09-03 Sun
 
-> WIP ~ Still working on solving pairwise with reduce--last advanced algorithm I have yet to complete! #freecodecamp 11/#100DaysOfCode 
-
+> WIP ~ Still working on solving pairwise with reduce--last advanced algorithm I have yet to complete! #freecodecamp 11/#100DaysOfCode
 
 ## Day 10: 2017-09-02 Sat
 
-> No repeats please! ☑️ Spent more time fixing regex than I did learning & implementing Heap's algorithm! 10/#100DaysOfCode #freecodecamp 
-
+> No repeats please! ☑️ Spent more time fixing regex than I did learning & implementing Heap's algorithm! 10/#100DaysOfCode #freecodecamp
 
 ## Day 09: 2017-09-01 Fri
 
-> Attended a great 406creatives talk on authenticity, innovation & culture diff from googlemaps builders Garima & Alysia. 9/#100DaysOfCode  
-
+> Attended a great 406creatives talk on authenticity, innovation & culture diff from googlemaps builders Garima & Alysia. 9/#100DaysOfCode
 
 ## Day 08: 2017-08-31 Thurs
 
-> Finished Symmetric Difference that I gave up on over a year ago! I also may have reworked the modal 👑 #freecodecamp 8/#100DaysOfCode  
-
+> Finished Symmetric Difference that I gave up on over a year ago! I also may have reworked the modal 👑 #freecodecamp 8/#100DaysOfCode
 
 ## Day 07: 2017-08-30 Wed
 
-> Finished some exercises on #EloquentJS. Met up with a fellow coder to develop ideas for projects this fall! 7/#100DaysOfCode 
-
+> Finished some exercises on #EloquentJS. Met up with a fellow coder to develop ideas for projects this fall! 7/#100DaysOfCode
 
 ## Day 06: 2017-08-29 Tues
 
-> Finally understanding [higher-order functions](https://www.youtube.com/watch?v=BMUiFMZr7vk) with vids from mpjme / Ch. 5 #EloquentJS 6/#100DaysOfCode 
-
+> Finally understanding [higher-order functions](https://www.youtube.com/watch?v=BMUiFMZr7vk) with vids from mpjme / Ch. 5 #EloquentJS 6/#100DaysOfCode
 
 ## Day 05: 2017-08-28 Mon
 
-> Finally—that green lock of glory from @letsencrypt! Also ex. 38-42 from [A Smarter Way to Learn JavaScript](http://www.asmarterwaytolearn.com/js/index-of-exercises.html) 5/#100DaysOfCode  
-
+> Finally—that green lock of glory from @letsencrypt! Also ex. 38-42 from [A Smarter Way to Learn JavaScript](http://www.asmarterwaytolearn.com/js/index-of-exercises.html) 5/#100DaysOfCode
 
 ## Day 04: 2017-08-27 Sun
 
-> Completed [ex. 29-37--date conversions & functions](http://www.asmarterwaytolearn.com/js/index-of-exercises.html) & migrating sites to digitalocean ❤️ 4/#100DaysOfCode 
-
+> Completed [ex. 29-37--date conversions & functions](http://www.asmarterwaytolearn.com/js/index-of-exercises.html) & migrating sites to digitalocean ❤️ 4/#100DaysOfCode
 
 ## Day 03: 2017-08-26 Sat
 
-> Learned correlation & finished ch. 4 of #EloquentJS (& Migrated email to zoho—great docs!) 3/#100DaysOfCode  
-
+> Learned correlation & finished ch. 4 of #EloquentJS (& Migrated email to zoho—great docs!) 3/#100DaysOfCode
 
 ## Day 02: 2017-08-25 Fri
 
-> Backing up files from site5. Thinking of moving to digitalocean & zoho for SSL support. Ch4/arrays of #eloquentjs 2/#100DaysOfCode 
-
+> Backing up files from site5. Thinking of moving to digitalocean & zoho for SSL support. Ch4/arrays of #eloquentjs 2/#100DaysOfCode
 
 ## Day 01: 2017-08-24 Thurs
 
-> Finished my [portfolio migration from #Wordpress to GoHugoIO](http://www.satinflame.com)  Next up: implement letsencrypt 1/#100DaysOfCode
+> Finished my [portfolio migration from #Wordpress to GoHugoIO](http://www.satinflame.com) Next up: implement letsencrypt 1/#100DaysOfCode
