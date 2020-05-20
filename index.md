@@ -173,11 +173,8 @@ export default RenderDetails;
 
 ## R3 Day 60: 2020-05-19 Tuesday
 
-Begin adding React components
-
-## R3 Day 59: 2020-05-18 Monday
-
 ### Determine React component hierarchy
+Begin adding React components
 
 - App
 
@@ -185,8 +182,6 @@ Begin adding React components
     - CommentList
     - CommentCreate
   - PostCreate
-
-
 
 ## R3 Day 59: 2020-05-18 Monday
 
