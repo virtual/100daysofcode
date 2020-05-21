@@ -53,9 +53,10 @@
   - Day 27: [Snaking Timeline](https://codepen.io/virtual/pen/bGVpdyN) ✓
   - Day 42: [Minecraft Drawing Grid](https://codepen.io/virtual/full/vYNeajo)
   - Day 43: [Minecraft Drawing Grid](https://codepen.io/virtual/full/vYNeajo)
-- Server updates
+- Portfolio & Server updates
   - Day 31: Updated to support LetsEncrypt ACMEv2 and to Debian 10 ✓
   - Day 54: Explore docker droplets, SSH config
+  - Day 62: Added schema to satinflame.com
 - IBM Design Thinking
   - Day 31: Practitioner Badge ✓
 - Stylelint
@@ -113,6 +114,15 @@
   - Blue Array certification
 
 ---
+
+## R3 Day 62: 2020-05-21 Thursday
+
+Inspired by [Scott Mathson's SEO on the Jamstack presentation - VirtuaCon (Jekyll)](https://scottmathson.com/blog/2020/05/15/seo-on-the-jamstack-virtuacon-presentation/?ref=virtuacon-redirect) to add [schema to a website using Hugo](https://dev.to/pdwarkanath/adding-structured-data-to-your-hugo-site-58db). 
+
+Notes: 
+- [My implemented schema for my portfolio](https://github.com/virtual/hugo-static-satinflame/blob/master/layouts/partials/schema.html)
+- To see multiple structures on Google Structured Data Testing, you have to wrap each structure in its own `<script>` tag.
+- It doesn't appear that BlogPost is an enhancement type shown in Google Search Console.
 
 ## R3 Day 61: 2020-05-20 Wednesday
 
