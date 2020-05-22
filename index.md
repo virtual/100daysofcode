@@ -79,6 +79,7 @@
   - Day 59: Section 2: A Mini-Microservices App (begin React components)
   - Day 60: Section 2: A Mini-Microservices App (PostCreate)
   - Day 61: Section 2: A Mini-Microservices App (CORS support)
+  - Day 63: Section 2: A Mini-Microservices App (React components)
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Animations / manipulations with SVG
@@ -114,6 +115,10 @@
   - Blue Array certification
 
 ---
+
+## R3 Day 63: 2020-05-22 Friday
+
+Microservices react components for (listing and adding) Posts and Comments complete.
 
 ## R3 Day 62: 2020-05-21 Thursday
 
