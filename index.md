@@ -80,8 +80,11 @@
   - Day 60: Section 2: A Mini-Microservices App (PostCreate)
   - Day 61: Section 2: A Mini-Microservices App (CORS support)
   - Day 63: Section 2: A Mini-Microservices App (React components)
+  - Day 65: Section 2: A Mini-Microservices App (Emitting events)
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
+- Other projects/APIs
+  - Day 64: Test ESPN APi  
 - Animations / manipulations with SVG
 - Create a game with an isometric view
 - Create a virtual pet site
@@ -115,6 +118,31 @@
   - Blue Array certification
 
 ---
+
+## R3 Day 65: 2020-05-24 Sunday
+
+### Microservices blog
+
+Current data flow:
+- Get posts, show each post, get the comments for _each_ posts (each making its own request)
+- Very inefficient
+
+Proposed: Asynchronous call using an Event bus
+- Types of event buses: RabbitMQ, Kafka, NATS
+- Adds in a Query service that assembles all of the blogs and comments into an efficient structure
+- Listens to any time a post or comment is created
+- Posts and Comments services will emit an event when new item created
+
+Emitting events
+- Each event should have two properties: `type` (eg 'PostCreated') and `data` (object of new item)
+
+Notes:
+- Why do you not need to explicitly install `body-parser` and [why do we need body-parser](https://stackoverflow.com/questions/38306569/what-does-body-parser-do-with-express)?
+  - To handle HTTP POST request in Express.js version 4 and above, you need to install middleware module called body-parser.
+  - body-parser extract the entire body portion of an incoming request stream and exposes it on `req.body`.
+  - The middleware was a part of Express.js earlier but now you have to install it separately.
+  - This body-parser module parses the JSON, buffer, string and URL encoded data submitted using HTTP POST request. Install body-parser using NPM.
+  - _As of April 2019_: in express@4.16.0 the body-parser middleware bundled with express.
 
 ## R3 Day 64: 2020-05-23 Saturday
 
