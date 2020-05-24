@@ -116,6 +116,20 @@
 
 ---
 
+## R3 Day 64: 2020-05-23 Saturday
+
+Playing with football APIs. ESPN seems to have a good--albeit undocumented--API.
+
+- [GitHub Repo: ESPN Fantasy Football API](https://github.com/mkreiser/ESPN-Fantasy-Football-API)
+- [GitHub discussion: ESPN's hidden API endpoints](https://gist.github.com/akeaswaran/b48b02f1c94f873c6655e7129910fc3b)
+- Example endpoint for single player: `https://site.web.api.espn.com/apis/common/v3/sports/football/nfl/athletes/101`
+
+Notes:
+- When do we use `const` vs. `import` for certain libraries?
+  - [`require` is the node.js way to load modules](https://stackoverflow.com/questions/31354559/using-node-js-require-vs-es6-import-export)
+  - In 2016 it makes sense to [stick with the `import`](https://stackoverflow.com/questions/34601582/what-is-the-difference-between-import-and-const-and-which-is-preferred-in-common) since that's the part of the standard. There is no technical reason to prefer import over require though: everything that can be done using `require` can be done with `import` and vice versa. In some cases one will be more concise, in another - the other.
+- [Using Axios on Node](https://flaviocopes.com/node-axios/)
+
 ## R3 Day 63: 2020-05-22 Friday
 
 Microservices react components for (listing and adding) Posts and Comments complete.
