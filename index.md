@@ -100,7 +100,7 @@
   - Day 48, 49: Technical audit of your site (part 1)
   - Day 50: Technical audit of your site (part 2)
   - Day 51: Producing a technical backlog
-  - Day 51, 52: Benchmarking against your competitors
+  - Day 51, 52, 66: Benchmarking against your competitors
   - SEO common pitfalls
   - Creating a Keyword Universe
   - Creating your North Star Goal
@@ -118,6 +118,13 @@
   - Blue Array certification
 
 ---
+
+## R3 Day 66: 2020-05-25 Monday
+
+A little break from programming; working on SEO Gap analysis for my website and some complex Excel functions. 
+
+- Sum of search volume for all Keywords appearing positions 1-3: `=SUMIFS('Overall Aggregate'!$F:$F,'Overall Aggregate'!$C:$C,"<4",'Overall Aggregate'!$C:$C,">0")`
+- If site has a position for a certain keyword: `=IFERROR(VLOOKUP(A14,'Our site (Pos 1-100, non-brand)'!A:B,2,FALSE),"GAP")`
 
 ## R3 Day 65: 2020-05-24 Sunday
 
