@@ -81,6 +81,7 @@
   - Day 61: Section 2: A Mini-Microservices App (CORS support)
   - Day 63: Section 2: A Mini-Microservices App (React components)
   - Day 65: Section 2: A Mini-Microservices App (Emitting events)
+  - Day 67: Section 2: A Mini-Microservices App (Implement query service)
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Other projects/APIs
@@ -101,7 +102,7 @@
   - Day 50: Technical audit of your site (part 2)
   - Day 51: Producing a technical backlog
   - Day 51, 52, 66: Benchmarking against your competitors
-  - SEO common pitfalls
+  - Day 66: SEO common pitfalls
   - Creating a Keyword Universe
   - Creating your North Star Goal
   - Creating your monthly report
@@ -118,6 +119,10 @@
   - Blue Array certification
 
 ---
+
+## R3 Day 67: 2020-05-26 Tuesday
+
+Implement query service for listing posts and comments. [GitHub changes](https://github.com/virtual/microservices-blog/commit/2aa985f45af0ff8527f79035e1a85fbec57daf58#diff-b46b523c2e3993521d921e937acb3a3e)
 
 ## R3 Day 66: 2020-05-25 Monday
 
