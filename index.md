@@ -120,6 +120,10 @@
 
 ---
 
+## R3 Day 68: 2020-05-27 Wednesday
+
+Added handlesbars for implementing conditional content in sendgrid email templates--hopefully can reduce the large amount of email templates down to a few!
+
 ## R3 Day 67: 2020-05-26 Tuesday
 
 Implement query service for listing posts and comments. [GitHub changes](https://github.com/virtual/microservices-blog/commit/2aa985f45af0ff8527f79035e1a85fbec57daf58#diff-b46b523c2e3993521d921e937acb3a3e)
