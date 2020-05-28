@@ -120,6 +120,10 @@
 
 ---
 
+## R3 Day 69: 2020-05-28 Thursday
+
+Beginning adding comment moderation to Udemy Microservices Blog feature
+
 ## R3 Day 68: 2020-05-27 Wednesday
 
 Added handlesbars for implementing conditional content in sendgrid email templates--hopefully can reduce the large amount of email templates down to a few!
