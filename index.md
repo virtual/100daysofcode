@@ -82,10 +82,13 @@
   - Day 63: Section 2: A Mini-Microservices App (React components)
   - Day 65: Section 2: A Mini-Microservices App (Emitting events)
   - Day 67: Section 2: A Mini-Microservices App (Implement query service)
+  - Day 69: Section 2: A Mini-Microservices App (Comment moderation)
+  - Day 70: Section 2: A Mini-Microservices App (Moderation service and CommentUpdated event)
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Other projects/APIs
   - Day 64: Test ESPN APi  
+  - Day 68: Sendgrid handlebars email templates
 - Animations / manipulations with SVG
 - Create a game with an isometric view
 - Create a virtual pet site
@@ -119,6 +122,20 @@
   - Blue Array certification
 
 ---
+
+## R3 Day 70: 2020-05-29 Friday
+
+### Microservices Query Service: Add moderation
+
+Best practice: Query service only listens for `update` events:
+
+- The query service is all about presentation logic
+- Does it make sense for a presentation service to understand how to process a very precise update?
+- What happens when (in the future) there are 10 ways to update it? (Upvote, add photos, advertised)
+- The Comment service is in charge of all business logic around a comment
+  - When comment updated (moderated, upvoted, downvoted, etc) Comment service emits one generic event __Comment Updated__ to Query service
+  - Query service can then take the emitted `data` attrs and copy them
+
 
 ## R3 Day 69: 2020-05-28 Thursday
 
