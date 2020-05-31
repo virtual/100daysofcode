@@ -85,6 +85,7 @@
   - Day 69: Section 2: A Mini-Microservices App (Comment moderation)
   - Day 70: Section 2: A Mini-Microservices App (Moderation service and CommentUpdated event)
   - Day 71: Section 2✓: A Mini-Microservices App (Event bus data store)
+  - Day 72: Section 3: Running services with Docker
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Other projects/APIs
@@ -123,6 +124,22 @@
   - Blue Array certification
 
 ---
+
+## R3 Day 72: 2020-05-31 Sunday
+
+### Microservices: Running services with Docker
+
+- Load balance: randomize which server the incoming request goes to
+- Docker container: instance of an image; one container for each service (eg Posts, Comments, Query, Event Bus)
+- Kubernetes: a tool for running a bunch of Docker containers together
+- K8s cluster: a set of virtual machines (called nodes) managed by master
+- K8s master: a program that manages everything in the cluster, reads config file
+
+### Basics of Docker
+
+- `docker run hello-world` - A simple app that shows that docker is running successfully in your environment
+- _Docker CLI_ - aka the Docker client
+- `docker run <IMGNAME>` creates a container of an image from your local machine or Docker Hub
 
 ## R3 Day 71: 2020-05-30 Saturday
 
