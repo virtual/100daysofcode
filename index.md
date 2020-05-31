@@ -74,7 +74,7 @@
 - GDG Meetup
   - Day 53: AMP Website Workshop
 - [Microservices with Node JS and React](https://www.udemy.com/course/microservices-with-node-js-and-react/)
-  - Day 57: Section 1: Fundamental Ideas Around Microservices
+  - Day 57: Section 1✓: Fundamental Ideas Around Microservices
   - Day 58: Section 2: A Mini-Microservices App (setup and services)
   - Day 59: Section 2: A Mini-Microservices App (begin React components)
   - Day 60: Section 2: A Mini-Microservices App (PostCreate)
@@ -84,6 +84,7 @@
   - Day 67: Section 2: A Mini-Microservices App (Implement query service)
   - Day 69: Section 2: A Mini-Microservices App (Comment moderation)
   - Day 70: Section 2: A Mini-Microservices App (Moderation service and CommentUpdated event)
+  - Day 71: Section 2✓: A Mini-Microservices App (Event bus data store)
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Other projects/APIs
@@ -122,6 +123,26 @@
   - Blue Array certification
 
 ---
+
+## R3 Day 71: 2020-05-30 Saturday
+
+- Fix type check in moderation
+- Turn off moderation service in order to mimick the "pending approval"
+- When we turn moderation service back on, the comment will not get approved :(
+- How do we deal with missing events and event syncing?
+- How do we retroactively enable a new feature in the future?
+  1. Sync requests - for first run only
+  1. Direct DB access - for first run only
+  1. Store events - new service needs access to all events that were emitted in the past
+
+Storing events
+- Use event bus, emits event for all services and then stores the event internally in the event bus data store
+- New service can determine what needs to be done for tasks
+- No extra processing code needs to be written (eg sync and direct db code)
+
+Steps:
+1. Every time an event occurs we store it inside an array
+2. Add an endpoint to event bus that allows us to retrieve all the events that ever occurred
 
 ## R3 Day 70: 2020-05-29 Friday
 
