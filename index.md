@@ -91,6 +91,7 @@
 - Other projects/APIs
   - Day 64: Test ESPN APi  
   - Day 68: Sendgrid handlebars email templates
+  - Day 73: Netlify Jamdocs
 - Animations / manipulations with SVG
 - Create a game with an isometric view
 - Create a virtual pet site
@@ -124,6 +125,11 @@
   - Blue Array certification
 
 ---
+
+## R3 Day 73: 2020-06-01 Monday
+
+Playing with Jamdocs on Netlify, uses gridsome and [Forestry](https://forestry.io/docs/quickstart/tour/):
+https://virtual-jamdocs.netlify.app/
 
 ## R3 Day 72: 2020-05-31 Sunday
 
