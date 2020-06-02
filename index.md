@@ -86,6 +86,7 @@
   - Day 70: Section 2: A Mini-Microservices App (Moderation service and CommentUpdated event)
   - Day 71: Section 2✓: A Mini-Microservices App (Event bus data store)
   - Day 72: Section 3: Running services with Docker
+  - Day 74: Section 24: Basics of Docker
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Other projects/APIs
@@ -125,6 +126,50 @@
   - Blue Array certification
 
 ---
+
+## R3 Day 74: 2020-06-02 Tuesday
+
+### Microservices: Basics of Docker
+
+- Image: a snapshot of the filesystem and a start command
+- Namespacing: isolating resources per process (or group of processes)
+- Control groups (cgroup): manages the RAM, hard disk, network bandwidth, etc needed by the container/per process (linux)
+- Docker (for Win/Mac) is a Linux VM, the Linux kernal manages access from containers to computer hardware
+
+`docker run <image name> command`
+
+- Creates _and_ runs a container `docker run` = `docker create` + `docker start`
+- Since docker containers have a run command by default, if you add a command, it will _override_ the default run command.
+- If we try to execute a command inside a container (`ls` or `echo hi`) that doesn't exist in image's filesystem, we receive an error.
+- `docker ps` - show running images
+- `docker ps --all` - show any image ever created one machine
+- `docker start -a <containerid>` - `-a` (attach), watch it and tell it to output to our console from the container
+- By default: `docker run` shows all output; `docker start` does not
+
+Lifecycles
+
+- When a container is exited, it can still be easily restarted
+- Images save your start command override; _you cannot override it_
+- `docker system prune` - clean existing images
+- `docker stop <id>` - gives running processes time to shut down (10s)
+- `docker kill <id>` - forces it to stop immediately (such as `ping`)
+
+Seeing what was run:
+
+- → `docker create busybox echo hi there`
+- _b895a109c17c51e05967ac463c0d2bb77f82a1be79d2ef0e99ed135dd4cfe02c_
+- → `docker start b895` (if you forgot the `-a` flag)
+- _b895_
+- → `docker logs b895`
+- _hi there_
+
+Redis: 
+- a in-memory data store that's commonly used for web applications
+- `docker run redis` - starts Redis server
+- `redis-cli` --> need to start it inside the container
+- Use `docker exec -it <containerid> <command>` to execute a second command inside a running container (`-it` allows us to provide input to the container)
+- e.g.: `docker exec -it 8ca6 redis-cli`
+
 
 ## R3 Day 73: 2020-06-01 Monday
 
