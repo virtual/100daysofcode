@@ -127,6 +127,51 @@
 
 ---
 
+## R3 Day 75: 2020-06-03 Wednesday
+
+### Microservices: Basics of Docker
+
+__More about `-it`__
+
+- Every process inside a Docker (linux) environment has 3 communication channels attached to it:
+  1. STDIN - things you type into
+  1. STDOUT - output that shows on your console (from the process)
+  1. STDERR - similar to STDOUT but specifically for show process errors
+- `-it` is really `-i` and `-t`
+  - `-i` - attach the terminal to the STDIN when executing this command 
+  - `-t` - formats input/output so it shows up nicely and allows for autocomplete
+
+__Running a terminal inside your running container__
+
+- `docker exec -it 9320 sh`
+- allows for Unix commands like `cd ~/` or `ls`
+- if you need to exit and CTRL+C isn't working, try CTRL+D or `exit`
+- `sh` is the default command processor (or `bash`)
+- containers do not share filesystems by default
+
+__Docker Images__
+
+Creating an Image:
+
+- Setup a dockerfile - plain text config that defines how the container should behave
+  - Specify base image
+  - Run some command to install additional programs
+  - Set the command to run on container startup
+  - Base image, Analogy: adding Chrome to a computer with no OS
+
+```dockerfile
+# Use existing image (alpine) as base
+FROM alpine 
+
+# Download and Install depedency
+RUN apk add --update redis
+
+# Tell image what to do with in starts as a container
+CMD ["redis-server"]
+```  
+
+`FROM, RUN, CMD` are docker commands used in the `Dockerfile`
+
 ## R3 Day 74: 2020-06-02 Tuesday
 
 ### Microservices: Basics of Docker
