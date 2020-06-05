@@ -109,7 +109,7 @@
   - Day 50: Technical audit of your site (part 2)
   - Day 51: Producing a technical backlog
   - Day 51, 52, 66: Benchmarking against your competitors
-  - Day 66: SEO common pitfalls
+  - Day 66, 76: SEO common pitfalls
   - Creating a Keyword Universe
   - Creating your North Star Goal
   - Creating your monthly report
@@ -127,7 +127,11 @@
 
 ---
 
-## R3 Day 75: 2020-06-03 Wednesday
+## R3 Day 77: 2020-06-05 Friday
+
+SEO reviewing common pitfalls
+
+## R3 Day 76: 2020-06-04 Thursday
 
 ### Docker images
 
