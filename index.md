@@ -129,6 +129,23 @@
 
 ## R3 Day 75: 2020-06-03 Wednesday
 
+### Docker images
+
+- `docker build .` runs build on the Dockerfile
+- each build item is a "step"
+- each step creates a new intermediate/temporary container
+- If rerunning a build that hasn't changed (up to a step), it can use a cache
+- put changes as low (last) in the Dockerfile as possible to keep rebuilding fast
+
+Tagging an image
+- When building tag in order to reference a name instead of id `<yourDockerId>/<reponame>:<version>`, e.g. `docker build -t stephengrinder/redis:latest .`
+- `<reponame>` is what you want to reference it as
+- "tag" refers to the version
+- `commit -c` - for manually creating
+
+
+## R3 Day 75: 2020-06-03 Wednesday
+
 ### Microservices: Basics of Docker
 
 __More about `-it`__
