@@ -127,6 +127,27 @@
 
 ---
 
+## R3 Day 79: 2020-06-07 Sunday
+
+Create Dockerfile for posts
+
+- Use `.dockerignore` file to ignore `node_modules` and other directories you don't want copied to the Docker image
+
+Common commands:
+
+- `docker build -t stephengrinder/posts .` - build an image based on the dockerfile in the current directory, tag it as 'stephengrinder/posts'
+- `docker run[image id or image tag]` - Create and start a container based on the provided image id or tag
+- `docker run -it [image id or image tag][cmd]` - Create and start container, but also override the default command
+- `docker ps` - Print out information about all of the running containers
+- `docker exec -it [container id][cmd]` - Execute the given command in a running container
+- `docker logs [container id]` - Print out logs from the given container
+
+Kubernetes is a tool for running many different containers
+
+- Docker for Mac; preferences, enable Kubernetes
+- `kubectl version`
+- When you want to use K8s, you should already have all the Docker images ready
+
 ## R3 Day 78: 2020-06-06 Saturday
 
 ### Running Node.js in a Docker Container
