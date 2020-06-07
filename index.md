@@ -127,6 +127,80 @@
 
 ---
 
+## R3 Day 78: 2020-06-06 Saturday
+
+### Running Node.js in a Docker Container
+
+Initial Attempt:
+
+```Dockerfile
+# base image
+FROM alpine
+# Install dependencies
+RUN npm install
+# Set start command
+CMD [ "npm", "start" ]
+```
+
+`docker build .`
+
+Possible errors:
+
+- _npm not found_ 
+  - there is no copy of npm available (npm is not part of the alpine base image)
+  - find a different base image (search [docker hub](https://hub.docker.com/) for "node")
+  - or run a different command to add in npm
+  - if you want a certain tag, you could tell it `FROM node:6.14` or `FROM node:alpine` in the Dockerfile
+  - "alpine" is a very stripped down version of an image
+- _npm WARN saveError ENOENT: no such file or directory, open '/package.json'_
+  - by default, new container doesn't see files that are on your local filesystem
+  - you'll specifically need to tell the container to see files from your hard drive
+  - `COPY` command to copy files from local file system to container
+  - `COPY ./ ./` (pwd)
+- Docker ID is long
+  - Let's rebuild using tagging: `docker build -t satinflame/simpleweb .`
+  - Now we can run `docker run satinflame/simpleweb`
+- Why is the app not showing on `localhost:8080`?
+  - By default no outside services can access ports on your computer (incoming requests)
+  - We have to set up an explicit port mapping, forward
+  - We can only make this change when we run a docker container (fwd requests to my machine at port 8080 to port 8080 on docker)
+  - `docker run -p 5000:8080 satinflame/simpleweb`
+
+Cleaning up working directory
+
+- When you run the COPY command in the Dockerfile, let's create a subdirectory so we're not copying files into the base folder
+- WORKDIR, once set, any following commands will be executed relative to this folder
+- Since we changed Dockerfile, rebuild!  
+- Now when you run `docker run -it satinflame/simpleweb sh` you'll start in the WORKDIR
+
+Making changes to the local files
+
+- When you run COPY you are making snapshot of the files
+- New changes are not automatically reflected
+- Need to rebuild--but this means we need to re-copy and re-npm install all items
+- Let's split COPY into two steps:
+  - `COPY ./package.json ./`
+  - `COPY ./ ./`
+
+Our final, awesome Dockerfile:
+
+```Dockerfile
+# base image
+FROM node:alpine
+# Create work directory
+# If not exists, this folder will be created
+WORKDIR /usr/app
+# Split COPY into two steps to avoid having to npm install each rebuild
+COPY ./package.json ./
+# Install dependencies
+RUN npm install
+# Copy local file system to container
+# Move this after npm install so npm install doesn't need to be rerun
+COPY ./ ./
+# Set start command
+CMD [ "npm", "start" ]
+```  
+
 ## R3 Day 77: 2020-06-05 Friday
 
 SEO reviewing common pitfalls
