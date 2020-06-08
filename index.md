@@ -127,6 +127,41 @@
 
 ---
 
+## R3 Day 80: 2020-06-08 Monday
+
+### Kubernetes
+
+- Container: an instance of a Docker image
+- `kubectl` - the command to interact with a K8s cluster
+- K8s will look at your local machine first to see if a Docker image is available
+
+Kubernetes vocab: 
+
+- Cluster: a master of nodes and a master to manage them
+- Node: virtual machine; the computer that will run some number of containers for us
+- Pod: the smallest deployable units of computing that can be created and managed in Kubernetes; Pods run a single container (could have multi)
+- Deployment for a service - monitors a set of pods/containers created and responsible for recreating pods when a service crashes, etc.
+- Service - provides an simple URL to access a running container; gives us access to running pods inside our cluster, handles networking
+
+__Always use config files to create Objects--Deployments, Pods, and Services; do not type direct commands__
+
+### Config
+
+- Start by creating a new versioned tag: `docker build -t satinflame/posts:0.0.1 .`
+- Create /infra/k8s/posts.yaml:
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: posts
+spec: 
+  containers: 
+    - name: posts
+      image: satinflame/posts:0.0.1
+```
+- cd to k8s folder and run `kubectl apply -f posts.yaml`
+- `kubectl get pods` - return a list of running pods
+
 ## R3 Day 79: 2020-06-07 Sunday
 
 Create Dockerfile for posts
