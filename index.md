@@ -92,7 +92,7 @@
   - Day 78: Section 24✓: Basics of Docker (Running Node.js in a Docker Container)
   - Day 79: Section 3✓: Running services with Docker (Create Dockerfile for posts)
   - Day 80: Section 4: Orchestrating Collections of Services with Kubernetes (Getting started: Kubernetes)
-  - Day 80: Section 4: Orchestrating Collections of Services with Kubernetes (Deployments)
+  - Day 81: Section 4: Orchestrating Collections of Services with Kubernetes (Deployments)
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Other projects/APIs
