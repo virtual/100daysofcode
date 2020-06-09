@@ -87,6 +87,12 @@
   - Day 71: Section 2✓: A Mini-Microservices App (Event bus data store)
   - Day 72: Section 3: Running services with Docker
   - Day 74: Section 24: Basics of Docker
+  - Day 75: Section 24: Basics of Docker
+  - Day 76: Section 24: Basics of Docker (Docker images)
+  - Day 78: Section 24✓: Basics of Docker (Running Node.js in a Docker Container)
+  - Day 79: Section 3✓: Running services with Docker (Create Dockerfile for posts)
+  - Day 80: Section 4: Orchestrating Collections of Services with Kubernetes (Getting started: Kubernetes)
+  - Day 80: Section 4: Orchestrating Collections of Services with Kubernetes (Deployments)
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Other projects/APIs
@@ -109,8 +115,8 @@
   - Day 50: Technical audit of your site (part 2)
   - Day 51: Producing a technical backlog
   - Day 51, 52, 66: Benchmarking against your competitors
-  - Day 66, 76: SEO common pitfalls
-  - Creating a Keyword Universe
+  - Day 66, 76, 77: SEO common pitfalls
+  - Day 81: Creating a Keyword Universe
   - Creating your North Star Goal
   - Creating your monthly report
   - Site structure and internal linking
@@ -126,6 +132,75 @@
   - Blue Array certification
 
 ---
+
+## R3 Day 81: 2020-06-09 Tuesday
+
+### Understanding a Pod Spec
+
+- apiVersion v1 is the basic "pool" of K8s objects
+- a dash (-) means the item is an array entry
+- if the image is "latest", K8s will try to find the image from docker hub
+
+### Common Kubectl Commands
+
+- `kubectl get pods` - list running pods
+- `kubectl exec -it [pod_name] [cmd]` - execute a command in a running pod
+- `kubectl logs [pod_name]` - print pod logs
+- `kubectl delete pod [pod_name]` - Use delete to destroy and recreate (restart) pod
+- `kubectl apply -f [config.yaml]` - tell K8s to process config (start pod)
+- `kubectl describe pod [pod_name]` - print info about running pod (debug)
+
+### Bash Alias
+
+- [How to Create Bash Aliases](https://linuxize.com/post/how-to-create-bash-aliases/)
+- ~/.bashrc: 
+
+```bash
+alias k="kubectl"
+```
+
+- enable with `source ~/.bashrc`
+
+### Deployments
+
+- A pod manager
+- Typically we run deployments instead of configs for a single pod
+- Deployments run multiple identical pods with the same config file
+- Recreates pods if they crash or disappear
+- Creates pods for a new version and sunsets old pods 
+- replicas: the number of pods to be created by deployment
+
+posts-depl.yaml
+(No longer going to use posts.yaml for single pod)
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: posts-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: posts
+  template:
+    metadata:
+      labels:
+        app: posts
+    spec: 
+      containers: 
+        - name: posts
+          image: satinflame/posts:0.0.1
+```
+
+- Now if you delete a running pod, the deployment will automatically recreate a new one
+
+### Common Deployment Commands
+
+- `kubectl get deployments` - list running deployments
+- `kubectl describe deployment [deployment_name]` - print out info on a deployment
+- `kubectl apply -f [config.yaml]` - create deployment from config
+- `kubectl delete deployment [deployment_name]` - Use delete to destroy a deployment (and delete related pods)
 
 ## R3 Day 80: 2020-06-08 Monday
 
