@@ -149,6 +149,7 @@ __Always use config files to create Objects--Deployments, Pods, and Services; do
 
 - Start by creating a new versioned tag: `docker build -t satinflame/posts:0.0.1 .`
 - Create /infra/k8s/posts.yaml:
+
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -159,6 +160,7 @@ spec:
     - name: posts
       image: satinflame/posts:0.0.1
 ```
+
 - cd to k8s folder and run `kubectl apply -f posts.yaml`
 - `kubectl get pods` - return a list of running pods
 
@@ -189,7 +191,7 @@ Kubernetes is a tool for running many different containers
 
 Initial Attempt:
 
-```Dockerfile
+```dockerfile
 # base image
 FROM alpine
 # Install dependencies
@@ -240,7 +242,7 @@ Making changes to the local files
 
 Our final, awesome Dockerfile:
 
-```Dockerfile
+```dockerfile
 # base image
 FROM node:alpine
 # Create work directory
