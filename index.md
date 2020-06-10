@@ -133,6 +133,59 @@
 
 ---
 
+## R3 Day 82: 2020-06-10 Wednesday
+
+### Updating deployments
+
+Recommended method using Docker Hub (no need for hardcoded versions)
+
+1. The deployment must be using the 'latest' tag in the pod spec sections
+1. Make the updates to your code
+1. Build the image
+1. Push the image to docker hub: `docker push satinflame/posts`
+1. Run the command: `kubectl rollout restart deployment [depl_name]` (depl_name should refer to the deployment NAME when you view `kubectl get deployments`)
+
+### Services
+
+_K8s Services provide networking between pods_
+
+Types of services: 
+ 
+- __Cluster IP__: sets up an easy-to-use URL to access a pod. Only exposes pods _in the cluster_.
+- __Node port__: allows access to a pod _outside the cluster_; used for dev only.
+- __Load Balancer__: makes a pod accessible _outside the cluster_; this is the right way to expose a pod to the outside world.
+- __External Name__: redirects an in-cluster request to a CNAME URL.
+
+Creating a NodePort service in posts-srv.yaml:
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: posts-srv
+spec:
+  type: NodePort
+  selector: 
+    app: posts
+  ports:
+    - name: posts
+      protocol: TCP
+      port: 4000
+      targetPort: 4000
+```
+
+```bash
+k apply -f posts-srv.yaml 
+service/posts-srv created
+
+k get services
+NAME         TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+kubernetes   ClusterIP   10.96.0.1        <none>        443/TCP          2d19h
+posts-srv    NodePort    10.102.129.168   <none>        4000:30595/TCP   19s
+```
+
+NodePort now available (30595) and you can access this endpoint at `http://localhost:30595/posts`
+
 ## R3 Day 81: 2020-06-09 Tuesday
 
 ### Understanding a Pod Spec
@@ -160,6 +213,14 @@ alias k="kubectl"
 ```
 
 - enable with `source ~/.bashrc`
+- for Mac, add to ~/.bash_profile:
+
+```bash
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+fi
+```
 
 ### Deployments
 
