@@ -133,6 +133,38 @@
 
 ---
 
+
+## R3 Day 83: 2020-06-11 Thursday
+
+Made a quick Go program for a GDG meetup with James Perkins!
+
+madlibs/main.go
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	var exclamation string = ""
+	var adverb string = ""
+	var noun = ""
+	var adjective string = ""
+
+	fmt.Print("Enter a exclamation!")
+	fmt.Scanln(&exclamation)
+	fmt.Print("Enter an adverb!")
+	fmt.Scanln(&adverb)
+	fmt.Print("Enter a noun!")
+	fmt.Scanln(&noun)
+	fmt.Print("Enter an adjective!")
+	fmt.Scanln(&adjective)
+
+	fmt.Println(exclamation+"!", "She said", adverb, "as she jumped into her",
+		adjective, noun, "and drove off with her", adjective, "dog.")
+}
+```
+
 ## R3 Day 82: 2020-06-10 Wednesday
 
 ### Updating deployments
