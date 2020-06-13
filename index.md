@@ -133,6 +133,17 @@
 
 ---
 
+## R3 Day 84: 2020-06-12 Friday
+
+### Setting up Cluster IP service 
+
+Will allow posts and event bus to talk to eachother
+
+- Build an image for the Event Bus
+- Push the image to Docker Hub
+- Create a deployment for Event Bus
+- Create a Cluster IP service for Event Bus and Posts
+- Wire it all up
 
 ## R3 Day 83: 2020-06-11 Thursday
 
