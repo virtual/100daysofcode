@@ -73,6 +73,7 @@
   - Day 52: Learn Phaser: Physics ✓
 - GDG Meetup
   - Day 53: AMP Website Workshop
+  - Day 83: Go with James Perkins
 - [Microservices with Node JS and React](https://www.udemy.com/course/microservices-with-node-js-and-react/)
   - Day 57: Section 1✓: Fundamental Ideas Around Microservices
   - Day 58: Section 2: A Mini-Microservices App (setup and services)
@@ -92,7 +93,10 @@
   - Day 78: Section 24✓: Basics of Docker (Running Node.js in a Docker Container)
   - Day 79: Section 3✓: Running services with Docker (Create Dockerfile for posts)
   - Day 80: Section 4: Orchestrating Collections of Services with Kubernetes (Getting started: Kubernetes)
-  - Day 81: Section 4: Orchestrating Collections of Services with Kubernetes (Deployments)
+  - Day 81: Section 4: Orchestrating Collections... (Deployments)
+  - Day 82: Section 4: Orchestrating Collections... (Updating deployments, creating services)
+  - Day 84: Section 4: Orchestrating Collections... (Intro to ClusterIPs)
+  - Day 85: Section 4: Orchestrating Collections... (Setup ClusterIPs for Posts & Events)
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Other projects/APIs
@@ -132,6 +136,19 @@
   - Blue Array certification
 
 ---
+
+## R3 Day 85: 2020-06-13 Saturday
+
+### Setting up Cluster IP service 
+
+Add cluster IP service to existing deployment file for each pod config to make it easier to manage incoming requests
+
+__How to Communicate between services__
+
+- Reference other Cluster IP services based on their name (as shown when you do `kubectl get services`)
+- For example, `await axios.post('http://localhost:4005/events'` would become `await axios.post('http://event-bus-srv:4005/events'`
+- Redeploy (see R3D82 _Updating deployments_)
+- Test a Post in postman to `localhost:30594/posts` 
 
 ## R3 Day 84: 2020-06-12 Friday
 
