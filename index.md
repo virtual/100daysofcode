@@ -103,13 +103,6 @@
   - Day 64: Test ESPN APi  
   - Day 68: Sendgrid handlebars email templates
   - Day 73: Netlify Jamdocs
-- Animations / manipulations with SVG
-- Create a game with an isometric view
-- Create a virtual pet site
-- Mod a game (Minecraft)
-- Continue developing out [Libworx](https://github.com/virtual/libworx)
-- Consider apps that might help Toastmaster groups online (Timer, Feedback forms)
-- FCC AWS Certification
 - Blue Array Academy SEO Manager Certification
   - Day 46: Welcome
   - Day 46: How does search work?
@@ -120,7 +113,7 @@
   - Day 51: Producing a technical backlog
   - Day 51, 52, 66: Benchmarking against your competitors
   - Day 66, 76, 77: SEO common pitfalls
-  - Day 81: Creating a Keyword Universe
+  - Day 81, 86: Creating a Keyword Universe
   - Creating your North Star Goal
   - Creating your monthly report
   - Site structure and internal linking
@@ -135,7 +128,20 @@
   - Managing SEO in-house
   - Blue Array certification
 
+
 ---
+
+## R3 Day 86: 2020-06-14 Sunday
+
+### Keyword Universe clusters
+
+- More clusters! But this time in SEO. 
+- Import all keyword info and competitor keyword info into a sheet with keyword, monthly search volume and keyword difficulty (and later cluster, modifier and sub-category)
+- Create keyword clusters using the free [Keyword Grouper Tool](https://marketbold.com/KeywordGrouperPro/app/)
+- Bring these keywords into your sheet and use VLOOKUP to match your terms with their cluster
+- Also create a modifier column and filter (How, What, When, Why, Where) to get a better understanding of possible questions
+- Create sub-categories on your cluster groups if they make sense
+- This information also helps with understanding the Information Architecture (IA) for your website
 
 ## R3 Day 85: 2020-06-13 Saturday
 
@@ -2446,6 +2452,16 @@ Starting Round 3 of #100DaysOfCode--honestly for a mental health break from read
 ---
 
 ## ⭐ ⭐ Round 3 begins ⭐ ⭐
+
+Ideas tabled for later (see R3 Day 100 for projects worked on!)
+
+- Animations / manipulations with SVG
+- Create a game with an isometric view
+- Create a virtual pet site
+- Mod a game (Minecraft)
+- Continue developing out [Libworx](https://github.com/virtual/libworx)
+- Consider apps that might help Toastmaster groups online (Timer, Feedback forms)
+- FCC AWS Certification
 
 ---
 
