@@ -131,6 +131,20 @@
 
 ---
 
+## R3 Day 87: 2020-06-15 Monday
+
+- Microservices: update remaining services to use event-bus
+- After creating all docker images and pushing them to Docker hub, create K8 depl files for each image
+- Rebuild the folder of `infra/k8s` using `kubectl apply -f .`
+- Test using postman
+
+Integrating React portion
+
+- We'll use a Load Balancer Service to give the browser access to the posts, comments, etc services
+- Load Balancer Service: tell K8s to reach out to its provider and provision a load balancer. Gets traffic in a _single_ pod
+- Ingress (Controller): A pod with a set of routing rules to distribute traffic to other services 
+
+
 ## R3 Day 86: 2020-06-14 Sunday
 
 ### Keyword Universe clusters
