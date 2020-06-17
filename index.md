@@ -131,6 +131,12 @@
 
 ---
 
+## R3 Day 88: 2020-06-16 Tuesday
+
+Outside world -> Load Balancer -> Ingress Controller -> Cluster (Pod)
+
+- We will be using [ingress-nginx](https://github.com/kubernetes/ingress-nginx)
+
 ## R3 Day 87: 2020-06-15 Monday
 
 - Microservices: update remaining services to use event-bus
