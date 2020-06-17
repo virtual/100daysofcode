@@ -97,6 +97,8 @@
   - Day 82: Section 4: Orchestrating Collections... (Updating deployments, creating services)
   - Day 84: Section 4: Orchestrating Collections... (Intro to ClusterIPs)
   - Day 85: Section 4: Orchestrating Collections... (Setup ClusterIPs for Posts & Events)
+  - Day 87: Section 4: Orchestrating Collections... (Update all services to use Docker)
+  - Day 88: Section 4: Orchestrating Collections... (Begin adding Ingress)
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Other projects/APIs
@@ -131,11 +133,59 @@
 
 ---
 
+## R3 Day 89: 2020-06-17 Wednesday
+
+Adding Ingress config:
+
+Create `ingress-srv.yaml` and apply file
+
+```yaml
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-srv
+  annotations: # helps ingress understand that we are sending it routing rules
+    kubernetes.io/ingress.class: nginx
+spec:
+  rules: # all the routing rules to teach ingress how to route incoming traffic
+    - host: posts.com # ingress assumes you may be hosting multiple domains
+      http:
+        paths:
+          - path: /post # match what the posts/index.js expects traffic on
+            backend:
+              serviceName: posts-clusterip-srv # send requests to this service
+              servicePort: 4000 # matches what is in posts-depl.yaml port
+```              
+
+### Ingress host
+
+- Since Ingress requires a host (eg post.com), we need to trick our localhost to thinking it's post.com
+- Edit `/etc/hosts` file (Mac)
+- ```bash
+  # kubernetes microservices-blog
+  # connect to localhost
+  127.0.0.1 posts.com
+  ```
+- Now you can go to http://posts.com/posts in your browser
+- Gather a list of all axios requests, POST, GET, etc
+- For each of these requests, update ingress-depl.yaml with these route handler
+- Ingress cannot choose based on method (POST, GET) so every method using the same route will need a unique ID: POST /posts or GET /posts are not unique enough
+
+### Getting React to work in cluster
+
+- Update all references to localhost to posts.com (or whatever you called your dev site); eg. `http://localhost:4000/posts` becomes `http://posts.com/posts`
+- Create a Docker image of the client folder
+- Push to Docker hub and create deployment & cluster ip configs
+
+?? Issue with adding a post and refreshing; need to rebuild query service in order for new posts to show up?
+
 ## R3 Day 88: 2020-06-16 Tuesday
 
 Outside world -> Load Balancer -> Ingress Controller -> Cluster (Pod)
 
 - We will be using [ingress-nginx](https://github.com/kubernetes/ingress-nginx)
+- Install per instructions
+- Confirm the ingress-nginx-controller deployment exists: `kubectl get pods -n ingress-nginx`
 
 ## R3 Day 87: 2020-06-15 Monday
 
