@@ -100,6 +100,8 @@
   - Day 85: Section 4: Orchestrating Collections... (Setup ClusterIPs for Posts & Events)
   - Day 87: Section 4: Orchestrating Collections... (Update all services to use Docker)
   - Day 88: Section 4: Orchestrating Collections... (Begin adding Ingress)
+  - Day 89: Section 4: Orchestrating Collections... (Ingress)
+  - Day 91: Section 4: Orchestrating Collections... (Skaffold)
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Other projects/APIs
@@ -133,6 +135,23 @@
 
 
 ---
+
+## R3 Day 91: 2020-06-19 Friday
+
+### Microservices: Skaffold
+
+- Current workflow includes building each image, pushing to Docker hub and running `kubectl rollout restart deployment [depl_name]`
+- While this is a good process for rolling out updates to production, is there an easier way to make changes while doing development?
+
+[Skaffold](https://skaffold.dev/)
+
+- Automates many tasks in a k8s __dev__ envionrment
+- Makes it easy to update code in a _running pod_
+- Makes it easy to create/delete all objects tied to a project at once
+- Skaffold runs outside of cluster
+- skaffold.yaml (in root folder) is a config file only used by Skaffold
+- run with `skaffold dev`
+- Quit with `ctrl+c`, Skaffold will remove objects (services, deployments, etc)
 
 ## R3 Day 90: 2020-06-18 Thursday
 
@@ -182,7 +201,8 @@ spec:
 - Create a Docker image of the client folder
 - Push to Docker hub and create deployment & cluster ip configs
 
-?? Issue with adding a post and refreshing; need to rebuild query service in order for new posts to show up?
+Q: Issue with adding a post and refreshing; need to rebuild query service in order for new posts to show up?
+- A: Routes in event-bus/index.js needed to refer to the service :)
 
 ## R3 Day 88: 2020-06-16 Tuesday
 
