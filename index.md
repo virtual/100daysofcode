@@ -71,9 +71,10 @@
   - Day 50: Learn Phaser: Physics
   - Day 51: Learn Phaser: Physics
   - Day 52: Learn Phaser: Physics ✓
-- GDG Meetup
-  - Day 53: AMP Website Workshop
-  - Day 83: Go with James Perkins
+- Meetup
+  - Day 53: GDG AMP Website Workshop
+  - Day 83: GDG Go with James Perkins
+  - Dya 90: JS Bozeman Deno
 - [Microservices with Node JS and React](https://www.udemy.com/course/microservices-with-node-js-and-react/)
   - Day 57: Section 1✓: Fundamental Ideas Around Microservices
   - Day 58: Section 2: A Mini-Microservices App (setup and services)
@@ -132,6 +133,10 @@
 
 
 ---
+
+## R3 Day 90: 2020-06-18 Thursday
+
+Exploring Deno with Bozeman JS group :)
 
 ## R3 Day 89: 2020-06-17 Wednesday
 
