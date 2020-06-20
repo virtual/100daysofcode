@@ -76,32 +76,33 @@
   - Day 83: GDG Go with James Perkins
   - Dya 90: JS Bozeman Deno
 - [Microservices with Node JS and React](https://www.udemy.com/course/microservices-with-node-js-and-react/)
-  - Day 57: Section 1✓: Fundamental Ideas Around Microservices
-  - Day 58: Section 2: A Mini-Microservices App (setup and services)
-  - Day 59: Section 2: A Mini-Microservices App (begin React components)
-  - Day 60: Section 2: A Mini-Microservices App (PostCreate)
-  - Day 61: Section 2: A Mini-Microservices App (CORS support)
-  - Day 63: Section 2: A Mini-Microservices App (React components)
-  - Day 65: Section 2: A Mini-Microservices App (Emitting events)
-  - Day 67: Section 2: A Mini-Microservices App (Implement query service)
-  - Day 69: Section 2: A Mini-Microservices App (Comment moderation)
-  - Day 70: Section 2: A Mini-Microservices App (Moderation service and CommentUpdated event)
-  - Day 71: Section 2✓: A Mini-Microservices App (Event bus data store)
-  - Day 72: Section 3: Running services with Docker
-  - Day 74: Section 24: Basics of Docker
-  - Day 75: Section 24: Basics of Docker
-  - Day 76: Section 24: Basics of Docker (Docker images)
-  - Day 78: Section 24✓: Basics of Docker (Running Node.js in a Docker Container)
-  - Day 79: Section 3✓: Running services with Docker (Create Dockerfile for posts)
-  - Day 80: Section 4: Orchestrating Collections of Services with Kubernetes (Getting started: Kubernetes)
-  - Day 81: Section 4: Orchestrating Collections... (Deployments)
-  - Day 82: Section 4: Orchestrating Collections... (Updating deployments, creating services)
-  - Day 84: Section 4: Orchestrating Collections... (Intro to ClusterIPs)
-  - Day 85: Section 4: Orchestrating Collections... (Setup ClusterIPs for Posts & Events)
-  - Day 87: Section 4: Orchestrating Collections... (Update all services to use Docker)
-  - Day 88: Section 4: Orchestrating Collections... (Begin adding Ingress)
-  - Day 89: Section 4: Orchestrating Collections... (Ingress)
-  - Day 91: Section 4: Orchestrating Collections... (Skaffold)
+  - Day 57: S1✓: Fundamental Ideas Around Microservices
+  - Day 58: S2: [A Mini-Microservices App](https://github.com/virtual/microservices-blog) (setup and services)
+  - Day 59: S2: A Mini-Microservices App (begin React components)
+  - Day 60: S2: A Mini-Microservices App (PostCreate)
+  - Day 61: S2: A Mini-Microservices App (CORS support)
+  - Day 63: S2: A Mini-Microservices App (React components)
+  - Day 65: S2: A Mini-Microservices App (Emitting events)
+  - Day 67: S2: A Mini-Microservices App (Implement query service)
+  - Day 69: S2: A Mini-Microservices App (Comment moderation)
+  - Day 70: S2: A Mini-Microservices App (Moderation service and CommentUpdated event)
+  - Day 71: S2✓: A Mini-Microservices App (Event bus data store)
+  - Day 72: S3: Running services with Docker
+  - Day 74: S24: Basics of Docker
+  - Day 75: S24: Basics of Docker
+  - Day 76: S24: Basics of Docker (Docker images)
+  - Day 78: S24✓: Basics of Docker (Running Node.js in a Docker Container)
+  - Day 79: S3✓: Running services with Docker (Create Dockerfile for posts)
+  - Day 80: S4: Orchestrating Collections of Services with Kubernetes (Getting started: Kubernetes)
+  - Day 81: S4: Orchestrating Collections... (Deployments)
+  - Day 82: S4: Orchestrating Collections... (Updating deployments, creating services)
+  - Day 84: S4: Orchestrating Collections... (Intro to ClusterIPs)
+  - Day 85: S4: Orchestrating Collections... (Setup ClusterIPs for Posts & Events)
+  - Day 87: S4: Orchestrating Collections... (Update all services to use Docker)
+  - Day 88: S4: Orchestrating Collections... (Begin adding Ingress)
+  - Day 89: S4: Orchestrating Collections... (Ingress)
+  - Day 91: S4✓: Orchestrating Collections... (Skaffold)
+  - Day 92: S5: Architecture of Multi-Service Apps
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Other projects/APIs
@@ -135,6 +136,37 @@
 
 
 ---
+
+## R3 Day 92: 2020-06-20 Saturday
+
+Reviewing the setup of our first Microservices app and setup for next
+
+- Biggest challenge: handling data
+- Focus on async communication
+- Async communication focuses on communicating changes using events sent to an event bus
+- Async encourages each service to be 100% self-sufficient
+- Docker makes it easier to package services
+- Kubernetes makes it easy to deploy and scale microservices
+
+Review upcoming ticket app
+
+Data
+- User
+- Order
+- Ticket
+- Charge
+
+Services
+- auth
+- tickets
+- orders
+- expiration
+- payments
+
+- Client: Will be using React with Next.js -- Next.js is a server-side rendering React framework
+- Service: node & mongodb; node & Redis (expiration)
+- services will use a common library
+- in place of event bus, we'll use NATS streaming server
 
 ## R3 Day 91: 2020-06-19 Friday
 
