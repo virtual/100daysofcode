@@ -106,7 +106,7 @@
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Other projects/APIs
-  - Day 64: Test ESPN APi  
+  - Day 64: Test ESPN APi
   - Day 68: Sendgrid handlebars email templates
   - Day 73: Netlify Jamdocs
 - Blue Array Academy SEO Manager Certification
@@ -134,8 +134,64 @@
   - Managing SEO in-house
   - Blue Array certification
 
-
 ---
+
+## R3 Day 93: 2020-06-21 Sunday
+
+### Typescript
+
+What is it? Basically:
+
+- JavaScript
+  - arrays
+  - arrow functions
+  - destructuring
+- plus a type system
+  - uses 'type annotations' to analyze our code
+
+Typescript:
+
+- Helps identify bugs in development
+- Only active during dev
+- Compiles as normal javascript
+- Does not change speed/performance
+- Add to environment `npm install -g typescript ts-node`
+- test with `tsc --help` (typescript compiler)
+
+Resources:
+
+- [Typescript Playground](https://www.typescriptlang.org/play/index.html)
+- [Testing API](http://jsonplaceholder.typicode.com/)
+
+FetchJSON app
+
+- compile with `tsc index.ts` (creates compiled js)
+- run with `node index.js`
+- `ts-node` compiles and executes in one command
+- Create an interface and tell TS that an object uses that interface `as Todo`
+
+Primitive types:
+
+- number
+- boolean
+- void
+- undefined
+- string
+- symbol
+- null
+
+Object types: (we can tell TS to treat as a diff Object type)
+
+- functions
+- arrays
+- classes
+- objects
+
+Inferences vs. annotation
+
+- If we declaration and initialization are done on the same line, Typescript can infer the type for us: `const color = 'red'`
+- If on two separate lines, `let apples;` & `apples = 5`, typescript gives apples a type of any and is not able to infer the type
+- Avoid variables with type 'any' at all costs!
 
 ## R3 Day 92: 2020-06-20 Saturday
 
@@ -151,12 +207,14 @@ Reviewing the setup of our first Microservices app and setup for next
 Review upcoming ticket app
 
 Data
+
 - User
 - Order
 - Ticket
 - Charge
 
 Services
+
 - auth
 - tickets
 - orders
@@ -177,7 +235,7 @@ Services
 
 [Skaffold](https://skaffold.dev/)
 
-- Automates many tasks in a k8s __dev__ envionrment
+- Automates many tasks in a k8s **dev** envionrment
 - Makes it easy to update code in a _running pod_
 - Makes it easy to create/delete all objects tied to a project at once
 - Skaffold runs outside of cluster
@@ -211,7 +269,7 @@ spec:
             backend:
               serviceName: posts-clusterip-srv # send requests to this service
               servicePort: 4000 # matches what is in posts-depl.yaml port
-```              
+```
 
 ### Ingress host
 
@@ -234,6 +292,7 @@ spec:
 - Push to Docker hub and create deployment & cluster ip configs
 
 Q: Issue with adding a post and refreshing; need to rebuild query service in order for new posts to show up?
+
 - A: Routes in event-bus/index.js needed to refer to the service :)
 
 ## R3 Day 88: 2020-06-16 Tuesday
@@ -255,14 +314,13 @@ Integrating React portion
 
 - We'll use a Load Balancer Service to give the browser access to the posts, comments, etc services
 - Load Balancer Service: tell K8s to reach out to its provider and provision a load balancer. Gets traffic in a _single_ pod
-- Ingress (Controller): A pod with a set of routing rules to distribute traffic to other services 
-
+- Ingress (Controller): A pod with a set of routing rules to distribute traffic to other services
 
 ## R3 Day 86: 2020-06-14 Sunday
 
 ### Keyword Universe clusters
 
-- More clusters! But this time in SEO. 
+- More clusters! But this time in SEO.
 - Import all keyword info and competitor keyword info into a sheet with keyword, monthly search volume and keyword difficulty (and later cluster, modifier and sub-category)
 - Create keyword clusters using the free [Keyword Grouper Tool](https://marketbold.com/KeywordGrouperPro/app/)
 - Bring these keywords into your sheet and use VLOOKUP to match your terms with their cluster
@@ -272,20 +330,20 @@ Integrating React portion
 
 ## R3 Day 85: 2020-06-13 Saturday
 
-### Setting up Cluster IP service 
+### Setting up Cluster IP service
 
 Add cluster IP service to existing deployment file for each pod config to make it easier to manage incoming requests
 
-__How to Communicate between services__
+**How to Communicate between services**
 
 - Reference other Cluster IP services based on their name (as shown when you do `kubectl get services`)
 - For example, `await axios.post('http://localhost:4005/events'` would become `await axios.post('http://event-bus-srv:4005/events'`
 - Redeploy (see R3D82 _Updating deployments_)
-- Test a Post in postman to `localhost:30594/posts` 
+- Test a Post in postman to `localhost:30594/posts`
 
 ## R3 Day 84: 2020-06-12 Friday
 
-### Setting up Cluster IP service 
+### Setting up Cluster IP service
 
 Will allow posts and event bus to talk to eachother
 
@@ -342,12 +400,12 @@ Recommended method using Docker Hub (no need for hardcoded versions)
 
 _K8s Services provide networking between pods_
 
-Types of services: 
- 
-- __Cluster IP__: sets up an easy-to-use URL to access a pod. Only exposes pods _in the cluster_.
-- __Node port__: allows access to a pod _outside the cluster_; used for dev only.
-- __Load Balancer__: makes a pod accessible _outside the cluster_; this is the right way to expose a pod to the outside world.
-- __External Name__: redirects an in-cluster request to a CNAME URL.
+Types of services:
+
+- **Cluster IP**: sets up an easy-to-use URL to access a pod. Only exposes pods _in the cluster_.
+- **Node port**: allows access to a pod _outside the cluster_; used for dev only.
+- **Load Balancer**: makes a pod accessible _outside the cluster_; this is the right way to expose a pod to the outside world.
+- **External Name**: redirects an in-cluster request to a CNAME URL.
 
 Creating a NodePort service in posts-srv.yaml:
 
@@ -358,7 +416,7 @@ metadata:
   name: posts-srv
 spec:
   type: NodePort
-  selector: 
+  selector:
     app: posts
   ports:
     - name: posts
@@ -368,7 +426,7 @@ spec:
 ```
 
 ```bash
-k apply -f posts-srv.yaml 
+k apply -f posts-srv.yaml
 service/posts-srv created
 
 k get services
@@ -399,7 +457,7 @@ NodePort now available (30595) and you can access this endpoint at `http://local
 ### Bash Alias
 
 - [How to Create Bash Aliases](https://linuxize.com/post/how-to-create-bash-aliases/)
-- ~/.bashrc: 
+- ~/.bashrc:
 
 ```bash
 alias k="kubectl"
@@ -421,7 +479,7 @@ fi
 - Typically we run deployments instead of configs for a single pod
 - Deployments run multiple identical pods with the same config file
 - Recreates pods if they crash or disappear
-- Creates pods for a new version and sunsets old pods 
+- Creates pods for a new version and sunsets old pods
 - replicas: the number of pods to be created by deployment
 
 posts-depl.yaml
@@ -441,8 +499,8 @@ spec:
     metadata:
       labels:
         app: posts
-    spec: 
-      containers: 
+    spec:
+      containers:
         - name: posts
           image: satinflame/posts:0.0.1
 ```
@@ -464,7 +522,7 @@ spec:
 - `kubectl` - the command to interact with a K8s cluster
 - K8s will look at your local machine first to see if a Docker image is available
 
-Kubernetes vocab: 
+Kubernetes vocab:
 
 - Cluster: a master of nodes and a master to manage them
 - Node: virtual machine; the computer that will run some number of containers for us
@@ -472,7 +530,7 @@ Kubernetes vocab:
 - Deployment for a service - monitors a set of pods/containers created and responsible for recreating pods when a service crashes, etc.
 - Service - provides an simple URL to access a running container; gives us access to running pods inside our cluster, handles networking
 
-__Always use config files to create Objects--Deployments, Pods, and Services; do not type direct commands__
+**Always use config files to create Objects--Deployments, Pods, and Services; do not type direct commands**
 
 ### Config
 
@@ -484,8 +542,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: posts
-spec: 
-  containers: 
+spec:
+  containers:
     - name: posts
       image: satinflame/posts:0.0.1
 ```
@@ -533,7 +591,7 @@ CMD [ "npm", "start" ]
 
 Possible errors:
 
-- _npm not found_ 
+- _npm not found_
   - there is no copy of npm available (npm is not part of the alpine base image)
   - find a different base image (search [docker hub](https://hub.docker.com/) for "node")
   - or run a different command to add in npm
@@ -557,7 +615,7 @@ Cleaning up working directory
 
 - When you run the COPY command in the Dockerfile, let's create a subdirectory so we're not copying files into the base folder
 - WORKDIR, once set, any following commands will be executed relative to this folder
-- Since we changed Dockerfile, rebuild!  
+- Since we changed Dockerfile, rebuild!
 - Now when you run `docker run -it satinflame/simpleweb sh` you'll start in the WORKDIR
 
 Making changes to the local files
@@ -586,7 +644,7 @@ RUN npm install
 COPY ./ ./
 # Set start command
 CMD [ "npm", "start" ]
-```  
+```
 
 ## R3 Day 77: 2020-06-05 Friday
 
@@ -603,27 +661,27 @@ SEO reviewing common pitfalls
 - put changes as low (last) in the Dockerfile as possible to keep rebuilding fast
 
 Tagging an image
+
 - When building tag in order to reference a name instead of id `<yourDockerId>/<reponame>:<version>`, e.g. `docker build -t stephengrinder/redis:latest .`
 - `<reponame>` is what you want to reference it as
 - "tag" refers to the version
 - `commit -c` - for manually creating
 
-
 ## R3 Day 75: 2020-06-03 Wednesday
 
 ### Microservices: Basics of Docker
 
-__More about `-it`__
+**More about `-it`**
 
 - Every process inside a Docker (linux) environment has 3 communication channels attached to it:
   1. STDIN - things you type into
   1. STDOUT - output that shows on your console (from the process)
   1. STDERR - similar to STDOUT but specifically for show process errors
 - `-it` is really `-i` and `-t`
-  - `-i` - attach the terminal to the STDIN when executing this command 
+  - `-i` - attach the terminal to the STDIN when executing this command
   - `-t` - formats input/output so it shows up nicely and allows for autocomplete
 
-__Running a terminal inside your running container__
+**Running a terminal inside your running container**
 
 - `docker exec -it 9320 sh`
 - allows for Unix commands like `cd ~/` or `ls`
@@ -631,7 +689,7 @@ __Running a terminal inside your running container__
 - `sh` is the default command processor (or `bash`)
 - containers do not share filesystems by default
 
-__Docker Images__
+**Docker Images**
 
 Creating an Image:
 
@@ -643,14 +701,14 @@ Creating an Image:
 
 ```dockerfile
 # Use existing image (alpine) as base
-FROM alpine 
+FROM alpine
 
 # Download and Install depedency
 RUN apk add --update redis
 
 # Tell image what to do with in starts as a container
 CMD ["redis-server"]
-```  
+```
 
 `FROM, RUN, CMD` are docker commands used in the `Dockerfile`
 
@@ -690,13 +748,13 @@ Seeing what was run:
 - → `docker logs b895`
 - _hi there_
 
-Redis: 
+Redis:
+
 - a in-memory data store that's commonly used for web applications
 - `docker run redis` - starts Redis server
 - `redis-cli` --> need to start it inside the container
 - Use `docker exec -it <containerid> <command>` to execute a second command inside a running container (`-it` allows us to provide input to the container)
 - e.g.: `docker exec -it 8ca6 redis-cli`
-
 
 ## R3 Day 73: 2020-06-01 Monday
 
@@ -731,11 +789,13 @@ https://virtual-jamdocs.netlify.app/
   1. Store events - new service needs access to all events that were emitted in the past
 
 Storing events
+
 - Use event bus, emits event for all services and then stores the event internally in the event bus data store
 - New service can determine what needs to be done for tasks
 - No extra processing code needs to be written (eg sync and direct db code)
 
 Steps:
+
 1. Every time an event occurs we store it inside an array
 2. Add an endpoint to event bus that allows us to retrieve all the events that ever occurred
 
@@ -749,9 +809,8 @@ Best practice: Query service only listens for `update` events:
 - Does it make sense for a presentation service to understand how to process a very precise update?
 - What happens when (in the future) there are 10 ways to update it? (Upvote, add photos, advertised)
 - The Comment service is in charge of all business logic around a comment
-  - When comment updated (moderated, upvoted, downvoted, etc) Comment service emits one generic event __Comment Updated__ to Query service
+  - When comment updated (moderated, upvoted, downvoted, etc) Comment service emits one generic event **Comment Updated** to Query service
   - Query service can then take the emitted `data` attrs and copy them
-
 
 ## R3 Day 69: 2020-05-28 Thursday
 
@@ -767,7 +826,7 @@ Implement query service for listing posts and comments. [GitHub changes](https:/
 
 ## R3 Day 66: 2020-05-25 Monday
 
-A little break from programming; working on SEO Gap analysis for my website and some complex Excel functions. 
+A little break from programming; working on SEO Gap analysis for my website and some complex Excel functions.
 
 - Sum of search volume for all Keywords appearing positions 1-3: `=SUMIFS('Overall Aggregate'!$F:$F,'Overall Aggregate'!$C:$C,"<4",'Overall Aggregate'!$C:$C,">0")`
 - If site has a position for a certain keyword: `=IFERROR(VLOOKUP(A14,'Our site (Pos 1-100, non-brand)'!A:B,2,FALSE),"GAP")`
@@ -777,19 +836,23 @@ A little break from programming; working on SEO Gap analysis for my website and 
 ### Microservices blog
 
 Current data flow:
+
 - Get posts, show each post, get the comments for _each_ posts (each making its own request)
 - Very inefficient
 
 Proposed: Asynchronous call using an Event bus
+
 - Types of event buses: RabbitMQ, Kafka, NATS
 - Adds in a Query service that assembles all of the blogs and comments into an efficient structure
 - Listens to any time a post or comment is created
 - Posts and Comments services will emit an event when new item created
 
 Emitting events
+
 - Each event should have two properties: `type` (eg 'PostCreated') and `data` (object of new item)
 
 Notes:
+
 - Why do you not need to explicitly install `body-parser` and [why do we need body-parser](https://stackoverflow.com/questions/38306569/what-does-body-parser-do-with-express)?
   - To handle HTTP POST request in Express.js version 4 and above, you need to install middleware module called body-parser.
   - body-parser extract the entire body portion of an incoming request stream and exposes it on `req.body`.
@@ -806,6 +869,7 @@ Playing with football APIs. ESPN seems to have a good--albeit undocumented--API.
 - Example endpoint for single player: `https://site.web.api.espn.com/apis/common/v3/sports/football/nfl/athletes/101`
 
 Notes:
+
 - When do we use `const` vs. `import` for certain libraries?
   - [`require` is the node.js way to load modules](https://stackoverflow.com/questions/31354559/using-node-js-require-vs-es6-import-export)
   - In 2016 it makes sense to [stick with the `import`](https://stackoverflow.com/questions/34601582/what-is-the-difference-between-import-and-const-and-which-is-preferred-in-common) since that's the part of the standard. There is no technical reason to prefer import over require though: everything that can be done using `require` can be done with `import` and vice versa. In some cases one will be more concise, in another - the other.
@@ -817,9 +881,10 @@ Microservices react components for (listing and adding) Posts and Comments compl
 
 ## R3 Day 62: 2020-05-21 Thursday
 
-Inspired by [Scott Mathson's SEO on the Jamstack presentation - VirtuaCon (Jekyll)](https://scottmathson.com/blog/2020/05/15/seo-on-the-jamstack-virtuacon-presentation/?ref=virtuacon-redirect) to add [schema to a website using Hugo](https://dev.to/pdwarkanath/adding-structured-data-to-your-hugo-site-58db). 
+Inspired by [Scott Mathson's SEO on the Jamstack presentation - VirtuaCon (Jekyll)](https://scottmathson.com/blog/2020/05/15/seo-on-the-jamstack-virtuacon-presentation/?ref=virtuacon-redirect) to add [schema to a website using Hugo](https://dev.to/pdwarkanath/adding-structured-data-to-your-hugo-site-58db).
 
-Notes: 
+Notes:
+
 - [My implemented schema for my portfolio](https://github.com/virtual/hugo-static-satinflame/blob/master/layouts/partials/schema.html)
 - To see multiple structures on Google Structured Data Testing, you have to wrap each structure in its own `<script>` tag.
 - It doesn't appear that BlogPost is an enhancement type shown in Google Search Console.
@@ -830,35 +895,31 @@ Notes:
 
 You have to extend React.Component to create a stateful component which then will need a constructor and you'll be able to use the state.
 
-__Create Component using Class__
+**Create Component using Class**
+
 ```jsx
 class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "Hello React",
+      title: 'Hello React'
     };
   }
   render() {
-    return (
-      <div>
-        {this.state.title}
-      </div>
-    )
+    return <div>{this.state.title}</div>;
   }
 }
 ```
 
-__Implicit__
+**Implicit**
+
 ```jsx
 export default function Foo(props) {
-    return (
-        <div>My component</div>
-    )
+  return <div>My component</div>;
 }
 ```
 
-__Using arrow functions__
+**Using arrow functions**
 
 Using an arrow function with a class property ensures that the method is always invoked with the component as the value for this, meaning that the manual rebinding here is redundant:
 
@@ -867,14 +928,16 @@ Using an arrow function with a class property ensures that the method is always 
 ```jsx
 export default (details) => {
   // code
-}
+};
 ```
+
 or from Dan Abramov:
 "Arrows work just fine if you give them implicit name first."
+
 ```jsx
 const RenderDetails = (details) => {
   // code
-}
+};
 export default RenderDetails;
 ```
 
@@ -884,6 +947,7 @@ export default RenderDetails;
 ## R3 Day 60: 2020-05-19 Tuesday
 
 ### Determine React component hierarchy
+
 Begin adding React components
 
 - App
@@ -1430,13 +1494,13 @@ Example of [404 response](https://gitlab.com/pragmaticreviews/node-mocha-chai/-/
 
 ```js
 // GET (BY ID)
-app.get("/api/tasks/:id", (request, response) => {
+app.get('/api/tasks/:id', (request, response) => {
   const taskId = request.params.id;
   const task = tasks.find((task) => task.id === parseInt(taskId));
   if (!task)
     return response
       .status(404)
-      .send("The task with the provided ID does not exist.");
+      .send('The task with the provided ID does not exist.');
   response.send(task);
 });
 ```
@@ -1752,22 +1816,22 @@ Because the end function is passed a callback, assertions are run asynchronously
 For example, in the Mocha test framework, this is accomplished using the done callback, which signal that the callback has completed, and the assertions can be verified:
 
 ```js
-it("fails, as expected", function (done) {
+it('fails, as expected', function (done) {
   // <= Pass in done callback
   chai
-    .request("http://localhost:8080")
-    .get("/")
+    .request('http://localhost:8080')
+    .get('/')
     .end(function (err, res) {
       expect(res).to.have.status(123);
       done(); // <= Call done to signal callback end
     });
 });
 
-it("succeeds silently!", function () {
+it('succeeds silently!', function () {
   // <= No done callback
   chai
-    .request("http://localhost:8080")
-    .get("/")
+    .request('http://localhost:8080')
+    .get('/')
     .end(function (err, res) {
       expect(res).to.have.status(123); // <= Test completes before this runs
     });
@@ -1914,14 +1978,14 @@ Book ref: xUnit Test Patterns: Refactoring Test Code by Gerard Meszaros
   - do not use callback (do not use `done()`)
 
 ```js
-describe("Reservation Suite", function () {
-  context("Date and Time Combination", function () {
-    it("should return a ISO 8601 date and time with valid input", function () {
-      const date = "2020/04/17";
-      const time = "04:53 PM";
+describe('Reservation Suite', function () {
+  context('Date and Time Combination', function () {
+    it('should return a ISO 8601 date and time with valid input', function () {
+      const date = '2020/04/17';
+      const time = '04:53 PM';
 
       Reservation.combineDateTime(date, time).should.equal(
-        "2020-04-17T16:53:00.000Z"
+        '2020-04-17T16:53:00.000Z'
       );
     });
   });
@@ -1991,11 +2055,11 @@ Assertion Libraries (that work with any testing framework):
 ```js
 module.exports = {
   env: {
-    mocha: true,
+    mocha: true
   },
   rules: {
-    "no-unused-vars": ["error", { varsIgnorePattern: "should|expect" }],
-  },
+    'no-unused-vars': ['error', { varsIgnorePattern: 'should|expect' }]
+  }
 };
 ```
 
@@ -2178,7 +2242,7 @@ Questions:
 - How do I get the result of a promise?
 
   ```js
-  db.collection("issues").findOne({ _id: ObjectId(req.body._id) }, function (
+  db.collection('issues').findOne({ _id: ObjectId(req.body._id) }, function (
     err,
     result
   ) {
@@ -2325,8 +2389,8 @@ html(lang="en")
 _It's time to set up Passport so we can finally start allowing a user to register or login to an account! In addition to Passport, we will use Express-session to handle sessions. Using this middleware saves the session id as a cookie in the client and allows us to access the session data using that id on the server. This way we keep personal account information out of the cookie used by the client to verify to our server they are authenticated and just keep the key to access the data stored on the server._
 
 ```js
-const session = require("express-session");
-const passport = require("passport");
+const session = require('express-session');
+const passport = require('passport');
 
 // ...
 
@@ -2334,7 +2398,7 @@ app.use(
   session({
     secret: process.env.SESSION_SECRET,
     resave: true,
-    saveUninitialized: true,
+    saveUninitialized: true
   })
 );
 
@@ -2432,20 +2496,20 @@ _BCrypt hashes will always looks like `$2a$13$ZyprE5MRw2Q3WpNOGZWGbeG7ADUre1Q8QO
 [Chai Testing Repo](https://github.com/virtual/boilerplate-mochachai) running on [Heroku](https://fcc-boilerplate-mochachai.herokuapp.com/)
 
 ```javascript
-suite("Functional Tests", function () {
+suite('Functional Tests', function () {
   test('submit "surname" : "Vespucci" - write your e2e test...', function (done) {
     browser
       // fill the form, and submit.
-      .fill("surname", "Vespucci")
-      .pressButton("submit", function () {
+      .fill('surname', 'Vespucci')
+      .pressButton('submit', function () {
         // assert that status is OK 200
         browser.assert.success(); // 200
         // assert that the text inside the element 'span#name' is 'Amerigo'
-        browser.assert.text("span#name", "Amerigo", "name should be Amerigo");
+        browser.assert.text('span#name', 'Amerigo', 'name should be Amerigo');
         // assert that the text inside the element 'span#surname' is 'Vespucci'
-        browser.assert.text("span#surname", "Vespucci", "surname is Vespucci");
+        browser.assert.text('span#surname', 'Vespucci', 'surname is Vespucci');
         // assert that the element(s) 'span#dates' exist and their count is 1
-        browser.assert.element("span#dates", 1, "dates element exists");
+        browser.assert.element('span#dates', 1, 'dates element exists');
         // assert.fail();
       });
     done();
@@ -2988,7 +3052,7 @@ Currently, I'm to the point where I have set up some overrides for my Homestead 
 ```yaml
 # ~/Homestead/Homestead.yaml
 ---
-ip: "192.168.10.10"
+ip: '192.168.10.10'
 memory: 2048
 cpus: 1
 provider: virtualbox
