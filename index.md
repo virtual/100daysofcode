@@ -105,13 +105,14 @@
   - Day 92: S5: Architecture of Multi-Service Apps
   - Day 93: S25: Typescript
   - Day 94: S25: Typescript: Functions and Objects
+  - Day 95: S25: Typescript: Arrays, tuples, interfaces
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Other projects/APIs
   - Day 64: Test ESPN APi
   - Day 68: Sendgrid handlebars email templates
   - Day 73: Netlify Jamdocs
-- Blue Array Academy SEO Manager Certification
+- Blue Array Academy SEO Manager Certification✓
   - Day 46: Welcome
   - Day 46: How does search work?
   - Day 47: SEO strategies
@@ -122,21 +123,68 @@
   - Day 51, 52, 66: Benchmarking against your competitors
   - Day 66, 76, 77: SEO common pitfalls
   - Day 81, 86: Creating a Keyword Universe
-  - Creating your North Star Goal
-  - Creating your monthly report
-  - Site structure and internal linking
-  - Creating a content strategy
-  - Technical on-page optimisation
-  - Local SEO
-  - International SEO
-  - SEO for eCommerce
-  - Backlink strategy
-  - Maintenance SEO
-  - Ongoing learning
-  - Managing SEO in-house
-  - Blue Array certification
+  - Day 91: Blue Array certification
 
 ---
+
+## R3 Day 95: 2020-06-23 Tuesday
+
+**Tuples:**
+
+- array-like structure where each element represents one property about a record
+- contains multiple properties to describe one thing
+- drink example `[color, carbonated, sugarContent]`
+- order is critical
+- could be useful for CSV files (rows)
+
+```ts
+const pepsiArray = ['brown', true, 40];
+const pepsiTuple: [string, boolean, number] = ['brown', true, 40];
+
+// Can also be done as a "type alias"
+// not an array--> defines the tuple!
+type Drink = [string, boolean, number];
+const coke: Drink = ['brown', true, 39];
+const tea: Drink = ['brown', false, 15];
+```
+
+**Interfaces in Typescript**
+
+- Interfaces + Classes = strong TS code
+- Creates a new type, describing the property names and value types of an object
+- Used for 'gatekeeping' and ensuring an object has the right type (good for code reuse!)
+- Create functions that accept arguments that are typed with interfaces
+- Object/classes can decide to do 'implement' a given interface to work with a function
+
+```ts
+interface Vehicle {
+  name: string;
+  year: number;
+  broken: boolean;
+}
+const listVehicle = (vehicle: Vehicle): void => {
+  console.log(`Name: ${vehicle.name}`);
+  console.log(`Year: ${vehicle.year}`);
+  console.log(`Broken: ${vehicle.broken}`);
+};
+
+// Refactoring
+// Q: But what happens to all the type checking for the vehicles?
+// Q: Can we have optional, but defined, variables in the Interface?
+interface Reportable {
+  summary(): string;
+}
+const car1 = {
+  prop1: 'vw',
+  summary(): string {
+    return `This ${this.prop1} is awesome.`;
+  }
+};
+const printSummary = (item: Reportable): void => {
+  console.log(item.summary());
+};
+printSummary(car1);
+```
 
 ## R3 Day 94: 2020-06-22 Monday
 
