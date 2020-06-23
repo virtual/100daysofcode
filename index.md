@@ -103,6 +103,8 @@
   - Day 89: S4: Orchestrating Collections... (Ingress)
   - Day 91: S4✓: Orchestrating Collections... (Skaffold)
   - Day 92: S5: Architecture of Multi-Service Apps
+  - Day 93: S25: Typescript
+  - Day 94: S25: Typescript: Functions and Objects
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Other projects/APIs
@@ -135,6 +137,35 @@
   - Blue Array certification
 
 ---
+
+## R3 Day 94: 2020-06-22 Monday
+
+- You can assign multiple types to a variable
+- Type inference on functions only works for the return type, not the argument type(s)
+
+`let numberAboveZero: boolean | number = false;`
+
+Destructured function example:
+
+```ts
+const logWeatherDestr = ({
+  date,
+  weather
+}: {
+  date: Date;
+  weather: string;
+}): void => {
+  console.log(date, weather);
+};
+```
+
+Object example:
+
+```ts
+const {
+  coords: { lat, lng }
+}: { coords: { lat: number; lng: number } } = profile;
+```
 
 ## R3 Day 93: 2020-06-21 Sunday
 
