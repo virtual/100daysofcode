@@ -106,6 +106,7 @@
   - Day 93: S25: Typescript
   - Day 94: S25: Typescript: Functions and Objects
   - Day 95: S25: Typescript: Arrays, tuples, interfaces
+  - Day 96: S25: Typescript: Classes
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Other projects/APIs
@@ -126,6 +127,42 @@
   - Day 91: Blue Array certification
 
 ---
+
+## R3 Day 96: 2020-06-24 Wednesday
+
+**Typescript Classes**
+
+- A blueprint to create an object with some fields (values) and methods (functions) to represent a 'thing'
+- Inheritence: (Car is a type of Vehicle) extends a class to use another Class's methods
+
+```ts
+// refer to as the Super Class
+class Vehicle {
+  drive(): void {
+    console.log('chugga chugga');
+  }
+  honk(): void {
+    console.log('beep');
+  }
+}
+// refer to as the Child Class
+class CarClass extends Vehicle {
+  // copies all props from Vehicle
+  // if we want to override, we can
+  drive(): void {
+    console.log('vroom');
+  }
+}
+const carInstance = new CarClass();
+carInstance.drive();
+carInstance.honk();
+```
+
+Modifers: keywords we can place on methods and props inside a class
+
+- **public**--can be called anywhere, anytime
+- **private**--can only be called by _other methods_ in _this class_
+- **protected**--can be called by other methods in _this class_, or by other methods in child classes
 
 ## R3 Day 95: 2020-06-23 Tuesday
 
