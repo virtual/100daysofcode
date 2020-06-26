@@ -108,6 +108,7 @@
   - Day 95: S25: Typescript: Arrays, tuples, interfaces
   - Day 96: S25: Typescript: Classes
   - Day 97: S25: Typescript: Constructors and App Setup
+  - Day 98: S25: Typescript: App w/ faker, Google map
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Other projects/APIs
@@ -128,6 +129,69 @@
   - Day 91: Blue Array certification
 
 ---
+
+## R3 Day 98: 2020-06-26 Friday
+
+- `npm install faker` - allows generation for fake data
+- Error: 'could not find declaration file for module': if you include a file that isn't Typescript, it can't determine TS types
+- Type definition files (`name.d.ts`) tells the TS compiler the functions that are in a file and what kind of types it takes/uses
+- Precreated type definition files can be found from "Definitely typed", eg `@types/faker`: use install `npm install @types/faker`
+- After install, the error should magically go away :)
+- Command click on import variable to view typescript def file
+
+Example of User.js that creates a user with faker data; uses the export keyword:
+
+```ts
+import faker from 'faker';
+
+export class User {
+  name: string;
+  location: {
+    lat: number;
+    lng: number;
+  };
+
+  constructor() {
+    // generate random info using faker
+    this.name = faker.name.firstName();
+    // this.location.lat -- this is undefined!
+    this.location = {
+      lat: parseFloat(faker.address.latitude()), // return a number to match definition above
+      lng: parseFloat(faker.address.longitude())
+    };
+  }
+}
+```
+
+```ts
+import { User } from './User';
+// anything we export something from a file, we use curly braces
+// this allows us to export mulitple items with diff names
+// different from `export default` as that will be the default
+// export default is rarely used in TS
+const user = new User();
+```
+
+- By adding the following into our `index.html`, we have created a _global_ variable `google`: `<script src="https://maps.googleapis.com/maps/api/js?key=API_KEY"></script>`
+- However, TS files do not understand that this global var is available
+- We can use the [type definition files](https://www.npmjs.com/package/@types/googlemaps) for these situations as well
+- We can reference this in the top of the file as `/// <reference types="@types/googlemaps" />`
+- Command+shift+P inside a TS file and choose Fold Level 2 to fold all level-2 headings
+- `opts?` is a flag for optional argument
+
+Limit access to methods on third-party plugins:
+
+```ts
+// Instead of creating and calling this directly in index.ts, let's
+// create a Map class to limit the functionality allowed in index.ts
+const map = new google.maps.Map(document.getElementById('map'), {
+  zoom: 2,
+  center: {
+    lat: 0,
+    lng: 0
+  }
+});
+```
 
 ## R3 Day 97: 2020-06-25 Thursday
 
@@ -1470,11 +1534,10 @@ Note that we are using JavaScript’s property-value shorthand, the code above w
   1. `docker-compose up -d mongo`
   1. `docker-compose up -d app`
   1. `docker-compose up -d client`
-- s
 
 ## R3 Day 39: 2020-04-28 Tuesday
 
-## [Getting Started with Google Kubernetes Engine](https://www.coursera.org/learn/google-kubernetes-engine/lecture/Ad1z3/what-are-containers)
+### [Getting Started with Google Kubernetes Engine](https://www.coursera.org/learn/google-kubernetes-engine/lecture/Ad1z3/what-are-containers)
 
 Labs: [Introduction to Containers and Docker](https://github.com/ScottyVG/public-org/blob/master/google-cloud-kubernetes/google-cloud-training.org)
 
