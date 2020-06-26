@@ -107,6 +107,7 @@
   - Day 94: S25: Typescript: Functions and Objects
   - Day 95: S25: Typescript: Arrays, tuples, interfaces
   - Day 96: S25: Typescript: Classes
+  - Day 97: S25: Typescript: Constructors and App Setup
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Other projects/APIs
@@ -127,6 +128,28 @@
   - Day 91: Blue Array certification
 
 ---
+
+## R3 Day 97: 2020-06-25 Thursday
+
+**Constructors**
+
+```ts
+// way 1
+color: string;
+// a constructor is instantly executed and uses arguments
+constructor(color: string) {
+  this.color = color; // if you use a constructor, then don't define it above
+}
+// end way 1
+
+// way 2 -- add public, equivalent to way 1!
+constructor(public color: string) { }
+// end way 2
+```
+
+constructors that extend a parent class need `super()` calls
+
+Going to use `npm install -g parcel-bundler` for packaging TS code going forward
 
 ## R3 Day 96: 2020-06-24 Wednesday
 
@@ -163,6 +186,10 @@ Modifers: keywords we can place on methods and props inside a class
 - **public**--can be called anywhere, anytime
 - **private**--can only be called by _other methods_ in _this class_
 - **protected**--can be called by other methods in _this class_, or by other methods in child classes
+
+Notes:
+
+- If you override the method in a child class, you cannot change the modifier
 
 ## R3 Day 95: 2020-06-23 Tuesday
 
