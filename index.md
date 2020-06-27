@@ -109,6 +109,7 @@
   - Day 96: S25: Typescript: Classes
   - Day 97: S25: Typescript: Constructors and App Setup
   - Day 98: S25: Typescript: App w/ faker, Google map
+  - Day 99: S25✓: Typescript: Google map CustomMap and Mappable interface
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Other projects/APIs
@@ -129,6 +130,60 @@
   - Day 91: Blue Array certification
 
 ---
+
+## R3 Day 99: 2020-06-27 Saturday
+
+`addMarker(mappable: User | Company): void { }`
+
+- To allow for multiple type as an argument, use a bar as an OR operator
+- This compares the available properties in each
+- Only properties that exist in _both_ (and have the same types) can be used within this function call
+- This can get messy as we scale, as we need to manage the types, eg: `User | Company | Parks | CarLots`...
+- Instead, invert the setup and make the class types work with the CustomMap class needs
+
+```ts
+interface Mappable {
+  location: {
+    lat: number;
+    lng: number;
+  };
+}
+// Ideal things we can do with the map in index.ts
+export class CustomMap {
+  // addMarker(mappable: User | Company): void {
+  // Instead of maintaing list types, we can use the Mappable type
+  addMarker(mappable: Mappable): void {}
+}
+```
+
+Typescript does an implicit check of User and Company to make sure they pass as type Mappable
+
+To help identify errors in classes we can use `export`:
+
+```ts
+// by adding export, we can use this to help with error checking in User
+// and Company classees
+export interface Mappable {}
+```
+
+And then add `implements` to the Class itself
+
+```ts
+import { Mappable } from './CustomMap';
+// Since we export Mappable, we can use implements
+// (not extends!) Mappable to help id errors
+// Not required, but helpful :)
+export class User implements Mappable {}
+```
+
+Now errors will show inside the User class showing expectations of Mappable
+
+**Typical Typescript file**
+
+- Interface definitions for working with this class
+- Class definition
+
+Review of why this project used Parcel: "Parcel is a Web Application Bundler. It's in the same tool category of _webpack_, with a different value proposition. Parcel promises to do many things without any configuration at all, and be fast too."
 
 ## R3 Day 98: 2020-06-26 Friday
 
