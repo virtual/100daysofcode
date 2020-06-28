@@ -1,6 +1,6 @@
 # #100DaysOfCode
 
-## ⭐ Some ideas for round 3: ⭐
+## ⭐ Round 3 Projects ⭐
 
 - Continue through [Javascript30](https://javascript30.com/)
   - Day 01: [Challenge 08 ✓](https://virtual-javascript30.herokuapp.com/08-canvas/index.html)
@@ -131,6 +131,14 @@
   - Day 91: Blue Array certification
 
 ---
+
+> Today I finished R3 D100 of 100DaysOfCode! 🎉 Thanks to all the amazing content creators including freeCodeCamp, Codecademy, FrontendMasters, FluxSauce, ste_grider, and wesbos! https://virtual.github.io/100daysofcode/
+
+> Favorite course of the year from ste_grider: Microservices with Node JS and React. Great lessons on learning Docker and Typescript and actually integrating them into projects. I love the hands-on approach and "improving code" progression. 👏 https://www.udemy.com/course/microservices-with-node-js-and-react/
+
+> Interested in test-driven design TDD? There's so much information in this course: Node.js: Testing and Code Quality from FluxSauce! I learned about tools I didn't even know existed for auditing and reporting on code coverage. https://www.lynda.com/Node-js-tutorials/Node-js-Testing-Code-Quality/587672-2.html
+
+> If you're interested in doing 100DaysOfCode, start with a list of possible projects you're interested in working on. It's helpful when you finish something (or are a bit bored) & need a change of pace. Great options: javascript30 freecodecamp
 
 ## R3 Day 100: 2020-06-28 Sunday
 
@@ -1382,13 +1390,11 @@ Last-In-First-Out using `.push()` and `.pop()`
 
 ## R3 Day 54: 2020-05-13 Wednesday
 
-> Set up my SSH config on my Mac so I don't have to type crazy-long SSH lines! Logged into DigitalOcean to look into setting up a droplet to try out Docker, TDD & CI/CD and realized I still have no idea what I'm doing. https://www.ostechnix.com/how-to-create-ssh-alias-in-linux/
-> R3D54/#100DaysOfCode
+> Set up my SSH config on my Mac so I don't have to type crazy-long SSH lines! Logged into DigitalOcean to look into setting up a droplet to try out Docker, TDD & CI/CD and realized I still have no idea what I'm doing. https://www.ostechnix.com/how-to-create-ssh-alias-in-linux/ R3D54/#100DaysOfCode
 
 ## R3 Day 53: 2020-05-12 Tuesday
 
-> A little DGD while I code an AMP example with GDG! Thanks for teaching the #AMPstudygroup
-> benmorss! R3D53/#100DaysOfCode https://virtual-gdg-amp-study-group.glitch.me
+> A little DGD while I code an AMP example with GDG! Thanks for teaching the #AMPstudygroup benmorss! R3D53/#100DaysOfCode https://virtual-gdg-amp-study-group.glitch.me
 
 Feeling motivated an inspired today. Morning yoga, Toastmasers, and an AMP workshop with GDG!
 
@@ -1553,9 +1559,7 @@ Note that we are using JavaScript’s property-value shorthand, the code above w
 
 ## R3 Day 42: 2020-05-01 Friday
 
-> Ready for the weekend! Made a silly little Minecraft doodle tool with jQuery. Interesting challenge using mousedown / mousemove to keep drawing. Happy May Day! 🌼
-> R3D42/#100DaysOfCode
-> https://codepen.io/virtual/full/vYNeajo
+> Ready for the weekend! Made a silly little Minecraft doodle tool with jQuery. Interesting challenge using mousedown / mousemove to keep drawing. Happy May Day! 🌼 R3D42/#100DaysOfCode https://codepen.io/virtual/full/vYNeajo
 
 ## R3 Day 41: 2020-04-30 Thursday
 
