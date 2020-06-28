@@ -110,6 +110,7 @@
   - Day 97: S25: Typescript: Constructors and App Setup
   - Day 98: S25: Typescript: App w/ faker, Google map
   - Day 99: S25✓: Typescript: Google map CustomMap and Mappable interface
+  - Day 100: S5: Architecture... (Auth)
 - Develop out [Knight University using TailwindCSS](https://virtual.github.io/knightu/)
   - Day 55: Hero, subfeature
 - Other projects/APIs
@@ -130,6 +131,41 @@
   - Day 91: Blue Array certification
 
 ---
+
+## R3 Day 100: 2020-06-28 Sunday
+
+### Microservices Ticketing Site
+
+Auth service
+
+- New auth folder
+- `npm init -y`
+- `npm install typescript ts-node-dev express @types/express`
+- `tsc --init`
+- create `auth/src/index.ts` (ts!)
+- update package.json: `"start": "ts-node-dev src/index.ts"`
+
+Setup K8s early on!
+
+- Make sure we can build an image, we'll need a Dockerfile (`FROM node:alpine...`)
+- We'll also add .dockerignore to avoid copying over node_modules folder to image
+- Try building image
+- Now add k8s info in `infra/k8s`
+- Create auth-depl.yaml
+- Everytime we create a deployment, we'll want to create a service to go along with it
+- Create service information inside the same auth-depl.yaml file
+
+Skaffold
+
+- From root of project, create `skaffold.yaml` and fill in
+- Test run with `skaffold dev`
+- Note on `-poll` (I use `poll` a lot for other projects!)
+  - If you did not see your server restart after changing the index.ts file, do the following:
+  - Open the package.json file in the ‘auth’ directory
+  - Find the ‘start’ script
+  - Update the start script to the following:
+  - `ts-node-dev --poll src/index.ts`
+-
 
 ## R3 Day 99: 2020-06-27 Saturday
 
