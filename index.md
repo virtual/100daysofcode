@@ -134,7 +134,7 @@
 
 ## R3 Day 100: 2020-06-28 Sunday
 
-### Microservices Ticketing Site
+### [Microservices Ticketing Site](https://github.com/virtual/microservices-ticketing)
 
 Auth service
 
@@ -165,7 +165,6 @@ Skaffold
   - Find the ‘start’ script
   - Update the start script to the following:
   - `ts-node-dev --poll src/index.ts`
--
 
 ## R3 Day 99: 2020-06-27 Saturday
 
