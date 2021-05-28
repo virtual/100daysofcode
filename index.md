@@ -4,21 +4,21 @@
 
 Ideas for Round 4 starting June 1, 2021
 
-- [https://codepen.io/virtual/pen/QWjaRRo](Bouncy Panda phaser)
-- [https://www.codecademy.com/courses/learn-phaser/lessons/learn-phaser-basics/exercises/hello-world](Phaser)
+- [Bouncy Panda phaser](https://codepen.io/virtual/pen/QWjaRRo)
+- [Phaser](https://www.codecademy.com/courses/learn-phaser/lessons/learn-phaser-basics/exercises/hello-world)
 - javascript 30
 - python projects
-- [https://www.sololearn.com/learning/1073](python sololearn app) for when i'm lazy 
-- [https://www.udemy.com/course/microservices-with-node-js-and-react/](Microservices with Node JS and React)
+- [python sololearn app](https://www.sololearn.com/learning/1073) for when i'm lazy 
+- [Microservices with Node JS and React](https://www.udemy.com/course/microservices-with-node-js-and-react/)
 - advanced scss stylelinting
 - fix my old app databases
-- [https://github.com/virtual/libworx](Libworx)
+- [Libworx](https://github.com/virtual/libworx)
 - create a virtual pet site
 - read Code Complete
-- [https://virtual.github.io/toy-factory/](build out more of toy-factory!)
+- [build out more of toy-factory!](https://virtual.github.io/toy-factory/)
 - check out https://apexcharts.com/ for item leveling charts
-- [https://classroom.udacity.com/courses/ud989](Javascript design patterns (MVC))
-- [https://fcc-recipe.herokuapp.com/](make search work on recipe app; make list items editable)
+- [Javascript design patterns (MVC)](https://classroom.udacity.com/courses/ud989)
+- [make search work on recipe app; make list items editable](https://fcc-recipe.herokuapp.com/)
 - broken image css
 - music-related javascript?
 
