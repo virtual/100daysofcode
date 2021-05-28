@@ -1,5 +1,29 @@
 # #100DaysOfCode
 
+## ⭐ ⭐ Round 4 begins ⭐ ⭐
+
+Ideas for Round 4 starting June 1, 2021
+
+- [https://codepen.io/virtual/pen/QWjaRRo](Bouncy Panda phaser)
+- [https://www.codecademy.com/courses/learn-phaser/lessons/learn-phaser-basics/exercises/hello-world](Phaser)
+- javascript 30
+- python projects
+- [https://www.sololearn.com/learning/1073](python sololearn app) for when i'm lazy 
+- [https://www.udemy.com/course/microservices-with-node-js-and-react/](Microservices with Node JS and React)
+- advanced scss stylelinting
+- fix my old app databases
+- [https://github.com/virtual/libworx](Libworx)
+- create a virtual pet site
+- read Code Complete
+- [https://virtual.github.io/toy-factory/](build out more of toy-factory!)
+- check out https://apexcharts.com/ for item leveling charts
+- [https://classroom.udacity.com/courses/ud989](Javascript design patterns (MVC))
+- [https://fcc-recipe.herokuapp.com/](make search work on recipe app; make list items editable)
+- broken image css
+- music-related javascript?
+
+---
+
 ## ⭐ Round 3 Projects ⭐
 
 - Continue through [Javascript30](https://javascript30.com/)
