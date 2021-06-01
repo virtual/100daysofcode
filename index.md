@@ -1,5 +1,48 @@
 # #100DaysOfCode
 
+## R4 Day 1: 2021-06-01 Tuesday
+
+### Audio JS Libraries
+
+- [Tone.js](https://tonejs.github.io/)
+  - [Inspiration: Yume](http://www.unseen-music.com/yume/)
+  - [Tweakable](https://tweakable.org/)
+  - [More examples](https://tonejs.github.io/demos)
+- [pizzicato](https://alemangui.github.io/pizzicato/) - Might need to try to make a song with this
+
+To reset your Github account on VSCode after enabling 2FA use:
+
+```bash
+git config --global --unset credential.helper
+```
+
+### Python Project #2: Time Calculator
+
+Run debugger with `F5` in VSCode; set up `launch.json` if needed, e.g.
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Main File",
+      "type": "python",
+      "request": "launch",
+      "program": "main.py",
+      "console": "integratedTerminal"
+    }
+  ]
+}
+```
+
+Implemented code to pass the first test for the [Time Calculator](https://github.com/virtual/fcc-python-projects/blob/master/time-calculator/time_calculator.py)
+
+Tidy code to split a string and assign it as ints to two variables:
+
+```python
+dHours, dMins = map(int,duration.split(':'))
+```
+
 ## ⭐ ⭐ Round 4 begins ⭐ ⭐
 
 Ideas for Round 4 starting June 1, 2021
