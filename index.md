@@ -1,5 +1,14 @@
 # #100DaysOfCode
 
+## R4 Day 2: 2021-06-02 Wenesday
+
+Not very pretty but now passing tests 2-5 for the [Time Calculator](https://github.com/virtual/fcc-python-projects/blob/master/time-calculator/time_calculator.py) | [(Replit)](https://replit.com/@virtual/boilerplate-time-calculator)
+
+Working with the Python debugger to check my values
+
+- `str(min).zfill(2)` - for left padding numbers with 0s (07 vs 7)
+- python uses `elif` not `elseif` 
+
 ## R4 Day 1: 2021-06-01 Tuesday
 
 ### Audio JS Libraries
