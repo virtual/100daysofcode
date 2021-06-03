@@ -1,8 +1,15 @@
 # #100DaysOfCode
 
+## 👑 Round 4 Projects 👑
+
+- freeCodeCamp
+  - Scientific Computing with Python Projects 
+    - Day 01: Project 2: [Time Calculator](https://www.freecodecamp.org/learn/scientific-computing-with-python/scientific-computing-with-python-projects/time-calculator), test #1, simple time addition
+    - Day 02: Project 2: Time Calculator, tests #2-5, next day
+
 ## R4 Day 2: 2021-06-02 Wenesday
 
-Not very pretty but now passing tests 2-5 for the [Time Calculator](https://github.com/virtual/fcc-python-projects/blob/master/time-calculator/time_calculator.py) | [(Replit)](https://replit.com/@virtual/boilerplate-time-calculator)
+Not very pretty but now passing tests 2-5 for the [Time Calculator](https://github.com/virtual/fcc-python-projects/blob/master/time-calculator/time_calculator.py) &middot; [(Replit)](https://replit.com/@virtual/boilerplate-time-calculator)
 
 Working with the Python debugger to check my values
 
@@ -52,7 +59,7 @@ Tidy code to split a string and assign it as ints to two variables:
 dHours, dMins = map(int,duration.split(':'))
 ```
 
-## ⭐ ⭐ Round 4 begins ⭐ ⭐
+## 👑 👑 Round 4 begins 👑 👑
 
 Ideas for Round 4 starting June 1, 2021
 
