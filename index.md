@@ -7,6 +7,23 @@
     - Day 01: Project 2: [Time Calculator](https://www.freecodecamp.org/learn/scientific-computing-with-python/scientific-computing-with-python-projects/time-calculator), test #1, simple time addition
     - Day 02: Project 2: Time Calculator, tests #2-5, next day
     - Day 03: Project 2: Time Calculator, tests #6-12, show days elapsed ✓
+- [Sentiment Analyzer](https://github.com/virtual/sentiment-analyzer)
+  - Day 04: Began looking into sentiment analysis
+
+## R4 Day 4: 2021-06-04 Friday
+
+Considering a sentiment analyzer to potentially create an interactive app that can later use a sound library
+
+A few notes:
+
+- Lyrics repeat a lot of words, but I also tried to remove repeats, and that didn't seem to be a good solution
+- Need to create a custom word list to filter lyrics like "yeah" that might repeat several time (and have a positive sentiment)
+- Phrases like "shooting stars" become negative--any way to better process phrases? :\
+
+Resources:
+
+- [Stopwords](https://github.com/fergiemcdowall/stopword) - words to filter out
+- [Building a sentiment analysis app with Node.js](https://blog.logrocket.com/sentiment-analysis-node-js/)
 
 ## R4 Day 3: 2021-06-03 Thursday
 
