@@ -6,8 +6,15 @@
   - Scientific Computing with Python Projects 
     - Day 01: Project 2: [Time Calculator](https://www.freecodecamp.org/learn/scientific-computing-with-python/scientific-computing-with-python-projects/time-calculator), test #1, simple time addition
     - Day 02: Project 2: Time Calculator, tests #2-5, next day
+    - Day 03: Project 2: Time Calculator, tests #6-12, show days elapsed ✓
 
-## R4 Day 2: 2021-06-02 Wenesday
+## R4 Day 3: 2021-06-03 Thursday
+
+- Finished the [second python project for FCC](https://replit.com/@virtual/boilerplate-time-calculator)!
+
+Learned there's no case statements for python, but may be coming soon :)
+
+## R4 Day 2: 2021-06-02 Wednesday
 
 Not very pretty but now passing tests 2-5 for the [Time Calculator](https://github.com/virtual/fcc-python-projects/blob/master/time-calculator/time_calculator.py) &middot; [(Replit)](https://replit.com/@virtual/boilerplate-time-calculator)
 
