@@ -9,6 +9,14 @@
     - Day 03: Project 2: Time Calculator, tests #6-12, show days elapsed ✓
 - [Sentiment Analyzer](https://github.com/virtual/sentiment-analyzer)
   - Day 04: Began looking into sentiment analysis
+  - Day 05: Created front-end form using React and Axios
+
+## R4 Day 5: 2021-06-05 Saturday
+
+Added a [textarea to input words/lyrics](https://github.com/virtual/sentiment-analyzer) and then using Axios, make a post request to node which then queries my original function to output the sentiment value. :)
+
+Looks like if I want this to run on replit, I need to set up some [environment variables](https://marcopeg.com/2019/nodejs-backend-on-repl-it)
+
 
 ## R4 Day 4: 2021-06-04 Friday
 
