@@ -10,6 +10,7 @@
 - [Sentiment Analyzer](https://github.com/virtual/sentiment-analyzer)
   - Day 04: Began looking into sentiment analysis
   - Day 05: Created front-end form using React and Axios
+  - Day 06: App now working on www 
 
 
   
