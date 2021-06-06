@@ -11,6 +11,42 @@
   - Day 04: Began looking into sentiment analysis
   - Day 05: Created front-end form using React and Axios
 
+
+  
+
+## R4 Day 6: 2021-06-06 Sunday
+
+Configured my [sentiment analyzer to run on replit](https://sentiment-analyzer.virtual.repl.co/)!
+
+Overview of [changes](https://github.com/virtual/sentiment-analyzer/commit/ef16254386d4fa46e9be1e799bd0a2fcd02fc0ed):
+- Run `npm run build` in public folder
+- Remove `build` folder from `public/.gitignore`
+- Add an `.env` to the replit app `NODE_ENV` set to `production`
+- Add conditional logic to to app.js to serve files if on prod
+
+Updated app.js:
+```bash
+require('dotenv').config();
+
+if (process.env.NODE_ENV === 'production') { 
+  app.use(express.static("./public/build"));
+} else {
+  app.use(express.static("public"));  
+}
+```
+
+Added logging and debugging with log4js
+
+A few ideas:
+- Check for certain words and add X amount svgs that are related (stars, hearts, skulls, lulz)
+- Other things could be unique if found in the text (city skyline)
+- Slow svg animation or something
+- Change color/theme based on sentiment rating
+- Then add audio to these svgs on interaction
+
+
+Also updated my Heroku apps since they have an necessary upgrade (The Heroku-16 stack is end-of-life).
+
 ## R4 Day 5: 2021-06-05 Saturday
 
 Added a [textarea to input words/lyrics](https://github.com/virtual/sentiment-analyzer) and then using Axios, make a post request to node which then queries my original function to output the sentiment value. :)
