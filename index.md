@@ -11,9 +11,16 @@
   - Day 04: Began looking into sentiment analysis
   - Day 05: Created front-end form using React and Axios
   - Day 06: App now working on www 
+  - Day 07: Lifted state, added dynamic coloring based on pos/neg
 
 
-  
+ 
+## R4 Day 7: 2021-06-07 Monday
+
+Lifted the state for the sentiment analysis value for my [sentiment analyzer](https://sentiment-analyzer.virtual.repl.co/) and added some coloring based on positive / negative, and attempted to do some saturation value (HSL) based on just how intense the result is.
+
+Learned about using `isInfinite()` instead of checking if a var equals `Infinity` (doesn't work)
+ 
 
 ## R4 Day 6: 2021-06-06 Sunday
 
