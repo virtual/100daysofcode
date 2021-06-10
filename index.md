@@ -13,6 +13,23 @@
   - Day 06: App now working on www 
   - Day 07: Lifted state, added dynamic coloring based on pos/neg
   - Day 08: Added svgs that appear based on the content
+  - Day 09: Added pop-in animation, delay, and some more randomation; made more performant
+  
+
+
+## R4 Day 9: 2021-06-09 Wednesday
+
+Added animation delay and better handling for performance; only showing svg changes on submit. 
+
+A few gotchas:
+
+- Animation needs to include `forwards` otherwise it will revert to original style
+- React relies on the key to know if should rerender a specific element (otherwise animation-delay was not firing when key stayed the same)
+- Use `shouldComponentUpdate` to check if the component should re-render. By default it seems every component is re-rendering everytime anything changes!
+
+[Sentiment Analyzer](https://github.com/virtual/sentiment-analyzer) - 
+`count your lucky stars okay star star star rawr star star circle mew star`
+
 
 
 ## R4 Day 8: 2021-06-08 Tuesday
