@@ -3,10 +3,13 @@
 ## 👑 Round 4 Projects 👑
 
 - freeCodeCamp
-  - Scientific Computing with Python Projects 
-    - Day 01: Project 2: [Time Calculator](https://www.freecodecamp.org/learn/scientific-computing-with-python/scientific-computing-with-python-projects/time-calculator), test #1, simple time addition
-    - Day 02: Project 2: Time Calculator, tests #2-5, next day
-    - Day 03: Project 2: Time Calculator, tests #6-12, show days elapsed ✓
+  - Python Project 2: [Time Calculator ✓](https://www.freecodecamp.org/learn/scientific-computing-with-python/scientific-computing-with-python-projects/time-calculator) 
+    - Day 01: test #1, simple time addition
+    - Day 02: tests #2-5, next day
+    - Day 03: tests #6-12, show days elapsed ✓
+  - Python Project 3: [Budget App](https://replit.com/@virtual/virtual-fcc-budget-app)  
+    - Day 11: local setup
+    - Day 12: tests #1-7, deposit, withdraw, check balance
 - [Sentiment Analyzer](https://github.com/virtual/sentiment-analyzer)
   - Day 04: Began looking into sentiment analysis
   - Day 05: Created front-end form using React and Axios
@@ -14,8 +17,30 @@
   - Day 07: Lifted state, added dynamic coloring based on pos/neg
   - Day 08: Added svgs that appear based on the content
   - Day 09: Added pop-in animation, delay, and some more randomation; made more performant
-  
+  - Day 10: Added a bit more random sizing, hover effects and interactive note sounds using Tone JS
 
+## R4 Day 12: 2021-06-12 Saturday
+
+Python Project #3: [Budget App](https://replit.com/@virtual/virtual-fcc-budget-app)
+
+Revising Python and [objects from py4e](https://www.py4e.com/lessons/Objects#)
+
+- **Class** - a template `Dog`
+- **Method or Message** - A defined capability of a class `bark()`
+- **Field or attribute** - A bit of data in a class `length`
+- **Object or Instance** - A particular instance of a class `Lassie`
+
+Use `dir(var)` to list all the items/methods inside a variable
+
+Use [dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries) for a structure like `{'jack': 4098, 'sape': 4139}`
+
+## R4 Day 11: 2021-06-11 Friday
+
+Back to python, setup the Budget App locally; tried adding a few lines of code to the class but it's obvious I completely forgot everything about python classes.
+
+## R4 Day 10: 2021-06-10 Thursday
+
+Added a bit more random sizing, hover effects and interactive note sounds using Tone JS. Done with this project for a bit, not quite going the way I want between the advanced svgs and delays I'd like. And the interactivity, I'm not even sure what I want. 
 
 ## R4 Day 9: 2021-06-09 Wednesday
 
