@@ -10,6 +10,7 @@
   - Python Project 3: [Budget App](https://replit.com/@virtual/virtual-fcc-budget-app)  
     - Day 11: local setup
     - Day 12: tests #1-7, deposit, withdraw, check balance
+    - Day 13: tests #8-10, transfer, override str method
 - [Sentiment Analyzer](https://github.com/virtual/sentiment-analyzer)
   - Day 04: Began looking into sentiment analysis
   - Day 05: Created front-end form using React and Axios
@@ -18,6 +19,41 @@
   - Day 08: Added svgs that appear based on the content
   - Day 09: Added pop-in animation, delay, and some more randomation; made more performant
   - Day 10: Added a bit more random sizing, hover effects and interactive note sounds using Tone JS
+
+
+## R4 Day 13: 2021-06-13 Sunday
+
+Tests #8-10 of Budget app passing; need to still center the title of the instance dynamically.
+
+Overriding what is returned when calling the instance obj by overriding `__str__` in the Class; roughly:
+
+```py
+def __str__(self):
+    output = ''
+    for iter in range(len(self.ledger)):
+      output = output + str(self.ledger[iter]['amount'])
+    return f'{output}'
+```
+
+Using [Sphinx documentation for Python](https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#python-signatures) is helpful for later auto-generating docs.
+
+Example:
+
+```py
+def transfer(self, amount, targetCategory):
+  '''
+  Send a message to a recipient
+
+  :param float amount: The amount of money to transfer
+  :param str targetCategory: The target category to transfer to
+  :return: `True` if the transfer took place, and `False` otherwise
+  :rtype: boolean
+  :raises ValueError: if the targetCategory exceeds 160 characters
+  :raises TypeError: if the targetCategory is not a basestring
+  '''
+```
+
+Had a bit of fun at looking at more profile customizations & updated my GitHub profile a bit with [Spotify stats](https://spotify-recently-played-readme.vercel.app/) from [JeffreyCA](https://github.com/JeffreyCA), also their project [spleeter web](https://github.com/JeffreyCA/spleeter-web) looks really neat. Will need to check out :)
 
 ## R4 Day 12: 2021-06-12 Saturday
 
