@@ -11,6 +11,7 @@
     - Day 11: local setup
     - Day 12: tests #1-7, deposit, withdraw, check balance
     - Day 13: tests #8-10, transfer, override str method
+    - Day 15: working on the bar chart
 - [Sentiment Analyzer](https://github.com/virtual/sentiment-analyzer)
   - Day 04: Began looking into sentiment analysis
   - Day 05: Created front-end form using React and Axios
@@ -19,7 +20,16 @@
   - Day 08: Added svgs that appear based on the content
   - Day 09: Added pop-in animation, delay, and some more randomation; made more performant
   - Day 10: Added a bit more random sizing, hover effects and interactive note sounds using Tone JS
+- Sololearn
+  - Day 14: Python core
 
+## R4 Day 15: 2021-06-15 Tuesday
+
+Working through the final python project #3, started setting up the bar chart; also worked on a definition to center the category title when printing the given category object.
+
+## R4 Day 14: 2021-06-14 Monday
+
+Simple day of python on sololearn app
 
 ## R4 Day 13: 2021-06-13 Sunday
 
