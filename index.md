@@ -7,11 +7,11 @@
     - Day 01: test #1, simple time addition
     - Day 02: tests #2-5, next day
     - Day 03: tests #6-12, show days elapsed ✓
-  - Python Project 3: [Budget App](https://replit.com/@virtual/virtual-fcc-budget-app)  
+  - Python Project 3: [Budget App ✓](https://replit.com/@virtual/virtual-fcc-budget-app)  
     - Day 11: local setup
     - Day 12: tests #1-7, deposit, withdraw, check balance
     - Day 13: tests #8-10, transfer, override str method
-    - Day 15: working on the bar chart
+    - Day 15, 17, 18: bar chart ✓
 - [Sentiment Analyzer](https://github.com/virtual/sentiment-analyzer)
   - Day 04: Began looking into sentiment analysis
   - Day 05: Created front-end form using React and Axios
@@ -22,6 +22,22 @@
   - Day 10: Added a bit more random sizing, hover effects and interactive note sounds using Tone JS
 - Sololearn
   - Day 14: Python core
+
+
+
+## R4 Day 18: 2021-06-18 Friday
+
+Finished [Python Budget App](https://replit.com/@virtual/virtual-fcc-budget-app)! 🎉 Calculated percentages overall for withdrawals and added accurate representations for the bar chart. A  nifty function:
+
+- `max(names, key=len)` - get the longest length item in a list (then take its length)
+
+## R4 Day 17: 2021-06-17 Thursday
+
+Setup the vertical labels for the categories for the Python Budget App.
+
+## R4 Day 16: 2021-06-16 Wednesday
+
+🌑
 
 ## R4 Day 15: 2021-06-15 Tuesday
 
