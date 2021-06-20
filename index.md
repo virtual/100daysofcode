@@ -2,8 +2,8 @@
 
 ## 👑 Round 4 Projects 👑
 
-- freeCodeCamp
-  - Python Project 2: [Time Calculator ✓](https://www.freecodecamp.org/learn/scientific-computing-with-python/scientific-computing-with-python-projects/time-calculator) 
+- freeCodeCamp [Python](https://www.freecodecamp.org/learn/scientific-computing-with-python/)
+  - Python Project 2: [Time Calculator ✓](https://replit.com/@virtual/boilerplate-time-calculator) 
     - Day 01: test #1, simple time addition
     - Day 02: tests #2-5, next day
     - Day 03: tests #6-12, show days elapsed ✓
@@ -12,6 +12,9 @@
     - Day 12: tests #1-7, deposit, withdraw, check balance
     - Day 13: tests #8-10, transfer, override str method
     - Day 15, 17, 18: bar chart ✓
+  - Python Project 4: [Polygon Area Calculator ✓](https://replit.com/@virtual/fcc-polygon-area-calculator)  
+    - Day 19: tests #1-5
+    - Day 20: all tests complete ✓
 - [Sentiment Analyzer](https://github.com/virtual/sentiment-analyzer)
   - Day 04: Began looking into sentiment analysis
   - Day 05: Created front-end form using React and Axios
@@ -24,6 +27,13 @@
   - Day 14: Python core
 
 
+## R4 Day 20: 2021-06-20 Sunday
+
+Finished [Polygon Area Calculator](https://replit.com/@virtual/fcc-polygon-area-calculator)! Seemed a lot easier than the last challenge. :D
+
+## R4 Day 19: 2021-06-19 Saturday
+
+Started [Polygon Area Calculator](https://replit.com/@virtual/fcc-polygon-area-calculator) 
 
 ## R4 Day 18: 2021-06-18 Friday
 
