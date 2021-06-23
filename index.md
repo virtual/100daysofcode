@@ -15,6 +15,9 @@
   - Python Project 4: [Polygon Area Calculator ✓](https://replit.com/@virtual/fcc-polygon-area-calculator)  
     - Day 19: tests #1-5
     - Day 20: all tests complete ✓
+  - Python Project 5: [Probability Calculator](https://replit.com/@virtual/probability-calculator)
+    - Day 21: test #1
+    - Day 22: test #2
 - [Sentiment Analyzer](https://github.com/virtual/sentiment-analyzer)
   - Day 04: Began looking into sentiment analysis
   - Day 05: Created front-end form using React and Axios
@@ -26,6 +29,33 @@
 - Sololearn
   - Day 14: Python core
 
+
+## R4 Day 22: 2021-06-22 Tuesday
+
+Battling it out with Python and bash; turns out I just needed a restart. 😅
+
+Did end up changing my launch.json for python (internalConsole from integratedTerminal), so now it has different colors. (Not sure if it's better...)
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "main.py",
+      "console": "internalConsole"
+    }
+  ]
+}
+```
+
+Passing test #2, but... why is always returning `['blue', 'red']` for a "random" choice?
+
+## R4 Day 21: 2021-06-21 Monday
+
+Started the fifth python project--[Probability Calculator](https://replit.com/@virtual/probability-calculator), passing 1/3 tests.
 
 ## R4 Day 20: 2021-06-20 Sunday
 
