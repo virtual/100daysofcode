@@ -2,7 +2,7 @@
 
 ## 👑 Round 4 Projects 👑
 
-- freeCodeCamp [Python](https://www.freecodecamp.org/learn/scientific-computing-with-python/)
+- freeCodeCamp [Python](https://www.freecodecamp.org/learn/scientific-computing-with-python/) & [Scientific Computing with Python certification!](https://www.freecodecamp.org/certification/virtual/scientific-computing-with-python-v7)
   - Python Project 2: [Time Calculator ✓](https://replit.com/@virtual/boilerplate-time-calculator) 
     - Day 01: test #1, simple time addition
     - Day 02: tests #2-5, next day
@@ -15,9 +15,11 @@
   - Python Project 4: [Polygon Area Calculator ✓](https://replit.com/@virtual/fcc-polygon-area-calculator)  
     - Day 19: tests #1-5
     - Day 20: all tests complete ✓
-  - Python Project 5: [Probability Calculator](https://replit.com/@virtual/probability-calculator)
+  - Python Project 5: [Probability Calculator ✓](https://replit.com/@virtual/probability-calculator)
     - Day 21: test #1
     - Day 22: test #2
+    - Day 23: random library
+    - Day 24: test #3 ✓
 - [Sentiment Analyzer](https://github.com/virtual/sentiment-analyzer)
   - Day 04: Began looking into sentiment analysis
   - Day 05: Created front-end form using React and Axios
@@ -29,6 +31,20 @@
 - Sololearn
   - Day 14: Python core
 
+## R4 Day 24: 2021-06-24 Thursday
+
+Finished the [Probability Calculator](https://replit.com/@virtual/probability-calculator) and claimed my [Scientific Computing with Python certification!](https://www.freecodecamp.org/certification/virtual/scientific-computing-with-python-v7) Pretty excited :)
+
+## R4 Day 23: 2021-06-23 Wednesday
+
+Sick day but did learn a bit more about Python's random library. It's more predestined randomization--it always gives the same "random" result given the same inputs. (Good for testing...) It can instead be re-written using SystemRandom()
+
+```py
+sr = random.SystemRandom()
+# for truly random use sr
+# randomSelection = random.choice(contents)
+randomSelection = sr.choice(contents)
+```
 
 ## R4 Day 22: 2021-06-22 Tuesday
 
