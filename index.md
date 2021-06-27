@@ -35,6 +35,12 @@
   - Day 14: Python core
 - Codepen
   - Day 25: [Styling broken images](https://codepen.io/virtual/pen/BaRBajq)
+- Projects
+  - Day 27: Fixed & readded [Recipe App search](https://fcc-recipe.herokuapp.com/)
+
+## R4 Day 27: 2021-06-27 Sunday
+
+Fixed 3-year old issue with my [Recipe App search](https://fcc-recipe.herokuapp.com/)! It turns out the [key for the card component](https://github.com/virtual/fcc-recipe-box/commit/6ab07f003946ed7db86ffcf4f7425d4bd723fd47#diff-46882322b44ef809269ece297270640b0509766c1ce82a6338855b5b83b590ad) wasn't correct which was causing the wrong results to cache/render. Also spent a good chunk of time playing with outdated node_modules.
 
 ## R4 Day 26: 2021-06-26 Saturday
 
