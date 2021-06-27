@@ -20,6 +20,9 @@
     - Day 22: test #2
     - Day 23: random library
     - Day 24: test #3 ✓
+- freeCodeCamp Information Security
+  - Python for Penetration Testing
+    - Day 26: 
 - [Sentiment Analyzer](https://github.com/virtual/sentiment-analyzer)
   - Day 04: Began looking into sentiment analysis
   - Day 05: Created front-end form using React and Axios
@@ -30,6 +33,23 @@
   - Day 10: Added a bit more random sizing, hover effects and interactive note sounds using Tone JS
 - Sololearn
   - Day 14: Python core
+- Codepen
+  - Day 25: [Styling broken images](https://codepen.io/virtual/pen/BaRBajq)
+
+## R4 Day 26: 2021-06-26 Saturday
+
+Starting freeCodeCamp Information Security, Python for Penetration Testing
+
+Socket: an internal endpoint for sending and receiving data (analogy: outlet)
+
+Types:
+1. TCP - transmission control protocol (IPV4 or IPV6)
+1. UDP
+
+
+## R4 Day 25: 2021-06-25 Friday
+
+[Styling broken images](https://codepen.io/virtual/pen/BaRBajq) with CSS
 
 ## R4 Day 24: 2021-06-24 Thursday
 
