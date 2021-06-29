@@ -22,7 +22,7 @@
     - Day 24: test #3 ✓
 - freeCodeCamp Information Security
   - Python for Penetration Testing
-    - Day 26: 
+    - Day 26: sockets
 - [Sentiment Analyzer](https://github.com/virtual/sentiment-analyzer)
   - Day 04: Began looking into sentiment analysis
   - Day 05: Created front-end form using React and Axios
@@ -37,6 +37,12 @@
   - Day 25: [Styling broken images](https://codepen.io/virtual/pen/BaRBajq)
 - Projects
   - Day 27: Fixed & readded [Recipe App search](https://fcc-recipe.herokuapp.com/)
+  - Day 28: Internationalization
+
+
+## R4 Day 28: 2021-06-28 Monday
+
+Looking into [implementing internationalization](https://dev.to/adrai/how-to-properly-internationalize-a-react-application-using-i18next-3hdb) (i18n) for my Recipe app, but running into some issues with wrapping the export class in the library. [(Example)](https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-react-app-with-react-i18next) May try it on a simpler app, or non-React project another time.
 
 ## R4 Day 27: 2021-06-27 Sunday
 
