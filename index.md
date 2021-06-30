@@ -35,10 +35,23 @@
   - Day 14: Python core
 - Codepen
   - Day 25: [Styling broken images](https://codepen.io/virtual/pen/BaRBajq)
+  - Day 30: Fixed some broken codepens
 - Projects
   - Day 27: Fixed & readded [Recipe App search](https://fcc-recipe.herokuapp.com/)
   - Day 28: Internationalization
+  - Day 29: Failed attempt adding ingredients on edit
 
+
+## R4 Day 30: 2021-06-30 Monday
+
+Fixing some of my better codepens!
+
+- [Quote generator](https://codepen.io/virtual/full/jqJeKb) - Chris has a new API, working good!
+- [Collapsible timeline](https://codepen.io/virtual/full/Vjrbvb) - Placehold.it images have a new link
+
+## R4 Day 29: 2021-06-29 Tuesday
+
+Attemped to add editing and adding ability for Recipe app ingredients, but ended up scrapping it. 
 
 ## R4 Day 28: 2021-06-28 Monday
 
