@@ -41,8 +41,43 @@
   - Day 28: Internationalization
   - Day 29: Failed attempt adding ingredients on edit
 
+## R4 Day 31: 2021-07-01 Thursday
 
-## R4 Day 30: 2021-06-30 Monday
+[Localization for Developers](https://www.linkedin.com/learning/localization-for-developers/welcome?u=104778834)
+
+- **Locale** - a group of target users described by location, language, and preferences. _language, currency, measurements_
+- **Localization (L10n)** - the process of tailoring a product for a specific locale
+- **Internationalization (i18n)** - preparing a product to support multiple languages and settings
+
+Steps for localization:
+1. Translation (inc. reading direction)
+1. Unit conversion
+1. Social conventions - accommodating user expectations
+1. Legal regulation
+
+Considerations:
+- Separate code from content
+- Load different assets
+- Toggle region / language
+- Support displaying content of different lengths
+
+Localization != language
+
+Associated Preferences:
+- Time
+- Date
+- Number
+- Currency
+- Keyboard layout
+- Input prefs
+- Paper sizes
+- Writing standards (e.g. simplified vs traditional Chinese)
+
+Identifying locales: typically defined using two values: (eg `en_US` vs `en_CA`)
+1. language in lowercase (ISO 639.1 - 2 chars/639.2 - 3 chars)
+1. region in uppercase (ISO 3166 - 2 chars)
+
+## R4 Day 30: 2021-06-30 Wednesday
 
 Fixing some of my better codepens!
 
