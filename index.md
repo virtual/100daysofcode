@@ -40,6 +40,58 @@
   - Day 27: Fixed & readded [Recipe App search](https://fcc-recipe.herokuapp.com/)
   - Day 28: Internationalization
   - Day 29: Failed attempt adding ingredients on edit
+- LinkedIn
+  - Localization for Developers
+    - Day 30: Intro: Overview
+    - Day 31: Intro: Localization management & research
+
+## R4 Day 32: 2021-07-02 Friday
+
+1. Identify target locales
+1. Internationalize your product
+1. Pseudo-localization - test that media, text is changing
+1. Test for functionality
+1. Add additional locales
+1. Test each locale
+
+### Localization solution - one spot for all localizations, translations, media
+
+- Context and feedback - translators can ask questions, if others ask similar questions for other locales, it helps streamline
+- Translation memory (TM) - keeps track of how a phrase may have been previously translated
+- Machine translation (MT) - eg Google Translate
+- Other features - online repo, permisisons, stats
+
+### Research
+
+- Identify potential targets
+  - User feedback
+  - Watch for an elevated # of users from a certain geolocation
+  - How easy (eg France, Italy and Spain at the same time)
+  - Check what your competitors support (App Annie)
+- Locale needs
+  - How is language written?
+  - Punctuation? 
+  - Currency, special symbols
+- Consumption
+  - What types of smartphones are most common?
+  - Is internet readily available
+  - How are similar services received?
+
+### Legal Implications
+
+- Identify any major legal obstacles
+- Restrictions on data storage? User consent? PII
+- uk.practicallaw.com - Laws about data storage
+- COPPA - legislation about info for children under 13
+
+### Specialists
+
+- Consultants for the whole process or a part
+- Analysis and training
+- Internationalization
+- Localization (translators)
+- Review
+- QA & Testing
 
 ## R4 Day 31: 2021-07-01 Thursday
 
