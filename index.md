@@ -42,8 +42,47 @@
   - Day 29: Failed attempt adding ingredients on edit
 - LinkedIn
   - Localization for Developers
-    - Day 30: Intro: Overview
-    - Day 31: Intro: Localization management & research
+    - Day 31: Intro: Overview
+    - Day 32: Intro: Localization management & research
+    - Day 34: Internationalizing content
+
+## R4 Day 34: 2021-07-04 Sunday
+
+### Content
+
+- Content needs context
+- The shorter the word, the more obscure the translation can be
+- Annotate strings as you pull them out
+- Is the text itself appropriately international?
+  - Figures of speech
+  - Culture-specific: sports metaphors (Kickoff meeting)
+  - Listing seasons
+  - Exaggerations 
+  - Sarcasm
+
+Strings:
+- Don't concatenate
+- Use interpolation: where the variables are directly placed in the string: `you sent a message at $time` allows you rewrite the sentence correctly
+- You don't know which order the variables will be used, so they need to be able to be rearranged
+- Avoid using strings in two different content / locations
+  - "Edit" - is it a verb or noun?
+  - Grammatical gender
+
+Numbers:
+- Some languages have three forms:
+  - Singular (1)
+  - Dual (2+)
+  - Plural (3+)    
+- GetText is a free GNU localization framework
+- [Lanuage plural rules](https://www.unicode.org/cldr/cldr-aux/charts/29/supplemental/language_plural_rules.html)  
+
+Media:
+- Yellow school buses are not common outside NA
+
+
+## R4 Day 33: 2021-07-03 Saturday
+
+--
 
 ## R4 Day 32: 2021-07-02 Friday
 
