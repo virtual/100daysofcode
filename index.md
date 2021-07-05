@@ -45,6 +45,83 @@
     - Day 31: Intro: Overview
     - Day 32: Intro: Localization management & research
     - Day 34: Internationalizing content
+    - Day 35: Unicode fonts, RTL support
+
+
+## R4 Day 35: 2021-07-05 Monday
+
+Media:
+1. Unlocalize media
+    - Yellow school buses are not common outside NA
+1. Media swapping
+    - Should be as easy to swap as text
+    - RtL / LtR infographics
+    - Japan reads comics RtL but text LtR
+1. Media separation
+    - Avoid text in an image
+1. Media context
+    - Know guidelines of things to avoid in contries / context
+1. Keep all source files
+    - Makes dubbing easier
+    - Some countries are accepting of dubbing, others not
+    - Make sure all audio can be turned off
+
+### Internationalizing GUI
+
+Unicode:
+- encodes characters _up to_ 4 bytes
+- UTF-8 is encoded in up to 4 8-bit groups (variable width)
+- UTF-16 
+- Ensure every input, function, storage format and font is Unicode compliant
+- [Unicode normalization](https://unicode.org/reports/tr15)
+
+__Diacritical marks__ - accents, tone marks used for pronunciation
+
+Fonts
+- There is no font that supports 100% of the unicode mapped characters
+- Google is working on this project with [Noto](https://www.google.com/get/noto/) - Google’s goal is to see “**no** more **to**fu” (tofu - the white boxes for when a character isn't supported)
+
+### RTL Support
+
+**BiDi** - Bi-directional text; where using a mix of LTR & RTL text in the same field or interface
+
+| Characters | Direction | Effect |
+| - | - | - | 
+| Most alphabets | LTR | Strong | 
+| Hebrew & Arabic | RTL | Strong | 
+| European numbers | none | Weak | 
+
+- Numbers and punctuation appear in the overall direction (weak)
+- You can force the [direction of unicode](https://www.explainxkcd.com/wiki/index.php/1137:_RTL)
+- [202 encoding reference](http://unicode.org/reports/tr9/#Explicit_Directional_Embeddings)
+- [Demystifying BiDi talk](https://youtu.be/wOEzYefrqo4?t=653)
+
+
+| Abbr. |	Code Point | 	Name	| Description |
+| - | - | - | - |
+| LRE |	U+202A|	LEFT-TO-RIGHT EMBEDDING | 	Treat the following text as embedded left-to-right. |
+| RLE |	U+202B|	RIGHT-TO-LEFT EMBEDDING | 	Treat the following text as embedded right-to-left. |
+| LRO |	U+202D|	LEFT-TO-RIGHT OVERRIDE | 	Force following characters to be treated as strong left-to-right characters. |
+| RLO |	U+202E|	RIGHT-TO-LEFT OVERRIDE | 	Force following characters to be treated as strong right-to-left  characters. |
+| PDF |	U+202C|	POP DIRECTIONAL FORMATTING	 | End  the scope of the last LRE, RLE, RLO, or LRO. |
+
+Use example, as stored in database:
+
+```text
+תבותכ: [U+202a] 123 Easy St. [U+202c]
+```
+
+Desired output:
+```text
+123 Easy St. :כתובת
+```
+
+202C allows us to "pop" back to global settings after overriding
+
+You can also use native HTML solution (as stored in DB):
+```html
+תבותכ: <span dir="ltr">123 Easy St.</span>
+```
 
 ## R4 Day 34: 2021-07-04 Sunday
 
@@ -76,8 +153,7 @@ Numbers:
 - GetText is a free GNU localization framework
 - [Lanuage plural rules](https://www.unicode.org/cldr/cldr-aux/charts/29/supplemental/language_plural_rules.html)  
 
-Media:
-- Yellow school buses are not common outside NA
+
 
 
 ## R4 Day 33: 2021-07-03 Saturday
