@@ -47,7 +47,21 @@
     - Day 34: Internationalizing content
     - Day 35: Unicode fonts, RTL support
     - Day 36: formatting, icons, pseudolocalization
+    - Day 37: translators
 
+## R4 Day 37: 2021-07-07 Wednesday
+
+- [A guide to buying translation service](https://www.atanet.org/client-assistance/getting-it-right/)
+- [Translator directory](https://www.proz.com/)
+  - Best to translate into their native language
+  - Find a translator with experience in a relative field
+  - Transifex
+
+Localization solutions:
+- gettext GNU
+- Shuttle, integrates with Github - requires Ruby & subscription
+- OneSky - paid & free for sole developers
+-   
 
 ## R4 Day 36: 2021-07-06 Tuesday
 
