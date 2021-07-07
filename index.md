@@ -46,7 +46,44 @@
     - Day 32: Intro: Localization management & research
     - Day 34: Internationalizing content
     - Day 35: Unicode fonts, RTL support
+    - Day 36: formatting, icons, pseudolocalization
 
+
+## R4 Day 36: 2021-07-06 Tuesday
+
+If you're formatting with bold, italics, or underlines, this may not work in other languages:
+- Some languages don't have italics versions
+- Bold might make asian characters indistinguishable
+- They may use a different font or dots instead
+
+Formatting:
+- A for-loop with space & commas might not work some languages, like Chinese which uses an Ideographic Comma & Fullwidth Comma
+- In French, punctuation (: ? !) are always preceded by a space
+- Many languages use [different quotation marks](https://en.wikipedia.org/wiki/Quotation_mark)
+
+### Adapting UI
+
+- Interface should support at least 30% expansion of text (50-60% ideal)
+- Communicate if there's a necessary limit of characters in a certain space
+- Some characters may need to be displayed larger to be legible
+- Arrows & tab icons may need to be flipped for RTL interfaces
+- Pagination for RTL can be confusing (text labels might be the clearest)
+- Don't change shortcut keys (CTRL+S, CTRL+B) as they're expected to work a certain way
+- Make sure sorting happens in the expected order of a locale
+- Icons only work if the user can identify the icon (eg inbox)
+- Using red for alerts and icons is okay in China, even though they usually use red for celebration
+- Best to add the color format to the translated string
+- Avoid using flags to represent a language
+- Showing divided maps can be an issue for regions where there's disputed territory
+- Hand gestures can mean different things
+- Animal icons can mean different things: owls (wise in US; death in China; bad luck in India)
+- [Foreign lorem ipsum](https://generator.lorem-ipsum.info/_hebrew) is good for testing encoding support
+
+### Pseudolocalization
+
+- Create a placeholder file that allows you to test string replacement
+- Easy to visualize unlocalized strings
+- Use longer test strings to test for long text
 
 ## R4 Day 35: 2021-07-05 Monday
 
