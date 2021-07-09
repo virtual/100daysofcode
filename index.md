@@ -41,13 +41,29 @@
   - Day 28: Internationalization
   - Day 29: Failed attempt adding ingredients on edit
 - LinkedIn
-  - Localization for Developers
+  - Localization for Developers ✓
     - Day 31: Intro: Overview
     - Day 32: Intro: Localization management & research
     - Day 34: Internationalizing content
     - Day 35: Unicode fonts, RTL support
     - Day 36: formatting, icons, pseudolocalization
     - Day 37: translators
+
+## R4 Day 38: 2021-07-08 Thursday
+
+### QA Strategy
+ 
+- Locale testing: 
+  - Testing text strings and media files
+  - Interface can support variable-width strings
+  - Lanugage is correct
+  - Product won't be misinterpretted
+  - Test it by someone who is native; are comfortable using computers in _their_ language; and comfortable with using similar products
+- Functional testing:
+  - Do all program functions still work with different languages
+  - Retest with your QA checklist
+
+Test by changing your locale in your OS! Can also try the Language Switcher App. Virtual environments can be good.  
 
 ## R4 Day 37: 2021-07-07 Wednesday
 
