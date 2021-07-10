@@ -29,7 +29,7 @@
   - Day 06: App now working on www 
   - Day 07: Lifted state, added dynamic coloring based on pos/neg
   - Day 08: Added svgs that appear based on the content
-  - Day 09: Added pop-in animation, delay, and some more randomation; made more performant
+  - Day 09: Added pop-in animation, delay, and some more randomization; made more performant
   - Day 10: Added a bit more random sizing, hover effects and interactive note sounds using Tone JS
 - Sololearn
   - Day 14: Python core
@@ -70,7 +70,7 @@ Trying to scrape practice questions for license information to make Anki cards b
   - Testing text strings and media files
   - Interface can support variable-width strings
   - Lanugage is correct
-  - Product won't be misinterpretted
+  - Product won't be misinterpreted
   - Test it by someone who is native; are comfortable using computers in _their_ language; and comfortable with using similar products
 - Functional testing:
   - Do all program functions still work with different languages
@@ -90,7 +90,6 @@ Localization solutions:
 - gettext GNU
 - Shuttle, integrates with Github - requires Ruby & subscription
 - OneSky - paid & free for sole developers
--   
 
 ## R4 Day 36: 2021-07-06 Tuesday
 
@@ -140,7 +139,7 @@ Media:
 1. Media separation
     - Avoid text in an image
 1. Media context
-    - Know guidelines of things to avoid in contries / context
+    - Know guidelines of things to avoid in countries / context
 1. Keep all source files
     - Makes dubbing easier
     - Some countries are accepting of dubbing, others not
@@ -231,7 +230,7 @@ Numbers:
   - Dual (2+)
   - Plural (3+)    
 - GetText is a free GNU localization framework
-- [Lanuage plural rules](https://www.unicode.org/cldr/cldr-aux/charts/29/supplemental/language_plural_rules.html)  
+- [Language plural rules](https://www.unicode.org/cldr/cldr-aux/charts/29/supplemental/language_plural_rules.html)  
 
 
 
@@ -254,7 +253,7 @@ Numbers:
 - Context and feedback - translators can ask questions, if others ask similar questions for other locales, it helps streamline
 - Translation memory (TM) - keeps track of how a phrase may have been previously translated
 - Machine translation (MT) - eg Google Translate
-- Other features - online repo, permisisons, stats
+- Other features - online repo, permissions, stats
 
 ### Research
 
@@ -333,7 +332,7 @@ Fixing some of my better codepens!
 
 ## R4 Day 29: 2021-06-29 Tuesday
 
-Attemped to add editing and adding ability for Recipe app ingredients, but ended up scrapping it. 
+Attempted to add editing and adding ability for Recipe app ingredients, but ended up scrapping it. 
 
 ## R4 Day 28: 2021-06-28 Monday
 
