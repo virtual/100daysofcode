@@ -37,9 +37,12 @@
   - Day 25: [Styling broken images](https://codepen.io/virtual/pen/BaRBajq)
   - Day 30: Fixed some broken codepens
 - Projects
-  - Day 27: Fixed & readded [Recipe App search](https://fcc-recipe.herokuapp.com/)
-  - Day 28: Internationalization
-  - Day 29: Failed attempt adding ingredients on edit
+  - [Recipe App ](https://fcc-recipe.herokuapp.com/)
+    - Day 27: Fixed & readded search
+    - Day 28: Internationalization
+    - Day 29: Failed attempt adding ingredients on edit
+  - Day 39: Scrape Q&A api
+  - Day 40: Flask App
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -48,6 +51,16 @@
     - Day 35: Unicode fonts, RTL support
     - Day 36: formatting, icons, pseudolocalization
     - Day 37: translators
+    - Day 38: wrap-up
+
+
+## R4 Day 40: 2021-07-10 Saturday
+
+Working to setup https://github.com/virtual/flask-tutorial to maybe work on a team repo project with arek_grows!
+
+## R4 Day 39: 2021-07-09 Friday
+
+Trying to scrape practice questions for license information to make Anki cards but the API seems to be limited to 10 results, no matter what limit you put. 
 
 ## R4 Day 38: 2021-07-08 Thursday
 
