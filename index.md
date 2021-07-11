@@ -42,7 +42,9 @@
     - Day 28: Internationalization
     - Day 29: Failed attempt adding ingredients on edit
   - Day 39: Scrape Q&A api
-  - Day 40: Flask App
+  - Flask App
+    - Day 40: Setup for collaboration
+    - Day 41: Add SCSS functionality
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -53,6 +55,10 @@
     - Day 37: translators
     - Day 38: wrap-up
 
+
+## R4 Day 41: 2021-07-11 Sunday
+
+Adding [Flask-Scss](https://pythonhosted.org/Flask-Scss/) to the flask app and restructured some of the scss files; added vars
 
 ## R4 Day 40: 2021-07-10 Saturday
 
