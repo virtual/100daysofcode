@@ -45,6 +45,9 @@
   - Flask App
     - Day 40: Setup for collaboration
     - Day 41: Add SCSS functionality
+    - Day 42: Django
+  - [JavaScript30](https://github.com/virtual/javascript30)
+    - Day 43: Started project 11, video player 
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -55,6 +58,14 @@
     - Day 37: translators
     - Day 38: wrap-up
 
+
+## R4 Day 43: 2021-07-13 Tuesday
+
+Started project 11, video player. Seems like there's a feature/bug that the video will automatically start/stop on click without an event listener for video.click (so basically if you listen for it, you're doubling the work and negating the effect). Also interesting: videos have no "playing" status, only "paused."
+
+## R4 Day 42: 2021-07-12 Monday
+
+Not much--figured out the Flask app uses django for HTML templating.
 
 ## R4 Day 41: 2021-07-11 Sunday
 
