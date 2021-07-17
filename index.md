@@ -48,8 +48,8 @@
     - Day 42: Django
   - [JavaScript30](https://github.com/virtual/javascript30)
     - Day 43: Started project 11, video player 
-    - Day 44: Project 11, build out button interactions with dataset
-    - Day 43: Project 11, ranges and updates ✓
+    - Day 45: Project 11, build out button interactions with dataset
+    - Day 46: Project 11, ranges and updates ✓
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
