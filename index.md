@@ -48,6 +48,8 @@
     - Day 42: Django
   - [JavaScript30](https://github.com/virtual/javascript30)
     - Day 43: Started project 11, video player 
+    - Day 44: Project 11, build out button interactions with dataset
+    - Day 43: Project 11, ranges and updates ✓
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -58,6 +60,17 @@
     - Day 37: translators
     - Day 38: wrap-up
 
+## R4 Day 46: 2021-07-16 Friday
+
+Finished JavaScript 30 project 11 with custom video controls.
+
+## R4 Day 45: 2021-07-15 Thursday
+
+Worked more on JavaScript 30 project #11. Reminder about how cool `.dataset.myitem` is to pull any items that have an attribute like `data-myitem`
+
+## R4 Day 44: 2021-07-14 Wednesday
+
+Skip
 
 ## R4 Day 43: 2021-07-13 Tuesday
 
