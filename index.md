@@ -59,6 +59,19 @@
     - Day 36: formatting, icons, pseudolocalization
     - Day 37: translators
     - Day 38: wrap-up
+- Reading
+  - Day 47: Code Complete
+
+
+## R4 Day 47: 2021-07-17 Saturday
+
+Code Complete, pp 74-86
+
+- Break up larger systems into subpackages
+- use references between classes as a last resort
+- the simpler the better 
+- never have circular references
+- if you have old obfuscated code, create an interface so that it's easier to access the data returned by kludgy code in a more consistent way
 
 ## R4 Day 46: 2021-07-16 Friday
 
