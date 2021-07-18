@@ -50,6 +50,7 @@
     - Day 43: Started project 11, video player 
     - Day 45: Project 11, build out button interactions with dataset
     - Day 46: Project 11, ranges and updates ✓
+    - Day 48: Project 12, key sequence detection ✓
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -60,8 +61,11 @@
     - Day 37: translators
     - Day 38: wrap-up
 - Reading
-  - Day 47: Code Complete
+  - Day 47: Code Complete, pp 74-86
 
+## R4 Day 48: 2021-07-18 Sunday
+
+JavaScript30, [project 12, key sequence detection](http://virtual-javascript30.herokuapp.com/12-konami/) (like the Konami code used on buzzfeed) pretty magical! 
 
 ## R4 Day 47: 2021-07-17 Saturday
 
