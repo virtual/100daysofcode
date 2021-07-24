@@ -54,6 +54,8 @@
   - [Front-end projects](https://github.com/virtual/fed-projects)
     - Day 50: Setup local environment
     - Day 52: Add a second page 
+    - Day 53: Roughed in HTML & CSS, setup variables 
+    - Day 54: Played with scss functions
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -65,6 +67,20 @@
     - Day 38: wrap-up
 - Reading
   - Day 47: Code Complete, pp 74-86
+
+
+
+## R4 Day 54: 2021-07-24 Saturday
+
+Updated scss to [use some functions](https://github.com/virtual/fed-projects/commit/c2e68d3f2a6432b5171d8f6553eab5f7a19c25cf)
+
+- Great article on [functions from gavsblog](https://www.gavsblog.com/blog/for-each-while-loops-sass-scss)
+- [Sass div](https://sass-lang.com/documentation/breaking-changes/slash-div); using the math libray in scss
+- [Kitchen sink code incl. headings](https://fashionipsum.com/snippets.html) for testing css
+
+## R4 Day 53: 2021-07-23 Friday
+
+Setup some styles and HTML for a small project.
 
 ## R4 Day 52: 2021-07-22 Thursday
 
