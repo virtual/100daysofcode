@@ -51,6 +51,9 @@
     - Day 45: Project 11, build out button interactions with dataset
     - Day 46: Project 11, ranges and updates ✓
     - Day 48: Project 12, key sequence detection ✓
+  - [Front-end projects](https://github.com/virtual/fed-projects)
+    - Day 50: Setup local environment
+    - Day 52: Add a second page 
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -62,6 +65,22 @@
     - Day 38: wrap-up
 - Reading
   - Day 47: Code Complete, pp 74-86
+
+## R4 Day 52: 2021-07-22 Thursday
+
+Set up a second page in jigsaw
+
+## R4 Day 51: 2021-07-21 Wednesday
+
+Not exactly coding; spent the evening trying to figure out mic recording and processing tracks on reaper
+
+## R4 Day 50: 2021-07-20 Tuesday
+
+Setup a local environment for working on [front-end projects](https://github.com/virtual/fed-projects)
+
+## R4 Day 49: 2021-07-19 Monday
+
+Skipped
 
 ## R4 Day 48: 2021-07-18 Sunday
 
