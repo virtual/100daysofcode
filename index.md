@@ -56,6 +56,7 @@
     - Day 52: Add a second page 
     - Day 53: Roughed in HTML & CSS, setup variables 
     - Day 54: Played with scss functions
+    - Day 55: Stylelint setup
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -69,6 +70,11 @@
   - Day 47: Code Complete, pp 74-86
 
 
+## R4 Day 55: 2021-07-25 Sunday
+
+Working on setting up my styelint for a computer but it turns out there's some issues with this package not being updated for sometime: `stylelint-config-rational-order`; need to find a new way to accomplish it, due to security vulnerabilities on these packages.
+
+Quick update to add border-radius; if you have an outer parent with a border radius, you can use `overflow: hidden` to give all the child elements the same border-radius. Never quite thought that through :)
 
 ## R4 Day 54: 2021-07-24 Saturday
 
