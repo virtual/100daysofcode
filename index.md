@@ -57,6 +57,7 @@
     - Day 53: Roughed in HTML & CSS, setup variables 
     - Day 54: Played with scss functions
     - Day 55: Stylelint setup
+    - Day 56: Stylelint hackery
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -69,6 +70,58 @@
 - Reading
   - Day 47: Code Complete, pp 74-86
 
+
+## R4 Day 56: 2021-07-26 Monday
+
+package.json:
+
+```json
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "stylelint": "^13.13.1", 
+    "stylelint-declaration-block-no-ignored-properties": "^2.4.0",
+    "stylelint-config-rational-order": "Allohamora/stylelint-config-rational-order#master",
+    "stylelint-order": "^2.2.1",
+    "stylelint-scss": "^3.20.1"
+  }
+}
+```
+
+.stylelintrc.json:
+
+```json
+{
+  "plugins": [
+    "stylelint-order", 
+    "stylelint-config-rational-order/plugin",
+    "stylelint-declaration-block-no-ignored-properties"
+  ],
+  "rules": {
+    "order/properties-order": [[], { "severity": "warning" }], 
+    "order/order": [
+			"custom-properties",
+			"declarations"
+		],
+    "plugin/rational-order": [true, {
+      "border-in-box-model": false,
+      "empty-line-between-groups": false,
+      "severity": "warning"
+    }],
+    "declaration-no-important": true,
+    "plugin/declaration-block-no-ignored-properties": true
+  } 
+}
+```
 
 ## R4 Day 55: 2021-07-25 Sunday
 
