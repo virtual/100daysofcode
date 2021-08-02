@@ -58,6 +58,8 @@
     - Day 54: Played with scss functions
     - Day 55: Stylelint setup
     - Day 56: Stylelint hackery
+    - Day 61: FED Project #1
+    - Day 62: scss loops
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -69,9 +71,54 @@
     - Day 38: wrap-up
 - Reading
   - Day 47: Code Complete, pp 74-86
+  - Day 60: Code Complete, pp 86-94
+
+
+
+## R4 Day 62: 2021-08-01 Sunday
+
+Worked on building out more [columns, margin](https://github.com/virtual/fed-projects/blob/main/source/_assets/sass/_structure.scss), and [theme](https://github.com/virtual/fed-projects/blob/main/source/_assets/sass/_colors.scss) classes (similar to Bootstrap) using scss for loops.
+
+```scss
+$marginbuffers: 5;
+@for $i from 0 through $marginbuffers {
+  .my-#{$i} {
+    margin-top: $i * ($theme-font-size-base * .5);
+    margin-bottom: $i * ($theme-font-size-base * .5);
+  }
+  .mt-#{$i} {
+    margin-top: $i * ($theme-font-size-base * .5);
+  }
+  .mb-#{$i} {
+    margin-bottom: $i * ($theme-font-size-base * .5);
+  }
+}
+```
+
+## R4 Day 61: 2021-07-31 Saturday
+
+Worked on FED Project #1
+
+## R4 Day 60: 2021-07-30 Friday
+
+Read Code Complete pp 86-94; inheritance, abstraction
+
+## R4 Day 59: 2021-07-29 Thursday
+
+Skip
+
+## R4 Day 58: 2021-07-28 Wednesday
+
+Skip
+
+## R4 Day 57: 2021-07-27 Tuesday
+
+Skip
 
 
 ## R4 Day 56: 2021-07-26 Monday
+
+Got stylelint working with some third-party packages
 
 package.json:
 
