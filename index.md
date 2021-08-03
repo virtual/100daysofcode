@@ -60,6 +60,7 @@
     - Day 56: Stylelint hackery
     - Day 61: FED Project #1
     - Day 62: scss loops
+    - Day 64: scss theme overrides
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -74,6 +75,39 @@
   - Day 60: Code Complete, pp 86-94
 
 
+## R4 Day 64: 2021-08-03 Tuesday
+
+Set up FED projects to allow for theme / scss variable overrides in order to maintain one general base code and themes that can override it.
+
+- Easier way to do this in webpack mix file?
+- Should I do an include for general includes?
+
+
+proj01.scss:
+
+```scss
+@import './variables';
+@import './01/variables';
+
+// General includes
+@import './structure';
+@import './colors';
+@import './typography';
+@import './lists';
+
+@import './components/buttons';
+
+// Local overrides
+@import './01/structure';
+@import './01/colors';
+@import './01/components/cards';
+@import './01/components/buttons';
+```
+
+
+## R4 Day 63: 2021-08-02 Monday
+
+Skip
 
 ## R4 Day 62: 2021-08-01 Sunday
 
