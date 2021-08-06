@@ -33,6 +33,7 @@
   - Day 10: Added a bit more random sizing, hover effects and interactive note sounds using Tone JS
 - Sololearn
   - Day 14: Python core
+  - Day 65: Go
 - Codepen
   - Day 25: [Styling broken images](https://codepen.io/virtual/pen/BaRBajq)
   - Day 30: Fixed some broken codepens
@@ -61,6 +62,7 @@
     - Day 61: FED Project #1
     - Day 62: scss loops
     - Day 64: scss theme overrides
+    - Day 67: FED Project #2
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -74,6 +76,18 @@
   - Day 47: Code Complete, pp 74-86
   - Day 60: Code Complete, pp 86-94
 
+
+## R4 Day 67: 2021-08-06 Friday
+
+Setup and worked on [FED Project #2](https://virtual.github.io/fed-projects/02)
+
+## R4 Day 66: 2021-08-05 Thursday
+
+Learning Go (Google's machine learning language) on SoloLearn app
+
+## R4 Day 65: 2021-08-04 Wednesday
+
+Skip
 
 ## R4 Day 64: 2021-08-03 Tuesday
 
