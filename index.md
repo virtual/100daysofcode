@@ -63,6 +63,7 @@
     - Day 62: scss loops
     - Day 64: scss theme overrides
     - Day 67: FED Project #2
+    - Day 68: FED Project #2
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -76,6 +77,10 @@
   - Day 47: Code Complete, pp 74-86
   - Day 60: Code Complete, pp 86-94
 
+
+## R4 Day 68: 2021-08-07 Saturday
+
+Finished [FED Project #2](https://virtual.github.io/fed-projects/02); added flexbox mixins to the base SCSS core (pretty easy!); refactored base to a 'base' folder to cleanup the structure a little.
 
 ## R4 Day 67: 2021-08-06 Friday
 
