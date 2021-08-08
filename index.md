@@ -64,6 +64,7 @@
     - Day 64: scss theme overrides
     - Day 67: FED Project #2
     - Day 68: FED Project #2
+    - Day 69: FED Project #3
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -76,6 +77,12 @@
 - Reading
   - Day 47: Code Complete, pp 74-86
   - Day 60: Code Complete, pp 86-94
+
+
+## R4 Day 69: 2021-08-08 Sunday
+
+Start [FED Project #3](https://virtual.github.io/fed-projects/03); going a little more complex now that I have a standard base theme figured out with overrides. More things to add the base core will become apparent like list styles, menu things. :)
+
 
 
 ## R4 Day 68: 2021-08-07 Saturday
