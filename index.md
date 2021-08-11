@@ -65,6 +65,8 @@
     - Day 67: FED Project #2
     - Day 68: FED Project #2
     - Day 69: FED Project #3
+    - Day 70: FED Project #3
+    - Day 71: learning about !default scss flag
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -79,11 +81,17 @@
   - Day 60: Code Complete, pp 86-94
 
 
+## R4 Day 71: 2021-08-10 Tuesday
+
+Read up on the scss `!default` usage. Will try to [reorder my base theme](https://thoughtbot.com/blog/sass-default) after my child themes to see if this helps reduce redundancy. 
+
+## R4 Day 70: 2021-08-09 Monday
+
+Building out HTML and some more base styles (padding, menu, forms) https://virtual.github.io/fed-projects/03/
+
 ## R4 Day 69: 2021-08-08 Sunday
 
 Start [FED Project #3](https://virtual.github.io/fed-projects/03); going a little more complex now that I have a standard base theme figured out with overrides. More things to add the base core will become apparent like list styles, menu things. :)
-
-
 
 ## R4 Day 68: 2021-08-07 Saturday
 
