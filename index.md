@@ -68,6 +68,7 @@
     - Day 70: FED Project #3
     - Day 71: learning about !default scss flag
     - Day 73: restructured using !default
+    - Day 74: FED Project #3, form
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -81,6 +82,15 @@
   - Day 47: Code Complete, pp 74-86
   - Day 60: Code Complete, pp 86-94
 
+## R4 Day 74: 2021-08-13 Friday
+
+Styling the form and more of project 3. Instead of using offset margins and padding for the off-centered look of the form, I used a 50%/50% linear background. 
+
+```scss
+.cta-form {
+  background:linear-gradient(to bottom, $color-white, $color-white 50%, $color-gray-light 50%);
+}
+```
 
 ## R4 Day 73: 2021-08-12 Thursday
 
