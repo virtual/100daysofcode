@@ -67,6 +67,7 @@
     - Day 69: FED Project #3
     - Day 70: FED Project #3
     - Day 71: learning about !default scss flag
+    - Day 73: restructured using !default
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -80,6 +81,39 @@
   - Day 47: Code Complete, pp 74-86
   - Day 60: Code Complete, pp 86-94
 
+
+## R4 Day 73: 2021-08-12 Thursday
+
+> Sass variables, like all Sass identifiers, treat hyphens and underscores as identical. This means that `$font-size` and `$font_size` both refer to the same variable.
+
+Restructuring projects 1-3 using `!default`; reduces repeating code and overrides.
+
+Original:
+
+| File | Size |
+| -------- | ---------: |
+| `/js/main.js` | 10.9 KiB |
+| `css/main.css` | 6.74 KiB |
+| `css/proj01.css` | 7.38 KiB |
+| `css/proj02.css` | 8.35 KiB |
+| `css/proj03.css` | 9.36 KiB |
+ 
+
+Updated compiled sizes after restructure:
+
+
+| File | Size |
+| -------- | ---------: |
+| `/js/main.js` | 10.9 KiB |
+| `css/main.css` | 6.34 KiB |
+| `css/proj01.css` | 6.79 KiB |
+| `css/proj02.css` | 7.72 KiB |
+| `css/proj03.css` | 8.52 KiB |
+
+
+## R4 Day 72: 2021-08-11 Wednesday
+
+Skip
 
 ## R4 Day 71: 2021-08-10 Tuesday
 
