@@ -69,6 +69,8 @@
     - Day 71: learning about !default scss flag
     - Day 73: restructured using !default
     - Day 74: FED Project #3, form
+    - Day 75: FED Project #3, type
+    - Day 76: FED Project #3, cards
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -81,6 +83,14 @@
 - Reading
   - Day 47: Code Complete, pp 74-86
   - Day 60: Code Complete, pp 86-94
+
+## R4 Day 76: 2021-08-15 Sunday
+
+FED Project #3, card designs
+
+## R4 Day 75: 2021-08-14 Saturday
+
+FED Project #3, font styles
 
 ## R4 Day 74: 2021-08-13 Friday
 
