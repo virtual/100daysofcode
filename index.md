@@ -71,6 +71,8 @@
     - Day 74: FED Project #3, form
     - Day 75: FED Project #3, type
     - Day 76: FED Project #3, cards
+    - Day 78: Setup JavaScript include
+    - Day 81: Added PristineJS validation, alert styles
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -83,6 +85,28 @@
 - Reading
   - Day 47: Code Complete, pp 74-86
   - Day 60: Code Complete, pp 86-94
+
+
+## R4 Day 81: 2021-08-20 Friday
+
+Added form validation for the URL box using [PristineJS validation library](https://github.com/sha256/Pristine). Added alert colors to base theme & FED project #3, generated with https://colors.eva.design/.
+
+
+## R4 Day 80: 2021-08-19 Thursday
+
+Skip
+
+## R4 Day 79: 2021-08-18 Wednesday
+
+Try out Storybook with Jigsaw (no-go); Try out responsively for Chrome
+
+## R4 Day 78: 2021-08-17 Tuesday
+
+Setup JavaScript to use in the project #3
+
+## R4 Day 77: 2021-08-16 Monday
+
+Skip
 
 ## R4 Day 76: 2021-08-15 Sunday
 
