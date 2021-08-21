@@ -73,6 +73,7 @@
     - Day 76: FED Project #3, cards
     - Day 78: Setup JavaScript include
     - Day 81: Added PristineJS validation, alert styles
+    - Day 82: Styling hero, results table
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -86,6 +87,10 @@
   - Day 47: Code Complete, pp 74-86
   - Day 60: Code Complete, pp 86-94
 
+
+## R4 Day 82: 2021-08-21 Saturday
+
+Working on [FED project #3](https://virtual.github.io/fed-projects/03/). Styled hero background to be better for mobile and desktop; updated URL shortener to include (faked-in) result if the link given in valid. Spacing between table rows (given a different background color) is kind of difficult actually. Ended up using a border top for `tr + tr`. 
 
 ## R4 Day 81: 2021-08-20 Friday
 
