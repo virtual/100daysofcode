@@ -87,6 +87,17 @@
   - Day 47: Code Complete, pp 74-86
   - Day 60: Code Complete, pp 86-94
 
+## R4 Day 83: 2021-08-22 Sunday
+
+Styling tweaks for [FED project #3](https://virtual.github.io/fed-projects/03/).
+
+Still to do:
+
+- Mobile menu
+- JavaScript to generate URL
+- JavaScript for Copy Link button
+- Check keyboard accessibility
+
 
 ## R4 Day 82: 2021-08-21 Saturday
 
