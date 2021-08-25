@@ -74,6 +74,9 @@
     - Day 78: Setup JavaScript include
     - Day 81: Added PristineJS validation, alert styles
     - Day 82: Styling hero, results table
+    - Day 83: Styling tweaks
+    - Day 84: Menu collapsing JS
+    - Day 85: Styling mobile menu
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -86,6 +89,14 @@
 - Reading
   - Day 47: Code Complete, pp 74-86
   - Day 60: Code Complete, pp 86-94
+
+## R4 Day 85: 2021-08-24 Tuesday
+
+Styling for mobile menu, transitions and SVG image, and fix ARIA
+
+## R4 Day 84: 2021-08-23 Monday
+
+JavaScript for mobile menu toggle
 
 ## R4 Day 83: 2021-08-22 Sunday
 
