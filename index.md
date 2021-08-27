@@ -77,6 +77,8 @@
     - Day 83: Styling tweaks
     - Day 84: Menu collapsing JS
     - Day 85: Styling mobile menu
+    - Day 86: Dynamic table results
+    - Day 87: Copy to clipboard button
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -89,6 +91,15 @@
 - Reading
   - Day 47: Code Complete, pp 74-86
   - Day 60: Code Complete, pp 86-94
+
+
+## R4 Day 87: 2021-08-26 Thursday
+
+Update Copy button to copy the fake shortened link to clipboard
+
+## R4 Day 86: 2021-08-25 Wednesday
+
+Build dynamic rows in table for shortened links and create more dynamic (fake) link shortener.
 
 ## R4 Day 85: 2021-08-24 Tuesday
 
