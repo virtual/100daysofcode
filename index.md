@@ -79,6 +79,8 @@
     - Day 85: Styling mobile menu
     - Day 86: Dynamic table results
     - Day 87: Copy to clipboard button
+    - Day 88: Style stackable tables for mobile
+    - Day 89: Lighthouse audit fixes
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -92,6 +94,34 @@
   - Day 47: Code Complete, pp 74-86
   - Day 60: Code Complete, pp 86-94
 
+
+## R4 Day 89: 2021-08-28 Saturday
+
+Check Lighthouse scores
+
+- 76 Performance
+- 95 Accessibility
+- 100 Best Practices
+- 100 SEO
+
+Actionable:
+
+- Set widths and heights on images
+- Move JS to bottom
+- Change font loads to use a print media type to lower priority
+- Updated text contrast
+- Removed aria hidden on load and relying on JS to set instead
+
+Updated score: (at least all green)
+
+- 90 Performance
+- 98 Accessibility
+- 100 Best Practices
+- 100 SEO
+
+## R4 Day 88: 2021-08-27 Friday
+
+Modified table styles to be responsive on mobile.
 
 ## R4 Day 87: 2021-08-26 Thursday
 
