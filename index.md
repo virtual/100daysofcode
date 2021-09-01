@@ -81,6 +81,7 @@
     - Day 87: Copy to clipboard button
     - Day 88: Style stackable tables for mobile
     - Day 89: Lighthouse audit fixes
+    - Day 92: Fix mobile styles; add robots.txt
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -94,6 +95,23 @@
   - Day 47: Code Complete, pp 74-86
   - Day 60: Code Complete, pp 86-94
 
+
+## R4 Day 92: 2021-08-31 Tuesday
+
+Update styles for mobile and add robots.txt. Good default:
+
+```txt
+User-agent: *
+Allow: /
+```
+
+## R4 Day 91: 2021-08-30 Monday
+
+Skip
+
+## R4 Day 90: 2021-08-29 Sunday
+
+Skip
 
 ## R4 Day 89: 2021-08-28 Saturday
 
