@@ -52,6 +52,7 @@
     - Day 45: Project 11, build out button interactions with dataset
     - Day 46: Project 11, ranges and updates ✓
     - Day 48: Project 12, key sequence detection ✓
+    - Da 96: Project 13, copy JS arrays and objects ✓
   - [Front-end projects](https://github.com/virtual/fed-projects)
     - Day 50: Setup local environment
     - Day 52: Add a second page 
@@ -95,6 +96,21 @@
   - Day 47: Code Complete, pp 74-86
   - Day 60: Code Complete, pp 86-94
 
+## R4 Day 96: 2021-09-04 Saturday
+
+[Javascript 30 Day 13](https://virtual-javascript30.herokuapp.com/index.html) How to copy JS arrays and objects
+
+## R4 Day 95: 2021-09-03 Friday
+
+Skip
+
+## R4 Day 94: 2021-09-02 Thursday
+
+Tried running a prior university project on my Mac, but everything is so out-of-date and broken. 
+
+## R4 Day 93: 2021-09-01 Wednesday
+
+Skip
 
 ## R4 Day 92: 2021-08-31 Tuesday
 
