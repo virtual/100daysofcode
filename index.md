@@ -2,6 +2,15 @@
 
 ## 👑 Round 4 Projects 👑
 
+### Hightlights from this round:
+
+- [Scientific Computing with Python certification!](https://www.freecodecamp.org/certification/virtual/scientific-computing-with-python-v7)
+- [Sentiment Analyzer](https://github.com/virtual/sentiment-analyzer)
+- [Recipe App - fixed search](https://fcc-recipe.herokuapp.com/)
+- [Front-end projects with base theme](https://github.com/virtual/fed-projects)
+
+### All projects:
+
 - freeCodeCamp [Python](https://www.freecodecamp.org/learn/scientific-computing-with-python/) & [Scientific Computing with Python certification!](https://www.freecodecamp.org/certification/virtual/scientific-computing-with-python-v7)
   - Python Project 2: [Time Calculator ✓](https://replit.com/@virtual/boilerplate-time-calculator) 
     - Day 01: test #1, simple time addition
@@ -38,7 +47,7 @@
   - Day 25: [Styling broken images](https://codepen.io/virtual/pen/BaRBajq)
   - Day 30: Fixed some broken codepens
 - Projects
-  - [Recipe App ](https://fcc-recipe.herokuapp.com/)
+  - [Recipe App](https://fcc-recipe.herokuapp.com/)
     - Day 27: Fixed & readded search
     - Day 28: Internationalization
     - Day 29: Failed attempt adding ingredients on edit
@@ -52,7 +61,7 @@
     - Day 45: Project 11, build out button interactions with dataset
     - Day 46: Project 11, ranges and updates ✓
     - Day 48: Project 12, key sequence detection ✓
-    - Da 96: Project 13, copy JS arrays and objects ✓
+    - Day 96: Project 13, copy JS arrays and objects ✓
   - [Front-end projects](https://github.com/virtual/fed-projects)
     - Day 50: Setup local environment
     - Day 52: Add a second page 
@@ -83,6 +92,11 @@
     - Day 88: Style stackable tables for mobile
     - Day 89: Lighthouse audit fixes
     - Day 92: Fix mobile styles; add robots.txt
+- Python
+  - Day 97: Reviewing some PY4E code
+  - Day 98: PY4E code, file reading
+  - Day 99: Codewars, list comprehension
+  - Day 100: Codewars
 - LinkedIn
   - Localization for Developers ✓
     - Day 31: Intro: Overview
@@ -95,6 +109,23 @@
 - Reading
   - Day 47: Code Complete, pp 74-86
   - Day 60: Code Complete, pp 86-94
+
+
+## R4 Day 100: 2021-09-08 Wednesday
+
+Last day of code! Poked around on [codewars](https://www.codewars.com/kata/578aa45ee9fd15ff4600090d/train/python)
+
+## R4 Day 99: 2021-09-07 Tuesday
+
+[Codewars](https://www.codewars.com/kata/546f922b54af40e1e90001da/solutions/python), learning list comprehension!
+
+## R4 Day 98: 2021-09-06 Monday
+
+Played with some python and file reading lines
+
+## R4 Day 97: 2021-09-05 Sunday
+
+Reviewing some python code :)
 
 ## R4 Day 96: 2021-09-04 Saturday
 
