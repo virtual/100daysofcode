@@ -1,5 +1,35 @@
 # #100DaysOfCode
 
+## [HarvardX's CS50x](https://learning.edx.org/course/course-v1:HarvardX+CS50+X)
+
+### Week 0
+
+- [satinflame Scratch Project 0](https://scratch.mit.edu/projects/582543204/)
+
+### Week 1
+
+- introduction to C
+- use `help50 make file`, `style50 make file` or `check50 make file` as needed 
+- there is no hoisting in C, instead you use prototypes to hint at the function that is defined later below
+
+```c
+#include <cs50.h>
+#include <stdio.h>
+
+// Prototype
+void meow(void);
+
+int main(void)
+{
+   meow();
+}
+void meow(void)
+{
+    string answer = get_string("what's your name? ");
+    printf("meow, %s\n", answer);
+}
+```
+
 ## 👑 Round 4 Projects 👑
 
 ### Hightlights from this round:
