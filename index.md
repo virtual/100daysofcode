@@ -30,6 +30,22 @@ void meow(void)
 }
 ```
 
+5 Types built-in to C:
+
+- int
+- char
+- float (floating point number)
+- double
+- void (for functions)
+
+Types not built-in to C available in CS50 library:
+
+- bool
+- string
+
+You can init two variables in one line, for example: `int height, width;`
+
+
 ## 👑 Round 4 Projects 👑
 
 ### Hightlights from this round:
