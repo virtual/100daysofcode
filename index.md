@@ -2,9 +2,30 @@
 
 ## [HarvardX's CS50x](https://learning.edx.org/course/course-v1:HarvardX+CS50+X)
 
-### Week 0
 
-- [satinflame Scratch Project 0](https://scratch.mit.edu/projects/582543204/)
+
+### Week 2
+
+Clang 
+
+- `clang` is used as a compiler when you type `make`
+- It uses command-line arguments
+- `clang -o hello hello.c -lcs50`: passes in arguments, -o, hello, hello.c, -lcs50
+
+Compiling
+
+- compiler: a program that converts source code to machine code
+- compiling includes these four steps: 
+	- 1. preprocessing, 
+	- 2. compiling, 
+	- 3. assembling and 
+	- 4. linking
+
+1. **Preprocessing**--looks for any lines that start with a hash symbol, like `#include cs50.h`, and copies the contents of the file into the program; implements prototypes
+2. **Compiling**--changes source code to assembly code (`xorl %ebx, %ebx` would be like `i = 0`)
+3. **Assembling**--coverts assembly code to machine code (0s and 1s)
+4. **Linking**--takes the machine code from the given file and any included libraries and combines
+
 
 ### Week 1
 
@@ -44,6 +65,15 @@ Types not built-in to C available in CS50 library:
 - string
 
 You can init two variables in one line, for example: `int height, width;`
+
+
+
+
+### Week 0
+
+- [satinflame Scratch Project 0](https://scratch.mit.edu/projects/582543204/)
+
+------------
 
 
 ## 👑 Round 4 Projects 👑
