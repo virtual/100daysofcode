@@ -160,6 +160,9 @@ code {
 pre.highlight code {
   padding: 0;
 }
+pre.highlight {
+    padding: 10px;
+}
 blockquote p {
   color: #920d5a;
   font-size: 20px;
