@@ -26,6 +26,45 @@ Compiling
 3. **Assembling**--coverts assembly code to machine code (0s and 1s)
 4. **Linking**--takes the machine code from the given file and any included libraries and combines
 
+Debugging
+
+- Use `debug50` on your compiled code, e.g. `debug50 ./buggy`
+
+Size of C Types
+
+- bool - 1 byte
+- char - 1 byte
+- double - 8 bytes
+- float - 4 bytes
+- int - 4 bytes
+- long - 8 bytes
+
+
+"code smell" - when something is off with the code, but you can't quite pinpoint it
+
+C Notes:
+
+- In C, you cannot find the length of the array; you need to capture this value separately as a int
+- For a function using an array, you'd need to pass both the array and length values as arguments
+- If you multiply ints by a float, it will convert to a float; only one float value automagically converts
+- If you're setting a character, use single quotes: `char brick = '#'`
+- If you're setting a string, use double quotes: `string pyramid = "###"`
+- String is implemented as an array of 1-byte chars with a final byte that stores the end `\0` (the Null character)
+
+For loop to get chars from string, check for null character:
+
+```c
+string s = get_string("Input: "); 
+printf("Output: "); 
+
+for (int i = 0; s[i] != '\0'; i++) { 
+  printf("%c", s[i])
+}
+```
+
+Or use string.h and `strlen()`
+
+🧁 🍨 (2.0)
 
 ### Week 1
 
