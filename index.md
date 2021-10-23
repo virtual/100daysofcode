@@ -89,6 +89,7 @@ Successful c functions `return 0` for normal or `return 1` for errors
 
 🥥 Shorts
 
+
 ```c
 #include <studio.h>
 #include <cs50.h>
@@ -116,6 +117,7 @@ bool valid_triangle(int side1, int side2, int side3) {
 	return false;
 }
 ```
+
 
 Arrays in C
 
