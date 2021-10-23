@@ -15,11 +15,7 @@ Clang
 Compiling
 
 - compiler: a program that converts source code to machine code
-- compiling includes these four steps: 
-	- 1. preprocessing, 
-	- 2. compiling, 
-	- 3. assembling and 
-	- 4. linking
+- compiling includes these four steps: preprocessing, compiling, assembling and linking
 
 1. **Preprocessing**--looks for any lines that start with a hash symbol, like `#include cs50.h`, and copies the contents of the file into the program; implements prototypes
 2. **Compiling**--changes source code to assembly code (`xorl %ebx, %ebx` would be like `i = 0`)
@@ -86,6 +82,51 @@ int main(int argc, string argv[]) {
 ```
 
 Successful c functions `return 0` for normal or `return 1` for errors
+
+(1.25)
+
+🥥 Shorts
+
+```triangle.c
+#include <studio.h>
+#include <cs50.h>
+
+bool main(void) {
+	int side1 = get_int("Side 1: ");
+	int side2 = get_int("Side 2: ");
+	int side3 = get_int("Side 3: ");
+	return valid_triangle(side1, side2, side3);
+}
+
+bool valid_triangle(int side1, int side2, int side3) {
+
+	if (side1 <= 0 || side2 <= 0 || side3 <= 0) {
+		return false;
+	}
+
+	if (side1 + side2 > side3) {
+		if (side2 + side3 > side1) {
+			if (side3 + side1 > side 2) {
+				return true;
+			}
+		}
+	}
+	return false;
+}
+```
+
+Arrays in C
+
+- Initialization `type name[size]` or `bool truths[3] = { true, false, true }`
+- Will not prevent you from going out of bounds = segmentation fault!
+- You can actually look at what is stored in memory for other spaces
+- You cannot copy arrays to another variable; instead you need to loop over it and create a new array
+- When an array is passed into a function, it is the actual array, not a copy of it
+
+Command line args
+
+- int main(int argc, string argv[]) {}
+- input comes in as strings 
 
 (1.25)
 
