@@ -131,6 +131,7 @@ Command line args
 (1.25)
 
 Lab Scrabble (.75)
+Problem Reliability (2)
 
 ### Week 1
 
