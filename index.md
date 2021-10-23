@@ -89,7 +89,7 @@ Successful c functions `return 0` for normal or `return 1` for errors
 
 🥥 Shorts
 
-```triangle.c
+```c
 #include <studio.h>
 #include <cs50.h>
 
