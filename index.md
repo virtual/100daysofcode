@@ -60,11 +60,35 @@ printf("Output: ");
 for (int i = 0; s[i] != '\0'; i++) { 
   printf("%c", s[i])
 }
+
+
+for (int i = 0, n = strlen(s); s[i] < n; i++) { 
+  printf("%c", s[i])
+}
 ```
 
 Or use string.h and `strlen()`
 
-🧁 🍨 (2.0)
+
+`ctype.h`
+
+- islower() true / false
+- toupper()
+
+[Manual pages for the C standard library, C POSIX library, and the CS50 Library.](https://manual.cs50.io/)
+
+```c
+int main(int argc, string argv[]) {
+  # argv[0] will be the file name
+  # argv[1] would be the command line argument
+  # argc automatically saves how many words typed in (including filename, so 2 here)
+}
+```
+
+Successful c functions `return 0` for normal or `return 1` for errors
+
+(1.25)
+
 
 ### Week 1
 
