@@ -2,7 +2,9 @@
 
 ## [HarvardX's CS50x](https://learning.edx.org/course/course-v1:HarvardX+CS50+X)
 
+### Week 3
 
+¯\_(ツ)_/¯
 
 ### Week 2
 
@@ -128,10 +130,10 @@ Command line args
 - int main(int argc, string argv[]) {}
 - input comes in as strings 
 
-(1.25)
-
-Lab Scrabble (.75)
-Problem Reliability (2)
+- (1.25)
+- Lab Scrabble (.75)
+- Problem Reliability (2)
+- Problem Substitution (1.75)
 
 ### Week 1
 
