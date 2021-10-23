@@ -130,6 +130,7 @@ Command line args
 
 (1.25)
 
+Lab Scrabble (.75)
 
 ### Week 1
 
