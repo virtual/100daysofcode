@@ -8,6 +8,7 @@
 - *O* - big O notation: the maximum time/steps it will take to run
 - big O only focuses on dominant factors and not any constant factors, like the 1/2 or the divided by 2
 - Ω (omega): the lower bound on the time/steps it takes to run
+- θ (theta): if the program takes the same lower bound and upper bound time to run
 
 Common formulas:
 
@@ -62,6 +63,64 @@ int main(void)
 - Ciao MiaoMiao
 
 (2.5)
+
+
+#### Sorting
+
+[Comparison Sorting Examples](https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html)
+
+Selection Sort
+
+- Time: n^2/2 + n/2 = *O*(*n*^2) & *Ω*(*n*^2) = *θ*(*n*^2)
+- Looks through every number to find smallest, then swaps position at i. 
+- If no swaps, the sort still runs again.
+
+```
+For i from 0 to n-1
+  Find smallest item between i'th item and last item
+  Swap smallest item with i'th item
+```
+
+Bubble Sort
+
+- Time: n^2 - 2n + 1 = *O*(*n*^2) & *Ω*(*n*) 
+- Looks through pairs of numbers and sorts in pairs and biggest numbers start "bubbling up" to the top. 
+- If no swaps, the list is sorted and program can complete.
+- Finish for-loop at `(n-2)` because we don't compare the last number to another number (out of bounds)
+- Lower bounds time if the numbers are already sorted (look thru all elements 1 time)
+
+```
+Repeat n-1 times
+  For i from 0 to n-2
+   If i'th and i+1'th elements out of order
+   Swap them
+  If no swaps
+    Quit
+```
+
+Merge Sort
+
+- Time: n * log n = *O*(*n* log *n*) & *Ω*(*n* log *n*) = *θ*(*n* log *n*)
+- Divide in half, in half, in half (log)
+- Can't escape early if the input is already sorted
+- For C, you'll need a second array to temporarily merge things (Needs twice as much memory)
+
+```
+If only one number // Needs recursive base case
+  Quit
+Else
+  Sort left half of numbers
+  Sort right half of numbers
+  Merge sorted halves
+```
+
+Recursion
+
+- Needs a base case to quit
+- Define the answer in terms of itself
+
+(1.5)
+
 
 ### Week 2
 
