@@ -2,9 +2,25 @@
 
 ## [HarvardX's CS50x](https://learning.edx.org/course/course-v1:HarvardX+CS50+X)
 
-### Week 3
+### Week 3 🍍 Alogrithms
 
-¯\_(ツ)_/¯
+- **running time** - how long it takes to run, steps/time
+- *O* - big O notation: the maximum time/steps it will take to run
+- big O only focuses on dominant factors and not any constant factors, like the 1/2 or the divided by 2
+- Ω (omega): the lower bound on the time/steps it takes to run
+
+Common formulas:
+
+- *O*(*n*^2) -- worst
+- *O*(*n* log *n*)
+- *O*(*n*)
+- *O*(log *n*)
+- *O*(1) -- best
+
+#### Search types
+
+- Linear search *O*(*n*) - one by one
+
 
 ### Week 2
 
