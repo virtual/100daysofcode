@@ -57,6 +57,12 @@ int main(void)
 }
 ```
 
+- Sir Kittian's ribbons
+- Little Kitty Fluffpuff
+- Ciao MiaoMiao
+
+(2.5)
+
 ### Week 2
 
 Clang 
