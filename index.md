@@ -19,8 +19,14 @@ Common formulas:
 
 #### Search types
 
-- Linear search *O*(*n*) - one by one
+- Linear search: *O*(*n*), Ω(1) - one by one, for random ordered elements
+- Binary search: *O*(log *n*), Ω(1) - divide by half, half again, half again, ..., for increasingly ordered elements
 
+
+Hertz defs
+
+- 1 hertz = do 1 *thing* per second
+- 1 gigahertz = do 1 bil *things* per second, like a CPU
 
 ### Week 2
 
