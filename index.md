@@ -22,11 +22,40 @@ Common formulas:
 - Linear search: *O*(*n*), Ω(1) - one by one, for random ordered elements
 - Binary search: *O*(log *n*), Ω(1) - divide by half, half again, half again, ..., for increasingly ordered elements
 
+Comparing string values
+
+- You cannot use `==` for comparing string values
+- Use `strcmp()` from `string.h` include: `strcmp(compare_to_string, word_to_find)` returning 0 (equal), negative (first str comes before second), positive (first str comes after second) -- compares ASCII order, not alphabetical 
+- Strings always end with `\0`
+- Any non-zero value in C is considered true (truthy); only 0 is false
+- 
+
 
 Hertz defs
 
 - 1 hertz = do 1 *thing* per second
 - 1 gigahertz = do 1 bil *things* per second, like a CPU
+
+
+Creating custom types / data structures--allows you to keep related data tied together
+
+```c
+typedef struct
+{
+	string name;
+	string number;
+}
+person;
+
+int main(void) 
+{
+	person people[2]; // Init person structure of size 2
+	people[0].name = "Brian";
+	people[0].number = "555-555-5555";
+	
+	...
+}
+```
 
 ### Week 2
 
