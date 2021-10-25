@@ -2,7 +2,11 @@
 
 ## [HarvardX's CS50x](https://learning.edx.org/course/course-v1:HarvardX+CS50+X)
 
-### Week 3 🍍 Alogrithms
+- [Week 3 🍍 Algorithms](#week-3--alogrithms)
+- [Week 2 🧁 Arrays](#week-2--arrays)
+- [Week 1 C](#week-1-c)
+
+### Week 3 🍍 Algorithms
 
 - **running time** - how long it takes to run, steps/time
 - *O* - big O notation: the maximum time/steps it will take to run
@@ -116,7 +120,7 @@ Recursion
 - Define the answer in terms of itself
 
 
-### Week 2
+### Week 2 🧁 Arrays
 
 Clang 
 
@@ -241,7 +245,7 @@ Command line args
 - int main(int argc, string argv[]) {}
 - input comes in as strings 
 
-### Week 1
+### Week 1 C
 
 - introduction to C
 - use `help50 make file`, `style50 make file` or `check50 make file` as needed 
