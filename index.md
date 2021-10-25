@@ -2,7 +2,7 @@
 
 ## [HarvardX's CS50x](https://learning.edx.org/course/course-v1:HarvardX+CS50+X)
 
-- [Week 3 🍍 Algorithms](#week-3--alogrithms)
+- [Week 3 🍍 Algorithms](#week-3--algorithms)
 - [Week 2 🧁 Arrays](#week-2--arrays)
 - [Week 1 C](#week-1-c)
 
