@@ -29,8 +29,6 @@ Comparing string values
 - Use `strcmp()` from `string.h` include: `strcmp(compare_to_string, word_to_find)` returning 0 (equal), negative (first str comes before second), positive (first str comes after second) -- compares ASCII order, not alphabetical 
 - Strings always end with `\0`
 - Any non-zero value in C is considered true (truthy); only 0 is false
-- 
-
 
 Hertz defs
 
@@ -61,8 +59,6 @@ int main(void)
 - Sir Kittian's ribbons
 - Little Kitty Fluffpuff
 - Ciao MiaoMiao
-
-(2.5)
 
 
 #### Sorting
@@ -118,8 +114,6 @@ Recursion
 
 - Needs a base case to quit
 - Define the answer in terms of itself
-
-(1.5)
 
 
 ### Week 2
@@ -201,7 +195,6 @@ int main(int argc, string argv[]) {
 
 Successful c functions `return 0` for normal or `return 1` for errors
 
-(1.25)
 
 🥥 Shorts
 
@@ -247,11 +240,6 @@ Command line args
 
 - int main(int argc, string argv[]) {}
 - input comes in as strings 
-
-- (1.25)
-- Lab Scrabble (.75)
-- Problem Reliability (2)
-- Problem Substitution (1.75)
 
 ### Week 1
 
