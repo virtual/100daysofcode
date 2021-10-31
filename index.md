@@ -56,9 +56,22 @@ How would you copy a string?
 - Check if the address created is valid (not NULL)
 - Check that length of string is not 0
 - Loop over char address (`n <= i`) and copy all values, including `\0`
+
+Libraries
+
+- Or you could copy using `strcpy(s, t)`
 - Compare using `strcmp(v1, v2) == 0`
+- `malloc()` returns the address of the first byte
+- if you use `malloc()`, give the memory back `free(t)`
+- `get_string()` uses `malloc()` and `free()`
+- `valgrind()` shows where you touched memory; use it debug code
 
+**Memory layout*
 
+- machine code
+- globals
+- heap (malloc)
+- stack (calling a function, local vars) - memory gets used and reused
 
 ### Week 3 🍍 Algorithms
 
