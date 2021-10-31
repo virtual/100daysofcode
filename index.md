@@ -56,22 +56,107 @@ How would you copy a string?
 - Check if the address created is valid (not NULL)
 - Check that length of string is not 0
 - Loop over char address (`n <= i`) and copy all values, including `\0`
+- Or you could copy using `strcpy(s, t)`
 
 Libraries
 
-- Or you could copy using `strcpy(s, t)`
+- `strcpy(s, t)` - create a new copy of s to t
 - Compare using `strcmp(v1, v2) == 0`
 - `malloc()` returns the address of the first byte
 - if you use `malloc()`, give the memory back `free(t)`
 - `get_string()` uses `malloc()` and `free()`
 - `valgrind()` shows where you touched memory; use it debug code
+- `'scanf()` scan from user's keyboard
 
-**Memory layout*
+Defining a string variable w/ allocation:
+
+```c
+char *s = malloc(4);
+// uses heap, needs to also use free()
+```
+
+```c
+char s[4];
+// uses stack, doens't need free()
+```
+
+**Memory layout**
 
 - machine code
 - globals
 - heap (malloc)
 - stack (calling a function, local vars) - memory gets used and reused
+
+#### File Input/Output
+
+File I/O - taking input and output from files
+
+```c
+FILE *file = fopen("phonebook.csv", "a"); 
+// a - append
+// w - write
+// r - read
+```
+
+Full example of reading input and printing to a file:
+
+```c
+// Saves names and numbers to a CSV file
+
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+    // Open CSV file
+    // FILE is a native C type
+    FILE *file = fopen("phonebook.csv", "a");
+    
+    // Check if file is not null
+    if (!file)
+    {
+        return 1;
+    }
+
+    // Get name and number
+    string name = get_string("Name: ");
+    string number = get_string("Number: ");
+
+    // Print to file
+    fprintf(file, "%s,%s\n", name, number);
+
+    // Close file
+    fclose(file);
+}
+```
+
+- `fopen(pathname, mode)` - returns a pointer to the FILE or NULL
+- `fclose(pointer)` - close the file (previously opened by `fopen`) at the given pointer
+- `fprintf(pointer, format, values)` - prints to a file
+- `fread(pointerToStoreAt, size, numberToRead, filePointer)` - read bytes from a file and store at the pointerToStoreAt
+
+For iterating thru bytes, we need to define a custom typedef:
+
+```c
+typedef uint8_t BYTE;
+```
+
+Then we can copy, using `buffer` as a temporary value 
+
+```c
+// Copy source to destination, one BYTE at a time
+BYTE buffer;
+while (fread(&buffer, sizeof(BYTE), 1, source))
+{
+    fwrite(&buffer, sizeof(BYTE), 1, destination);
+}
+```
+
+Images
+
+Many file types have "magic numbers" the first N bytes in a file that establish what type of file it is; for example, every JPG will start with `0xff 0xd8 0xff`
+
 
 ### Week 3 🍍 Algorithms
 
