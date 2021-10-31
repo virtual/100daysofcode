@@ -22,9 +22,9 @@
 
 ```c
 int n = 50;
-printf("%i", n);   \\ 50 - value of n
-printf("%p", &n);  \\ 0x123 - address
-printf("%i", *&n); \\ 50 - print value at 0x123 (address)
+printf("%i", n);   // 50 - value of n
+printf("%p", &n);  // 0x123 - address
+printf("%i", *&n); // 50 - print value at 0x123 (address)
 ```
 
 **Pointers**
