@@ -2,9 +2,63 @@
 
 ## [HarvardX's CS50x](https://learning.edx.org/course/course-v1:HarvardX+CS50+X)
 
+- [Week 4 🍌 Memory](#week-4--memory)
 - [Week 3 🍍 Algorithms](#week-3--algorithms)
 - [Week 2 🧁 Arrays](#week-2--arrays)
 - [Week 1 C](#week-1-c)
+
+### Week 4 🍌 Memory
+
+**Hex**
+
+- Hex is base 16
+- `FF` works out perfectly for 4 bits: `16 x F` (240) + `1 x F` (15) = 255 
+- Any time you reference hex digits, prefix w/ `0x` eg `0x49`
+
+**Addresses**
+
+- `&` What is the address
+- `*` Go to the address; what's inside?
+
+```c
+int n = 50;
+printf("%i", n);   \\ 50 - value of n
+printf("%p", &n);  \\ 0x123 - address
+printf("%i", *&n); \\ 50 - print value at 0x123 (address)
+```
+
+**Pointers**
+
+- Store the *address* and *type* of value
+- `int *p = &n` - declare a pointer of type int
+- use `*p` to print the value of `n` (`*&n`)
+- Pointer address is 8 bytes
+
+Mailbox example
+
+- Mailbox `p` [0x123] - contains value of an address; points to mailbox 0x123
+- Mailbox 0x123 `n` [50] - contains value of 50 
+- We don't care about the pointer's (`p`) address
+
+**Strings**
+
+- Not native to C - created as `typedef char *string`
+- Example of string `[H][I][!][\0]`, where addresses would be consecutive, eg: `[0x123][0x124][0x125][0x126]`, 1 byte apart
+- The first byte of a "string" is the string's address
+- `string` = `char *s = "HI!";` where address of `s = &s[0]`
+- `printf("%c", *s); \\ H` - print value at address
+- last char of "string" is `\0` or `0` as type int
+- `get_string` returns address of first character
+
+How would you copy a string?
+
+- Allocate a new spot in memory: eg 4 bytes, `malloc(4)`, or `malloc(strlen(s) + 1)` (to account for `\0`)
+- Check if the address created is valid (not NULL)
+- Check that length of string is not 0
+- Loop over char address (`n <= i`) and copy all values, including `\0`
+- Compare using `strcmp(v1, v2) == 0`
+
+
 
 ### Week 3 🍍 Algorithms
 
