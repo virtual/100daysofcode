@@ -17,7 +17,7 @@ Helpful terms:
 - `*` dereference operator - goto / get the value at a pointer
 - `->` combines `.` and `*` functionality
 
-Array 
+#### Arrays
 
 - Time: *O*(*n*), Ω(1) 
 - More memory efficient (than LL) if you can erase the old array created by malloc
@@ -26,7 +26,7 @@ Array
 - "vector" means a resizable array (Java)
 - arrays in C are contiguous and cannot be resized
 
-Linked List
+#### Linked Lists
 
 - A list of numbers that are linked together ("nodes")
 - Stores the value `1` or `3`
@@ -85,6 +85,47 @@ Reallocate
 - `int *tmp = realloc(list, 4 * sizeof(int));`
 - copies old to new
 - don't need to free previous list after realloc
+
+
+Example for loop for linked list items:
+
+```c
+for (node *tmp = list; tmp != NULL; tmp = tmp->next)
+    {
+        printf("%i\n", tmp->number);
+    }
+```
+
+How to allocate more nodes in the middle (sorted)
+
+- Order matters so you don't orphan the remaining nodes and cause a memory leak
+- Point your new item to the first element
+- List still points to the first element
+- Remove list -> first element pointer, switch list -> new element, new element already points to previous first element
+
+```c
+n->next = list;
+list = n;
+```
+
+Linked lists are 1-dimensional
+
+#### Trees
+
+- Trees let us work in 2 dimensions! (Left-to-right and top-to-bottom)
+- Binary search - Requries you to be able to index into an array using Random Access 
+- Trees are deliberately ordered; left child is less, right child is more
+- Recursive data structure, tree with a child that is a tree
+
+```c
+typedef struct node
+{
+    int number;
+    struct node *left;
+    struct node *right;
+}
+node;
+```
 
 
 ### Week 4 🍌 Memory
