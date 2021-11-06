@@ -61,7 +61,7 @@ More on Linked Lists
 - Calling `malloc` gives you the *address* of the first byte (size 1 or 100!)
 - If you initialize without a value, it may hold garbage values--set it to `NULL`; create empty LL: `node *list = NULL;`
 - Create a node in LL `node *n = malloc(sizeof(node));` (syntax for storing an address)
-- Check if `n` is not `NULL` before doing any work on it
+- When creating via malloc, check if `n` is not `NULL` before doing any work on it
 
 ```c
 (*n).number = 1; 
@@ -71,8 +71,20 @@ n->number = 1;
 n->node = NULL;
 ```
 
-After creating the first node, point the list to the first node
+- After creating the first node, point the list to the first node
+- After instantiating n, point the list node with `next` value NULL to n
+- Search Time: *O*(*n*) - must travel thru each 1-by-1
+- Insert new into LL on to end or sorted placement: *O*(*n*) (doesn't have to go at the end!)
+- Can insert at beginning of LL: *O*(1)
+- `list[0]` bracket notation adds to stack
+- `int *list = malloc(sizeof(int));` adds to heap
 
+Reallocate
+
+- `realloc` - reallocates memory we used earlier
+- `int *tmp = realloc(list, 4 * sizeof(int));`
+- copies old to new
+- don't need to free previous list after realloc
 
 
 ### Week 4 🍌 Memory
