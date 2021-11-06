@@ -68,9 +68,10 @@ More on Linked Lists
 
 // or equivalent:
 n->number = 1;
-n->node = null;
+n->node = NULL;
 ```
 
+After creating the first node, point the list to the first node
 
 
 
