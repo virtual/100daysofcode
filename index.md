@@ -2,10 +2,57 @@
 
 ## [HarvardX's CS50x](https://learning.edx.org/course/course-v1:HarvardX+CS50+X)
 
+- [Week 5 Data Structures](#week-5-data-structures)
 - [Week 4 🍌 Memory](#week-4--memory)
 - [Week 3 🍍 Algorithms](#week-3--algorithms)
 - [Week 2 🧁 Arrays](#week-2--arrays)
 - [Week 1 C](#week-1-c)
+
+### Week 5 Data Structures
+
+Helpful terms:
+
+- `struct` - let's us define our own structures
+- `.` - let's you access a property
+- `*` dereference operator - goto / get the value at a pointer
+- `->` combines `.` and `*` functionality
+
+Array 
+
+- Time: *O*(*n*), Ω(1) 
+- More memory efficient (than LL) if you can erase the old array created by malloc
+- If space available, add one
+- If no space, copy and make a larger array space
+- "vector" means a resizable array (Java)
+- arrays in C are contiguous and cannot be resized
+
+Linked List
+
+- A list of numbers that are linked together ("nodes")
+- Stores the value `1` or `3`
+- Stores the pointer to the next value `0x456` or `0x00` (NULL)
+
+Example of LL as custom struct, where `next` is a pointer to the next node
+
+```c
+typedef struct
+{
+    int number;
+    node *next; // What is a node here?
+}
+node;
+```
+
+But since node doesn't exist to refer to the pointer for a type node, we also add the name `node` to the top of the struct def and `struct` to the pointer variable def:
+
+```c
+typedef struct node
+{
+    int number;
+    struct node *next;
+}
+node;
+```
 
 ### Week 4 🍌 Memory
 
