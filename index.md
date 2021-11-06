@@ -127,6 +127,42 @@ typedef struct node
 node;
 ```
 
+- Running time to insert new value into *balanced* tree: - Time: *O*(log *n*)
+- Height of balanced search tree is log2 *n* (Steps to find/insert new items)
+
+#### Hash table
+
+Essentially an array of linked lists; allows you to "bucketize" data to let you get data more quickly
+
+- init phonebook[26]
+- set phonebook[0] = linked list that contains Albus
+- set phonebook[25] = linked list that contains Zack
+- hash function - a function that tells you which array element to insert into
+- "hash" - look at some input and return output (which bucket?) based on characteristic of input  
+- colissions - when there are too many results (chains) under a certain hash array element
+
+More "buckets"
+
+- can we add another level of hash tables? 26 * 26 (676)
+- can we add levels for each letter? price = more memory 26 * 26 * 26 (17576)
+- Use `bc` for a CLI calculator! 
+- hash sort example, card suits
+- Running time of searching for an item: (4 buckets? n/4) as item count get larger: *O*(*n*), however still faster than LL and Array
+
+#### Tries (Retrievals)
+
+AKA Prefix tree
+
+- Used for storing words or sophisticated data
+- Tree made up of arrays, where each array is a pointer to another node
+- Retrieval time: *O*(1)
+- Needs a lot of memory
+
+#### Abstract data structures
+
+- Queue: FIFO, store checkout; enqueue (get in line), dequeue (get out of line), array isn't dynamic enough, need linked list 
+- Stack: LIFO, cafeteria tray; push and pop
+- Dictionary: associate keys with values; dictionary or salad pickup; *apple* has definition, lookup value by key
 
 ### Week 4 🍌 Memory
 
