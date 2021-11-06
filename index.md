@@ -54,6 +54,26 @@ typedef struct node
 node;
 ```
 
+More on Linked Lists 
+
+- Not contiguous
+- Cannot be searched with using binary search (phonebook)
+- Calling `malloc` gives you the *address* of the first byte (size 1 or 100!)
+- If you initialize without a value, it may hold garbage values--set it to `NULL`; create empty LL: `node *list = NULL;`
+- Create a node in LL `node *n = malloc(sizeof(node));` (syntax for storing an address)
+- Check if `n` is not `NULL` before doing any work on it
+
+```c
+(*n).number = 1; 
+
+// or equivalent:
+n->number = 1;
+n->node = null;
+```
+
+
+
+
 ### Week 4 🍌 Memory
 
 **Hex**
