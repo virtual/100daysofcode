@@ -82,6 +82,31 @@ Scope
 - In python, the variable will exist until the end of the function
 - Don't need to initialize the var outside of a loop
 
+
+```py
+print("I'll print with a newline")
+
+# You can use an end argument to specify end of line
+print("I'll print on the same line", end="")
+```
+
+Errors
+
+```py
+import sys
+
+# error (1)
+sys.exit(1)
+
+# all good (0)
+sys.exit(0)
+```
+
+Files
+
+- using `with open` will automatically close the file
+
+
 ----
 
 ### Week 5 Data Structures
