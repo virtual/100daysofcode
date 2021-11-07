@@ -2,11 +2,48 @@
 
 ## [HarvardX's CS50x](https://learning.edx.org/course/course-v1:HarvardX+CS50+X)
 
+- [Week 6 🐍 Python](#week-6--python)
 - [Week 5 Data Structures](#week-5-data-structures)
 - [Week 4 🍌 Memory](#week-4--memory)
 - [Week 3 🍍 Algorithms](#week-3--algorithms)
 - [Week 2 🧁 Arrays](#week-2--arrays)
 - [Week 1 C](#week-1-c)
+
+
+### Week 6 🐍 Python
+
+Loosely-typed language:
+
+- bool
+- float
+- int
+- str
+- range
+- list - like an array, but dynamic size
+- range - sequence of numbers
+- tuple - collection of ordered values like x- and y-coordinates, or longitude and latitude
+- dict, dictionaries, collection of key/value pairs, like a hash table
+- set - unique values
+
+
+```py
+print("hello, " + answer)
+
+# or new print format syntax
+print(f"hello, {answer}")
+```
+
+Simple for loop
+
+```py
+for i in [0, 1, 2]:
+    print("mew")
+
+# or use range
+for i in range(3):
+    print("mew")    
+```
+
 
 ### Week 5 Data Structures
 
