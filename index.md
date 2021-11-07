@@ -40,10 +40,49 @@ for i in [0, 1, 2]:
     print("mew")
 
 # or use range
-for i in range(3):
+for i in range(0,3):
     print("mew")    
 ```
 
+- Python runs code through an interpreter, which makes it a bit slower than C
+- `python` translates Python code to computer code
+
+Using library imports
+
+```py
+from cs50 import get_int
+x = get_int("x: ")
+y = get_int("y: ")
+
+# or use namespace
+import cs50
+x = cs50.get_int("x: ")
+y = cs50.get_int("y: ")
+```
+
+Function hoisting
+
+- Prototypes don't exist in Python
+- Functions aren't automatically hoisted (undefined if they exist below running code)
+- Use a `def main()` to call the functions and call `main()` to init
+
+```py
+def main():
+    for i in range(3):
+        meow()
+
+def meow():
+    print("meow")
+
+main()
+```
+
+Scope
+
+- In python, the variable will exist until the end of the function
+- Don't need to initialize the var outside of a loop
+
+----
 
 ### Week 5 Data Structures
 
@@ -201,6 +240,8 @@ AKA Prefix tree
 - Stack: LIFO, cafeteria tray; push and pop
 - Dictionary: associate keys with values; dictionary or salad pickup; *apple* has definition, lookup value by key
 
+----
+
 ### Week 4 🍌 Memory
 
 **Hex**
@@ -351,6 +392,7 @@ Images
 
 Many file types have "magic numbers" the first N bytes in a file that establish what type of file it is; for example, every JPG will start with `0xff 0xd8 0xff`
 
+----
 
 ### Week 3 🍍 Algorithms
 
@@ -465,6 +507,7 @@ Recursion
 - Needs a base case to quit
 - Define the answer in terms of itself
 
+----
 
 ### Week 2 🧁 Arrays
 
@@ -591,6 +634,8 @@ Command line args
 - int main(int argc, string argv[]) {}
 - input comes in as strings 
 
+----
+
 ### Week 1 C
 
 - introduction to C
@@ -630,7 +675,7 @@ Types not built-in to C available in CS50 library:
 
 You can init two variables in one line, for example: `int height, width;`
 
-
+----
 
 
 ### Week 0
