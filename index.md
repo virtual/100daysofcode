@@ -2,6 +2,7 @@
 
 ## [HarvardX's CS50x](https://learning.edx.org/course/course-v1:HarvardX+CS50+X)
 
+- [Week 7 SQL](#week-6-sql)
 - [Week 6 🐍 Python](#week-6--python)
 - [Week 5 Data Structures](#week-5-data-structures)
 - [Week 4 🍌 Memory](#week-4--memory)
@@ -9,6 +10,13 @@
 - [Week 2 🧁 Arrays](#week-2--arrays)
 - [Week 1 C](#week-1-c)
 
+### Week 7 SQL
+
+We can nest queries:
+
+```sql
+SELECT title FROM shows WHERE id IN (SELECT show_id FROM genres WHERE genre = "Musical");
+```
 
 ### Week 6 🐍 Python
 
