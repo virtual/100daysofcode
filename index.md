@@ -2,13 +2,27 @@
 
 ## [HarvardX's CS50x](https://learning.edx.org/course/course-v1:HarvardX+CS50+X)
 
-- [Week 7 SQL](#week-6-sql)
+- [Week 9 Flask](#week-9-flask)
+- [Week 8 HTML, CSS, JavaScript](#week-8-html-css-javascript)
+- [Week 7 SQL](#week-7-sql)
 - [Week 6 🐍 Python](#week-6--python)
 - [Week 5 Data Structures](#week-5-data-structures)
 - [Week 4 🍌 Memory](#week-4--memory)
 - [Week 3 🍍 Algorithms](#week-3--algorithms)
 - [Week 2 🧁 Arrays](#week-2--arrays)
 - [Week 1 C](#week-1-c)
+
+### Week 9 Flask
+
+### Week 8 HTML, CSS, JavaScript
+
+TCP/IP governs what goes outside the envelopes. HTTP governs what goes inside of the envelopes.
+
+- Internet Protocol - standardizes how computers address each other
+- Domain Name System - translates a english-like domain names, or fully qualified domain names, to the corresponding IP addresses
+- Transmission Control Protocol - TCP ports allows a server to handle multiple services (html, email, chat) and retransmitting data if needed
+
+`curl` - connect to URL
 
 ### Week 7 SQL
 
