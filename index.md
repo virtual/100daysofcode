@@ -14,6 +14,32 @@
 
 ### Week 9 Flask
 
+Framework - a way of organizing your code
+
+Flask:
+
+Running locally (Mac) assuming application.py is entry:
+
+```bash
+python3 -m venv venv
+. venv/bin/activate
+pip install Flask
+export FLASK_APP=application
+flask run
+```
+
+Basic application.py:
+
+```py
+# Greets user
+from flask import Flask, render_template, request
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return render_template("index.html", name=request.args.get("name", "world"))
+```
+
 ### Week 8 HTML, CSS, JavaScript
 
 TCP/IP governs what goes outside the envelopes. HTTP governs what goes inside of the envelopes.
