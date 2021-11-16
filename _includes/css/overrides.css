@@ -173,3 +173,9 @@ blockquote {
   padding: 12px 24px;
   margin-bottom:  1rem;
 }
+
+@media (min-width: 992px) {
+  .container .four.columns {
+    position: fixed;
+  }
+}
