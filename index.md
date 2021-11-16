@@ -33,12 +33,30 @@ Basic application.py:
 ```py
 # Greets user
 from flask import Flask, render_template, request
+
+# turn the current file into a web application
+# __name__ refers to current file
 app = Flask(__name__)
 
+# define paths
+# @ is a python decorator
 @app.route("/")
+
+# template pages go in the /templates/ folder
+# request libraries allows us to pass ?name=arg in the URL
+# arg defaults to None if not set
+# passes variable name into function with name value
 def index():
     return render_template("index.html", name=request.args.get("name", "world"))
 ```
+
+Pass into index.html template:
+
+```html
+hello, {{ name }}
+```
+
+In cs50 IDE: `flask run`
 
 ### Week 8 HTML, CSS, JavaScript
 
