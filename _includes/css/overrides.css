@@ -179,3 +179,11 @@ blockquote {
     position: fixed;
   }
 }
+
+.sidebar img {
+    max-width: 200px;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    width: 100%;
+}
