@@ -2,6 +2,7 @@
 
 ## [HarvardX's CS50x](https://learning.edx.org/course/course-v1:HarvardX+CS50+X)
 
+- [Week 10 Ethics](#week-10-ethics)
 - [Week 9 Flask](#week-9-flask)
 - [Week 8 HTML, CSS, JavaScript](#week-8-html-css-javascript)
 - [Week 7 SQL](#week-7-sql)
@@ -11,6 +12,22 @@
 - [Week 3 🍍 Algorithms](#week-3--algorithms)
 - [Week 2 🧁 Arrays](#week-2--arrays)
 - [Week 1 C](#week-1-c)
+
+
+### Week 10 Ethics
+
+Principles:
+
+- Correctness -- given a certain input, does the program or function give the correct output? 
+- Design -- is the program well-designed for speed and uses a clean solution?
+- Style -- is the code cleanly written? indentation, variable names, commented etc
+
+Ethic principles of democracy:
+ 
+- People are free and equal
+- Political regime, elections, rights, participation
+- Political discussions should appeal to cooporation from people with different beliefs
+
 
 ### Week 9 Flask
 
