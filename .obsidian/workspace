@@ -1,0 +1,95 @@
+{
+  "main": {
+    "id": "29a69748964d382c",
+    "type": "split",
+    "children": [
+      {
+        "id": "917dffe5a7902948",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "r2.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "811fcc8fa4e2ea14",
+    "type": "split",
+    "children": [
+      {
+        "id": "184822000fa693a5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0b2cdbabaaa19ff5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "bdf8a7babe652220",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ce8df598df4eeac6",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a118c0d84aec173",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e79e514fa4ba8539",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "r2.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "917dffe5a7902948",
+  "lastOpenFiles": [
+    "r2.md",
+    "index.md",
+    "r1.md"
+  ]
+}
