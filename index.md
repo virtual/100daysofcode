@@ -1,7 +1,10 @@
 # #100DaysOfCode
 
+[💫 CS50x Certificate of Completion 💫](https://cs50.harvard.edu/certificates/9f182396-082e-44bb-9aa0-75778c91f669) - Thanks to Flowy for the help and encouragement throughout this course :)
+
 ## [HarvardX's CS50x](https://learning.edx.org/course/course-v1:HarvardX+CS50+X)
 
+- [Final](#final)
 - [Week 10 Ethics](#week-10-ethics)
 - [Week 9 Flask](#week-9-flask)
 - [Week 8 HTML, CSS, JavaScript](#week-8-html-css-javascript)
@@ -12,6 +15,13 @@
 - [Week 3 🍍 Algorithms](#week-3--algorithms)
 - [Week 2 🧁 Arrays](#week-2--arrays)
 - [Week 1 C](#week-1-c)
+
+
+### Final 
+
+[CS50x final project using Flask](https://github.com/virtual/distantlife)
+
+Raise virtual pets while improving your language skills! The site is setup using Python, Flask with Jinja templates, and a custom CSS stylesheet. [View Distant Life website](https://distantlife.com/)
 
 
 ### Week 10 Ethics
