@@ -39,4 +39,4 @@ Ideas for Round 5 starting February 1, 2022
 - Play with Storybook or a similar platform for UI
 - AWS Cloud Pracitioner
 - Advanced SCSS
-
+- Make my 100daysofcode nav mobile friendly
