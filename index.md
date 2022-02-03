@@ -1,5 +1,19 @@
 # #100DaysOfCode Round 5
 
+## R5 Day 2: 2022-02-02 Wednesday
+
+AWS Cert:
+
+- Cloud Computing
+  - Traditional Data Centers
+  - Benefits of Cloud Computing
+  - Types of Cloud Computing
+- AWS Global Infrastructure	
+  - AWS Regions 
+  - Availability Zones
+  - AWS Edge Locations
+
+
 ## R5 Day 1: 2022-02-01 Tuesday
 
 - Digging into Pluralsight's [AWS Cloud Practitioner cert](https://app.pluralsight.com/explore/certifications/topics/aws) (doing notes in a guide), setup account
