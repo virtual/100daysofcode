@@ -1,5 +1,11 @@
 # #100DaysOfCode Round 5
 
+## R5 Day 4: 2022-02-04 Friday
+
+- Pluralsight skills:
+  - CSS: 238; need to work on at-rules, transitions, animations
+  - Python: 199
+
 ## R5 Day 3: 2022-02-03 Thursday
 
 AWS Cert: Fundamental Cloud Concepts
