@@ -1,8 +1,15 @@
 # #100DaysOfCode Round 5
 
+## R5 Day 3: 2022-02-03 Thursday
+
+AWS Cert: Fundamental Cloud Concepts
+
+- Understanding Cloud Economics: TCO calc, pricing calc
+- Supporting AWS Infrastructure: basic, developer, business, enterprise
+
 ## R5 Day 2: 2022-02-02 Wednesday
 
-AWS Cert:
+AWS Cert: Fundamental Cloud Concepts
 
 - Cloud Computing
   - Traditional Data Centers
