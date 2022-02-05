@@ -5,6 +5,7 @@
 - Pluralsight skills:
   - CSS: 238; need to work on at-rules, transitions, animations
   - Python: 199
+- Codewars: [Greed is Good](https://www.codewars.com/kata/5270d0d18625160ada0000e4/train/python)
 
 ## R5 Day 3: 2022-02-03 Thursday
 
