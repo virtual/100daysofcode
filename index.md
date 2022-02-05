@@ -1,5 +1,39 @@
 # #100DaysOfCode Round 5
 
+## R5 Day 5: 2022-02-05 Saturday
+
+AWS Cert: Understanding AWS Core Services
+
+Compute services:
+
+- Amazon EC2 (Elastic Compute Cloud)
+- AWS Elastic Beanstalk
+- AWS Lambda
+
+Methods of interacting:
+
+- AWS Console
+- AWS CLI (see setup below, use IAM user)
+- AWS SDK
+
+### AWS CLI
+
+Setting up AWS CLI, download CLI v2
+
+```sh
+aws configure --profile ps
+AWS Access Key ID [None]: KEY_ID
+AWS Secret Access Key [None]: SECRET_KEY
+Default region name [None]: us-west-2
+Default output format [None]: json
+```
+
+Example, list all S3 buckets:
+
+```sh
+aws s3 ls --profile ps
+```
+
 ## R5 Day 4: 2022-02-04 Friday
 
 - Pluralsight skills:
