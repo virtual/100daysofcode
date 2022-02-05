@@ -173,3 +173,19 @@ blockquote {
   padding: 12px 24px;
   margin-bottom:  1rem;
 }
+
+.four.columns.sidebar {
+    display: block;
+}
+.four.columns.sidebar img {
+    max-width: 200px;
+}
+body > .container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+@media (min-width: 768px) {
+     body > .container {
+         display: block;
+    }  
+}
