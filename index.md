@@ -1,5 +1,24 @@
 # #100DaysOfCode Round 5
 
+## R5 Day 6: 2022-02-06 Sunday
+
+AWS Cert: Understanding AWS Core Services
+
+- Content and Network Delivery Services
+  - Amazon VPC and Direct Connect
+  - Amazon Route 53 (DNS)
+  - Elastic Load Balancing
+  - Amazon CloudFront (CDN) and API Gateway
+  - AWS Global Accelerator
+- File Storage Services
+  - Amazon S3 
+  - Glacier and Glacier Deep Archive
+  - Elastic Block Store (single EC2)
+  - Elastic File System (Linux, multi EC2)
+  - Data Transfer with AWS Snowball, Snowmobile
+
+[Email: learn and test DMARC (Domain-based Message Authentication, Reporting & Conformance)](https://www.learndmarc.com/)
+
 ## R5 Day 5: 2022-02-05 Saturday
 
 AWS Cert: Understanding AWS Core Services
