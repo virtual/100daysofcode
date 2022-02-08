@@ -1,5 +1,33 @@
 # #100DaysOfCode Round 5
 
+## All projects:
+
+- AWS Cloud Practitioner Certification
+  - Fundamental Cloud Concepts ✓
+    - Day 01: Account setup 
+    - Day 02: Cloud Computing, AWS Global Infrastructure	 
+    - Day 03: Understanding Cloud Economics, Supporting AWS Infrastructure ✓
+  - Understanding AWS Core Services ✓
+    - Day 05: Interacting with AWS, Compute Services
+    - Day 06: Content and Network Delivery Services, File Storage Services, Database Services and Utilities, App Integration Services
+    - Day 07: Management and Governance Services ✓
+- Codewars
+  - Day 04: Greed is Good (Python) ✓
+ 
+
+## R5 Day 7: 2022-02-07 Sunday
+
+AWS Cert: Understanding AWS Core Services
+
+- Management and Governance Services
+  - AWS CloudTrail
+  - Amazon CloudWatch and AWS Config
+  - AWS Systems Manager
+  - AWS CloudFormation
+  - AWS OpsWorks
+  - AWS Organizations and Control Tower
+
+
 ## R5 Day 6: 2022-02-06 Sunday
 
 AWS Cert: Understanding AWS Core Services
@@ -10,12 +38,20 @@ AWS Cert: Understanding AWS Core Services
   - Elastic Load Balancing
   - Amazon CloudFront (CDN) and API Gateway
   - AWS Global Accelerator
+- Database Services and Utilities
+  - RDS
+  - DynamoDB
+  - Elasticache
+  - Redshift 
 - File Storage Services
   - Amazon S3 
   - Glacier and Glacier Deep Archive
   - Elastic Block Store (single EC2)
   - Elastic File System (Linux, multi EC2)
   - Data Transfer with AWS Snowball, Snowmobile
+- App Integration Services
+  - AWS Messaging Services
+  - AWS Step Functions
 
 [Email: learn and test DMARC (Domain-based Message Authentication, Reporting & Conformance)](https://www.learndmarc.com/)
 
