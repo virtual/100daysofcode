@@ -15,7 +15,7 @@
   - Day 04: Greed is Good (Python) ✓
  
 
-## R5 Day 7: 2022-02-07 Sunday
+## R5 Day 7: 2022-02-07 Monday
 
 AWS Cert: Understanding AWS Core Services
 
