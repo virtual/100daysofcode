@@ -11,9 +11,17 @@
     - Day 05: Interacting with AWS, Compute Services
     - Day 06: Content and Network Delivery Services, File Storage Services, Database Services and Utilities, App Integration Services
     - Day 07: Management and Governance Services ✓
+  - Introduction to Security and Architecture on AWS
+    - Day 08: AWS Architecture Core Concepts 
 - Codewars
   - Day 04: Greed is Good (Python) ✓
  
+
+## R5 Day 8: 2022-02-08 Tuesday
+
+AWS Cert: Introduction to Security and Architecture on AWS
+
+- AWS Architecture Core Concepts 
 
 ## R5 Day 7: 2022-02-07 Monday
 
