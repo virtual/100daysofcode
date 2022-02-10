@@ -13,9 +13,15 @@
     - Day 07: Management and Governance Services ✓
   - Introduction to Security and Architecture on AWS
     - Day 08: AWS Architecture Core Concepts 
+    - Day 09: AWS Identities and User Management
 - Codewars
   - Day 04: Greed is Good (Python) ✓
  
+## R5 Day 9: 2022-02-09 Wednesday
+
+AWS Cert: Introduction to Security and Architecture on AWS
+
+- AWS Identities and User Management
 
 ## R5 Day 8: 2022-02-08 Tuesday
 
