@@ -14,9 +14,16 @@
   - Introduction to Security and Architecture on AWS
     - Day 08: AWS Architecture Core Concepts 
     - Day 09: AWS Identities and User Management
+    - Day 10: Data Architecture on AWS
 - Codewars
   - Day 04: Greed is Good (Python) ✓
  
+
+## R5 Day 10: 2022-02-10 Thursday
+
+AWS Cert: Data Architecture on AWS
+
+
 ## R5 Day 9: 2022-02-09 Wednesday
 
 AWS Cert: Introduction to Security and Architecture on AWS
