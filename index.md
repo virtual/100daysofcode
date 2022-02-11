@@ -11,17 +11,28 @@
     - Day 05: Interacting with AWS, Compute Services
     - Day 06: Content and Network Delivery Services, File Storage Services, Database Services and Utilities, App Integration Services
     - Day 07: Management and Governance Services ✓
-  - Introduction to Security and Architecture on AWS
+  - Introduction to Security and Architecture on AWS ✓
     - Day 08: AWS Architecture Core Concepts 
     - Day 09: AWS Identities and User Management
     - Day 10: Data Architecture on AWS
+    - Day 11: Disaster Recovery on AWS, Architecting Applications on Amazon EC2 ✓
 - Codewars
   - Day 04: Greed is Good (Python) ✓
  
+ 
+ 
+## R5 Day 11: 2022-02-11 Friday
+
+AWS Cert: Introduction to Security and Architecture on AWS
+
+- Disaster Recovery on AWS
+- Architecting Applications on Amazon EC2
 
 ## R5 Day 10: 2022-02-10 Thursday
 
-AWS Cert: Data Architecture on AWS
+AWS Cert: Introduction to Security and Architecture on AWS
+
+-  Data Architecture on AWS
 
 
 ## R5 Day 9: 2022-02-09 Wednesday
