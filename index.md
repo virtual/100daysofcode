@@ -2,6 +2,8 @@
 
 ## All projects:
 
+- DistantLife
+  - Day 12: Update database connections to use sqlite3
 - AWS Cloud Practitioner Certification
   - Fundamental Cloud Concepts ✓
     - Day 01: Account setup 
@@ -19,7 +21,64 @@
 - Codewars
   - Day 04: Greed is Good (Python) ✓
  
- 
+
+## R5 Day 12: 2022-02-12 Saturday
+
+DistantLife: change use of `cs50` library to `sqlite3` for database queries
+
+Was:
+
+```py
+from cs50 import SQL
+
+db = SQL("sqlite:///distantlife.db")
+```
+
+Now:
+
+```py
+import sqlite3
+
+con = sqlite3.connect("distantlife.db")
+con.row_factory = sqlite3.Row # includes column name in return dictionary
+db = con.cursor()
+```
+
+Updated:
+
+```py
+@app.route("/pets")
+@login_required
+def pets():
+    """Lists all of user's pets"""
+    
+-   # previously using cs50 db query
+-   # pets_owned = db.execute("SELECT pets.id, pet_types.imgsrc, pet_types.pet_type, pets.created, pets.exp, pets.name, users.active_pet_id FROM owners JOIN pets ON pets.id = owners.pet_id JOIN pet_types ON pets.type = pet_types.id JOIN users ON users.id = owners.owner_id WHERE owner_id = ?", session_get_int("user_id"))
+-   # [{'id': 15, 'imgsrc': '/pets/034-jackalope.png', 'pet_type': 'Jackalope', 'created': '2021-12-05 18:04:39', 'exp': 0, 'name': 'Unnamed Pet', 'active_pet_id': 15}]    
+    
++   # now, updated using .fetchall and rows magic (above)
++   # also required trailing " , " in list of params
++   pets_owned = db.execute("SELECT pets.id, pet_types.imgsrc, pet_types.pet_type, pets.created, pets.exp, pets.name, users.active_pet_id FROM owners JOIN pets ON pets.id = owners.pet_id JOIN pet_types ON pets.type = pet_types.id JOIN users ON users.id = owners.owner_id WHERE owner_id = ?", (session_get_int("user_id"), )).fetchall()
++   # https://itheo.tech/get-column-names-from-sqlite-with-python
++   # print(dict(pets_owned[0]))
++   # {'id': 15, 'imgsrc': '/pets/034-jackalope.png', 'pet_type': 'Jackalope', 'created': '2021-12-05 18:04:39', 'exp': 0, 'name': 'Unnamed Pet', 'active_pet_id': 15}
+    return render_template("list.html", pets_owned=pets_owned)
+```
+
+After every UPDATE, INSERT, and DELETE you also need to commit in order to ensure the execution moves from the journal to the database.
+
+Example of updating a row, checking if there was an update with `rowcount` and committing the update
+
+```py
+updateqry = db.execute(
+    "UPDATE pets SET exp = ? WHERE id = ?", (exp, active_pet_id))
+con.commit()
+if (updateqry.rowcount > 0):
+    session.get("active_pet")["exp"] = exp
+    return exp
+else:
+    return 0
+```
  
 ## R5 Day 11: 2022-02-11 Friday
 
@@ -178,6 +237,7 @@ Ideas for Round 5 starting February 1, 2022
   - Limit abilities to pet levels
   - Create "worlds"
   - Add another language
+  - Add test suite for queries
 - [Javascript30](https://github.com/virtual/javascript30)
 - [Codewars](https://www.codewars.com/dashboard) (6kyu, 172)
 - [Javascript design patterns (MVC)](https://classroom.udacity.com/courses/ud989)
