@@ -22,6 +22,20 @@
   - Day 04: Greed is Good (Python) ✓
  
 
+## R5 Day 13: 2022-02-13 Sunday
+
+- [Unit Testing on Python](https://app.pluralsight.com/library/courses/using-unit-testing-python/table-of-contents)
+- [Possible flask blog platform](https://github.com/gouthambs/Flask-Blogging) - but a bit too much restructuring, newness for me atm
+
+### Unit Testing
+
+A unit test __doesn't__ use:
+- the filesystem
+- a database
+- the network
+
+[Phonebook tests repo](https://github.com/virtual/python-testing)
+
 ## R5 Day 12: 2022-02-12 Saturday
 
 DistantLife: change use of `cs50` library to `sqlite3` for database queries
