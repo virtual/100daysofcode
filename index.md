@@ -4,6 +4,9 @@
 
 - DistantLife
   - Day 12: Update database connections to use sqlite3
+  - Day 14: Updated python server & updated code on production to use sqlite3
+- Python Testing
+  - Day 13: Unit Testing
 - AWS Cloud Practitioner Certification
   - Fundamental Cloud Concepts ✓
     - Day 01: Account setup 
@@ -20,7 +23,20 @@
     - Day 11: Disaster Recovery on AWS, Architecting Applications on Amazon EC2 ✓
 - Codewars
   - Day 04: Greed is Good (Python) ✓
- 
+
+## R5 Day 14: 2022-02-14 Monday
+
+Updated python server & updated code on production to use sqlite3 
+
+```sh
+sudo apt-get update
+sudo apt-get upgrade
+cd /var/www/distantlife.com/html
+sudo systemctl stop distantlife
+git pull
+sudo systemctl start distantlife
+```
+
 
 ## R5 Day 13: 2022-02-13 Sunday
 
