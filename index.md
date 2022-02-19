@@ -7,6 +7,7 @@
   - Day 14: Updated python server & updated code on production to use sqlite3
 - Python Testing
   - Day 13: Unit Testing
+  - Day 19: Test Fixtures
 - AWS Cloud Practitioner Certification
   - Fundamental Cloud Concepts ✓
     - Day 01: Account setup 
@@ -23,6 +24,10 @@
     - Day 11: Disaster Recovery on AWS, Architecting Applications on Amazon EC2 ✓
 - Codewars
   - Day 04: Greed is Good (Python) ✓
+
+## R5 Day 19: 2022-02-19 Saturday
+
+[Phonebook tests repo](https://github.com/virtual/python-testing) - add test fixture
 
 ## R5 Day 14: 2022-02-14 Monday
 
