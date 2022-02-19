@@ -29,6 +29,10 @@
 
 [Phonebook tests repo](https://github.com/virtual/python-testing) - add test fixture
 
+## R5 Day 16: 2022-02-16 Wednesday
+
+Promoted to Senior FED 🎉
+
 ## R5 Day 14: 2022-02-14 Monday
 
 Updated python server & updated code on production to use sqlite3 
