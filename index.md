@@ -8,6 +8,7 @@
 - Python Testing
   - Day 13: Unit Testing
   - Day 19: Test Fixtures
+  - Day 21: Test Structure
 - AWS Cloud Practitioner Certification
   - Fundamental Cloud Concepts ✓
     - Day 01: Account setup 
@@ -24,6 +25,10 @@
     - Day 11: Disaster Recovery on AWS, Architecting Applications on Amazon EC2 ✓
 - Codewars
   - Day 04: Greed is Good (Python) ✓
+
+## R5 Day 21: 2022-02-21 Monday
+
+[Phonebook tests repo](https://github.com/virtual/python-testing) - Test structure: Arrange, act, assert
 
 ## R5 Day 19: 2022-02-19 Saturday
 
