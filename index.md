@@ -5,6 +5,8 @@
 - DistantLife
   - Day 12: Update database connections to use sqlite3
   - Day 14: Updated python server & updated code on production to use sqlite3
+- [Storybook](https://github.com/virtual/storybook-getting-started)
+  - Day 22: Overview  
 - Python Testing
   - Day 13: Unit Testing
   - Day 19: Test Fixtures
@@ -25,6 +27,35 @@
     - Day 11: Disaster Recovery on AWS, Architecting Applications on Amazon EC2 ✓
 - Codewars
   - Day 04: Greed is Good (Python) ✓
+
+## R5 Day 22: 2022-02-22 Tuesday
+
+### Storybook: Getting Started (Pluralsight)
+
+__Examples__
+
+- [Lonely Planet BackpackUI](https://lonelyplanet.github.io/backpack-ui/?path=/story/buttons--bookmark-button-custom-button)
+- [Airbnb React Dates](https://react-dates.github.io/react-dates/?path=/story/drp-calendar-props--default)
+
+It's a tool for creating isolated UI components
+
+May be known as:
+
+- A living styleguide
+- Component library
+
+How it works:
+
+- It renders components in an iframe
+- Shows you how it works / looks
+- Knobs: add-on that let's you update parameters pased to component (text)
+- Show Info: add-on used by Airbnb to show dev docs / params
+
+Getting Started
+
+1. `/components` - React components, etc
+1. Add stories (`/.storybook`) - `npx -p @storybook/cli sb init`
+1. `npm run storybook`
 
 ## R5 Day 21: 2022-02-21 Monday
 
