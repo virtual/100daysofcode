@@ -7,6 +7,7 @@
   - Day 14: Updated python server & updated code on production to use sqlite3
 - [Storybook](https://github.com/virtual/storybook-getting-started)
   - Day 22: Overview  
+  - Day 25: Setup and add-ons
 - Python Testing
   - Day 13: Unit Testing
   - Day 19: Test Fixtures
@@ -27,6 +28,12 @@
     - Day 11: Disaster Recovery on AWS, Architecting Applications on Amazon EC2 ✓
 - Codewars
   - Day 04: Greed is Good (Python) ✓
+
+
+## R5 Day 25: 2022-02-25 Friday
+
+- Reviewed Storybook setup and add-ons
+- Tried playing with [Blast (Laravel Blades)](https://github.com/area17/blast) but I don't have php artisan set up
 
 ## R5 Day 22: 2022-02-22 Tuesday
 
